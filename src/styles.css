@@ -818,6 +818,54 @@ td.type {
    One measure, so one hue. The only other colour on it is the band marking the
    month you are reading it in. */
 
+.key {
+  margin: 0 0 1.1rem;
+  padding: 1rem 1.1rem;
+  background: var(--surface);
+  border: 1px solid var(--rule-soft);
+  border-radius: 3px;
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+}
+
+.key > div {
+  display: grid;
+  grid-template-columns: 2.6rem 1fr;
+  gap: 0.8rem;
+  align-items: start;
+}
+
+.key dt { margin: 0; padding-top: 0.34rem; }
+
+.key dd {
+  margin: 0;
+  font-size: 0.9rem;
+  color: var(--ink-soft);
+}
+
+.key dd strong { color: var(--ink); font-weight: 600; }
+
+.key-bar,
+.key-band,
+.key-none {
+  display: block;
+  width: 2.4rem;
+  height: 0.62rem;
+  border-radius: 4px;
+}
+
+.key-bar { background: var(--leaf); }
+.key-band { background: var(--accent-soft); height: 1.2rem; border-radius: 2px; }
+.key-none { border: 1px dashed var(--rule); }
+
+.provenance {
+  margin: 0 0 1.6rem;
+  font-size: 0.88rem;
+  color: var(--ink-mute);
+  max-width: 36rem;
+}
+
 .cal-group + .cal-group { margin-top: 1.8rem; }
 
 .cal-group h3 {
@@ -828,7 +876,7 @@ td.type {
 }
 
 table.calendar {
-  min-width: 30rem;
+  min-width: 36rem;
   table-layout: fixed;
   font-size: 0.85rem;
 }
@@ -843,7 +891,8 @@ table.calendar th[scope="row"] {
 }
 
 table.calendar thead th {
-  padding: 0.5rem 0;
+  padding: 0.5rem 0.1rem;
+  font-size: 0.62rem;
   text-align: center;
   border-bottom: 1px solid var(--rule);
 }

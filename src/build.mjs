@@ -389,7 +389,9 @@ ${groups}
   </section>`;
 }
 
-const MONTHS = ["J", "F", "M", "A", "M", "J", "J", "A", "S", "O", "N", "D"];
+/* Three letters, not one. J, M and A each appear twice in a year and a single
+   initial makes the reader count columns to work out where they are. */
+const MONTHS = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
 const MONTH_NAMES = [
   "January", "February", "March", "April", "May", "June",
   "July", "August", "September", "October", "November", "December",
@@ -469,11 +471,28 @@ ${body}
       <h2>The year</h2>
       <span class="window">${MONTH_NAMES[thisMonth - 1]} highlighted</span>
     </div>
-    <p class="section-note">When each plant actually does something: flowers, fruit or autumn colour. A plant appears under every area it grows in.${
-      missing
-        ? ` ${missing} plants have no bar yet, because they are the ones still waiting on an identification.`
-        : ""
-    }</p>
+    <p class="section-note">A bar marks the months a plant is doing the thing named under it. Everything else about the year, growing, dying back, sitting dormant, is deliberately not shown.</p>
+
+    <dl class="key">
+      <div>
+        <dt><span class="key-bar"></span></dt>
+        <dd><strong>The bar</strong> is the window when that plant performs. The label under each name says what it is doing: flowers, fruit, harvest or autumn colour. A short bar is not a worse plant, just a shorter season.</dd>
+      </div>
+      <div>
+        <dt><span class="key-band"></span></dt>
+        <dd><strong>The band</strong> is the month you are reading this in, so you can see at a glance what should be performing right now.</dd>
+      </div>
+      <div>
+        <dt><span class="key-none"></span></dt>
+        <dd><strong>No bar</strong> does not mean dead. Most of these plants are alive year round and simply have nothing to show. ${
+          missing
+            ? `${missing} plants have no bar at all, and those are the ones still waiting on an identification.`
+            : ""
+        }</dd>
+      </div>
+    </dl>
+
+    <p class="provenance">These are typical Seattle seasons for each plant, not measurements from your garden. Yours will run a week or two either side, and a warm wall or a shady corner shifts things further. When you notice something starting or finishing at a different time than the bar says, tell me and I will set that row to what actually happens here rather than what the books say.</p>
 
 ${groups}
   </section>`;
