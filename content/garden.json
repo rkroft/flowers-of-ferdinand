@@ -250,18 +250,18 @@
     {
       "id": "driveway-2",
       "name": "Driveway Bed 2",
-      "role": "Not yet surveyed",
+      "role": "Sun annuals",
       "aspect": "East side, beyond the driveway",
-      "exposure": "Morning sun likely",
-      "sun": "unknown",
-      "surveyed": false,
+      "exposure": "Full sun",
+      "sun": "full",
+      "surveyed": true,
       "map": {
         "x": 462,
         "y": 194,
         "w": 78,
         "h": 40
       },
-      "description": "East side alongside the house, beyond the driveway. Morning sun and afternoon shade is the likely pattern, subject to whatever stands on the neighbouring property. Not seen yet."
+      "description": "East of the driveway alongside the house. Sunflowers, zinnias and gladiolus, and confirmed as full sun, which is more than its position beside the house suggested: nothing tall stands to the east of it. Together with Driveway Bed 1 it makes the driveway side a second sunny run rather than the marginal strip the map implied."
     },
     {
       "id": "back-2",

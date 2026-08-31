@@ -46,7 +46,8 @@
         "weight": "check",
         "beds": [
           "street-1",
-          "street-2"
+          "street-2",
+          "driveway-2"
         ],
         "flags": [
           "Diagnostic"
@@ -82,7 +83,8 @@
         "weight": "now",
         "beds": [
           "street-1",
-          "street-2"
+          "street-2",
+          "driveway-2"
         ],
         "flags": [],
         "done": false,
@@ -201,7 +203,8 @@
         "title": "Deadhead the zinnias, deep",
         "weight": "now",
         "beds": [
-          "driveway-1"
+          "driveway-1",
+          "driveway-2"
         ],
         "flags": [],
         "done": false,
@@ -217,7 +220,8 @@
         "title": "Read the light off the plants themselves",
         "weight": "check",
         "beds": [
-          "driveway-1"
+          "driveway-1",
+          "driveway-2"
         ],
         "flags": [
           "Diagnostic"
@@ -371,24 +375,21 @@
       },
       {
         "id": "survey-upper-lower",
-        "title": "Survey the remaining five areas",
+        "title": "Survey the remaining three areas",
         "weight": "check",
         "beds": [
-          "front-lower",
-          "upper-lower",
-          "back-1",
           "back-2",
-          "back-3",
-          "driveway-2"
+          "back-1",
+          "back-3"
         ],
         "flags": [],
         "done": false,
         "body": [
-          "Five of eleven areas have not been looked at. Back Bed 1 in the south-east corner is the only remaining candidate for real sun, since it sits clear of the house on the south side.",
-          "Photograph each and note what is already growing there. Sun aside, there may be more usable growing space here than anyone has counted."
+          "Three of eleven areas have not been looked at: Back Bed 2, Back Bed 1, Back Bed 3. All three sit along the back and the south-east, which is the part of the property nothing has been recorded from yet.",
+          "Photograph each and note what is already growing there. Back Bed 3 is the one I am most curious about, since it is on the south wall and the townhomes decide how much sun it actually gets."
         ],
         "slip": "safe",
-        "ifSkipped": "The plan stays partly blank. No plant suffers."
+        "ifSkipped": "The plan stays blank for a third of the garden. No plant suffers, but nothing about those beds can be planned either."
       }
     ]
   },
@@ -485,7 +486,8 @@
         "weight": "grow",
         "beds": [
           "street-1",
-          "street-2"
+          "street-2",
+          "driveway-2"
         ],
         "flags": [],
         "done": false,
@@ -532,7 +534,8 @@
         "title": "Collect the zinnia seed",
         "weight": "seed",
         "beds": [
-          "driveway-1"
+          "driveway-1",
+          "driveway-2"
         ],
         "flags": [],
         "done": false,
@@ -622,7 +625,8 @@
         "weight": "check",
         "beds": [
           "street-1",
-          "street-2"
+          "street-2",
+          "driveway-2"
         ],
         "flags": [],
         "done": false,

@@ -124,6 +124,35 @@ if (garden) {
     }
   }
 
+  /* The masthead's area count and the survey task both restate what the data
+     already knows, and both have quietly gone stale before. Check them. */
+  const surveyed = (garden.beds ?? []).filter((b) => b.surveyed).length;
+  const areasLine = (garden.meta ?? []).find((m) => m.label === "Areas");
+  if (areasLine) {
+    const expected = `${garden.beds.length} mapped, ${surveyed} surveyed`;
+    if (areasLine.value !== expected) {
+      fail(
+        `garden.json: the Areas line says "${areasLine.value}" but the beds say "${expected}". ` +
+          `Update it, or it drifts every time an area is surveyed.`
+      );
+    }
+  }
+
+  const pending = new Set((garden.beds ?? []).filter((b) => !b.surveyed).map((b) => b.id));
+  for (const phase of plan ?? []) {
+    for (const task of phase.tasks ?? []) {
+      if (!/^survey-/.test(task.id)) continue;
+      for (const id of task.beds ?? []) {
+        if (!pending.has(id)) {
+          fail(
+            `plan.json[${task.id}]: lists "${id}", which is already surveyed. A survey task ` +
+              `should only name areas whose "surveyed" is false.`
+          );
+        }
+      }
+    }
+  }
+
   /* Overlapping rectangles mean the plan is drawn wrong, and it is very hard
      to see in JSON. Structures are allowed to touch beds, beds are not. */
   const boxes = (garden.beds ?? []).filter((b) => b.map);

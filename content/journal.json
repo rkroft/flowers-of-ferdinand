@@ -83,5 +83,10 @@
     "date": "2026-08-31",
     "title": "Bed names reconciled with the plan",
     "note": "Checked every bed name against the Figma labels. All eleven already matched; the drift was on the site plan, which abbreviated them to fit narrow boxes so the map said 'Box 1' where the rest of the page said 'Street Bed Box 1'. The map now wraps and draws the full name, and the validator checks the wrapped text fits rather than checking a hand-written abbreviation."
+  },
+  {
+    "date": "2026-08-31",
+    "title": "Driveway Bed 2 surveyed",
+    "note": "Sunflowers, zinnias and gladiolus, and confirmed full sun rather than the morning-sun-likely I had guessed from its position beside the house. Nothing tall stands to its east. That makes the driveway side a second sunny run alongside the street beds, and it moves the gladiolus, zinnia and sunflower jobs onto three beds instead of two. Seven of eleven areas surveyed."
   }
 ]

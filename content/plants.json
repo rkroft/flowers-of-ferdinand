@@ -135,7 +135,8 @@
     "beds": [
       "street-1",
       "side",
-      "driveway-1"
+      "driveway-1",
+      "driveway-2"
     ],
     "type": "annual",
     "confidence": "confirmed",
@@ -232,7 +233,8 @@
     "variety": "grows from corms, not bulbs",
     "beds": [
       "street-1",
-      "street-2"
+      "street-2",
+      "driveway-2"
     ],
     "type": "corm",
     "confidence": "confirmed",
@@ -250,7 +252,7 @@
       "deadhead": "Not deadheading exactly, but cut the whole flower spike off at its base once the last floret fades. Letting it set those green seed capsules costs you next year's corm size.",
       "good": "Upright spikes and firm fat corms when you lift them.",
       "poor": "Silvery streaking and browning on the leaves means thrips. Corms that come up rough, corky or sticky are infested and go in the bin, not the compost.",
-      "endOfSeason": "Leave every leaf until it has gone completely yellow, because that is what feeds the corm. Then cut at ground level and lift, inspect and spread the corms.",
+      "endOfSeason": "Leave every leaf until it has gone completely yellow, because that is what feeds the corm, then cut at ground level. Lift, inspect and spread the corms after that, across all three beds they grow in.",
       "propagate": "This is the free-plants one. When you lift the corms in autumn, each has a cluster of tiny cormels around its base. Pick them off, store them dry over winter, and grow them on in a nursery corner. They reach flowering size in two or three years."
     },
     "art": {
@@ -893,7 +895,8 @@
     "name": "Zinnia",
     "variety": "",
     "beds": [
-      "driveway-1"
+      "driveway-1",
+      "driveway-2"
     ],
     "type": "annual",
     "confidence": "likely",
