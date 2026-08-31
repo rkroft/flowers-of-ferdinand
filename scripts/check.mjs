@@ -15,6 +15,7 @@ const CONTENT = join(dirname(fileURLToPath(import.meta.url)), "..", "content");
 const WEIGHTS = new Set(["now", "seed", "grow", "check"]);
 const STATUSES = new Set(["blooming", "finished", "watch"]);
 const CONFIDENCE = new Set(["confirmed", "likely", "unknown"]);
+const SLIP = new Set(["closes", "costs", "safe"]);
 
 const errors = [];
 const warnings = [];
@@ -155,6 +156,16 @@ if (plan) {
         fail(`${where}: weight "${task.weight}" is not one of ${[...WEIGHTS].join(", ")}`);
       }
       if (typeof task.done !== "boolean") fail(`${where}: "done" must be true or false`);
+
+      if (!SLIP.has(task.slip)) {
+        fail(`${where}: slip "${task.slip}" is not one of ${[...SLIP].join(", ")}`);
+      }
+      if (!task.ifSkipped) {
+        fail(
+          `${where}: every task needs "ifSkipped" saying plainly what happens if it does not ` +
+            `get done. Rachel's time comes in bursts, so that line is how she triages.`
+        );
+      }
       if (!Array.isArray(task.body) || task.body.length === 0) {
         fail(`${where}: "body" must be a non-empty array of paragraphs`);
       }

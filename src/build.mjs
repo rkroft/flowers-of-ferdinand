@@ -58,7 +58,12 @@ function renderMasthead(garden) {
     <div class="meta">
         ${meta}
     </div>
-  </header>`;
+  </header>
+
+  <div class="triage">
+    <p>Time comes in bursts, so most of this list is optional. Seven jobs have a window that closes and cannot be made up later.</p>
+    <button class="btn" type="button" id="triage-toggle" aria-pressed="false">Show only what cannot wait</button>
+  </div>`;
 }
 
 /* The site plan. Geometry comes from garden.json so the drawing and the
@@ -118,10 +123,11 @@ ${inBed
     ? `        <ol class="panel-tasks">
 ${mine
   .map(
-    (t) => `          <li class="${t.done ? "done" : ""}" data-weight="${esc(t.weight)}">
+    (t) => `          <li class="${t.done ? "done" : ""}" data-weight="${esc(t.weight)}" data-slip="${esc(t.slip ?? "safe")}">
             <div class="pt-head">
               <span class="pt-weight">${esc(WEIGHT_LABEL[t.weight] ?? t.weight)}</span>
               <span class="pt-window">${esc(t.window)}</span>
+              ${t.slip === "closes" ? `<span class="pt-closes">cannot be made up</span>` : ""}
             </div>
             <span class="pt-title">${esc(t.title)}</span>
           </li>`
@@ -271,6 +277,7 @@ function renderTask(task, bedsById) {
       return `<span class="tag tag-area">${esc(bed ? bed.name : id)}</span>`;
     }),
     ...(task.flags ?? []).map((flag) => `<span class="tag tag-flag">${esc(flag)}</span>`),
+    task.slip === "closes" ? `<span class="tag tag-closes">Cannot be made up</span>` : "",
   ].join("");
 
   const tagRow = tags ? `          <div class="tags">${tags}</div>\n` : "";
@@ -279,12 +286,15 @@ function renderTask(task, bedsById) {
     .join("\n");
 
   const done = task.done === true;
+  const skip = task.ifSkipped
+    ? `\n          <p class="if-skipped"><span>If you skip it</span> ${esc(task.ifSkipped)}</p>`
+    : "";
 
-  return `      <div class="task${done ? " done" : ""}" data-weight="${esc(task.weight ?? "grow")}" data-id="${esc(task.id)}" data-source-done="${done}">
+  return `      <div class="task${done ? " done" : ""}" data-weight="${esc(task.weight ?? "grow")}" data-slip="${esc(task.slip ?? "safe")}" data-id="${esc(task.id)}" data-source-done="${done}">
         <input type="checkbox" ${done ? "checked " : ""}aria-labelledby="h-${esc(task.id)}">
         <div class="task-body">
 ${tagRow}          <h3 id="h-${esc(task.id)}">${esc(task.title)}</h3>
-${paragraphs}
+${paragraphs}${skip}
         </div>
       </div>`;
 }

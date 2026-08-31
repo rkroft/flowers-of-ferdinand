@@ -122,12 +122,32 @@ A task:
   "id": "poppy-seed",
   "title": "Shake the poppy seed where you want it",
   "weight": "seed",
+  "slip": "closes",
+  "ifSkipped": "The pods shatter and next spring's poppies come up wherever they land.",
   "beds": ["street-2"],
   "flags": ["Closing window"],
   "done": false,
   "body": ["first paragraph", "second paragraph"]
 }
 ```
+
+**`slip` and `ifSkipped` are required on every task and matter more than any
+other field here.** Rachel's time comes in bursts, not steadily, and her stated
+goal is low maintenance. She needs to know what she can drop, so every task
+says plainly what happens if it does not get done.
+
+| slip     | means                                                          |
+| -------- | -------------------------------------------------------------- |
+| `closes` | a window shuts and it cannot be made up this year                |
+| `costs`  | recoverable, but you lose flowers, vigour or make later work     |
+| `safe`   | cosmetic or deferrable, nothing suffers                          |
+
+Be honest when grading these. Most deadheading is `costs`, not `closes`:
+skipping it means fewer flowers, not dead plants, and saying otherwise turns a
+low-maintenance garden into a guilt list. Reserve `closes` for real deadlines,
+seed windows, division windows, frost protection, and the one pruning mistake
+that cannot be undone. The triage button on the page filters to `closes` only,
+so over-grading empties that view of meaning.
 
 `weight` sets the colour of the left stripe and must be one of:
 

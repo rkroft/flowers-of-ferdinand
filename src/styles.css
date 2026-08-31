@@ -192,6 +192,64 @@ section { margin-top: 3.4rem; }
   max-width: 34rem;
 }
 
+/* ---------- triage bar ----------
+   Built for a gardener whose time comes in bursts: the default view is
+   everything, one press strips it to the jobs that cannot be made up. */
+
+.triage {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.8rem 1.2rem;
+  margin-top: 1.4rem;
+  padding: 0.9rem 1.1rem;
+  background: var(--surface-sunk);
+  border-radius: 3px;
+}
+
+.triage p {
+  margin: 0;
+  font-size: 0.9rem;
+  color: var(--ink-soft);
+  max-width: 32rem;
+}
+
+.triage .btn { margin: 0; flex: none; }
+
+.triage .btn[aria-pressed="true"] {
+  background: var(--ink);
+  border-color: var(--ink);
+  color: var(--ground);
+}
+
+/* Filtered view: everything that can slip steps aside. */
+.filtered .task:not([data-slip="closes"]),
+.filtered .panel-tasks li:not([data-slip="closes"]),
+.filtered section.no-urgent { display: none; }
+
+.tag-closes { background: var(--urgent); color: var(--surface); }
+
+.if-skipped {
+  margin-top: 0.6rem !important;
+  padding-top: 0.5rem;
+  border-top: 1px dashed var(--rule);
+  font-size: 0.88rem !important;
+  color: var(--ink-mute) !important;
+}
+
+.if-skipped span {
+  font-family: "IBM Plex Mono", ui-monospace, monospace;
+  font-size: 0.62rem;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--ink-soft);
+  margin-right: 0.35rem;
+}
+
+.pt-closes { color: var(--urgent); font-weight: 500; }
+
 /* ---------- site plan ----------
    Sun is an ordered quantity, so it gets one sequential gold ramp rather than
    four unrelated hues. Unsurveyed areas are left unfilled with a dashed

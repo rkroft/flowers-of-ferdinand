@@ -3,7 +3,7 @@
     "id": "this-week",
     "title": "Do this week",
     "window": "Aug 31 – Sep 6",
-    "note": "Eight jobs across three areas. The first has a hard deadline set by the plants, not by you. The rest buy weeks of extra bloom or head off a problem.",
+    "note": "Eleven jobs across five areas. Two of them have a window that closes; the rest buy you flowers or head off a problem, and nothing dies if they slip.",
     "tasks": [
       {
         "id": "poppy-seed",
@@ -19,7 +19,9 @@
         "body": [
           "Those hundreds of little pods are ripe or nearly ripe, and once they shatter the seed goes wherever it goes. Hold each stem over the spot you want poppies next spring and tip the pod. It pours out like a pepper shaker.",
           "Shirley poppies will not transplant and resent spring sowing, so this fall drop is your only real shot at next year's display. Put a pinch in an envelope as insurance before you scatter the rest."
-        ]
+        ],
+        "slip": "closes",
+        "ifSkipped": "The pods shatter and next spring's poppies come up wherever they happen to land, not where you want them."
       },
       {
         "id": "deadhead-hard",
@@ -34,7 +36,9 @@
         "body": [
           "Across the photos there are roughly two dozen spent seed globes for every open gaillardia flower. Once the plant decides it has made enough seed, it quits blooming. Cut each spent globe back to a leaf or side shoot, not just the ball off the top.",
           "Same move on the dahlias: cut back to a set of leaves or a stem junction. Buds are round and firm, spent heads are pointed and conical. Then the scabiosa. Done properly this is worth six to eight more weeks of flowers."
-        ]
+        ],
+        "slip": "costs",
+        "ifSkipped": "Nothing dies. The plants set seed and stop flowering several weeks earlier than they would have."
       },
       {
         "id": "thrips-test",
@@ -51,7 +55,9 @@
         "body": [
           "These corms already overwinter in the beds and come back, so the baseline is good and the yellowing is most likely ordinary post-bloom senescence. This check only rules out the one thing that would change the routine.",
           "Hold white paper under a leaf and flick the leaf sharply. Thrips look like tiny dark slivers moving fast on the paper. The proper inspection happens in fall anyway, when the corms are out of the ground."
-        ]
+        ],
+        "slip": "safe",
+        "ifSkipped": "You find out anyway when the corms come out of the ground in fall."
       },
       {
         "id": "split-stem",
@@ -66,7 +72,9 @@
         "done": true,
         "body": [
           "Closed. A thick green stalk appeared to have a long vertical crack in one photo, but nothing obvious in the bed, so it was almost certainly minor growth cracking that has already healed over."
-        ]
+        ],
+        "slip": "safe",
+        "ifSkipped": "Closed, nothing to skip."
       },
       {
         "id": "glad-spikes",
@@ -80,7 +88,9 @@
         "done": false,
         "body": [
           "The green seed capsules swelling on those spikes are pulling energy the corm needs to size up for next year. Cut the flower spike at its base. Leave every leaf until it yellows completely."
-        ]
+        ],
+        "slip": "costs",
+        "ifSkipped": "Smaller corms and weaker flowers next summer."
       },
       {
         "id": "mildew-sunflowers",
@@ -94,7 +104,9 @@
         "body": [
           "The white powdery coating on the side bed sunflowers is powdery mildew. It is not worth spraying this late on plants that are nearly finished. Pull off the worst leaves, especially the low ones, and bin them rather than putting them in the tumbler.",
           "The cause is the spot, not the plant. A west wall gives shade all morning, then hard afternoon heat radiating off the wall, over roots kept dry by the foundation and the eave. Warm, still and dry-rooted is what powdery mildew wants. Sunflowers want open sun and steady moisture, so move them to the street boxes next year."
-        ]
+        ],
+        "slip": "safe",
+        "ifSkipped": "Cosmetic on plants that are nearly finished. It looks bad and does almost nothing."
       },
       {
         "id": "weed-strawberries",
@@ -108,7 +120,9 @@
         "body": [
           "There is a low creeping ground cover running between the strawberry crowns, plus a few broadleaf rosettes. Get them out now while the soil is soft and before they set seed.",
           "Identify the creeper before you assume it is harmless. Chickweed pulls out in soft mats and is a minor annual nuisance. Ground ivy roots at every node and is a multi-year problem, and telling them apart takes ten seconds."
-        ]
+        ],
+        "slip": "costs",
+        "ifSkipped": "They seed, and next spring's weeding takes several times as long."
       },
       {
         "id": "check-foundation-dry",
@@ -124,7 +138,9 @@
         "body": [
           "Push a finger in to the second knuckle right up against the wall, then again at the front edge of the bed. The strip beside a house is usually the driest soil in a garden: the wall throws a rain shadow, the foundation wicks moisture away, and any eave overhead keeps rain off entirely.",
           "If the back is noticeably drier than the front, that explains the stressed sunflowers, and the fix is simply watering that strip separately rather than assuming the whole bed gets the same."
-        ]
+        ],
+        "slip": "safe",
+        "ifSkipped": "You keep watering the whole bed the same and the back stays thirsty."
       },
       {
         "id": "cut-shasta",
@@ -138,7 +154,9 @@
         "body": [
           "Almost every flower on that stand is finished, and the bed is reading as brown from the sidewalk because of it. Cut the spent stems down to the low mound of fresh green leaves at the base, which stays through winter.",
           "Leave a few seedheads standing if you want it to self-sow, but only a few. This one seeds itself generously."
-        ]
+        ],
+        "slip": "safe",
+        "ifSkipped": "It looks brown from the sidewalk. The plant is completely fine."
       },
       {
         "id": "volunteer-tree-check",
@@ -154,7 +172,9 @@
         "body": [
           "There is a woody seedling with divided leaves coming up through the back of the bed. Ash and elder both self-sow all over Seattle and both become trees.",
           "Photograph a whole leaf laid flat and note whether leaves come off the stem in opposite pairs, then pull it. It will never be easier to remove than it is right now."
-        ]
+        ],
+        "slip": "costs",
+        "ifSkipped": "It gets meaningfully harder to remove every year, and eventually needs a saw."
       },
       {
         "id": "compass-check",
@@ -172,7 +192,9 @@
         "body": [
           "Closed. Confirmed three ways: the street is the north side, south is where the townhomes are, and the Side Bed Box is on the west wall. All three agree on a standard north-up plan, which also matches your original hand sketch and your observation that the street boxes are full sun.",
           "Every area's aspect now derives from that one fact rather than being guessed bed by bed."
-        ]
+        ],
+        "slip": "safe",
+        "ifSkipped": "Closed."
       },
       {
         "id": "deadhead-zinnias",
@@ -186,7 +208,9 @@
         "body": [
           "Zinnias are cut-and-come-again, and they reward hard cutting. Do not snip the flower off the top: follow the stem down to where it meets a pair of leaves or a side shoot and cut there. You get two new flowering stems from every cut.",
           "Leave three or four of the best heads uncut to dry on the plant for seed. Zinnia seed is among the easiest to save and it is worth having."
-        ]
+        ],
+        "slip": "costs",
+        "ifSkipped": "Flowering tails off within a few weeks instead of running to frost."
       },
       {
         "id": "light-meter-check",
@@ -202,7 +226,9 @@
         "body": [
           "Sunflowers and zinnias make good light meters, so this bed can confirm its own sun without you timing shadows. Stout upright sunflower stems with big heads mean full sun. Thin stems leaning hard in one direction with small heads mean they are reaching for light they are not getting.",
           "Same story for the zinnias: compact and smothered in flowers is full sun, tall and floppy with few flowers is not enough. Tell me which you see and I will fix the map."
-        ]
+        ],
+        "slip": "safe",
+        "ifSkipped": "The map keeps a guess in it where it could have a fact."
       }
     ]
   },
@@ -225,7 +251,9 @@
         "done": false,
         "body": [
           "Street Bed 2 is the sowing bed, because pulling the spent poppies opens real ground. Larkspur, nigella, bachelor's button, breadseed poppy, calendula, orlaya. Scatter, press in, do not bury deep, keep damp until the rains take over."
-        ]
+        ],
+        "slip": "closes",
+        "ifSkipped": "Sow in spring instead and you get later, smaller, shorter-lived plants. The fall window does not come back."
       },
       {
         "id": "clear-spent",
@@ -240,7 +268,9 @@
           "After the seed is shaken, pull the poppy plants. They are annuals and they are finished.",
           "Leave the snapdragons. Cut their spent spikes off but keep the plants: they are hardy enough to overwinter here and often come back for a second year. Let two or three spikes stand and shatter if you want them to self-sow.",
           "Before pulling the big silver-grey mass, squeeze a stem near the base. Brittle and hollow means dead, pull it. Still flexible and green inside means alive and just ugly, leave it."
-        ]
+        ],
+        "slip": "safe",
+        "ifSkipped": "It looks untidy over winter. Some gardeners prefer it that way."
       },
       {
         "id": "shear-oregano",
@@ -253,7 +283,9 @@
         "done": false,
         "body": [
           "It has already flowered so the leaves are past peak flavour, but they are still worth drying. Cutting now stops it going leggy and woody in the middle. Stay out of the old wood: save hard renewal pruning for spring."
-        ]
+        ],
+        "slip": "safe",
+        "ifSkipped": "It gets leggier and woodier, and you fix it in spring instead."
       },
       {
         "id": "shear-geranium",
@@ -266,7 +298,9 @@
         "done": false,
         "body": [
           "Cut the cranesbill to a few inches. It looks brutal and it works: a fresh low mound of clean foliage within two or three weeks, and often a second flush of flowers before frost."
-        ]
+        ],
+        "slip": "safe",
+        "ifSkipped": "You miss a second flush of flowers and some fresh foliage. That is all."
       },
       {
         "id": "thin-strawberries",
@@ -280,7 +314,9 @@
         "body": [
           "These are flowering and fruiting at the end of August, which makes them everbearing or day-neutral rather than June-bearing. That matters: do not mow the foliage down. The renovation advice you will find everywhere online is for June-bearing types and would cost you fruit.",
           "What they do need is space. The mat is crowded, and crowded strawberries give small fruit and hold damp air around the crowns. Thin to roughly one plant every six to eight inches, taking out the oldest woodiest crowns first. Plants decline after three or four years, so peg down a few runners into the gaps to root as free replacements and cut the rest off."
-        ]
+        ],
+        "slip": "costs",
+        "ifSkipped": "Smaller fruit and crowded damp crowns next season, and the decline compounds."
       },
       {
         "id": "beans-through-frost",
@@ -294,7 +330,9 @@
         "body": [
           "Picking is what keeps them producing. Every pod left to mature tells the plant it is done. You have roughly four to six weeks left.",
           "When they finish, cut the stems at soil level rather than pulling them up. The roots carry nitrogen-fixing nodules, and leaving them in place feeds whatever goes in that spot next year."
-        ]
+        ],
+        "slip": "costs",
+        "ifSkipped": "Picking is what keeps them producing, so they stop early."
       },
       {
         "id": "divide-iris",
@@ -310,7 +348,9 @@
         "body": [
           "Late summer is the window, and you are at the end of it. Lift the clump, snap the rhizomes apart so each piece has a fan of leaves and some roots, and throw away any that are soft or hollow.",
           "Cut the leaves back to a fan about six inches tall so the wind cannot rock the new divisions loose. Replant shallow, with the top of each rhizome visible above the soil. Iris planted too deep is the single most common reason it stops flowering."
-        ]
+        ],
+        "slip": "closes",
+        "ifSkipped": "The window is gone until next August, and a congested clump flowers less every year in the meantime."
       },
       {
         "id": "layer-rosemary",
@@ -324,11 +364,13 @@
         "body": [
           "The rosemary has opened up and thrown long bare branches flat across the soil. Rather than cutting them off, pin a few down where they touch the ground with a rock or a bent wire. They root along the buried section over winter, and you can cut them free as new plants in spring.",
           "This is also the fix for the bare woody centre. You cannot prune rosemary back into old wood to rejuvenate it, so growing replacements is the way to renew the planting."
-        ]
+        ],
+        "slip": "costs",
+        "ifSkipped": "You lose a free year of replacement plants, and the bare centre stays bare."
       },
       {
         "id": "survey-upper-lower",
-        "title": "Survey the remaining six areas",
+        "title": "Survey the remaining five areas",
         "weight": "check",
         "beds": [
           "front-lower",
@@ -336,15 +378,16 @@
           "back-1",
           "back-2",
           "back-3",
-          "driveway-1",
           "driveway-2"
         ],
         "flags": [],
         "done": false,
         "body": [
-          "Six of eleven areas have not been looked at. Two of them, Driveway Bed 1 in the north-east corner and Back Bed 1 in the south-east, are the only remaining candidates for real sun, since both sit clear of the house.",
+          "Five of eleven areas have not been looked at. Back Bed 1 in the south-east corner is the only remaining candidate for real sun, since it sits clear of the house on the south side.",
           "Photograph each and note what is already growing there. Sun aside, there may be more usable growing space here than anyone has counted."
-        ]
+        ],
+        "slip": "safe",
+        "ifSkipped": "The plan stays partly blank. No plant suffers."
       },
       {
         "id": "plan-sunny-side",
@@ -361,7 +404,9 @@
         "body": [
           "With the orientation settled, the shape of this garden is clear and it is lopsided. Every genuinely sunny area is out by the street, clear of the house: the two street boxes and Path Bed. Everything against the house is shade or part shade, because the house blocks the north side and the townhomes block the south.",
           "That means the sun-hungry things are in the wrong places. The sunflowers are on a west wall, and the beds with real sun are given over to cut flowers. Worth deciding before spring rather than during it."
-        ]
+        ],
+        "slip": "safe",
+        "ifSkipped": "Next spring gets decided in a rush instead of on purpose."
       }
     ]
   },
@@ -380,7 +425,9 @@
         "done": false,
         "body": [
           "Soft new growth heading into a wet Seattle autumn is asking for rot and mildew. Nothing more goes on the beds until spring."
-        ]
+        ],
+        "slip": "costs",
+        "ifSkipped": "Soft new growth going into the wet, which invites rot and mildew."
       },
       {
         "id": "keep-watering",
@@ -391,7 +438,9 @@
         "done": false,
         "body": [
           "September here looks wet and usually is not. A street-side raised box in full sun dries fast, and dahlias stop setting buds the moment they go dry. Carry on until real rain arrives, roughly mid-October."
-        ]
+        ],
+        "slip": "costs",
+        "ifSkipped": "Dahlias stop setting buds the moment they run dry, and do not restart quickly."
       },
       {
         "id": "buy-bulbs",
@@ -402,7 +451,9 @@
         "done": false,
         "body": [
           "Selection is best in September and planting is October and November. Both beds have room once the annuals come out."
-        ]
+        ],
+        "slip": "costs",
+        "ifSkipped": "The good selection is gone by late October. You can still plant, with less choice."
       }
     ]
   },
@@ -421,7 +472,9 @@
         "done": false,
         "body": [
           "Pull spent petals off the plant rather than letting them rot in place, especially on the dahlias. Thin enough stems that air moves through the bed. This one habit prevents most of the damage."
-        ]
+        ],
+        "slip": "costs",
+        "ifSkipped": "Grey mould spreads through dense flower heads once the rain sets in."
       },
       {
         "id": "sweet-peas-bulbs",
@@ -434,7 +487,9 @@
         "done": false,
         "body": [
           "Sweet peas go in around mid-October for the earliest and strongest spring plants. Bulbs can go in any time from now, and tulips will happily wait until the ground is too wet to work, often December here."
-        ]
+        ],
+        "slip": "closes",
+        "ifSkipped": "Fall-sown sweet peas are the strong ones. Spring sowing gives noticeably weaker plants."
       },
       {
         "id": "cut-glad-foliage",
@@ -448,7 +503,9 @@
         "done": false,
         "body": [
           "Not before. Green leaves are still feeding the corm. When they have gone completely yellow, cut them at ground level."
-        ]
+        ],
+        "slip": "safe",
+        "ifSkipped": "Untidy over winter, and no harm at all as long as you do not cut it while still green."
       },
       {
         "id": "top-dress",
@@ -462,7 +519,9 @@
         "done": false,
         "body": [
           "An inch or two over the soil surface, not piled against any crowns. Winter rain works it in for you."
-        ]
+        ],
+        "slip": "safe",
+        "ifSkipped": "Soil improves more slowly. Nothing is damaged."
       },
       {
         "id": "spare-the-herbs",
@@ -476,7 +535,9 @@
         "body": [
           "This is the one to remember when the urge to cut everything down arrives. Pruning woody Mediterranean herbs in fall pushes out soft growth that then dies in the first cold snap, and cutting into their bare wood leaves a permanent hole because neither one resprouts from it.",
           "Leave both untouched until spring. Keep compost and mulch off their crowns too: they die of wet feet here far more often than of cold."
-        ]
+        ],
+        "slip": "closes",
+        "ifSkipped": "Cut a woody Mediterranean herb into bare wood and the hole is permanent. This one is not recoverable."
       },
       {
         "id": "zinnia-seed",
@@ -490,7 +551,9 @@
         "body": [
           "Take the heads you left standing once they are brown and crisp, not before. Damp seed rots in storage. Pull the dried head apart and the seeds are the arrowhead-shaped flakes at the base of each petal.",
           "Dry them another week indoors on a plate, then into a paper envelope somewhere cool. Zinnias resent transplanting, so sow them straight into the ground after the last frost next spring."
-        ]
+        ],
+        "slip": "closes",
+        "ifSkipped": "The heads rot or shatter over winter and the seed is gone."
       }
     ]
   },
@@ -512,7 +575,9 @@
         "body": [
           "Cut the blackened stalks to about four inches. Cap the hollow stems so winter rain cannot funnel down into the crown, then cover with a few inches of coarse mulch.",
           "In a raised box that drains well, leaving tubers in the ground is a reasonable bet here. The risk is rot in saturated soil, not freezing. Dig and store only for zero risk."
-        ]
+        ],
+        "slip": "closes",
+        "ifSkipped": "Water funnels into the open stems and the tubers rot over winter. This is the difference between having dahlias next year and not."
       },
       {
         "id": "glad-corms",
@@ -527,7 +592,9 @@
         "body": [
           "This is the job already done here each fall. The only addition is looking at each corm as it comes up. Firm and smooth is healthy. Rough corky brown patches, sometimes with a sticky varnished sheen, means thrips. Anything rough or shrivelled goes in the trash, not back in the bed and not in the compost.",
           "Each season the old corm is used up and a new one forms on top, usually with a cluster of tiny cormels around the base. Those cormels are free plants. Pick them off and grow them on in a nursery corner rather than letting them crowd the parents, and they reach flowering size in two or three years."
-        ]
+        ],
+        "slip": "costs",
+        "ifSkipped": "The clump gets congested and any thrips carry through to next summer."
       },
       {
         "id": "leave-standing",
@@ -541,7 +608,9 @@
         "done": false,
         "body": [
           "Leave the echinacea seedheads for goldfinches and the sunflower heads for everything else. Cut the gaillardia to four to six inches rather than to the ground, so water cannot sit in a hollow crown, and keep mulch off its centre. Gaillardia dies of wet feet here, never of cold."
-        ]
+        ],
+        "slip": "safe",
+        "ifSkipped": "You lose the bird food and the frost interest. The plants do not mind."
       }
     ],
     "callout": {
