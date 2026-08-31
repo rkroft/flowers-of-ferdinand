@@ -326,69 +326,6 @@ ${tasks}
   </section>`;
 }
 
-function plantRow(plant) {
-  const uncertain = plant.confidence !== "confirmed";
-  const mark = uncertain
-    ? `<span class="conf conf-${esc(plant.confidence)}">${plant.confidence === "likely" ? "likely" : "unknown"}</span>`
-    : "";
-
-  return `          <tr>
-            <td class="plant">${esc(plant.name)}${mark}${plant.variety ? `<em>${esc(plant.variety)}</em>` : ""}</td>
-            <td class="type">${esc(plant.type)}</td>
-            <td><span class="status ${esc(plant.status)}">${esc(plant.statusLabel)}</span></td>
-            <td>${esc(plant.handling)}</td>
-          </tr>`;
-}
-
-function renderPlants(plants, garden) {
-  const confirmed = plants.filter((p) => p.confidence === "confirmed").length;
-
-  const groups = garden.beds
-    .map((bed) => {
-      const inBed = plants.filter((p) => (p.beds ?? []).includes(bed.id));
-      if (!inBed.length) return "";
-
-      const shared = inBed.filter((p) => (p.beds ?? []).length > 1).length;
-      const count = `${inBed.length} plant${inBed.length === 1 ? "" : "s"}${
-        shared ? `, ${shared} shared with other areas` : ""
-      }`;
-
-      return `    <div class="bed-group">
-      <div class="bed-group-head">
-        <h3>${esc(bed.name)}</h3>
-        <span class="window">${count}</span>
-      </div>
-      <div class="table-scroll">
-        <table>
-          <thead>
-            <tr>
-              <th>Plant</th>
-              <th>Type</th>
-              <th>Status</th>
-              <th>Handling</th>
-            </tr>
-          </thead>
-          <tbody>
-${inBed.map(plantRow).join("\n")}
-          </tbody>
-        </table>
-      </div>
-    </div>`;
-    })
-    .filter(Boolean)
-    .join("\n\n");
-
-  return `  <section id="plants">
-    <div class="section-head">
-      <h2>Inventory</h2>
-      <span class="window">${confirmed} of ${plants.length} confirmed</span>
-    </div>
-    <p class="section-note">Grouped by area. A plant growing in more than one area is listed under each. Anything not marked confirmed is a working guess, not a fact.</p>
-
-${groups}
-  </section>`;
-}
-
 /* Three letters, not one. J, M and A each appear twice in a year and a single
    initial makes the reader count columns to work out where they are. */
 const MONTHS = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
@@ -493,6 +430,92 @@ ${body}
     </dl>
 
     <p class="provenance">These are typical Seattle seasons for each plant, not measurements from your garden. Yours will run a week or two either side, and a warm wall or a shady corner shifts things further. When you notice something starting or finishing at a different time than the bar says, tell me and I will set that row to what actually happens here rather than what the books say.</p>
+
+${groups}
+  </section>`;
+}
+
+const CARE_FIELDS = [
+  ["feed", "Soil and feeding"],
+  ["deadhead", "Deadheading"],
+  ["good", "Doing well"],
+  ["poor", "Not doing well"],
+  ["endOfSeason", "End of season"],
+];
+
+/* One card per plant, answering the same five questions in the same order
+   every time. Built on <details> so it collapses without any script and the
+   list stays scannable at forty-one plants. */
+function plantCard(plant) {
+  const care = plant.care ?? {};
+  const uncertain = plant.confidence !== "confirmed";
+
+  const rows = CARE_FIELDS.filter(([k]) => care[k])
+    .map(
+      ([k, label]) => `            <div class="care-row" data-field="${esc(k)}">
+              <dt>${esc(label)}</dt>
+              <dd>${esc(care[k])}</dd>
+            </div>`
+    )
+    .join("\n");
+
+  const w = plant.window;
+
+  return `        <details class="plant-card">
+          <summary>
+            <span class="pc-name">${esc(plant.name)}${
+              uncertain
+                ? ` <span class="conf conf-${esc(plant.confidence)}">${plant.confidence === "likely" ? "likely" : "unknown"}</span>`
+                : ""
+            }</span>
+            <span class="pc-meta">
+              <span class="pc-type">${esc(plant.type)}</span>
+              ${w ? `<span class="pc-window">${esc(w.kind)} ${MONTHS[w.from - 1]}&ndash;${MONTHS[w.to - 1]}</span>` : ""}
+              <span class="status ${esc(plant.status)}">${esc(plant.statusLabel)}</span>
+            </span>
+          </summary>
+          <div class="care">
+            ${plant.variety ? `<p class="pc-variety">${esc(plant.variety)}</p>` : ""}
+            <dl class="care-list">
+${rows}
+            </dl>
+            ${plant.idNote ? `<p class="pc-idnote"><span>To confirm</span> ${esc(plant.idNote)}</p>` : ""}
+          </div>
+        </details>`;
+}
+
+function renderPlants(plants, garden) {
+  const confirmed = plants.filter((p) => p.confidence === "confirmed").length;
+
+  const groups = garden.beds
+    .map((bed) => {
+      const inBed = plants.filter((p) => (p.beds ?? []).includes(bed.id));
+      if (!inBed.length) return "";
+
+      const shared = inBed.filter((p) => (p.beds ?? []).length > 1).length;
+      const count = `${inBed.length} plant${inBed.length === 1 ? "" : "s"}${
+        shared ? `, ${shared} shared with other areas` : ""
+      }`;
+
+      return `    <div class="bed-group">
+      <div class="bed-group-head">
+        <h3>${esc(bed.name)}</h3>
+        <span class="window">${count}</span>
+      </div>
+      <div class="plant-cards">
+${inBed.map(plantCard).join("\n")}
+      </div>
+    </div>`;
+    })
+    .filter(Boolean)
+    .join("\n\n");
+
+  return `  <section id="plants">
+    <div class="section-head">
+      <h2>Plant by plant</h2>
+      <span class="window">${confirmed} of ${plants.length} confirmed</span>
+    </div>
+    <p class="section-note">Open any plant for the same five answers: what to feed it and when, how to deadhead it, what it looks like doing well, what it looks like struggling, and what to do when it is finished for the year. A plant growing in more than one area is listed under each.</p>
 
 ${groups}
   </section>`;

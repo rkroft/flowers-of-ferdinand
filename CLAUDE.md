@@ -192,6 +192,27 @@ it, and `npm run check` enforces that.
 `type` is free text (`annual`, `perennial`, `tender perennial`, `corm`,
 `perennial herb`). Use `"unknown"` rather than leaving it blank.
 
+**`care` is required on every plant and is the heart of this project.** Rachel
+asked for exactly five things per plant, in this order, and the page renders
+them in that order every time:
+
+```json
+"care": {
+  "feed":        "If and when it needs soil or fertiliser.",
+  "deadhead":    "How and when to deadhead, or that there is nothing to deadhead.",
+  "good":        "What it looks like when it is thriving.",
+  "poor":        "What it looks like when it is struggling, and what that means.",
+  "endOfSeason": "When it is finished, and whether to cut it back or leave it."
+}
+```
+
+Write these as things she can see with her eyes, not as categories. "Fat round
+buds and thick stems" beats "vigorous growth". For `feed`, "none, ever" is a
+real and common answer and is more useful than inventing a schedule; most of
+these plants want nothing. For a plant that is not yet identified, say so in
+the fields rather than giving generic advice that might be wrong for whatever
+it turns out to be.
+
 `window` is optional and drives the year calendar: `{ "from": 3, "to": 5,
 "kind": "flowers" }`, month numbers 1 to 12 inclusive. `kind` is free text and
 says what the plant is doing in that window, usually flowers, fruit, harvest or

@@ -196,6 +196,12 @@ if (plants) {
     if (plant.confidence !== "confirmed" && !plant.idNote) {
       fail(`${where}: confidence is "${plant.confidence}" so it needs an idNote saying what would settle it`);
     }
+    for (const f of ["feed", "deadhead", "good", "poor", "endOfSeason"]) {
+      if (!plant.care?.[f]) {
+        fail(`${where}: care.${f} is missing. Every plant answers the same five questions: what to feed it and when, how to deadhead it, what doing well looks like, what struggling looks like, and what to do at the end of the season.`);
+      }
+    }
+
     if (plant.window) {
       const w = plant.window;
       const ok = (m) => Number.isInteger(m) && m >= 1 && m <= 12;

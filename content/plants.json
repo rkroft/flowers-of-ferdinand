@@ -16,6 +16,13 @@
       "from": 7,
       "to": 10,
       "kind": "flowers"
+    },
+    "care": {
+      "feed": "Hungry. A spade of compost at planting, then a low-nitrogen feed such as tomato food every two or three weeks through July and August. Stop feeding by the end of August so it hardens off before the wet.",
+      "deadhead": "Every few days in season, and cut deep: follow the stem down to a pair of leaves or a side bud and cut there, not just the head off the top. Spent heads are pointed and conical, unopened buds are round and firm.",
+      "good": "Fat round buds, thick stems and dark green leaves mean it is happy.",
+      "poor": "Yellowing lower leaves with few buds means hungry or dry. Ragged holes overnight are earwigs or slugs. A white bloom on the leaves late in the season is mildew and is not worth treating.",
+      "endOfSeason": "Frost blackens the foliage, usually mid-November. Cut the stalks to about four inches, cap the hollow stems so rain cannot funnel into the crown, and mulch over the top."
     }
   },
   {
@@ -36,6 +43,13 @@
       "from": 6,
       "to": 10,
       "kind": "flowers"
+    },
+    "care": {
+      "feed": "None, ever. It comes from poor dry ground and feeding it makes it floppy and shorter-lived.",
+      "deadhead": "Weekly through summer. Cut each spent seed globe back to a leaf or side shoot. It stops flowering once it decides it has made enough seed, so this is the one job that keeps it going.",
+      "good": "Compact growth and continuous flowers.",
+      "poor": "Flopping open with a dead patch in the middle means it is either overfed or coming to the end of its life. Blackened crown after a wet spell is rot.",
+      "endOfSeason": "Cut to four to six inches after frost rather than to the ground, so water cannot sit in a hollow crown. Keep mulch off the centre. It dies of wet feet here, never of cold."
     }
   },
   {
@@ -55,6 +69,13 @@
       "from": 6,
       "to": 11,
       "kind": "flowers"
+    },
+    "care": {
+      "feed": "Nothing beyond an inch of compost on the soil surface in spring.",
+      "deadhead": "Weekly. Cut the spent stem right down to the base of the plant rather than snipping the head off, or you leave a forest of bare stalks.",
+      "good": "Long clean stems and steady flowering into November.",
+      "poor": "Fewer and smaller flowers each year means the clump wants dividing. Grey mould on the buds in autumn means it is too crowded.",
+      "endOfSeason": "Leave a few seedheads for the birds and tidy the rest. Cut the whole thing back in spring, not autumn."
     }
   },
   {
@@ -74,6 +95,13 @@
       "from": 7,
       "to": 10,
       "kind": "flowers"
+    },
+    "care": {
+      "feed": "None. Rich soil gives you a six-foot leafy plant with almost no flowers, which is the single most common cosmos mistake.",
+      "deadhead": "Weekly. Cut back to a leaf pair. Like the dahlias, cutting deep gets you two stems where there was one.",
+      "good": "Airy growth covered in flowers.",
+      "poor": "Tall, leafy and barely flowering means soil too rich or not enough sun.",
+      "endOfSeason": "An annual, so frost ends it. Let a few heads shed seed first, then pull the plants. It self-sows reliably."
     }
   },
   {
@@ -95,6 +123,13 @@
       "from": 7,
       "to": 9,
       "kind": "flowers"
+    },
+    "care": {
+      "feed": "None in reasonable soil. They are less hungry than their size suggests.",
+      "deadhead": "Single-stem types have one flower and nothing to deadhead. Branching types keep producing if you cut spent flowers back to a side shoot.",
+      "good": "A stout upright stem with a big head means full sun.",
+      "poor": "Thin stems leaning hard in one direction with small heads means it is reaching for light it is not getting. White powdery coating is mildew, caused by still air and dry roots rather than by anything you did.",
+      "endOfSeason": "Annual. Leave the heads for the birds through autumn, or cut when the back of the head has turned brown and yellow if you want the seed. Pull the stems whenever they look done."
     }
   },
   {
@@ -114,6 +149,13 @@
       "from": 7,
       "to": 9,
       "kind": "flowers"
+    },
+    "care": {
+      "feed": "None. It is a prairie plant and prefers lean soil.",
+      "deadhead": "Optional, and mostly not worth it. Deadheading the first flush brings a few more flowers, but the seedheads are the point of this plant in autumn and winter.",
+      "good": "Strong upright stems and plenty of flowers.",
+      "poor": "Fewer, smaller flowers each year means the clump needs dividing, roughly every three or four years. Distorted green deformed flowers mean aster yellows, which has no cure: dig the plant out and bin it.",
+      "endOfSeason": "Leave every stem standing through winter for the goldfinches, then cut to the ground in March."
     }
   },
   {
@@ -133,6 +175,13 @@
       "from": 7,
       "to": 9,
       "kind": "flowers"
+    },
+    "care": {
+      "feed": "None, same as the purple.",
+      "deadhead": "Optional, same as the purple.",
+      "good": "Strong stems and steady flowering.",
+      "poor": "Declining flower size means it wants dividing.",
+      "endOfSeason": "Leave standing all winter. Cut in March."
     }
   },
   {
@@ -153,6 +202,13 @@
       "from": 7,
       "to": 8,
       "kind": "flowers"
+    },
+    "care": {
+      "feed": "A light balanced feed when the shoots are about six inches, and again as the flower spike shows. Nothing after flowering.",
+      "deadhead": "Not deadheading exactly, but cut the whole flower spike off at its base once the last floret fades. Letting it set those green seed capsules costs you next year's corm size.",
+      "good": "Upright spikes and firm fat corms when you lift them.",
+      "poor": "Silvery streaking and browning on the leaves means thrips. Corms that come up rough, corky or sticky are infested and go in the bin, not the compost.",
+      "endOfSeason": "Leave every leaf until it has gone completely yellow, because that is what feeds the corm. Then cut at ground level and lift, inspect and spread the corms."
     }
   },
   {
@@ -173,6 +229,13 @@
       "from": 5,
       "to": 8,
       "kind": "flowers"
+    },
+    "care": {
+      "feed": "Never. Feeding it produces soft floppy growth and fewer flowers.",
+      "deadhead": "Not needed. Deadheading extends flowering slightly, but the seed is how it returns.",
+      "good": "Blue-grey foliage and masses of flowers on lean dry ground.",
+      "poor": "Lush green floppy growth means the soil is too rich or too wet.",
+      "endOfSeason": "Annual here. Let it seed itself, then pull the spent plants whenever they look tired."
     }
   },
   {
@@ -192,6 +255,13 @@
       "from": 5,
       "to": 7,
       "kind": "flowers"
+    },
+    "care": {
+      "feed": "Never.",
+      "deadhead": "Not worth it. This one is grown for the seed as much as the flower.",
+      "good": "Masses of thin wiry flowering stems.",
+      "poor": "Rich soil gives leaves rather than flowers.",
+      "endOfSeason": "Shake the ripe pods where you want next year's plants, then pull. It will not transplant and resents spring sowing, so the autumn seed drop is the whole game."
     }
   },
   {
@@ -211,6 +281,13 @@
       "from": 6,
       "to": 9,
       "kind": "flowers"
+    },
+    "care": {
+      "feed": "A light feed in spring is plenty.",
+      "deadhead": "Cut a finished spike back to a leaf junction lower down the stem and it will send up new spikes. This is the difference between six weeks of flowers and four months.",
+      "good": "New side spikes coming after each cut.",
+      "poor": "Orange powdery pustules on the undersides of leaves are rust, which is common here. Remove the worst leaves and give it more air.",
+      "endOfSeason": "Cut the spent spikes but leave the plants standing. They are hardy enough to overwinter in Seattle and often come back for a second year."
     }
   },
   {
@@ -230,6 +307,13 @@
       "from": 7,
       "to": 8,
       "kind": "flowers"
+    },
+    "care": {
+      "feed": "None. Feeding it makes it lush and noticeably less flavourful.",
+      "deadhead": "Shear the whole plant back by about a third after it flowers. That is the only cutting it wants in autumn.",
+      "good": "Dense aromatic growth.",
+      "poor": "A woody bare centre with growth only at the edges means it is due for a hard renewal prune.",
+      "endOfSeason": "Leave it through winter. Hard prune into the old wood in spring, never in autumn."
     }
   },
   {
@@ -249,6 +333,13 @@
       "from": 5,
       "to": 7,
       "kind": "flowers"
+    },
+    "care": {
+      "feed": "None.",
+      "deadhead": "Not individual flowers. Shear the entire plant back to a few inches once the main flush is over. It looks brutal, and within two or three weeks you have a fresh mound of clean foliage and often a second lot of flowers.",
+      "good": "A tidy dense mound.",
+      "poor": "Flopping open with a bare middle and tired yellowing leaves is the signal that it wants that shear.",
+      "endOfSeason": "Leave the fresh foliage through winter and tidy any dead growth in spring."
     }
   },
   {
@@ -268,6 +359,13 @@
       "from": 7,
       "to": 8,
       "kind": "flowers"
+    },
+    "care": {
+      "feed": "Hold off until it is identified. Feeding the wrong thing at the wrong time is one of the few ways to actively harm a plant.",
+      "deadhead": "Depends on what it turns out to be.",
+      "good": "Nothing specific until it is named.",
+      "poor": "Nothing specific until it is named.",
+      "endOfSeason": "Leave it standing until it is identified. Cutting back is easy to do later and impossible to undo."
     }
   },
   {
@@ -282,7 +380,14 @@
     "status": "watch",
     "statusLabel": "Needs ID",
     "handling": "Do not pull until identified. Squeeze a stem at the base: brittle and hollow means dead, flexible and green inside means alive.",
-    "idNote": "A large mass of fine grey branching stems. Candidates are artemisia, lavender, statice, or simply a spent annual. Crush a stem and smell it, then photograph the base of the plant where it meets the soil, and whether it has a woody trunk or many soft stems."
+    "idNote": "A large mass of fine grey branching stems. Candidates are artemisia, lavender, statice, or simply a spent annual. Crush a stem and smell it, then photograph the base of the plant where it meets the soil, and whether it has a woody trunk or many soft stems.",
+    "care": {
+      "feed": "Hold off until it is identified. Feeding the wrong thing at the wrong time is one of the few ways to actively harm a plant.",
+      "deadhead": "Depends on what it turns out to be.",
+      "good": "Nothing specific until it is named.",
+      "poor": "Nothing specific until it is named.",
+      "endOfSeason": "Leave it standing until it is identified. Cutting back is easy to do later and impossible to undo."
+    }
   },
   {
     "id": "blue-wiry",
@@ -296,7 +401,14 @@
     "status": "watch",
     "statusLabel": "Needs ID",
     "handling": "Harmless either way. Identify before deciding whether it returns next year.",
-    "idNote": "Tiny blue-purple flowers on thin wiry stems threading through Street Bed 1. Lobelia is a low sprawling annual with tiny fan-shaped flowers. Salvia stands upright with flowers in tiers up a spike. A close photo of a single flower settles it."
+    "idNote": "Tiny blue-purple flowers on thin wiry stems threading through Street Bed 1. Lobelia is a low sprawling annual with tiny fan-shaped flowers. Salvia stands upright with flowers in tiers up a spike. A close photo of a single flower settles it.",
+    "care": {
+      "feed": "Hold off until it is identified. Feeding the wrong thing at the wrong time is one of the few ways to actively harm a plant.",
+      "deadhead": "Depends on what it turns out to be.",
+      "good": "Nothing specific until it is named.",
+      "poor": "Nothing specific until it is named.",
+      "endOfSeason": "Leave it standing until it is identified. Cutting back is easy to do later and impossible to undo."
+    }
   },
   {
     "id": "round-leaved",
@@ -310,7 +422,14 @@
     "status": "watch",
     "statusLabel": "Needs ID",
     "handling": "If nasturtium, it is an annual, edible, and will self-sow.",
-    "idNote": "Nasturtium leaves are round like small lily pads with the stem joining in the middle of the leaf rather than at the edge. That centre-join is the giveaway."
+    "idNote": "Nasturtium leaves are round like small lily pads with the stem joining in the middle of the leaf rather than at the edge. That centre-join is the giveaway.",
+    "care": {
+      "feed": "Hold off until it is identified. Feeding the wrong thing at the wrong time is one of the few ways to actively harm a plant.",
+      "deadhead": "Depends on what it turns out to be.",
+      "good": "Nothing specific until it is named.",
+      "poor": "Nothing specific until it is named.",
+      "endOfSeason": "Leave it standing until it is identified. Cutting back is easy to do later and impossible to undo."
+    }
   },
   {
     "id": "white-daisy",
@@ -324,7 +443,14 @@
     "status": "watch",
     "statusLabel": "Needs ID",
     "handling": "If feverfew, it self-sows enthusiastically and you may want to limit it.",
-    "idNote": "Small white daisies with yellow centres. Feverfew has divided, slightly yellow-green foliage and a strong bitter smell when crushed."
+    "idNote": "Small white daisies with yellow centres. Feverfew has divided, slightly yellow-green foliage and a strong bitter smell when crushed.",
+    "care": {
+      "feed": "Hold off until it is identified. Feeding the wrong thing at the wrong time is one of the few ways to actively harm a plant.",
+      "deadhead": "Depends on what it turns out to be.",
+      "good": "Nothing specific until it is named.",
+      "poor": "Nothing specific until it is named.",
+      "endOfSeason": "Leave it standing until it is identified. Cutting back is easy to do later and impossible to undo."
+    }
   },
   {
     "id": "crocosmia-check",
@@ -339,7 +465,14 @@
     "status": "watch",
     "statusLabel": "Worth checking",
     "handling": "If present, keep it separate when lifting. Crocosmia spreads by underground corm chains and will colonise a bed.",
-    "idNote": "Out of bloom the two look nearly identical. Gladiolus leaves are thicker, stiffer and stand upright in a flat fan. Crocosmia leaves are thinner, more pleated and arch over. The real tell is underground: a gladiolus corm sits alone with small cormels around its base, while crocosmia forms a vertical chain of corms stacked on top of each other. You will see it when you lift them this fall."
+    "idNote": "Out of bloom the two look nearly identical. Gladiolus leaves are thicker, stiffer and stand upright in a flat fan. Crocosmia leaves are thinner, more pleated and arch over. The real tell is underground: a gladiolus corm sits alone with small cormels around its base, while crocosmia forms a vertical chain of corms stacked on top of each other. You will see it when you lift them this fall.",
+    "care": {
+      "feed": "Hold off until it is identified. Feeding the wrong thing at the wrong time is one of the few ways to actively harm a plant.",
+      "deadhead": "Depends on what it turns out to be.",
+      "good": "Nothing specific until it is named.",
+      "poor": "Nothing specific until it is named.",
+      "endOfSeason": "Leave it standing until it is identified. Cutting back is easy to do later and impossible to undo."
+    }
   },
   {
     "id": "strawberry",
@@ -358,6 +491,13 @@
       "from": 6,
       "to": 10,
       "kind": "fruit"
+    },
+    "care": {
+      "feed": "Feed matters here. A balanced feed after the first flush of fruit and again in midsummer. Top-dress with compost in spring, but keep it off the crowns, which rot if buried.",
+      "deadhead": "Not deadheading. The equivalent job is runners: pinch off the ones you do not want so the plant puts its energy into fruit rather than into travelling.",
+      "good": "Dark green leaves and steady fruit through the season.",
+      "poor": "Pale leaves and small fruit means hungry or too crowded. Reddening leaves late in the season is usually age. Grey fuzz on the fruit is botrytis, which comes from damp still air.",
+      "endOfSeason": "These are everbearing, so do not mow the foliage down: that advice is for June-bearing types and would cost you fruit. Pull dead leaves, thin the mat, and replace the oldest crowns every three or four years."
     }
   },
   {
@@ -377,6 +517,13 @@
       "from": 7,
       "to": 9,
       "kind": "harvest"
+    },
+    "care": {
+      "feed": "None. They fix their own nitrogen, and feeding gives you leaves instead of pods.",
+      "deadhead": "Picking is the deadheading. Every pod left to mature tells the plant it is finished.",
+      "good": "Steady pod production and dark green leaves.",
+      "poor": "Yellowing leaves with few pods late in the season is normal ageing rather than a problem.",
+      "endOfSeason": "Cut the stems off at soil level rather than pulling them up, so the nitrogen-fixing nodules on the roots stay to feed whatever grows there next."
     }
   },
   {
@@ -391,7 +538,14 @@
     "status": "watch",
     "statusLabel": "Needs ID",
     "handling": "All three are edible and all three can be picked leaf by leaf, so it is safe to harvest either way.",
-    "idNote": "Growing low among the beans, deeply savoyed dark leaves. Chard has a thick white or coloured midrib and stalk. Beet has a reddish stalk and a swelling root at the base. Spinach has thin plain stalks and no swollen root. Look at the stalk colour and scrape the soil at the base."
+    "idNote": "Growing low among the beans, deeply savoyed dark leaves. Chard has a thick white or coloured midrib and stalk. Beet has a reddish stalk and a swelling root at the base. Spinach has thin plain stalks and no swollen root. Look at the stalk colour and scrape the soil at the base.",
+    "care": {
+      "feed": "Hold off until it is identified. Feeding the wrong thing at the wrong time is one of the few ways to actively harm a plant.",
+      "deadhead": "Depends on what it turns out to be.",
+      "good": "Nothing specific until it is named.",
+      "poor": "Nothing specific until it is named.",
+      "endOfSeason": "Leave it standing until it is identified. Cutting back is easy to do later and impossible to undo."
+    }
   },
   {
     "id": "ground-weed",
@@ -405,7 +559,14 @@
     "status": "watch",
     "statusLabel": "Needs ID",
     "handling": "Weed it out now either way, before it seeds or spreads further into the strawberry mat.",
-    "idNote": "Small round leaves running along the soil between the strawberries. Chickweed is soft, shallow-rooted and pulls out in mats, and is a minor annual nuisance. Ground ivy has scalloped leaves, a square stem, a strong minty smell when crushed, and roots at every node, and it is a genuine long-term problem. Crush a leaf and roll the stem: this one is worth knowing."
+    "idNote": "Small round leaves running along the soil between the strawberries. Chickweed is soft, shallow-rooted and pulls out in mats, and is a minor annual nuisance. Ground ivy has scalloped leaves, a square stem, a strong minty smell when crushed, and roots at every node, and it is a genuine long-term problem. Crush a leaf and roll the stem: this one is worth knowing.",
+    "care": {
+      "feed": "Hold off until it is identified. Feeding the wrong thing at the wrong time is one of the few ways to actively harm a plant.",
+      "deadhead": "Depends on what it turns out to be.",
+      "good": "Nothing specific until it is named.",
+      "poor": "Nothing specific until it is named.",
+      "endOfSeason": "Leave it standing until it is identified. Cutting back is easy to do later and impossible to undo."
+    }
   },
   {
     "id": "rosemary",
@@ -424,6 +585,13 @@
       "from": 3,
       "to": 5,
       "kind": "flowers"
+    },
+    "care": {
+      "feed": "Never. It wants poor sharp-draining soil, and feeding shortens its life.",
+      "deadhead": "Nothing to deadhead. Trim only into green growth, and only in spring.",
+      "good": "Aromatic dense green tips and new growth from the outer stems.",
+      "poor": "A bare woody centre is normal ageing and cannot be pruned out. Blackened or grey stems after winter means it sat too wet.",
+      "endOfSeason": "Nothing in autumn. Cutting a woody Mediterranean herb in autumn pushes soft growth that dies in the first cold snap, and cutting into bare wood leaves a permanent hole because it does not resprout from it."
     }
   },
   {
@@ -443,6 +611,13 @@
       "from": 5,
       "to": 6,
       "kind": "flowers"
+    },
+    "care": {
+      "feed": "Never, same as the rosemary.",
+      "deadhead": "Nothing to deadhead. Prune lightly into green growth in spring only.",
+      "good": "Soft grey aromatic leaves and growth from the outer stems.",
+      "poor": "Woody bare centre and sparse leaves means it is ageing out. Take cuttings rather than trying to cut it back into shape.",
+      "endOfSeason": "Leave it entirely alone in autumn, and keep mulch and compost off the crown."
     }
   },
   {
@@ -462,6 +637,13 @@
       "from": 6,
       "to": 8,
       "kind": "flowers"
+    },
+    "care": {
+      "feed": "An inch of compost in spring. Nothing else.",
+      "deadhead": "Cut spent stems right down to the low mound of green leaves at the base. Doing it early enough sometimes brings a second smaller flush.",
+      "good": "Strong stems that hold their flowers up without staking.",
+      "poor": "Flopping and a dying centre with flowering pushed to the edges means it wants dividing, roughly every three years.",
+      "endOfSeason": "Cut the flowered stems down and leave the basal rosette of leaves, which stays green through winter."
     }
   },
   {
@@ -481,6 +663,13 @@
       "from": 5,
       "to": 6,
       "kind": "flowers"
+    },
+    "care": {
+      "feed": "A low-nitrogen feed in early spring. Never manure or rich compost over the rhizome, which makes it rot.",
+      "deadhead": "Snap spent flowers off as they go over, then cut the whole flower stalk down to the base once the last one has finished.",
+      "good": "Fat firm rhizomes sitting at the soil surface with fans of clean leaves.",
+      "poor": "A soft, smelly rhizome is rot and must be cut out. Brown streaks and spots on the leaves are leaf spot, which overwinters on old foliage. Plenty of leaves but no flowers almost always means the rhizomes are buried too deep or too congested.",
+      "endOfSeason": "Cut the leaves back to a fan about six inches tall in autumn and clear away every dead leaf, since that is where leaf spot overwinters. Divide in late summer, replanting shallow with the rhizome backs showing."
     }
   },
   {
@@ -495,7 +684,14 @@
     "status": "watch",
     "statusLabel": "Needs ID",
     "handling": "If euphorbia, wear gloves. The milky sap burns skin and is genuinely bad in eyes, so identify it before cutting anything back.",
-    "idNote": "Upright stems with blue-green leaves spiralling around them, back left of the bed. Snap a leaf off and watch the break, from a safe distance: milky white sap means euphorbia. Do not get the sap on your skin."
+    "idNote": "Upright stems with blue-green leaves spiralling around them, back left of the bed. Snap a leaf off and watch the break, from a safe distance: milky white sap means euphorbia. Do not get the sap on your skin.",
+    "care": {
+      "feed": "Hold off until it is identified. Feeding the wrong thing at the wrong time is one of the few ways to actively harm a plant.",
+      "deadhead": "Depends on what it turns out to be.",
+      "good": "Nothing specific until it is named.",
+      "poor": "Nothing specific until it is named.",
+      "endOfSeason": "Leave it standing until it is identified. Cutting back is easy to do later and impossible to undo."
+    }
   },
   {
     "id": "volunteer-tree",
@@ -509,7 +705,14 @@
     "status": "watch",
     "statusLabel": "Deal with soon",
     "handling": "Pull or cut it while it is still small enough to pull. A tree seedling in a narrow bed becomes a much bigger job every year you leave it.",
-    "idNote": "Woody, with leaves divided into several toothed leaflets along a central stalk. Ash and elder both self-sow readily in Seattle and both get large. Photograph a whole leaf flat, and check whether leaves come off the stem in opposite pairs."
+    "idNote": "Woody, with leaves divided into several toothed leaflets along a central stalk. Ash and elder both self-sow readily in Seattle and both get large. Photograph a whole leaf flat, and check whether leaves come off the stem in opposite pairs.",
+    "care": {
+      "feed": "Hold off until it is identified. Feeding the wrong thing at the wrong time is one of the few ways to actively harm a plant.",
+      "deadhead": "Depends on what it turns out to be.",
+      "good": "Nothing specific until it is named.",
+      "poor": "Nothing specific until it is named.",
+      "endOfSeason": "Leave it standing until it is identified. Cutting back is easy to do later and impossible to undo."
+    }
   },
   {
     "id": "zinnia",
@@ -528,6 +731,13 @@
       "from": 7,
       "to": 10,
       "kind": "flowers"
+    },
+    "care": {
+      "feed": "A light feed monthly through summer is enough.",
+      "deadhead": "Cut deep, back to a leaf junction rather than snipping the flower off. Zinnias are cut-and-come-again and this is what keeps them going to frost.",
+      "good": "Compact plants covered in flowers.",
+      "poor": "Tall floppy growth with few flowers means not enough sun. White powdery coating on the leaves is mildew, which zinnias are very prone to here: water the soil rather than the leaves and give them space.",
+      "endOfSeason": "Frost kills them outright. Leave three or four heads to dry on the plant for seed, collect once brown and crisp, then pull."
     }
   },
   {
@@ -547,6 +757,13 @@
       "from": 6,
       "to": 9,
       "kind": "flowers"
+    },
+    "care": {
+      "feed": "None. Wildflower mixes are designed for poor soil and feeding them favours the coarse species over the pretty ones.",
+      "deadhead": "Not practical across a whole patch, and not the point of it.",
+      "good": "A good spread of different species flowering in succession.",
+      "poor": "One or two vigorous species taking over is the usual failure. Pull those before they seed.",
+      "endOfSeason": "Let most of it stand and shed seed, which is how the patch carries itself into next year. Clear it whenever it looks finished."
     }
   },
   {
@@ -567,6 +784,13 @@
       "from": 3,
       "to": 5,
       "kind": "flowers"
+    },
+    "care": {
+      "feed": "Bulb fertiliser or bonemeal worked in at planting, and a low-nitrogen feed as the shoots come through. Nothing once flowering is over.",
+      "deadhead": "Take the spent flower head off so the plant does not waste energy setting seed, but leave the stem and every leaf.",
+      "good": "Fat buds and broad healthy leaves.",
+      "poor": "Leaves but no flower, which gardeners call blind, means the bulb is depleted, planted too shallow, or was too small to begin with.",
+      "endOfSeason": "Leave the leaves until they have yellowed completely, then pull them away. Most tulips fade after a year or two in wet soil here, so the display is kept up by planting fresh bulbs each autumn rather than by the same ones returning."
     }
   },
   {
@@ -586,6 +810,13 @@
       "from": 4,
       "to": 5,
       "kind": "flowers"
+    },
+    "care": {
+      "feed": "None.",
+      "deadhead": "Shear the whole plant back by about a third straight after flowering. That single cut is the entire year's maintenance.",
+      "good": "A dense evergreen mat that smothers weeds.",
+      "poor": "A bare woody middle with flowers only around the edge means the annual shear has been missed a few years running.",
+      "endOfSeason": "Nothing in autumn. It is evergreen and earns its place through winter."
     }
   },
   {
@@ -605,6 +836,13 @@
       "from": 4,
       "to": 5,
       "kind": "flowers"
+    },
+    "care": {
+      "feed": "None.",
+      "deadhead": "Shear back hard right after flowering, by about a third. Leave it and it goes straggly and bare-centred.",
+      "good": "A tight cushion covered in flower in April.",
+      "poor": "Long bare trailing stems with a thin sparse centre means it needs that shear.",
+      "endOfSeason": "Nothing in autumn."
     }
   },
   {
@@ -624,6 +862,13 @@
       "from": 4,
       "to": 10,
       "kind": "flowers"
+    },
+    "care": {
+      "feed": "None.",
+      "deadhead": "A light shear when it starts looking tired brings another flush, but it is genuinely optional.",
+      "good": "Low mounds of scented white flower over a long season.",
+      "poor": "Legginess and browning in the middle means it is coming to its end, which is normal for an annual.",
+      "endOfSeason": "Let it set seed and it returns on its own. Pull spent plants whenever they look tired."
     }
   },
   {
@@ -643,6 +888,13 @@
       "from": 2,
       "to": 4,
       "kind": "flowers"
+    },
+    "care": {
+      "feed": "An inch of compost around the crowns in spring.",
+      "deadhead": "Pull spent flower stalks off at the base to keep it flowering longer.",
+      "good": "Fresh green rosettes and early flowers.",
+      "poor": "Crowded congested clumps flower less, which means divide after flowering. Ragged leaf edges are slugs or vine weevil.",
+      "endOfSeason": "Leave the foliage alone. It is evergreen here and next year's crown is inside it."
     }
   },
   {
@@ -662,6 +914,13 @@
       "from": 3,
       "to": 6,
       "kind": "flowers"
+    },
+    "care": {
+      "feed": "A light feed occasionally, or none at all.",
+      "deadhead": "Pinch spent flowers off between finger and thumb. It genuinely does prolong flowering, and it is a pleasant five-minute job rather than a chore.",
+      "good": "Continuous flowering over months.",
+      "poor": "Straggly stems and few flowers in high summer means heat, and they usually pick up again as it cools.",
+      "endOfSeason": "Let some set seed and they return. Pull the tired ones."
     }
   },
   {
@@ -681,6 +940,13 @@
       "from": 4,
       "to": 5,
       "kind": "flowers"
+    },
+    "care": {
+      "feed": "None. Feeding a vigorous groundcover is asking for trouble.",
+      "deadhead": "Nothing to deadhead.",
+      "good": "Dense evergreen cover holding the wall and keeping weeds out.",
+      "poor": "The failure mode is the opposite of struggling: it roots wherever a stem touches soil and will travel.",
+      "endOfSeason": "Shear it back off the bed edges whenever it oversteps, at any time of year. Both common vincas are listed as invasive in Washington, so bag the clippings rather than composting them."
     }
   },
   {
@@ -700,6 +966,13 @@
       "from": 6,
       "to": 7,
       "kind": "flowers"
+    },
+    "care": {
+      "feed": "None, if it is thyme. It wants poor sharp-draining soil.",
+      "deadhead": "Shear lightly after flowering.",
+      "good": "Dense aromatic mats spilling over the wall.",
+      "poor": "Woody bare patches and dieback in the middle usually means it has been sitting too wet.",
+      "endOfSeason": "Nothing in autumn. Depends on the identification being right, so worth confirming before you cut anything."
     }
   },
   {
@@ -719,6 +992,13 @@
       "from": 10,
       "to": 11,
       "kind": "autumn colour"
+    },
+    "care": {
+      "feed": "None. A light mulch of compost over the root area in spring at most.",
+      "deadhead": "Nothing to deadhead.",
+      "good": "Clean well-coloured foliage and steady growth.",
+      "poor": "Crisped brown leaf edges by August is scorch from too much sun or dry roots. A whole branch wilting and dying back in summer can be verticillium wilt, which is serious and worth getting looked at.",
+      "endOfSeason": "Leave it. If it ever needs pruning, do it in late summer or deep winter, never in spring when it is running with sap and will bleed heavily."
     }
   },
   {
@@ -738,6 +1018,13 @@
       "from": 3,
       "to": 4,
       "kind": "flowers"
+    },
+    "care": {
+      "feed": "Bonemeal at planting, and a low-nitrogen feed after flowering while the leaves are still green.",
+      "deadhead": "Snap the spent flower head off so it does not set seed, and leave every leaf.",
+      "good": "Clumps that get thicker and flower more each year, which is the difference between these and the tulips.",
+      "poor": "Leaves but no flowers means the clump is congested and wants lifting and dividing.",
+      "endOfSeason": "Leave the leaves until they yellow completely, six weeks or so after flowering. Never knot or cut them green."
     }
   }
 ]
