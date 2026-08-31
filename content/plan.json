@@ -89,7 +89,9 @@
         "flags": [],
         "done": false,
         "body": [
-          "The green seed capsules swelling on those spikes are pulling energy the corm needs to size up for next year. Cut the flower spike at its base. Leave every leaf until it yellows completely."
+          "The Street Bed Box 2 spikes are fully dried out and papery now, and still holding seed capsules. Every one of those capsules is drawing on the corm that has to carry next summer.",
+          "Cut each flower spike off at its base, right down where it emerges from the fan of leaves. Leave every leaf standing, however tatty, until it has gone completely yellow: the leaves are what rebuild the corm, the spike is what drains it.",
+          "Same job in Street Bed Box 1 and Driveway Bed 2."
         ],
         "slip": "costs",
         "ifSkipped": "Smaller corms and weaker flowers next summer."
