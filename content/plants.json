@@ -3,7 +3,9 @@
     "id": "dahlia",
     "name": "Dahlia",
     "variety": "yellow ball or decorative type",
-    "beds": ["bed1"],
+    "beds": [
+      "bed1"
+    ],
     "type": "tender perennial",
     "confidence": "confirmed",
     "status": "blooming",
@@ -15,7 +17,10 @@
     "id": "gaillardia",
     "name": "Gaillardia",
     "variety": "blanket flower, possibly 'Arizona Sun'",
-    "beds": ["bed1", "bed2"],
+    "beds": [
+      "bed1",
+      "bed2"
+    ],
     "type": "short-lived perennial",
     "confidence": "confirmed",
     "status": "blooming",
@@ -27,7 +32,9 @@
     "id": "scabiosa",
     "name": "Scabiosa",
     "variety": "pincushion flower",
-    "beds": ["bed1"],
+    "beds": [
+      "bed1"
+    ],
     "type": "perennial",
     "confidence": "confirmed",
     "status": "blooming",
@@ -39,7 +46,9 @@
     "id": "cosmos",
     "name": "Cosmos",
     "variety": "Cosmos bipinnatus",
-    "beds": ["bed1"],
+    "beds": [
+      "bed1"
+    ],
     "type": "annual",
     "confidence": "confirmed",
     "status": "blooming",
@@ -51,19 +60,24 @@
     "id": "sunflower",
     "name": "Sunflower",
     "variety": "one mahogany, one branching yellow",
-    "beds": ["bed1"],
+    "beds": [
+      "bed1",
+      "bed3"
+    ],
     "type": "annual",
     "confidence": "confirmed",
-    "status": "blooming",
-    "statusLabel": "Blooming",
-    "handling": "Leave heads for birds, or cut when the back of the head turns brown.",
+    "status": "watch",
+    "statusLabel": "Powdery mildew",
+    "handling": "Leave heads for birds, or cut when the back turns brown. The side bed plants have powdery mildew: strip the worst leaves, bin them rather than composting, and do not spray this late.",
     "idNote": "The dark red one is likely 'Velvet Queen' or 'Chocolate', but that is a guess from colour alone."
   },
   {
     "id": "echinacea-purple",
     "name": "Echinacea",
     "variety": "purple coneflower",
-    "beds": ["bed1"],
+    "beds": [
+      "bed1"
+    ],
     "type": "perennial",
     "confidence": "confirmed",
     "status": "finished",
@@ -75,7 +89,9 @@
     "id": "echinacea-white",
     "name": "Echinacea",
     "variety": "white, possibly 'White Swan'",
-    "beds": ["bed1"],
+    "beds": [
+      "bed1"
+    ],
     "type": "perennial",
     "confidence": "likely",
     "status": "finished",
@@ -87,7 +103,10 @@
     "id": "gladiolus",
     "name": "Gladiolus",
     "variety": "grows from corms, not bulbs",
-    "beds": ["bed1", "bed2"],
+    "beds": [
+      "bed1",
+      "bed2"
+    ],
     "type": "corm",
     "confidence": "confirmed",
     "status": "watch",
@@ -99,7 +118,10 @@
     "id": "california-poppy",
     "name": "California poppy",
     "variety": "Eschscholzia californica",
-    "beds": ["bed1", "bed2"],
+    "beds": [
+      "bed1",
+      "bed2"
+    ],
     "type": "annual, self-sowing",
     "confidence": "confirmed",
     "status": "finished",
@@ -111,7 +133,9 @@
     "id": "shirley-poppy",
     "name": "Shirley poppy",
     "variety": "Papaver rhoeas",
-    "beds": ["bed2"],
+    "beds": [
+      "bed2"
+    ],
     "type": "annual",
     "confidence": "confirmed",
     "status": "watch",
@@ -123,7 +147,9 @@
     "id": "snapdragon",
     "name": "Snapdragon",
     "variety": "Antirrhinum",
-    "beds": ["bed2"],
+    "beds": [
+      "bed2"
+    ],
     "type": "short-lived perennial here",
     "confidence": "confirmed",
     "status": "finished",
@@ -135,7 +161,9 @@
     "id": "oregano",
     "name": "Oregano",
     "variety": "Origanum vulgare",
-    "beds": ["bed2"],
+    "beds": [
+      "bed2"
+    ],
     "type": "perennial herb",
     "confidence": "confirmed",
     "status": "blooming",
@@ -147,7 +175,9 @@
     "id": "hardy-geranium",
     "name": "Hardy geranium",
     "variety": "cranesbill",
-    "beds": ["bed2"],
+    "beds": [
+      "bed2"
+    ],
     "type": "perennial",
     "confidence": "confirmed",
     "status": "blooming",
@@ -159,7 +189,9 @@
     "id": "whorled-spike",
     "name": "Whorled spike plant",
     "variety": "veronica, agastache, or Culver's root",
-    "beds": ["bed2"],
+    "beds": [
+      "bed2"
+    ],
     "type": "perennial",
     "confidence": "unknown",
     "status": "watch",
@@ -171,7 +203,9 @@
     "id": "silver-mass",
     "name": "Silver-grey dried mound",
     "variety": "unknown",
-    "beds": ["bed2"],
+    "beds": [
+      "bed2"
+    ],
     "type": "unknown",
     "confidence": "unknown",
     "status": "watch",
@@ -183,7 +217,9 @@
     "id": "blue-wiry",
     "name": "Small blue flowers",
     "variety": "lobelia or annual salvia",
-    "beds": ["bed1"],
+    "beds": [
+      "bed1"
+    ],
     "type": "unknown",
     "confidence": "unknown",
     "status": "watch",
@@ -195,7 +231,9 @@
     "id": "round-leaved",
     "name": "Round-leaved plant",
     "variety": "possibly nasturtium",
-    "beds": ["bed1"],
+    "beds": [
+      "bed1"
+    ],
     "type": "unknown",
     "confidence": "unknown",
     "status": "watch",
@@ -207,7 +245,9 @@
     "id": "white-daisy",
     "name": "Small white daisy",
     "variety": "possibly feverfew",
-    "beds": ["bed1"],
+    "beds": [
+      "bed1"
+    ],
     "type": "unknown",
     "confidence": "unknown",
     "status": "watch",
@@ -219,12 +259,71 @@
     "id": "crocosmia-check",
     "name": "Possible crocosmia",
     "variety": "mixed among the gladiolus",
-    "beds": ["bed1", "bed2"],
+    "beds": [
+      "bed1",
+      "bed2"
+    ],
     "type": "corm",
     "confidence": "unknown",
     "status": "watch",
     "statusLabel": "Worth checking",
     "handling": "If present, keep it separate when lifting. Crocosmia spreads by underground corm chains and will colonise a bed.",
     "idNote": "Out of bloom the two look nearly identical. Gladiolus leaves are thicker, stiffer and stand upright in a flat fan. Crocosmia leaves are thinner, more pleated and arch over. The real tell is underground: a gladiolus corm sits alone with small cormels around its base, while crocosmia forms a vertical chain of corms stacked on top of each other. You will see it when you lift them this fall."
+  },
+  {
+    "id": "strawberry",
+    "name": "Strawberry",
+    "variety": "everbearing or day-neutral",
+    "beds": [
+      "bed3"
+    ],
+    "type": "perennial",
+    "confidence": "likely",
+    "status": "blooming",
+    "statusLabel": "Still fruiting",
+    "handling": "Do not mow the foliage. Thin the mat to about one plant every six to eight inches, pinch off runners you do not want, and let a few root as replacements.",
+    "idNote": "Flowering and fruiting at the end of August means everbearing or day-neutral, not June-bearing. That matters because the two get opposite fall treatment. Confirm by whether it also gave you a heavy single crop in June."
+  },
+  {
+    "id": "beans",
+    "name": "Beans",
+    "variety": "purple-flowered, on string trellis",
+    "beds": [
+      "bed3"
+    ],
+    "type": "annual",
+    "confidence": "likely",
+    "status": "blooming",
+    "statusLabel": "Producing",
+    "handling": "Keep picking, which is what keeps them producing. When finished, cut at soil level and leave the roots in the ground for the nitrogen in the nodules.",
+    "idNote": "Purple flowers point to a purple-podded variety. Whether these are bush or pole changes nothing about care but is worth noting for next year. A photo of a pod would settle it."
+  },
+  {
+    "id": "dark-greens",
+    "name": "Dark puckered greens",
+    "variety": "spinach, chard or beet",
+    "beds": [
+      "bed3"
+    ],
+    "type": "unknown",
+    "confidence": "unknown",
+    "status": "watch",
+    "statusLabel": "Needs ID",
+    "handling": "All three are edible and all three can be picked leaf by leaf, so it is safe to harvest either way.",
+    "idNote": "Growing low among the beans, deeply savoyed dark leaves. Chard has a thick white or coloured midrib and stalk. Beet has a reddish stalk and a swelling root at the base. Spinach has thin plain stalks and no swollen root. Look at the stalk colour and scrape the soil at the base."
+  },
+  {
+    "id": "ground-weed",
+    "name": "Low creeping ground cover",
+    "variety": "chickweed or ground ivy",
+    "beds": [
+      "bed3"
+    ],
+    "type": "unknown",
+    "confidence": "unknown",
+    "status": "watch",
+    "statusLabel": "Needs ID",
+    "handling": "Weed it out now either way, before it seeds or spreads further into the strawberry mat.",
+    "idNote": "Small round leaves running along the soil between the strawberries. Chickweed is soft, shallow-rooted and pulls out in mats, and is a minor annual nuisance. Ground ivy has scalloped leaves, a square stem, a strong minty smell when crushed, and roots at every node, and it is a genuine long-term problem. Crush a leaf and roll the stem: this one is worth knowing."
   }
 ]

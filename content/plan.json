@@ -3,14 +3,18 @@
     "id": "this-week",
     "title": "Do this week",
     "window": "Aug 31 – Sep 6",
-    "note": "Five jobs. The first has a hard deadline set by the plants, not by you. The rest buy weeks of extra bloom.",
+    "note": "Eight jobs across three areas. The first has a hard deadline set by the plants, not by you. The rest buy weeks of extra bloom or head off a problem.",
     "tasks": [
       {
         "id": "poppy-seed",
         "title": "Shake the poppy seed where you want it",
         "weight": "seed",
-        "beds": ["bed2"],
-        "flags": ["Closing window"],
+        "beds": [
+          "bed2"
+        ],
+        "flags": [
+          "Closing window"
+        ],
         "done": false,
         "body": [
           "Those hundreds of little pods are ripe or nearly ripe, and once they shatter the seed goes wherever it goes. Hold each stem over the spot you want poppies next spring and tip the pod. It pours out like a pepper shaker.",
@@ -21,7 +25,10 @@
         "id": "deadhead-hard",
         "title": "Deadhead the gaillardia hard, then the dahlias",
         "weight": "now",
-        "beds": ["bed1", "bed2"],
+        "beds": [
+          "bed1",
+          "bed2"
+        ],
         "flags": [],
         "done": false,
         "body": [
@@ -33,8 +40,13 @@
         "id": "thrips-test",
         "title": "Quick thrips check on the gladiolus",
         "weight": "check",
-        "beds": ["bed1", "bed2"],
-        "flags": ["Diagnostic"],
+        "beds": [
+          "bed1",
+          "bed2"
+        ],
+        "flags": [
+          "Diagnostic"
+        ],
         "done": false,
         "body": [
           "These corms already overwinter in the beds and come back, so the baseline is good and the yellowing is most likely ordinary post-bloom senescence. This check only rules out the one thing that would change the routine.",
@@ -45,8 +57,12 @@
         "id": "split-stem",
         "title": "Inspect the split stem",
         "weight": "check",
-        "beds": ["bed1"],
-        "flags": ["Closed"],
+        "beds": [
+          "bed1"
+        ],
+        "flags": [
+          "Closed"
+        ],
         "done": true,
         "body": [
           "Closed. A thick green stalk appeared to have a long vertical crack in one photo, but nothing obvious in the bed, so it was almost certainly minor growth cracking that has already healed over."
@@ -56,11 +72,58 @@
         "id": "glad-spikes",
         "title": "Cut the spent gladiolus spikes, keep the leaves",
         "weight": "now",
-        "beds": ["bed1", "bed2"],
+        "beds": [
+          "bed1",
+          "bed2"
+        ],
         "flags": [],
         "done": false,
         "body": [
           "The green seed capsules swelling on those spikes are pulling energy the corm needs to size up for next year. Cut the flower spike at its base. Leave every leaf until it yellows completely."
+        ]
+      },
+      {
+        "id": "mildew-sunflowers",
+        "title": "Strip the mildewed sunflower leaves",
+        "weight": "now",
+        "beds": [
+          "bed3"
+        ],
+        "flags": [],
+        "done": false,
+        "body": [
+          "The white powdery coating on the side bed sunflowers is powdery mildew. It is not worth spraying this late in the season on plants that are nearly finished. Pull off the worst-affected leaves, especially the lower ones, and put them in the bin rather than the tumbler.",
+          "The cause is placement more than anything: a narrow bed against a wall means still air and a rain shadow. Worth remembering when you decide where sunflowers go next year."
+        ]
+      },
+      {
+        "id": "weed-strawberries",
+        "title": "Weed the strawberry mat before anything seeds",
+        "weight": "now",
+        "beds": [
+          "bed3"
+        ],
+        "flags": [],
+        "done": false,
+        "body": [
+          "There is a low creeping ground cover running between the strawberry crowns, plus a few broadleaf rosettes. Get them out now while the soil is soft and before they set seed.",
+          "Identify the creeper before you assume it is harmless. Chickweed pulls out in soft mats and is a minor annual nuisance. Ground ivy roots at every node and is a multi-year problem, and telling them apart takes ten seconds."
+        ]
+      },
+      {
+        "id": "check-foundation-dry",
+        "title": "Check how dry the soil is against the foundation",
+        "weight": "check",
+        "beds": [
+          "bed3"
+        ],
+        "flags": [
+          "Diagnostic"
+        ],
+        "done": false,
+        "body": [
+          "Push a finger in to the second knuckle right up against the wall, then again at the front edge of the bed. The strip beside a house is usually the driest soil in a garden: the wall throws a rain shadow, the foundation wicks moisture away, and any eave overhead keeps rain off entirely.",
+          "If the back is noticeably drier than the front, that explains the stressed sunflowers, and the fix is simply watering that strip separately rather than assuming the whole bed gets the same."
         ]
       }
     ]
@@ -75,8 +138,12 @@
         "id": "sow-hardy-annuals",
         "title": "Direct-sow hardy annuals into the gaps",
         "weight": "seed",
-        "beds": ["bed2"],
-        "flags": ["By Sep 20"],
+        "beds": [
+          "bed2"
+        ],
+        "flags": [
+          "By Sep 20"
+        ],
         "done": false,
         "body": [
           "Bed 2 is the sowing bed, because pulling the spent poppies opens real ground. Larkspur, nigella, bachelor's button, breadseed poppy, calendula, orlaya. Scatter, press in, do not bury deep, keep damp until the rains take over."
@@ -86,7 +153,9 @@
         "id": "clear-spent",
         "title": "Clear the spent poppies and dead material",
         "weight": "grow",
-        "beds": ["bed2"],
+        "beds": [
+          "bed2"
+        ],
         "flags": [],
         "done": false,
         "body": [
@@ -99,7 +168,9 @@
         "id": "shear-oregano",
         "title": "Shear the oregano by a third, dry the leaves",
         "weight": "grow",
-        "beds": ["bed2"],
+        "beds": [
+          "bed2"
+        ],
         "flags": [],
         "done": false,
         "body": [
@@ -110,11 +181,41 @@
         "id": "shear-geranium",
         "title": "Shear the hardy geranium back hard",
         "weight": "grow",
-        "beds": ["bed2"],
+        "beds": [
+          "bed2"
+        ],
         "flags": [],
         "done": false,
         "body": [
           "Cut the cranesbill to a few inches. It looks brutal and it works: a fresh low mound of clean foliage within two or three weeks, and often a second flush of flowers before frost."
+        ]
+      },
+      {
+        "id": "thin-strawberries",
+        "title": "Thin the strawberry mat and take runner cuttings",
+        "weight": "grow",
+        "beds": [
+          "bed3"
+        ],
+        "flags": [],
+        "done": false,
+        "body": [
+          "These are flowering and fruiting at the end of August, which makes them everbearing or day-neutral rather than June-bearing. That matters: do not mow the foliage down. The renovation advice you will find everywhere online is for June-bearing types and would cost you fruit.",
+          "What they do need is space. The mat is crowded, and crowded strawberries give small fruit and hold damp air around the crowns. Thin to roughly one plant every six to eight inches, taking out the oldest woodiest crowns first. Plants decline after three or four years, so peg down a few runners into the gaps to root as free replacements and cut the rest off."
+        ]
+      },
+      {
+        "id": "beans-through-frost",
+        "title": "Keep picking the beans, then cut at soil level",
+        "weight": "grow",
+        "beds": [
+          "bed3"
+        ],
+        "flags": [],
+        "done": false,
+        "body": [
+          "Picking is what keeps them producing. Every pod left to mature tells the plant it is done. You have roughly four to six weeks left.",
+          "When they finish, cut the stems at soil level rather than pulling them up. The roots carry nitrogen-fixing nodules, and leaving them in place feeds whatever goes in that spot next year."
         ]
       }
     ]
@@ -182,7 +283,9 @@
         "title": "Sow sweet peas, start planting bulbs",
         "weight": "seed",
         "beds": [],
-        "flags": ["Mid-month"],
+        "flags": [
+          "Mid-month"
+        ],
         "done": false,
         "body": [
           "Sweet peas go in around mid-October for the earliest and strongest spring plants. Bulbs can go in any time from now, and tulips will happily wait until the ground is too wet to work, often December here."
@@ -192,7 +295,10 @@
         "id": "cut-glad-foliage",
         "title": "Cut the gladiolus foliage once it is fully yellow",
         "weight": "grow",
-        "beds": ["bed1", "bed2"],
+        "beds": [
+          "bed1",
+          "bed2"
+        ],
         "flags": [],
         "done": false,
         "body": [
@@ -203,7 +309,10 @@
         "id": "top-dress",
         "title": "Top-dress with compost",
         "weight": "grow",
-        "beds": ["bed1", "bed2"],
+        "beds": [
+          "bed1",
+          "bed2"
+        ],
         "flags": [],
         "done": false,
         "body": [
@@ -222,7 +331,9 @@
         "id": "dahlias-to-bed",
         "title": "Put the dahlias to bed",
         "weight": "now",
-        "beds": ["bed1"],
+        "beds": [
+          "bed1"
+        ],
         "flags": [],
         "done": false,
         "body": [
@@ -234,7 +345,10 @@
         "id": "glad-corms",
         "title": "Lift, inspect and spread the gladiolus corms",
         "weight": "check",
-        "beds": ["bed1", "bed2"],
+        "beds": [
+          "bed1",
+          "bed2"
+        ],
         "flags": [],
         "done": false,
         "body": [
@@ -246,7 +360,10 @@
         "id": "leave-standing",
         "title": "Leave more standing than feels tidy",
         "weight": "grow",
-        "beds": ["bed1", "bed2"],
+        "beds": [
+          "bed1",
+          "bed2"
+        ],
         "flags": [],
         "done": false,
         "body": [
