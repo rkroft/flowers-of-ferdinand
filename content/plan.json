@@ -125,6 +125,36 @@
           "Push a finger in to the second knuckle right up against the wall, then again at the front edge of the bed. The strip beside a house is usually the driest soil in a garden: the wall throws a rain shadow, the foundation wicks moisture away, and any eave overhead keeps rain off entirely.",
           "If the back is noticeably drier than the front, that explains the stressed sunflowers, and the fix is simply watering that strip separately rather than assuming the whole bed gets the same."
         ]
+      },
+      {
+        "id": "cut-shasta",
+        "title": "Cut back the spent shasta daisies",
+        "weight": "now",
+        "beds": [
+          "path-bed"
+        ],
+        "flags": [],
+        "done": false,
+        "body": [
+          "Almost every flower on that stand is finished, and the bed is reading as brown from the sidewalk because of it. Cut the spent stems down to the low mound of fresh green leaves at the base, which stays through winter.",
+          "Leave a few seedheads standing if you want it to self-sow, but only a few. This one seeds itself generously."
+        ]
+      },
+      {
+        "id": "volunteer-tree-check",
+        "title": "Deal with the volunteer seedling",
+        "weight": "check",
+        "beds": [
+          "path-bed"
+        ],
+        "flags": [
+          "Diagnostic"
+        ],
+        "done": false,
+        "body": [
+          "There is a woody seedling with divided leaves coming up through the back of the bed. Ash and elder both self-sow all over Seattle and both become trees.",
+          "Photograph a whole leaf laid flat and note whether leaves come off the stem in opposite pairs, then pull it. It will never be easier to remove than it is right now."
+        ]
       }
     ]
   },
@@ -216,6 +246,36 @@
         "body": [
           "Picking is what keeps them producing. Every pod left to mature tells the plant it is done. You have roughly four to six weeks left.",
           "When they finish, cut the stems at soil level rather than pulling them up. The roots carry nitrogen-fixing nodules, and leaving them in place feeds whatever goes in that spot next year."
+        ]
+      },
+      {
+        "id": "divide-iris",
+        "title": "Divide the bearded iris",
+        "weight": "grow",
+        "beds": [
+          "path-bed"
+        ],
+        "flags": [
+          "By mid-Sep"
+        ],
+        "done": false,
+        "body": [
+          "Late summer is the window, and you are at the end of it. Lift the clump, snap the rhizomes apart so each piece has a fan of leaves and some roots, and throw away any that are soft or hollow.",
+          "Cut the leaves back to a fan about six inches tall so the wind cannot rock the new divisions loose. Replant shallow, with the top of each rhizome visible above the soil. Iris planted too deep is the single most common reason it stops flowering."
+        ]
+      },
+      {
+        "id": "layer-rosemary",
+        "title": "Peg down the sprawling rosemary branches",
+        "weight": "grow",
+        "beds": [
+          "path-bed"
+        ],
+        "flags": [],
+        "done": false,
+        "body": [
+          "The rosemary has opened up and thrown long bare branches flat across the soil. Rather than cutting them off, pin a few down where they touch the ground with a rock or a bent wire. They root along the buried section over winter, and you can cut them free as new plants in spring.",
+          "This is also the fix for the bare woody centre. You cannot prune rosemary back into old wood to rejuvenate it, so growing replacements is the way to renew the planting."
         ]
       }
     ]
@@ -317,6 +377,20 @@
         "done": false,
         "body": [
           "An inch or two over the soil surface, not piled against any crowns. Winter rain works it in for you."
+        ]
+      },
+      {
+        "id": "spare-the-herbs",
+        "title": "Keep the fall tidy away from the rosemary and sage",
+        "weight": "check",
+        "beds": [
+          "path-bed"
+        ],
+        "flags": [],
+        "done": false,
+        "body": [
+          "This is the one to remember when the urge to cut everything down arrives. Pruning woody Mediterranean herbs in fall pushes out soft growth that then dies in the first cold snap, and cutting into their bare wood leaves a permanent hole because neither one resprouts from it.",
+          "Leave both untouched until spring. Keep compost and mulch off their crowns too: they die of wet feet here far more often than of cold."
         ]
       }
     ]

@@ -86,11 +86,15 @@ function renderAreaPanel(bed, plants, tasks) {
 
   const mine = tasks
     .filter((t) => (t.beds ?? []).includes(bed.id))
+    /* Calendar first, weight second. A job in this week's window outranks one
+       in October whatever its label, and weight only breaks ties inside a
+       window. Sorting by weight first put an October reminder above a
+       mid-September deadline. */
     .sort(
       (a, b) =>
         Number(a.done) - Number(b.done) ||
-        (WEIGHT_RANK[a.weight] ?? 9) - (WEIGHT_RANK[b.weight] ?? 9) ||
-        a.phaseIndex - b.phaseIndex
+        a.phaseIndex - b.phaseIndex ||
+        (WEIGHT_RANK[a.weight] ?? 9) - (WEIGHT_RANK[b.weight] ?? 9)
     );
 
   const plantList = inBed.length

@@ -19,7 +19,7 @@
     },
     {
       "label": "Areas",
-      "value": "9 mapped, 3 surveyed"
+      "value": "9 mapped, 4 surveyed"
     }
   ],
   "map": {
@@ -219,19 +219,19 @@
     },
     {
       "id": "path-bed",
-      "name": "Path Bed",
-      "role": "Not yet surveyed",
-      "aspect": "North-west corner, beyond the path",
-      "exposure": "To confirm",
-      "sun": "unknown",
-      "surveyed": false,
+      "name": "Bed Path",
+      "role": "Mediterranean and perennials",
+      "aspect": "North-west corner, beside Street Bed 1",
+      "exposure": "Full sun, dry",
+      "sun": "full",
+      "surveyed": true,
       "map": {
         "x": 18,
         "y": 24,
         "w": 42,
         "h": 54
       },
-      "description": "The unlabelled bed at the north-west corner of your sketch, past the path. Needs a name as much as it needs a survey.",
+      "description": "Rosemary, sage and a big stand of shasta daisy, with bearded iris through the middle and a bare patch at the front. The herbs thriving here is the evidence for full sun and sharp drainage. This bed wants the opposite of a fall tidy: the woody herbs must not be cut back until spring.",
       "mapLabel": "Path"
     }
   ],

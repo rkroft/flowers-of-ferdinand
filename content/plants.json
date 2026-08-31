@@ -325,5 +325,89 @@
     "statusLabel": "Needs ID",
     "handling": "Weed it out now either way, before it seeds or spreads further into the strawberry mat.",
     "idNote": "Small round leaves running along the soil between the strawberries. Chickweed is soft, shallow-rooted and pulls out in mats, and is a minor annual nuisance. Ground ivy has scalloped leaves, a square stem, a strong minty smell when crushed, and roots at every node, and it is a genuine long-term problem. Crush a leaf and roll the stem: this one is worth knowing."
+  },
+  {
+    "id": "rosemary",
+    "name": "Rosemary",
+    "variety": "Salvia rosmarinus",
+    "beds": [
+      "path-bed"
+    ],
+    "type": "woody perennial herb",
+    "confidence": "confirmed",
+    "status": "blooming",
+    "statusLabel": "Established",
+    "handling": "Never cut into bare wood: rosemary does not resprout from it and the cut stays a hole forever. Trim only into green growth, and only in spring. The branches sprawling on the soil will root where they touch, which is free plants.",
+    "idNote": ""
+  },
+  {
+    "id": "sage",
+    "name": "Sage",
+    "variety": "Salvia officinalis",
+    "beds": [
+      "path-bed"
+    ],
+    "type": "woody perennial herb",
+    "confidence": "confirmed",
+    "status": "blooming",
+    "statusLabel": "Established",
+    "handling": "Same rule as the rosemary. No fall pruning, no cutting into old wood, no mulch piled against the crown. Prune in spring once new growth shows.",
+    "idNote": ""
+  },
+  {
+    "id": "shasta-daisy",
+    "name": "Shasta daisy",
+    "variety": "Leucanthemum",
+    "beds": [
+      "path-bed"
+    ],
+    "type": "perennial",
+    "confidence": "likely",
+    "status": "finished",
+    "statusLabel": "Gone over",
+    "handling": "Cut the spent stems back now. Divide every three years or so: the centre of the clump dies out and the flowering moves to the edges.",
+    "idNote": "Coarsely toothed dark lance-shaped leaves and white daisies with yellow centres. Shasta is the obvious call, but oxeye daisy looks similar and self-sows far harder. Shasta flowers are two to three inches across, oxeye about one."
+  },
+  {
+    "id": "bearded-iris",
+    "name": "Bearded iris",
+    "variety": "",
+    "beds": [
+      "path-bed"
+    ],
+    "type": "rhizome",
+    "confidence": "likely",
+    "status": "finished",
+    "statusLabel": "Divide now",
+    "handling": "Late summer is the window for dividing. Cut the leaves back to a fan about six inches tall and replant the rhizomes shallow, with their backs showing above the soil. Burying them is the usual reason iris stops flowering.",
+    "idNote": "Broad flat grey-green leaves in a fan, wider and stiffer than the gladiolus in the street beds. Bearded iris grows from a fat rhizome sitting at the soil surface. Scrape the soil at the base: a thick horizontal rhizome confirms it."
+  },
+  {
+    "id": "euphorbia",
+    "name": "Blue-green upright plant",
+    "variety": "possibly euphorbia",
+    "beds": [
+      "path-bed"
+    ],
+    "type": "unknown",
+    "confidence": "unknown",
+    "status": "watch",
+    "statusLabel": "Needs ID",
+    "handling": "If euphorbia, wear gloves. The milky sap burns skin and is genuinely bad in eyes, so identify it before cutting anything back.",
+    "idNote": "Upright stems with blue-green leaves spiralling around them, back left of the bed. Snap a leaf off and watch the break, from a safe distance: milky white sap means euphorbia. Do not get the sap on your skin."
+  },
+  {
+    "id": "volunteer-tree",
+    "name": "Volunteer seedling",
+    "variety": "compound leaves, possibly ash or elder",
+    "beds": [
+      "path-bed"
+    ],
+    "type": "unknown",
+    "confidence": "unknown",
+    "status": "watch",
+    "statusLabel": "Deal with soon",
+    "handling": "Pull or cut it while it is still small enough to pull. A tree seedling in a narrow bed becomes a much bigger job every year you leave it.",
+    "idNote": "Woody, with leaves divided into several toothed leaflets along a central stalk. Ash and elder both self-sow readily in Seattle and both get large. Photograph a whole leaf flat, and check whether leaves come off the stem in opposite pairs."
   }
 ]

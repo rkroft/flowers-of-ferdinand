@@ -84,8 +84,9 @@ photographed or walked yet. The area's panel then says so instead of
 pretending it is empty.
 
 Tapping an area on the plan opens its panel: what is planted there, and its
-tasks ordered by urgency (`now`, then `seed`, then `check`, then `grow`, then
-by calendar phase, with done tasks last). Panels are rendered into the HTML at
+tasks ordered by urgency: **calendar phase first**, then weight (`now`, `seed`,
+`check`, `grow`), with done tasks last. Calendar has to lead, otherwise an
+October reminder outranks a mid-September deadline. Panels are rendered into the HTML at
 build time, not assembled in the browser, so the content exists even if the
 script never runs.
 
