@@ -49,11 +49,11 @@
   },
   {
     "name": "Gladiolus",
-    "variety": "",
+    "variety": "corms, not bulbs",
     "beds": ["bed1", "bed2"],
     "status": "watch",
     "statusLabel": "Check thrips",
-    "handling": "Spike off now, leaves stay until yellow. Corm decision in November."
+    "handling": "Spike off now, leaves stay until yellow. Overwinters in these beds already. Inspect each corm when lifting and spreading in fall."
   },
   {
     "name": "California poppy",
@@ -89,18 +89,18 @@
   },
   {
     "name": "Unidentified spike",
-    "variety": "veronica or agastache",
+    "variety": "likely Culver's root",
     "beds": ["bed2"],
     "status": "watch",
     "statusLabel": "Needs ID",
-    "handling": "Handling depends on which. See the open questions."
+    "handling": "Square stem means agastache, round means veronica. See the open questions."
   },
   {
-    "name": "Unidentified pods",
-    "variety": "lupine or snapdragon",
+    "name": "Snapdragon",
+    "variety": "Antirrhinum",
     "beds": ["bed2"],
-    "status": "watch",
-    "statusLabel": "Needs ID",
-    "handling": "Handling depends on which. See the open questions."
+    "status": "finished",
+    "statusLabel": "Gone to seed",
+    "handling": "Cut spent spikes, leave the plants. Often overwinters here and returns. Let a few spikes shatter if you want more."
   }
 ]

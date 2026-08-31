@@ -31,14 +31,14 @@
       },
       {
         "id": "thrips-test",
-        "title": "Thrips test on the gladiolus",
+        "title": "Quick thrips check on the gladiolus",
         "weight": "check",
-        "beds": ["bed1"],
+        "beds": ["bed1", "bed2"],
         "flags": ["Diagnostic"],
         "done": false,
         "body": [
-          "The brown streaking and papery tips on the glad leaves are either normal post-bloom senescence or gladiolus thrips. Hold white paper under a leaf and flick the leaf sharply. Thrips look like tiny dark slivers moving fast on the paper.",
-          "This matters because thrips overwinter on the corms. A positive result means digging and treating rather than leaving them in the ground."
+          "These corms already overwinter in the beds and come back, so the baseline is good and the yellowing is most likely ordinary post-bloom senescence. This check only rules out the one thing that would change the routine.",
+          "Hold white paper under a leaf and flick the leaf sharply. Thrips look like tiny dark slivers moving fast on the paper. The proper inspection happens in fall anyway, when the corms are out of the ground."
         ]
       },
       {
@@ -46,11 +46,10 @@
         "title": "Inspect the split stem",
         "weight": "check",
         "beds": ["bed1"],
-        "flags": ["Diagnostic"],
-        "done": false,
+        "flags": ["Closed"],
+        "done": true,
         "body": [
-          "The thick green stalk with the long vertical crack. Dry and clean means growth cracking, which is harmless: leave it alone, do not wrap or seal it. Oozing, dark, mushy or smelly means rot got in and the stalk comes out.",
-          "Either way, if there is a heavy flower head above the split, stake it now. That crack is where it will snap in the first autumn wind."
+          "Closed. A thick green stalk appeared to have a long vertical crack in one photo, but nothing obvious in the bed, so it was almost certainly minor growth cracking that has already healed over."
         ]
       },
       {
@@ -92,6 +91,7 @@
         "done": false,
         "body": [
           "After the seed is shaken, pull the poppy plants. They are annuals and they are finished.",
+          "Leave the snapdragons. Cut their spent spikes off but keep the plants: they are hardy enough to overwinter here and often come back for a second year. Let two or three spikes stand and shatter if you want them to self-sow.",
           "Before pulling the big silver-grey mass, squeeze a stem near the base. Brittle and hollow means dead, pull it. Still flexible and green inside means alive and just ugly, leave it."
         ]
       },
@@ -232,13 +232,14 @@
       },
       {
         "id": "glad-corms",
-        "title": "Decide the gladiolus corms",
+        "title": "Lift, inspect and spread the gladiolus corms",
         "weight": "check",
         "beds": ["bed1", "bed2"],
         "flags": [],
         "done": false,
         "body": [
-          "Genuinely borderline in Seattle: some gardeners leave them in and they return, some lose them. If the thrips test came back positive, dig regardless. Leaving infested corms in the ground guarantees a repeat next summer."
+          "This is the job already done here each fall. The only addition is looking at each corm as it comes up. Firm and smooth is healthy. Rough corky brown patches, sometimes with a sticky varnished sheen, means thrips. Anything rough or shrivelled goes in the trash, not back in the bed and not in the compost.",
+          "Each season the old corm is used up and a new one forms on top, usually with a cluster of tiny cormels around the base. Those cormels are free plants. Pick them off and grow them on in a nursery corner rather than letting them crowd the parents, and they reach flowering size in two or three years."
         ]
       },
       {
