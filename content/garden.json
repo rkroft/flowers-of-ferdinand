@@ -1,6 +1,6 @@
 {
   "title": "Eleven Beds, One Season",
-  "standfirst": "A whole-garden plan built for time that comes in bursts. Everything between today and first frost, with what actually happens if you skip each job, because most of it is optional and a few things genuinely are not.",
+  "standfirst": "What is planted where, when each thing does its thing, and what needs doing between now and first frost. Every job says what happens if it slips, because most of them can.",
   "eyebrow": "Whole garden · Seattle",
   "updated": "2026-08-31",
   "season": "2026",
@@ -19,7 +19,7 @@
     },
     {
       "label": "Areas",
-      "value": "11 mapped, 6 surveyed"
+      "value": "11 mapped, 8 surveyed"
     }
   ],
   "map": {
@@ -201,41 +201,41 @@
         "w": 78,
         "h": 96
       },
-      "description": "North-east corner beyond the driveway, out by the street and clear of the house. A sunflower patch, zinnias and a wildflower mix. All three are full-sun plantings, and nobody puts a sunflower patch in the shade, so this is a fourth sunny area rather than the marginal one the map made it look. The sun call here comes from what is planted rather than from watching it, so the plants themselves are the check."
+      "description": "North-east corner beyond the driveway, out by the street and clear of the house. The annual patch: sunflowers, zinnias and a wildflower mix, grown here on purpose and staying that way. All three want full sun, which is the evidence for the sun rating."
     },
     {
       "id": "front-lower",
       "name": "Front Lower Bed",
       "mapLabel": "Front Lower",
-      "role": "Not yet surveyed",
-      "aspect": "North side of the house, toward the street",
-      "exposure": "Shaded by the house",
-      "sun": "shade",
-      "surveyed": false,
+      "role": "Spring display",
+      "aspect": "North side, street level below the retaining wall",
+      "exposure": "Part sun, spring-lit",
+      "sun": "part",
+      "surveyed": true,
       "map": {
         "x": 168,
         "y": 190,
         "w": 220,
         "h": 34
       },
-      "description": "The outer of the two beds on the north side. Being further from the wall it catches more open sky than the bed behind it, so it is the better of the two, but the house still sits to its south. Treat it as shade until you have watched it."
+      "description": "The wooden-edged strip at street level, packed with tulips in March and April. I had this down as shade and said sun-lovers would disappoint here, which the photographs flatly contradict. Two things I did not know: the front is terraced, so these beds sit raised and clear of the worst of the house shadow, and a north aspect still gets real early and late sun through spring and summer, when the sun rises and sets well north of east and west. It is shaded around midday and in winter, which is exactly why a spring display works so well here."
     },
     {
       "id": "upper-lower",
       "name": "Upper Lower Bed",
       "mapLabel": "Upper Lower",
-      "role": "Not yet surveyed",
-      "aspect": "North wall of the house",
-      "exposure": "Shaded by the house",
-      "sun": "shade",
-      "surveyed": false,
+      "role": "Spring display",
+      "aspect": "North side, raised above the retaining wall",
+      "exposure": "Part sun, spring-lit",
+      "sun": "part",
+      "surveyed": true,
       "map": {
         "x": 168,
         "y": 232,
         "w": 220,
         "h": 56
       },
-      "description": "Hard against the north wall, and the shadiest ground on the property. In shadow most of the day and effectively all day from October to March, when the sun barely clears the roofline. Sun-lovers will always disappoint here. Plant it for shade and it will do well."
+      "description": "The raised bed above the retaining wall, and the best-looking thing in the garden in spring. Candytuft, aubrieta, alyssum, primroses and violas over a base of tulips, with periwinkle and thyme spilling down the wall face. Raised and free-draining, which is why the mat-forming perennials do so well."
     },
     {
       "id": "side",
@@ -252,7 +252,7 @@
         "w": 56,
         "h": 76
       },
-      "description": "Narrow raised bed on the west wall. Strawberries, beans on string trellis, sunflowers and the compost tumbler. West facing means shade until around midday, then several hours of strong afternoon sun with heat radiating off the wall and held in it overnight. Add a foundation that wicks moisture away and an eave that keeps rain off, and you get warm still air over dry roots, which is what powdery mildew wants. Good for the strawberries, workable for the beans, and hotter and drier than it looks."
+      "description": "Narrow raised bed on the west wall. Strawberries, beans on string trellis, sunflowers and the compost tumbler. West facing means shade until around midday, then several hours of strong afternoon sun with heat radiating off the wall and held in it overnight. Add a foundation that wicks moisture away and an eave that keeps rain off, and you get warm still air over dry roots, which is what powdery mildew wants. Hotter and drier than it looks."
     },
     {
       "id": "driveway-2",

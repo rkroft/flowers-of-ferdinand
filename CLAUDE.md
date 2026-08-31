@@ -192,6 +192,13 @@ it, and `npm run check` enforces that.
 `type` is free text (`annual`, `perennial`, `tender perennial`, `corm`,
 `perennial herb`). Use `"unknown"` rather than leaving it blank.
 
+`window` is optional and drives the year calendar: `{ "from": 3, "to": 5,
+"kind": "flowers" }`, month numbers 1 to 12 inclusive. `kind` is free text and
+says what the plant is doing in that window, usually flowers, fruit, harvest or
+autumn colour. Leave it off a plant whose season you do not actually know
+rather than guessing, since a bar on the calendar reads as a fact. Windows that
+wrap the new year are not supported yet.
+
 Plants listing more than one bed appear under each bed, which is correct for an
 inventory. The "Still to identify" section is generated from every plant whose
 confidence is not `confirmed`, so there is no separate list to keep in sync.
@@ -207,6 +214,18 @@ delete answered questions, the record of what was checked is useful.
 
 **journal.json** dates are `YYYY-MM-DD`. Entries are sorted newest first at
 build time, so append rather than prepend.
+
+## What Rachel wants from this
+
+Stated directly: document what is actually there, and understand the timing of
+everything. **She has explicitly said she does not want new recommendations at
+the moment.** Record, identify and schedule; do not redesign. The annual
+sunflower and zinnia patch in Driveway Bed 1 is deliberate and she enjoys it, so
+do not propose replacing it with something lower maintenance.
+
+Low maintenance is a preference she holds, and her time comes in bursts, so
+`slip` and `ifSkipped` still matter on every task. That is about making the
+existing plan honest, not about changing the planting.
 
 ## Common jobs
 

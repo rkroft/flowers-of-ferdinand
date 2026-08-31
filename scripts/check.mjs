@@ -196,6 +196,17 @@ if (plants) {
     if (plant.confidence !== "confirmed" && !plant.idNote) {
       fail(`${where}: confidence is "${plant.confidence}" so it needs an idNote saying what would settle it`);
     }
+    if (plant.window) {
+      const w = plant.window;
+      const ok = (m) => Number.isInteger(m) && m >= 1 && m <= 12;
+      if (!ok(w.from) || !ok(w.to)) {
+        fail(`${where}: window.from and window.to must be month numbers 1 to 12`);
+      } else if (w.to < w.from) {
+        fail(`${where}: window runs from month ${w.from} to ${w.to}. Windows that wrap the new year are not supported yet.`);
+      }
+      if (!w.kind) fail(`${where}: window needs a "kind", such as flowers, fruit or harvest`);
+    }
+
     if (!plant.statusLabel) fail(`${where}: missing statusLabel`);
     if (!plant.handling) warn(`${where}: no handling note yet`);
     if (!plant.beds?.length) warn(`${where}: not assigned to any bed`);

@@ -814,6 +814,88 @@ td.type {
   color: var(--ink-mute);
 }
 
+/* ---------- year calendar ----------
+   One measure, so one hue. The only other colour on it is the band marking the
+   month you are reading it in. */
+
+.cal-group + .cal-group { margin-top: 1.8rem; }
+
+.cal-group h3 {
+  font-family: "Fraunces", Georgia, serif;
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin: 0 0 0.6rem;
+}
+
+table.calendar {
+  min-width: 30rem;
+  table-layout: fixed;
+  font-size: 0.85rem;
+}
+
+table.calendar th,
+table.calendar td { width: auto; }
+
+table.calendar th.cal-corner,
+table.calendar th[scope="row"] {
+  width: 34%;
+  text-align: left;
+}
+
+table.calendar thead th {
+  padding: 0.5rem 0;
+  text-align: center;
+  border-bottom: 1px solid var(--rule);
+}
+
+table.calendar thead th.cal-corner { text-align: left; padding-left: 0.85rem; }
+
+table.calendar th[scope="row"] {
+  font-family: "Public Sans", sans-serif;
+  font-size: 0.88rem;
+  font-weight: 500;
+  letter-spacing: 0;
+  text-transform: none;
+  color: var(--ink);
+  padding: 0.3rem 0.85rem 0.3rem;
+  border-bottom: none;
+  vertical-align: middle;
+}
+
+table.calendar th[scope="row"] em {
+  display: block;
+  font-family: "IBM Plex Mono", ui-monospace, monospace;
+  font-style: normal;
+  font-size: 0.62rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--ink-mute);
+  margin-top: 0.05rem;
+}
+
+table.calendar tbody td {
+  padding: 0.3rem 0;
+  border-bottom: none;
+  vertical-align: middle;
+}
+
+table.calendar abbr { text-decoration: none; border: none; }
+
+/* The bar. Rounded only where the season actually starts and ends, so a
+   continuing month reads as continuous rather than as a run of blocks. */
+.calendar .bar {
+  display: block;
+  height: 0.62rem;
+  background: var(--leaf);
+  margin: 0 -1px;
+}
+
+.calendar td.start .bar { border-radius: 4px 0 0 4px; margin-left: 2px; }
+.calendar td.end .bar { border-radius: 0 4px 4px 0; margin-right: 2px; }
+
+.calendar .is-now { background: var(--accent-soft); }
+.calendar thead th.is-now { color: var(--accent); font-weight: 700; }
+
 /* ---------- still to identify ---------- */
 
 .id-cards {

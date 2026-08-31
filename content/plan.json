@@ -388,25 +388,6 @@
         ],
         "slip": "safe",
         "ifSkipped": "The plan stays partly blank. No plant suffers."
-      },
-      {
-        "id": "plan-sunny-side",
-        "title": "Decide where the sun-lovers go next year",
-        "weight": "check",
-        "beds": [
-          "street-1",
-          "street-2",
-          "path-bed",
-          "side"
-        ],
-        "flags": [],
-        "done": false,
-        "body": [
-          "With the orientation settled, the shape of this garden is clear and it is lopsided. Every genuinely sunny area is out by the street, clear of the house: the two street boxes and Path Bed. Everything against the house is shade or part shade, because the house blocks the north side and the townhomes block the south.",
-          "That means the sun-hungry things are in the wrong places. The sunflowers are on a west wall, and the beds with real sun are given over to cut flowers. Worth deciding before spring rather than during it."
-        ],
-        "slip": "safe",
-        "ifSkipped": "Next spring gets decided in a rush instead of on purpose."
       }
     ]
   },
@@ -480,13 +461,19 @@
         "id": "sweet-peas-bulbs",
         "title": "Sow sweet peas, start planting bulbs",
         "weight": "seed",
-        "beds": [],
+        "beds": [
+          "front-lower",
+          "upper-lower",
+          "street-1",
+          "street-2"
+        ],
         "flags": [
           "Mid-month"
         ],
         "done": false,
         "body": [
-          "Sweet peas go in around mid-October for the earliest and strongest spring plants. Bulbs can go in any time from now, and tulips will happily wait until the ground is too wet to work, often December here."
+          "Sweet peas go in around mid-October for the earliest and strongest spring plants.",
+          "Bulbs matter more here than I realised. The front beds are a tulip display, and tulips fade after a year or two in wet Pacific Northwest soil, so the show is maintained by topping up rather than by the same bulbs returning. Daffodils do come back and multiply, so those are worth adding for the part of the display that looks after itself."
         ],
         "slip": "closes",
         "ifSkipped": "Fall-sown sweet peas are the strong ones. Spring sowing gives noticeably weaker plants."
@@ -554,6 +541,23 @@
         ],
         "slip": "closes",
         "ifSkipped": "The heads rot or shatter over winter and the seed is gone."
+      },
+      {
+        "id": "top-up-tulips",
+        "title": "Top up the tulips in the front beds",
+        "weight": "seed",
+        "beds": [
+          "front-lower",
+          "upper-lower"
+        ],
+        "flags": [],
+        "done": false,
+        "slip": "costs",
+        "ifSkipped": "Next spring's display is thinner than this one, and thinner again the year after. Nothing dies, it just quietly fades.",
+        "body": [
+          "This is the one bit of real upkeep the front beds need, and it is once a year. Plant fresh bulbs into the gaps in October or November, deep, about three times the height of the bulb.",
+          "If you want to shrink even this job, lean toward the kinds that persist here: Darwin hybrids and species tulips come back far better than the big fancy ones, and daffodils return and multiply on their own indefinitely."
+        ]
       }
     ]
   },
@@ -614,8 +618,8 @@
       }
     ],
     "callout": {
-      "title": "And then nothing until March",
-      "body": "Spring is when the standing seedheads come down, the oregano gets hard-pruned into old wood, and the mulch comes off the dahlia crowns. Winter is genuinely a rest."
+      "title": "And then the front beds do the work",
+      "body": "Spring is when the standing seedheads come down, the oregano gets hard-pruned into old wood, and the mulch comes off the dahlia crowns. It is also when the front beds pay out, with no input from you beyond having planted the bulbs. Leave every bulb leaf until it has yellowed completely: that is when next year's flower gets made."
     }
   }
 ]

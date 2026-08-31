@@ -389,6 +389,96 @@ ${groups}
   </section>`;
 }
 
+const MONTHS = ["J", "F", "M", "A", "M", "J", "J", "A", "S", "O", "N", "D"];
+const MONTH_NAMES = [
+  "January", "February", "March", "April", "May", "June",
+  "July", "August", "September", "October", "November", "December",
+];
+
+/* The year at a glance: one row per plant, a bar across the months it is doing
+   something. One measure, so one hue rather than a palette; the only other
+   colour is the band marking the month you are reading it in. Built as a real
+   table so it is readable by row header and by screen reader, not just by eye. */
+function renderCalendar(garden, plants, now) {
+  const withWindow = plants.filter((p) => p.window);
+  if (!withWindow.length) return "";
+
+  const thisMonth = now.getMonth() + 1;
+
+  const head = MONTHS.map(
+    (m, i) =>
+      `<th scope="col"${i + 1 === thisMonth ? ' class="is-now"' : ""}><abbr title="${MONTH_NAMES[i]}">${m}</abbr></th>`
+  ).join("");
+
+  const groups = garden.beds
+    .map((bed) => {
+      const rows = withWindow
+        .filter((p) => (p.beds ?? []).includes(bed.id))
+        .sort((a, b) => a.window.from - b.window.from || a.window.to - b.window.to);
+      if (!rows.length) return "";
+
+      const body = rows
+        .map((p) => {
+          const { from, to, kind } = p.window;
+          const cells = MONTHS.map((_, i) => {
+            const m = i + 1;
+            const on = m >= from && m <= to;
+            const cls = [
+              on ? "on" : "",
+              on && m === from ? "start" : "",
+              on && m === to ? "end" : "",
+              m === thisMonth ? "is-now" : "",
+            ]
+              .filter(Boolean)
+              .join(" ");
+            return `<td${cls ? ` class="${cls}"` : ""}>${
+              on
+                ? `<span class="bar" title="${esc(p.name)}: ${esc(kind)} ${MONTH_NAMES[from - 1]} to ${MONTH_NAMES[to - 1]}"></span>`
+                : ""
+            }</td>`;
+          }).join("");
+
+          return `            <tr>
+              <th scope="row">${esc(p.name)}<em>${esc(kind)}</em></th>
+${cells}
+            </tr>`;
+        })
+        .join("\n");
+
+      return `      <div class="cal-group">
+        <h3>${esc(bed.name)}</h3>
+        <div class="table-scroll">
+          <table class="calendar">
+            <thead>
+              <tr><th scope="col" class="cal-corner">Plant</th>${head}</tr>
+            </thead>
+            <tbody>
+${body}
+            </tbody>
+          </table>
+        </div>
+      </div>`;
+    })
+    .filter(Boolean)
+    .join("\n\n");
+
+  const missing = plants.length - withWindow.length;
+
+  return `  <section id="calendar">
+    <div class="section-head">
+      <h2>The year</h2>
+      <span class="window">${MONTH_NAMES[thisMonth - 1]} highlighted</span>
+    </div>
+    <p class="section-note">When each plant actually does something: flowers, fruit or autumn colour. A plant appears under every area it grows in.${
+      missing
+        ? ` ${missing} plants have no bar yet, because they are the ones still waiting on an identification.`
+        : ""
+    }</p>
+
+${groups}
+  </section>`;
+}
+
 function renderUnknowns(plants) {
   const open = plants.filter((p) => p.confidence !== "confirmed" && p.idNote);
   if (!open.length) return "";
@@ -565,6 +655,8 @@ ${renderMasthead(garden)}
 ${renderMap(garden, plants, plan)}
 
 ${plan.map((phase) => renderPhase(phase, bedsById)).join("\n\n")}
+
+${renderCalendar(garden, plants, new Date(garden.updated))}
 
 ${renderPlants(plants, garden)}
 

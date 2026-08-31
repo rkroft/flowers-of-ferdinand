@@ -11,7 +11,12 @@
     "status": "blooming",
     "statusLabel": "Blooming",
     "handling": "Deadhead deep and often. Runs to frost, then cut to four inches and mulch.",
-    "idNote": "Cultivar unknown. Worth naming if you ever want to reorder the same one."
+    "idNote": "Cultivar unknown. Worth naming if you ever want to reorder the same one.",
+    "window": {
+      "from": 7,
+      "to": 10,
+      "kind": "flowers"
+    }
   },
   {
     "id": "gaillardia",
@@ -26,7 +31,12 @@
     "status": "blooming",
     "statusLabel": "Blooming",
     "handling": "Deadhead relentlessly. Dies of wet feet here, never of cold, so keep the crown dry and open.",
-    "idNote": ""
+    "idNote": "",
+    "window": {
+      "from": 6,
+      "to": 10,
+      "kind": "flowers"
+    }
   },
   {
     "id": "scabiosa",
@@ -40,7 +50,12 @@
     "status": "blooming",
     "statusLabel": "Blooming",
     "handling": "Deadhead. Will run into November here.",
-    "idNote": ""
+    "idNote": "",
+    "window": {
+      "from": 6,
+      "to": 11,
+      "kind": "flowers"
+    }
   },
   {
     "id": "cosmos",
@@ -54,7 +69,12 @@
     "status": "blooming",
     "statusLabel": "Blooming",
     "handling": "Deadhead. Let a few set seed to self-sow.",
-    "idNote": ""
+    "idNote": "",
+    "window": {
+      "from": 7,
+      "to": 10,
+      "kind": "flowers"
+    }
   },
   {
     "id": "sunflower",
@@ -70,7 +90,12 @@
     "status": "watch",
     "statusLabel": "Powdery mildew",
     "handling": "Leave heads for birds, or cut when the back turns brown. The side bed plants have powdery mildew: strip the worst leaves and bin them, and do not spray this late. Sunflowers belong in the open sunny beds like the driveway patch, not against a west wall.",
-    "idNote": "The dark red one is likely 'Velvet Queen' or 'Chocolate', but that is a guess from colour alone."
+    "idNote": "The dark red one is likely 'Velvet Queen' or 'Chocolate', but that is a guess from colour alone.",
+    "window": {
+      "from": 7,
+      "to": 9,
+      "kind": "flowers"
+    }
   },
   {
     "id": "echinacea-purple",
@@ -84,7 +109,12 @@
     "status": "finished",
     "statusLabel": "Going over",
     "handling": "Leave seedheads standing all winter for goldfinches. Cut in March.",
-    "idNote": ""
+    "idNote": "",
+    "window": {
+      "from": 7,
+      "to": 9,
+      "kind": "flowers"
+    }
   },
   {
     "id": "echinacea-white",
@@ -98,7 +128,12 @@
     "status": "finished",
     "statusLabel": "Going over",
     "handling": "Same as the purple. Leave standing, cut in March.",
-    "idNote": "Definitely a white echinacea. Which cultivar is a guess, and it only matters for reordering."
+    "idNote": "Definitely a white echinacea. Which cultivar is a guess, and it only matters for reordering.",
+    "window": {
+      "from": 7,
+      "to": 9,
+      "kind": "flowers"
+    }
   },
   {
     "id": "gladiolus",
@@ -113,7 +148,12 @@
     "status": "watch",
     "statusLabel": "Check thrips",
     "handling": "Spike off now, leaves stay until fully yellow. Overwinters in these beds already. Inspect each corm when lifting and spreading in fall.",
-    "idNote": "Confirmed as present. See the crocosmia entry for whether every strap-leaved clump is actually a glad."
+    "idNote": "Confirmed as present. See the crocosmia entry for whether every strap-leaved clump is actually a glad.",
+    "window": {
+      "from": 7,
+      "to": 8,
+      "kind": "flowers"
+    }
   },
   {
     "id": "california-poppy",
@@ -128,7 +168,12 @@
     "status": "finished",
     "statusLabel": "Finishing",
     "handling": "Self-sows freely. Leave it to do that.",
-    "idNote": ""
+    "idNote": "",
+    "window": {
+      "from": 5,
+      "to": 8,
+      "kind": "flowers"
+    }
   },
   {
     "id": "shirley-poppy",
@@ -142,7 +187,12 @@
     "status": "watch",
     "statusLabel": "Seed now",
     "handling": "Shake pods where you want them, then pull the plants. Will not transplant and resents spring sowing.",
-    "idNote": ""
+    "idNote": "",
+    "window": {
+      "from": 5,
+      "to": 7,
+      "kind": "flowers"
+    }
   },
   {
     "id": "snapdragon",
@@ -156,7 +206,12 @@
     "status": "finished",
     "statusLabel": "Gone to seed",
     "handling": "Cut spent spikes, leave the plants. Often overwinters here and returns. Let a few spikes shatter if you want more.",
-    "idNote": ""
+    "idNote": "",
+    "window": {
+      "from": 6,
+      "to": 9,
+      "kind": "flowers"
+    }
   },
   {
     "id": "oregano",
@@ -170,7 +225,12 @@
     "status": "blooming",
     "statusLabel": "In flower",
     "handling": "Shear a third off now and dry the leaves. Hard prune into old wood in spring, not in fall.",
-    "idNote": ""
+    "idNote": "",
+    "window": {
+      "from": 7,
+      "to": 8,
+      "kind": "flowers"
+    }
   },
   {
     "id": "hardy-geranium",
@@ -184,7 +244,12 @@
     "status": "blooming",
     "statusLabel": "Blooming",
     "handling": "Shear to a few inches for fresh foliage and often a second flush of flowers.",
-    "idNote": ""
+    "idNote": "",
+    "window": {
+      "from": 5,
+      "to": 7,
+      "kind": "flowers"
+    }
   },
   {
     "id": "whorled-spike",
@@ -198,7 +263,12 @@
     "status": "watch",
     "statusLabel": "Needs ID",
     "handling": "Leave the seed spikes standing either way. Only veronica gives a second flush if you cut them now.",
-    "idNote": "Roll the stem: square with four flat sides means agastache, round means veronica. Then count leaves at one joint: two facing each other is agastache, three or more radiating like spokes is Culver's root. Best guess from photos is Culver's root."
+    "idNote": "Roll the stem: square with four flat sides means agastache, round means veronica. Then count leaves at one joint: two facing each other is agastache, three or more radiating like spokes is Culver's root. Best guess from photos is Culver's root.",
+    "window": {
+      "from": 7,
+      "to": 8,
+      "kind": "flowers"
+    }
   },
   {
     "id": "silver-mass",
@@ -283,7 +353,12 @@
     "status": "blooming",
     "statusLabel": "Still fruiting",
     "handling": "Do not mow the foliage. Thin the mat to about one plant every six to eight inches, pinch off runners you do not want, and let a few root as replacements.",
-    "idNote": "Flowering and fruiting at the end of August means everbearing or day-neutral, not June-bearing. That matters because the two get opposite fall treatment. Confirm by whether it also gave you a heavy single crop in June."
+    "idNote": "Flowering and fruiting at the end of August means everbearing or day-neutral, not June-bearing. That matters because the two get opposite fall treatment. Confirm by whether it also gave you a heavy single crop in June.",
+    "window": {
+      "from": 6,
+      "to": 10,
+      "kind": "fruit"
+    }
   },
   {
     "id": "beans",
@@ -297,7 +372,12 @@
     "status": "blooming",
     "statusLabel": "Producing",
     "handling": "Keep picking, which is what keeps them producing. When finished, cut at soil level and leave the roots in the ground for the nitrogen in the nodules.",
-    "idNote": "Purple flowers point to a purple-podded variety. Whether these are bush or pole changes nothing about care but is worth noting for next year. A photo of a pod would settle it."
+    "idNote": "Purple flowers point to a purple-podded variety. Whether these are bush or pole changes nothing about care but is worth noting for next year. A photo of a pod would settle it.",
+    "window": {
+      "from": 7,
+      "to": 9,
+      "kind": "harvest"
+    }
   },
   {
     "id": "dark-greens",
@@ -339,7 +419,12 @@
     "status": "blooming",
     "statusLabel": "Established",
     "handling": "Never cut into bare wood: rosemary does not resprout from it and the cut stays a hole forever. Trim only into green growth, and only in spring. The branches sprawling on the soil will root where they touch, which is free plants.",
-    "idNote": ""
+    "idNote": "",
+    "window": {
+      "from": 3,
+      "to": 5,
+      "kind": "flowers"
+    }
   },
   {
     "id": "sage",
@@ -353,7 +438,12 @@
     "status": "blooming",
     "statusLabel": "Established",
     "handling": "Same rule as the rosemary. No fall pruning, no cutting into old wood, no mulch piled against the crown. Prune in spring once new growth shows.",
-    "idNote": ""
+    "idNote": "",
+    "window": {
+      "from": 5,
+      "to": 6,
+      "kind": "flowers"
+    }
   },
   {
     "id": "shasta-daisy",
@@ -367,7 +457,12 @@
     "status": "finished",
     "statusLabel": "Gone over",
     "handling": "Cut the spent stems back now. Divide every three years or so: the centre of the clump dies out and the flowering moves to the edges.",
-    "idNote": "Coarsely toothed dark lance-shaped leaves and white daisies with yellow centres. Shasta is the obvious call, but oxeye daisy looks similar and self-sows far harder. Shasta flowers are two to three inches across, oxeye about one."
+    "idNote": "Coarsely toothed dark lance-shaped leaves and white daisies with yellow centres. Shasta is the obvious call, but oxeye daisy looks similar and self-sows far harder. Shasta flowers are two to three inches across, oxeye about one.",
+    "window": {
+      "from": 6,
+      "to": 8,
+      "kind": "flowers"
+    }
   },
   {
     "id": "bearded-iris",
@@ -381,7 +476,12 @@
     "status": "finished",
     "statusLabel": "Divide now",
     "handling": "Late summer is the window for dividing. Cut the leaves back to a fan about six inches tall and replant the rhizomes shallow, with their backs showing above the soil. Burying them is the usual reason iris stops flowering.",
-    "idNote": "Broad flat grey-green leaves in a fan, wider and stiffer than the gladiolus in the street beds. Bearded iris grows from a fat rhizome sitting at the soil surface. Scrape the soil at the base: a thick horizontal rhizome confirms it."
+    "idNote": "Broad flat grey-green leaves in a fan, wider and stiffer than the gladiolus in the street beds. Bearded iris grows from a fat rhizome sitting at the soil surface. Scrape the soil at the base: a thick horizontal rhizome confirms it.",
+    "window": {
+      "from": 5,
+      "to": 6,
+      "kind": "flowers"
+    }
   },
   {
     "id": "euphorbia",
@@ -423,7 +523,12 @@
     "status": "blooming",
     "statusLabel": "Blooming",
     "handling": "Cut-and-come-again: deadhead deep, back to a leaf junction rather than snipping the flower off, and it keeps producing until frost kills it outright. Very prone to powdery mildew here, so give it air and water the soil rather than the leaves.",
-    "idNote": "Told to me rather than seen. The type matters only for seed saving: big dahlia-flowered kinds come fairly true, mixed bedding types scramble. A photo of one flower would settle it."
+    "idNote": "Told to me rather than seen. The type matters only for seed saving: big dahlia-flowered kinds come fairly true, mixed bedding types scramble. A photo of one flower would settle it.",
+    "window": {
+      "from": 7,
+      "to": 10,
+      "kind": "flowers"
+    }
   },
   {
     "id": "wildflower-mix",
@@ -437,6 +542,202 @@
     "status": "watch",
     "statusLabel": "Needs ID",
     "handling": "Let most of it stand and shed seed, which is how a mix carries itself into next year. Pull anything that is clearly taking over before it seeds.",
-    "idNote": "A mix is many species, and knowing which ones changes everything about how it is managed. If you still have the seed packet it lists them, which beats identifying them one by one. Failing that, photograph the three or four most numerous plants."
+    "idNote": "A mix is many species, and knowing which ones changes everything about how it is managed. If you still have the seed packet it lists them, which beats identifying them one by one. Failing that, photograph the three or four most numerous plants.",
+    "window": {
+      "from": 6,
+      "to": 9,
+      "kind": "flowers"
+    }
+  },
+  {
+    "id": "tulips",
+    "name": "Tulips",
+    "variety": "mixed, many colours",
+    "beds": [
+      "front-lower",
+      "upper-lower"
+    ],
+    "type": "bulb",
+    "confidence": "confirmed",
+    "status": "finished",
+    "statusLabel": "Dormant now",
+    "handling": "Let the leaves die down fully after flowering, never cut them green: that is when next year's flower is made. Most tulips fade after a year or two in wet Pacific Northwest soil, so top up with fresh bulbs each autumn rather than expecting the display to hold.",
+    "idNote": "",
+    "window": {
+      "from": 3,
+      "to": 5,
+      "kind": "flowers"
+    }
+  },
+  {
+    "id": "candytuft",
+    "name": "Candytuft",
+    "variety": "Iberis sempervirens",
+    "beds": [
+      "upper-lower"
+    ],
+    "type": "evergreen perennial",
+    "confidence": "confirmed",
+    "status": "finished",
+    "statusLabel": "Dormant now",
+    "handling": "As close to no-work as a plant gets. Evergreen, smothers the ground so weeds cannot start, and needs only a light shear after flowering to stop it going bare in the middle.",
+    "idNote": "",
+    "window": {
+      "from": 4,
+      "to": 5,
+      "kind": "flowers"
+    }
+  },
+  {
+    "id": "aubrieta",
+    "name": "Aubrieta",
+    "variety": "purple mounds on the wall",
+    "beds": [
+      "upper-lower"
+    ],
+    "type": "evergreen perennial",
+    "confidence": "likely",
+    "status": "finished",
+    "statusLabel": "Dormant now",
+    "handling": "Shear it back by about a third right after it finishes flowering. That is the whole job for the year.",
+    "idNote": "Purple cushions flowering with the candytuft and spilling over the wall. Aubrieta is the usual suspect, though a creeping phlox looks similar at a glance. Aubrieta leaves are small, grey-green and slightly hairy; phlox leaves are narrow and needle-like.",
+    "window": {
+      "from": 4,
+      "to": 5,
+      "kind": "flowers"
+    }
+  },
+  {
+    "id": "alyssum",
+    "name": "Sweet alyssum",
+    "variety": "Lobularia",
+    "beds": [
+      "upper-lower"
+    ],
+    "type": "annual, self-sowing",
+    "confidence": "likely",
+    "status": "finished",
+    "statusLabel": "Self-sows",
+    "handling": "Leave it to seed itself, which it does reliably. No work at all.",
+    "idNote": "White carpets through the upper bed. Sweet alyssum is the obvious call. Confirm by smell: it is strongly honey-scented, which nothing similar is.",
+    "window": {
+      "from": 4,
+      "to": 10,
+      "kind": "flowers"
+    }
+  },
+  {
+    "id": "primrose",
+    "name": "Primroses",
+    "variety": "Primula",
+    "beds": [
+      "upper-lower"
+    ],
+    "type": "perennial",
+    "confidence": "likely",
+    "status": "finished",
+    "statusLabel": "Dormant now",
+    "handling": "Divide congested clumps after flowering every few years. Otherwise leave alone.",
+    "idNote": "The low rosettes with bright flowers scattered through the spring display. Which primula type is worth knowing only if you want more of the same.",
+    "window": {
+      "from": 2,
+      "to": 4,
+      "kind": "flowers"
+    }
+  },
+  {
+    "id": "viola",
+    "name": "Violas and pansies",
+    "variety": "",
+    "beds": [
+      "upper-lower"
+    ],
+    "type": "annual or short-lived perennial",
+    "confidence": "likely",
+    "status": "finished",
+    "statusLabel": "Dormant now",
+    "handling": "Self-sow readily if you let a few set seed. Deadheading extends them but is optional.",
+    "idNote": "Small faced flowers in mixed colours. Violas and pansies are near-identical in care, so the distinction barely matters here.",
+    "window": {
+      "from": 3,
+      "to": 6,
+      "kind": "flowers"
+    }
+  },
+  {
+    "id": "periwinkle",
+    "name": "Periwinkle",
+    "variety": "Vinca",
+    "beds": [
+      "upper-lower"
+    ],
+    "type": "evergreen groundcover",
+    "confidence": "likely",
+    "status": "finished",
+    "statusLabel": "Worth watching",
+    "handling": "Superb at holding a wall and suppressing weeds, and it needs nothing from you. Keep it cut back off the bed edges: it roots wherever a stem touches soil.",
+    "idNote": "Trailing mats with small blue star-shaped flowers over the wall face. Worth confirming, because both common vincas are listed as invasive in Washington and escape into wooded areas. It is fine held in a wall like this, but do not let clippings travel.",
+    "window": {
+      "from": 4,
+      "to": 5,
+      "kind": "flowers"
+    }
+  },
+  {
+    "id": "creeping-thyme",
+    "name": "Creeping thyme",
+    "variety": "",
+    "beds": [
+      "upper-lower"
+    ],
+    "type": "evergreen perennial herb",
+    "confidence": "unknown",
+    "status": "finished",
+    "statusLabel": "Needs ID",
+    "handling": "If thyme, it needs sun, sharp drainage and no feeding, and it is one of the lowest-effort plants you can own.",
+    "idNote": "Low sprawling grey-green mats hanging down the wall. Crush a piece: thyme is unmistakably thyme. If there is no scent it is more likely a rockcress or a stonecrop.",
+    "window": {
+      "from": 6,
+      "to": 7,
+      "kind": "flowers"
+    }
+  },
+  {
+    "id": "japanese-maple",
+    "name": "Japanese maple",
+    "variety": "Acer palmatum",
+    "beds": [
+      "upper-lower"
+    ],
+    "type": "small tree",
+    "confidence": "confirmed",
+    "status": "blooming",
+    "statusLabel": "Established",
+    "handling": "Almost no maintenance. Do not prune in spring when it is running with sap; late summer or winter if it ever needs it. Note that it casts shade over part of the bed as it leafs out.",
+    "idNote": "",
+    "window": {
+      "from": 10,
+      "to": 11,
+      "kind": "autumn colour"
+    }
+  },
+  {
+    "id": "daffodil",
+    "name": "Daffodils",
+    "variety": "Narcissus",
+    "beds": [
+      "front-lower"
+    ],
+    "type": "bulb",
+    "confidence": "likely",
+    "status": "finished",
+    "statusLabel": "Dormant now",
+    "handling": "Unlike the tulips these do return and multiply here. Leave the foliage until it yellows. Divide congested clumps every few years.",
+    "idNote": "Strap-shaped foliage among the tulips with a few yellow flowers. Confirm next spring when they bloom.",
+    "window": {
+      "from": 3,
+      "to": 4,
+      "kind": "flowers"
+    }
   }
 ]
