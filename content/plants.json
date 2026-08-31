@@ -24,6 +24,11 @@
       "poor": "Yellowing lower leaves with few buds means hungry or dry. Ragged holes overnight are earwigs or slugs. A white bloom on the leaves late in the season is mildew and is not worth treating.",
       "endOfSeason": "Frost blackens the foliage, usually mid-November. Cut the stalks to about four inches, cap the hollow stems so rain cannot funnel into the crown, and mulch over the top.",
       "propagate": "Divide the tubers in spring, not when you lift them: wait until the eyes are visible and swelling, then cut so every piece has an eye. A piece without an eye never grows. Buy new tubers in late winter, which is when the good ones sell out."
+    },
+    "art": {
+      "form": "pompon",
+      "petal": "#E8C13A",
+      "centre": "#C79A1E"
     }
   },
   {
@@ -52,6 +57,11 @@
       "poor": "Flopping open with a dead patch in the middle means it is either overfed or coming to the end of its life. Blackened crown after a wet spell is rot.",
       "endOfSeason": "Cut to four to six inches after frost rather than to the ground, so water cannot sit in a hollow crown. Keep mulch off the centre. It dies of wet feet here, never of cold.",
       "propagate": "Short-lived by nature, so plan on replacing it rather than keeping it going. It divides badly. Leave a handful of seedheads standing each year and it seeds itself, or sow fresh in spring. Expect to lose one or two over a wet winter."
+    },
+    "art": {
+      "form": "daisy",
+      "petal": "#C0392B",
+      "centre": "#E3BC4F"
     }
   },
   {
@@ -79,6 +89,11 @@
       "poor": "Fewer and smaller flowers each year means the clump wants dividing. Grey mould on the buds in autumn means it is too crowded.",
       "endOfSeason": "Leave a few seedheads for the birds and tidy the rest. Cut the whole thing back in spring, not autumn.",
       "propagate": "Divide in early spring every three years or so, which is also the fix when flowering thins out. It self-sows lightly if you leave a few seedheads."
+    },
+    "art": {
+      "form": "pincushion",
+      "petal": "#8F86C4",
+      "centre": "#E9E6F5"
     }
   },
   {
@@ -106,6 +121,11 @@
       "poor": "Tall, leafy and barely flowering means soil too rich or not enough sun.",
       "endOfSeason": "An annual, so frost ends it. Let a few heads shed seed first, then pull the plants. It self-sows reliably.",
       "propagate": "Self-sows readily. Let a few heads shatter where you want them next year, or collect the dry seed and sow straight into the ground after the last frost. It resents transplanting."
+    },
+    "art": {
+      "form": "daisy",
+      "petal": "#D98BB0",
+      "centre": "#E3BC4F"
     }
   },
   {
@@ -135,6 +155,11 @@
       "poor": "Thin stems leaning hard in one direction with small heads means it is reaching for light it is not getting. White powdery coating is mildew, caused by still air and dry roots rather than by anything you did.",
       "endOfSeason": "Annual. Leave the heads for the birds through autumn, or cut when the back of the head has turned brown and yellow if you want the seed. Pull the stems whenever they look done.",
       "propagate": "Save seed from the best heads once the backs are brown, dry them indoors a week, and sow directly in May. They do not transplant well. Note that seed from a hybrid will not come true to the parent."
+    },
+    "art": {
+      "form": "daisy",
+      "petal": "#E3BC4F",
+      "centre": "#5A4520"
     }
   },
   {
@@ -162,6 +187,11 @@
       "poor": "Fewer, smaller flowers each year means the clump needs dividing, roughly every three or four years. Distorted green deformed flowers mean aster yellows, which has no cure: dig the plant out and bin it.",
       "endOfSeason": "Leave every stem standing through winter for the goldfinches, then cut to the ground in March.",
       "propagate": "Divide in early spring every three or four years, which is also what fixes declining flower size. Autumn division is risky here because the wet winter rots new roots. It also self-sows if you leave seedheads."
+    },
+    "art": {
+      "form": "daisy",
+      "petal": "#B07AA8",
+      "centre": "#C46A2A"
     }
   },
   {
@@ -189,6 +219,11 @@
       "poor": "Declining flower size means it wants dividing.",
       "endOfSeason": "Leave standing all winter. Cut in March.",
       "propagate": "Same as the purple: divide in early spring, every three or four years. Seedlings from a named white will often come up purple, so divide rather than sow if you want to keep the colour."
+    },
+    "art": {
+      "form": "daisy",
+      "petal": "#F0EDE0",
+      "centre": "#C9A227"
     }
   },
   {
@@ -217,6 +252,11 @@
       "poor": "Silvery streaking and browning on the leaves means thrips. Corms that come up rough, corky or sticky are infested and go in the bin, not the compost.",
       "endOfSeason": "Leave every leaf until it has gone completely yellow, because that is what feeds the corm. Then cut at ground level and lift, inspect and spread the corms.",
       "propagate": "This is the free-plants one. When you lift the corms in autumn, each has a cluster of tiny cormels around its base. Pick them off, store them dry over winter, and grow them on in a nursery corner. They reach flowering size in two or three years."
+    },
+    "art": {
+      "form": "spike",
+      "petal": "#D96A8A",
+      "centre": "#E9C9D4"
     }
   },
   {
@@ -245,6 +285,11 @@
       "poor": "Lush green floppy growth means the soil is too rich or too wet.",
       "endOfSeason": "Annual here. Let it seed itself, then pull the spent plants whenever they look tired.",
       "propagate": "Self-sows and needs nothing from you. Never dig it up and move it: it has a long taproot and will not survive transplanting. If you want it somewhere new, scatter seed there in autumn."
+    },
+    "art": {
+      "form": "cup",
+      "petal": "#E88B24",
+      "centre": "#F2C877"
     }
   },
   {
@@ -272,6 +317,11 @@
       "poor": "Rich soil gives leaves rather than flowers.",
       "endOfSeason": "Shake the ripe pods where you want next year's plants, then pull. It will not transplant and resents spring sowing, so the autumn seed drop is the whole game.",
       "propagate": "Autumn seed drop is the whole method. Shake ripe pods where you want next year's plants, and keep a pinch in an envelope as backup. It will not transplant and resents spring sowing."
+    },
+    "art": {
+      "form": "cup",
+      "petal": "#D8402E",
+      "centre": "#3A2118"
     }
   },
   {
@@ -299,6 +349,11 @@
       "poor": "Orange powdery pustules on the undersides of leaves are rust, which is common here. Remove the worst leaves and give it more air.",
       "endOfSeason": "Cut the spent spikes but leave the plants standing. They are hardy enough to overwinter in Seattle and often come back for a second year.",
       "propagate": "Self-sows if you let a few spikes shatter, and often overwinters as a plant here anyway. Sow fresh seed indoors in late winter if you want particular colours."
+    },
+    "art": {
+      "form": "spike",
+      "petal": "#E8B0C0",
+      "centre": "#F5DDE4"
     }
   },
   {
@@ -326,6 +381,11 @@
       "poor": "A woody bare centre with growth only at the edges means it is due for a hard renewal prune.",
       "endOfSeason": "Leave it through winter. Hard prune into the old wood in spring, never in autumn.",
       "propagate": "Easiest by division in spring, or by layering: pin a low stem to the soil, it roots, and you cut it free. Semi-ripe cuttings in late summer also work."
+    },
+    "art": {
+      "form": "cluster",
+      "petal": "#C99BC0",
+      "centre": "#8FA07A"
     }
   },
   {
@@ -353,6 +413,11 @@
       "poor": "Flopping open with a bare middle and tired yellowing leaves is the signal that it wants that shear.",
       "endOfSeason": "Leave the fresh foliage through winter and tidy any dead growth in spring.",
       "propagate": "Divide in spring, every three or four years or whenever the middle goes bare. Big clumps come apart by hand or with two forks back to back."
+    },
+    "art": {
+      "form": "face",
+      "petal": "#A87FC4",
+      "centre": "#EFE7F5"
     }
   },
   {
@@ -380,6 +445,11 @@
       "poor": "Nothing specific until it is named.",
       "endOfSeason": "Leave it standing until it is identified. Cutting back is easy to do later and impossible to undo.",
       "propagate": "Depends on what it turns out to be. Whether you divide it, let it seed or buy more differs completely between the candidates, so leave it until the identification is settled."
+    },
+    "art": {
+      "form": "spike",
+      "petal": "#EDEDE4",
+      "centre": "#B9C0AE"
     }
   },
   {
@@ -402,6 +472,11 @@
       "poor": "Nothing specific until it is named.",
       "endOfSeason": "Leave it standing until it is identified. Cutting back is easy to do later and impossible to undo.",
       "propagate": "Depends on what it turns out to be. Whether you divide it, let it seed or buy more differs completely between the candidates, so leave it until the identification is settled."
+    },
+    "art": {
+      "form": "unknown",
+      "petal": "#B9C0AE",
+      "centre": "#B9C0AE"
     }
   },
   {
@@ -424,6 +499,11 @@
       "poor": "Nothing specific until it is named.",
       "endOfSeason": "Leave it standing until it is identified. Cutting back is easy to do later and impossible to undo.",
       "propagate": "Depends on what it turns out to be. Whether you divide it, let it seed or buy more differs completely between the candidates, so leave it until the identification is settled."
+    },
+    "art": {
+      "form": "spike",
+      "petal": "#6F86C8",
+      "centre": "#D6DDF2"
     }
   },
   {
@@ -446,6 +526,11 @@
       "poor": "Nothing specific until it is named.",
       "endOfSeason": "Leave it standing until it is identified. Cutting back is easy to do later and impossible to undo.",
       "propagate": "Depends on what it turns out to be. Whether you divide it, let it seed or buy more differs completely between the candidates, so leave it until the identification is settled."
+    },
+    "art": {
+      "form": "leaf",
+      "petal": "#6F8F55",
+      "centre": "#9BB87A"
     }
   },
   {
@@ -468,6 +553,11 @@
       "poor": "Nothing specific until it is named.",
       "endOfSeason": "Leave it standing until it is identified. Cutting back is easy to do later and impossible to undo.",
       "propagate": "Depends on what it turns out to be. Whether you divide it, let it seed or buy more differs completely between the candidates, so leave it until the identification is settled."
+    },
+    "art": {
+      "form": "daisy",
+      "petal": "#F5F3EA",
+      "centre": "#E3BC4F"
     }
   },
   {
@@ -491,6 +581,11 @@
       "poor": "Nothing specific until it is named.",
       "endOfSeason": "Leave it standing until it is identified. Cutting back is easy to do later and impossible to undo.",
       "propagate": "Depends on what it turns out to be. Whether you divide it, let it seed or buy more differs completely between the candidates, so leave it until the identification is settled."
+    },
+    "art": {
+      "form": "spike",
+      "petal": "#D9541F",
+      "centre": "#F0A46A"
     }
   },
   {
@@ -518,6 +613,11 @@
       "poor": "Pale leaves and small fruit means hungry or too crowded. Reddening leaves late in the season is usually age. Grey fuzz on the fruit is botrytis, which comes from damp still air.",
       "endOfSeason": "These are everbearing, so do not mow the foliage down: that advice is for June-bearing types and would cost you fruit. Pull dead leaves, thin the mat, and replace the oldest crowns every three or four years.",
       "propagate": "The runners are the renewal. Peg a few down into gaps in summer and they root by autumn, then cut them free from the parent. Replace the oldest crowns every three or four years: plants decline sharply after that, and a bed kept going indefinitely quietly stops fruiting."
+    },
+    "art": {
+      "form": "berry",
+      "petal": "#C63A2E",
+      "centre": "#6F8F55"
     }
   },
   {
@@ -545,6 +645,11 @@
       "poor": "Production stopping in late summer usually means picking fell behind rather than anything being wrong. Pods that are lumpy and stringy were left too long. On a west wall like this one, a slow start is normal: they want warm soil and this bed is shaded all morning.",
       "endOfSeason": "They carry on until frost or until the vine exhausts itself, usually well into September here. When done, cut the stems off at soil level rather than pulling, so the nitrogen-fixing nodules stay in the ground. Take the strings down and clean the trellis so nothing overwinters on it.",
       "propagate": "Leave a few pods on the vine until they are papery and rattle, then shell and store the seed somewhere cool and dry. This only comes true from an open-pollinated variety, not an F1 hybrid. Sow fresh in May, direct into warm soil, and get the supports in before you sow rather than after."
+    },
+    "art": {
+      "form": "pea",
+      "petal": "#B06AA8",
+      "centre": "#7C9A5E"
     }
   },
   {
@@ -567,6 +672,11 @@
       "poor": "Nothing specific until it is named.",
       "endOfSeason": "Leave it standing until it is identified. Cutting back is easy to do later and impossible to undo.",
       "propagate": "Depends on what it turns out to be. Whether you divide it, let it seed or buy more differs completely between the candidates, so leave it until the identification is settled."
+    },
+    "art": {
+      "form": "leaf",
+      "petal": "#3F5F3A",
+      "centre": "#6F8F55"
     }
   },
   {
@@ -589,6 +699,11 @@
       "poor": "Nothing specific until it is named.",
       "endOfSeason": "Leave it standing until it is identified. Cutting back is easy to do later and impossible to undo.",
       "propagate": "Depends on what it turns out to be. Whether you divide it, let it seed or buy more differs completely between the candidates, so leave it until the identification is settled."
+    },
+    "art": {
+      "form": "unknown",
+      "petal": "#7FA06A",
+      "centre": "#7FA06A"
     }
   },
   {
@@ -616,6 +731,11 @@
       "poor": "A bare woody centre is normal ageing and cannot be pruned out. Blackened or grey stems after winter means it sat too wet.",
       "endOfSeason": "Nothing in autumn. Cutting a woody Mediterranean herb in autumn pushes soft growth that dies in the first cold snap, and cutting into bare wood leaves a permanent hole because it does not resprout from it.",
       "propagate": "Never by division, and never from an old woody stem. Take semi-ripe cuttings in late summer, which is roughly now, or layer a low branch by pinning it to the soil and cutting it free in spring once rooted. Since a bare-centred rosemary cannot be pruned back into shape, growing its replacement is the actual fix."
+    },
+    "art": {
+      "form": "needle",
+      "petal": "#9BB8D4",
+      "centre": "#7E9478"
     }
   },
   {
@@ -643,6 +763,11 @@
       "poor": "Woody bare centre and sparse leaves means it is ageing out. Take cuttings rather than trying to cut it back into shape.",
       "endOfSeason": "Leave it entirely alone in autumn, and keep mulch and compost off the crown.",
       "propagate": "Same as rosemary: semi-ripe cuttings in late summer, or layering. It does not divide. A sage that has gone woody and sparse is replaced rather than rescued, so take the cuttings a year before you need them."
+    },
+    "art": {
+      "form": "leaf",
+      "petal": "#B6A8C4",
+      "centre": "#9AA893"
     }
   },
   {
@@ -670,6 +795,11 @@
       "poor": "Flopping and a dying centre with flowering pushed to the edges means it wants dividing, roughly every three years.",
       "endOfSeason": "Cut the flowered stems down and leave the basal rosette of leaves, which stays green through winter. Divide in early spring, not autumn: a division going into a wet Seattle winter on new roots is the one that rots.",
       "propagate": "Divide in early spring every three years. Discard the tired woody centre and replant the vigorous outer pieces. Do not divide in autumn here: new roots going into a wet winter are the ones that rot."
+    },
+    "art": {
+      "form": "daisy",
+      "petal": "#FAF8EE",
+      "centre": "#E3BC4F"
     }
   },
   {
@@ -697,6 +827,11 @@
       "poor": "A soft, smelly rhizome is rot and must be cut out. Brown streaks and spots on the leaves are leaf spot, which overwinters on old foliage. Plenty of leaves but no flowers almost always means the rhizomes are buried too deep or too congested.",
       "endOfSeason": "Cut the leaves back to a fan about six inches tall and clear every dead leaf away, since leaf spot overwinters on old foliage. Division happens in late summer, which is the window closing now, and the rhizomes go back in shallow with their backs showing above the soil.",
       "propagate": "Divide in late summer, six weeks or so after flowering, which is the window closing right now. Each piece needs a fan of leaves and some roots, and goes back in shallow with the rhizome top showing. Discard anything soft or hollow."
+    },
+    "art": {
+      "form": "iris",
+      "petal": "#7B5EA8",
+      "centre": "#E3BC4F"
     }
   },
   {
@@ -719,6 +854,11 @@
       "poor": "Nothing specific until it is named.",
       "endOfSeason": "Leave it standing until it is identified. Cutting back is easy to do later and impossible to undo.",
       "propagate": "Depends on what it turns out to be. Whether you divide it, let it seed or buy more differs completely between the candidates, so leave it until the identification is settled."
+    },
+    "art": {
+      "form": "unknown",
+      "petal": "#A8B86A",
+      "centre": "#A8B86A"
     }
   },
   {
@@ -741,6 +881,11 @@
       "poor": "Nothing specific until it is named.",
       "endOfSeason": "Leave it standing until it is identified. Cutting back is easy to do later and impossible to undo.",
       "propagate": "Depends on what it turns out to be. Whether you divide it, let it seed or buy more differs completely between the candidates, so leave it until the identification is settled."
+    },
+    "art": {
+      "form": "leaf",
+      "petal": "#5E8248",
+      "centre": "#8FAF6E"
     }
   },
   {
@@ -768,6 +913,11 @@
       "poor": "Tall floppy growth with few flowers means not enough sun. White powdery coating on the leaves is mildew, which zinnias are very prone to here: water the soil rather than the leaves and give them space.",
       "endOfSeason": "Frost kills them outright. Leave three or four heads to dry on the plant for seed, collect once brown and crisp, then pull.",
       "propagate": "Save seed from heads left to dry brown and crisp on the plant. The seeds are the arrowhead flakes at the base of each petal. Big dahlia-flowered types come fairly true; mixed bedding types scramble. Sow direct after the last frost, since zinnias hate root disturbance."
+    },
+    "art": {
+      "form": "daisy",
+      "petal": "#E0673A",
+      "centre": "#E3BC4F"
     }
   },
   {
@@ -795,6 +945,11 @@
       "poor": "One or two vigorous species taking over is the usual failure. Pull those before they seed.",
       "endOfSeason": "Let most of it stand and shed seed, which is how the patch carries itself into next year. Clear it whenever it looks finished.",
       "propagate": "It carries itself by seeding, so leave most of it standing to shed. Oversow bare patches with fresh mix in autumn rather than spring, so the hardy species get their cold period."
+    },
+    "art": {
+      "form": "mixed",
+      "petal": "#C97FA8",
+      "centre": "#E3BC4F"
     }
   },
   {
@@ -823,6 +978,11 @@
       "poor": "Leaves but no flower, which gardeners call blind, means the bulb is depleted, planted too shallow, or was too small to begin with.",
       "endOfSeason": "Leave the leaves until they have yellowed completely, then pull them away. Most tulips fade after a year or two in wet soil here, so the display is kept up by planting fresh bulbs each autumn rather than by the same ones returning.",
       "propagate": "Realistically, buy and replant rather than propagate. Most tulips fade after a year or two in wet soil here. You can lift and separate the offsets around the parent bulb, but they take years to reach flowering size and it is rarely worth it. Order in August and September, plant October into December."
+    },
+    "art": {
+      "form": "cup",
+      "petal": "#C63A2E",
+      "centre": "#E3BC4F"
     }
   },
   {
@@ -850,6 +1010,11 @@
       "poor": "A bare woody middle with flowers only around the edge means the annual shear has been missed a few years running.",
       "endOfSeason": "Nothing in autumn. It is evergreen and earns its place through winter.",
       "propagate": "Cuttings taken right after the post-flowering shear root easily. It also layers itself where stems touch soil, so you can often just lift a rooted piece in spring."
+    },
+    "art": {
+      "form": "cluster",
+      "petal": "#FAF8EE",
+      "centre": "#C8CDBC"
     }
   },
   {
@@ -877,6 +1042,11 @@
       "poor": "Long bare trailing stems with a thin sparse centre means it needs that shear.",
       "endOfSeason": "Nothing in autumn.",
       "propagate": "Take cuttings from the trimmings when you shear it after flowering. It also self-layers, so rooted pieces can be lifted and moved in spring."
+    },
+    "art": {
+      "form": "cluster",
+      "petal": "#8E63B0",
+      "centre": "#C9B4DC"
     }
   },
   {
@@ -904,6 +1074,11 @@
       "poor": "Legginess and browning in the middle means it is coming to its end, which is normal for an annual.",
       "endOfSeason": "Let it set seed and it returns on its own. Pull spent plants whenever they look tired.",
       "propagate": "Self-sows generously and needs nothing. If you want it in a new spot, scatter seed there in spring."
+    },
+    "art": {
+      "form": "cluster",
+      "petal": "#FAF8EE",
+      "centre": "#D5D9C8"
     }
   },
   {
@@ -931,6 +1106,11 @@
       "poor": "Crowded congested clumps flower less, which means divide after flowering. Ragged leaf edges are slugs or vine weevil.",
       "endOfSeason": "Leave the foliage alone. It is evergreen here and next year's crown is inside it.",
       "propagate": "Divide right after flowering, in May, every few years. Lift the clump, pull it apart into rosettes each with roots, and replant straight away. It self-sows too."
+    },
+    "art": {
+      "form": "face",
+      "petal": "#E8C13A",
+      "centre": "#C46A2A"
     }
   },
   {
@@ -958,6 +1138,11 @@
       "poor": "Straggly stems and few flowers in high summer means heat, and they usually pick up again as it cools.",
       "endOfSeason": "Let some set seed and they return. Pull the tired ones.",
       "propagate": "Self-sows freely if you let some flowers set seed. Sow fresh seed in late summer for the strongest spring plants."
+    },
+    "art": {
+      "form": "face",
+      "petal": "#7A5FA8",
+      "centre": "#E3BC4F"
     }
   },
   {
@@ -985,6 +1170,11 @@
       "poor": "The failure mode is the opposite of struggling: it roots wherever a stem touches soil and will travel.",
       "endOfSeason": "Shear it back off the bed edges whenever it oversteps, at any time of year. Both common vincas are listed as invasive in Washington, so bag the clippings rather than composting them.",
       "propagate": "Propagates itself whether you want it to or not: every stem that touches soil roots. Lift rooted pieces any time of year to move it. The real job here is limiting it rather than increasing it, and clippings go in the bin rather than the compost."
+    },
+    "art": {
+      "form": "mat",
+      "petal": "#7C8FD0",
+      "centre": "#6F8F55"
     }
   },
   {
@@ -1012,6 +1202,11 @@
       "poor": "Woody bare patches and dieback in the middle usually means it has been sitting too wet.",
       "endOfSeason": "Nothing in autumn. Depends on the identification being right, so worth confirming before you cut anything.",
       "propagate": "Layers itself along the ground. Lift rooted sections in spring and replant. Division of an established mat works too, in spring."
+    },
+    "art": {
+      "form": "mat",
+      "petal": "#C08BC0",
+      "centre": "#8FA07A"
     }
   },
   {
@@ -1039,6 +1234,11 @@
       "poor": "Crisped brown leaf edges by August is scorch from too much sun or dry roots. A whole branch wilting and dying back in summer can be verticillium wilt, which is serious and worth getting looked at.",
       "endOfSeason": "Leave it. If it ever needs pruning, do it in late summer or deep winter, never in spring when it is running with sap and will bleed heavily.",
       "propagate": "Not practical at home. Named varieties are grafted, and seedlings do not come true. This is a buy-one, keep-it-forever plant."
+    },
+    "art": {
+      "form": "leaf",
+      "petal": "#B0402E",
+      "centre": "#8A3324"
     }
   },
   {
@@ -1066,6 +1266,11 @@
       "poor": "Leaves but no flowers means the clump is congested and wants lifting and dividing.",
       "endOfSeason": "Leave the leaves until they yellow completely, six weeks or so after flowering. Never knot or cut them green.",
       "propagate": "These are the ones that genuinely multiply for you. Lift and divide congested clumps once the foliage has died back in June or July, separate the bulbs, and replant in autumn. A clump that has gone all leaves and no flowers is telling you it is time."
+    },
+    "art": {
+      "form": "trumpet",
+      "petal": "#F0D24A",
+      "centre": "#E39B1F"
     }
   }
 ]

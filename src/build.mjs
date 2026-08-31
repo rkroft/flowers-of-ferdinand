@@ -435,6 +435,102 @@ ${groups}
   </section>`;
 }
 
+/* Flower-form marks.
+ *
+ * These are schematics, not photographs: the form of the flower and its real
+ * colour, which between them are what you actually match against when you are
+ * standing in front of a plant. Drawn once as symbols and referenced per card,
+ * so forty-one marks cost one copy of each shape. Each plant supplies its own
+ * petal and centre colours through custom properties. */
+const FORMS = {
+  daisy: `<g><circle cx="20" cy="20" r="16" fill="none"/>${Array.from(
+    { length: 10 },
+    (_, i) =>
+      `<ellipse cx="20" cy="8.5" rx="3.1" ry="8" class="petal" transform="rotate(${i * 36} 20 20)"/>`
+  ).join("")}<circle cx="20" cy="20" r="5.4" class="centre"/></g>`,
+
+  pompon: `<g><circle cx="20" cy="20" r="15" class="petal"/><circle cx="20" cy="20" r="10.5" class="centre" opacity="0.55"/><circle cx="20" cy="20" r="6" class="petal"/><circle cx="20" cy="20" r="2.4" class="centre"/></g>`,
+
+  cup: `<g><path d="M20 37c-7 0-11-5-11-12 0-6 2-12 4-18 1 5 3 8 7 8s6-3 7-8c2 6 4 12 4 18 0 7-4 12-11 12z" class="petal"/><path d="M20 15c-2 0-3-3-3-8 2 4 4 4 6 0 0 5-1 8-3 8z" class="centre"/></g>`,
+
+  trumpet: `<g>${Array.from(
+    { length: 6 },
+    (_, i) =>
+      `<ellipse cx="20" cy="10" rx="4.4" ry="8.4" class="petal" transform="rotate(${i * 60} 20 20)"/>`
+  ).join("")}<circle cx="20" cy="20" r="7" class="centre"/><circle cx="20" cy="20" r="4" class="petal" opacity="0.5"/></g>`,
+
+  spike: `<g><line x1="20" y1="37" x2="20" y2="7" class="stem"/>${[
+    [13, 10], [27, 13], [13, 17], [27, 20], [13, 24], [27, 27],
+  ]
+    .map(([x, y]) => `<ellipse cx="${x}" cy="${y}" rx="6" ry="3.6" class="petal"/>`)
+    .join("")}<ellipse cx="20" cy="6" rx="4.4" ry="3.2" class="centre"/></g>`,
+
+  cluster: `<g>${[
+    [20, 12, 6.5], [12, 19, 6], [28, 19, 6], [16, 27, 5.6], [25, 27, 5.6],
+  ]
+    .map(([x, y, r]) => `<circle cx="${x}" cy="${y}" r="${r}" class="petal"/>`)
+    .join("")}${[
+    [20, 12], [12, 19], [28, 19], [16, 27], [25, 27],
+  ]
+    .map(([x, y]) => `<circle cx="${x}" cy="${y}" r="1.8" class="centre"/>`)
+    .join("")}</g>`,
+
+  pincushion: `<g><circle cx="20" cy="20" r="13.5" class="petal"/>${Array.from(
+    { length: 12 },
+    (_, i) => `<circle cx="20" cy="11.5" r="1.7" class="centre" transform="rotate(${i * 30} 20 20)"/>`
+  ).join("")}<circle cx="20" cy="20" r="5.4" class="centre"/></g>`,
+
+  iris: `<g>${[0, 120, 240]
+    .map(
+      (a) => `<ellipse cx="20" cy="29" rx="5" ry="9" class="petal" transform="rotate(${a} 20 20)"/>`
+    )
+    .join("")}${[60, 180, 300]
+    .map(
+      (a) => `<ellipse cx="20" cy="12" rx="4" ry="7.4" class="petal" opacity="0.6" transform="rotate(${a} 20 20)"/>`
+    )
+    .join("")}<circle cx="20" cy="20" r="3.4" class="centre"/></g>`,
+
+  face: `<g>${Array.from(
+    { length: 5 },
+    (_, i) => `<ellipse cx="20" cy="11" rx="6.4" ry="8" class="petal" transform="rotate(${i * 72} 20 20)"/>`
+  ).join("")}<circle cx="20" cy="20" r="4" class="centre"/></g>`,
+
+  pea: `<g><path d="M8 20c0-7 5-12 12-12s12 5 12 12c0 3-2 5-5 5H13c-3 0-5-2-5-5z" class="petal"/><path d="M13 25h14c0 5-3 8-7 8s-7-3-7-8z" class="centre"/></g>`,
+
+  berry: `<g><path d="M20 36c-7 0-11-6-11-12 0-4 4-8 11-8s11 4 11 8c0 6-4 12-11 12z" class="petal"/><path d="M20 16c-4 0-7-2-9-5 3 1 5 0 6-2 1 2 2 3 3 3s2-1 3-3c1 2 3 3 6 2-2 3-5 5-9 5z" class="centre"/></g>`,
+
+  needle: `<g><line x1="20" y1="37" x2="20" y2="5" class="stem"/>${Array.from(
+    { length: 7 },
+    (_, i) =>
+      `<line x1="20" y1="${9 + i * 4}" x2="${i % 2 ? 30 : 10}" y2="${6 + i * 4}" class="stem"/>`
+  ).join("")}<circle cx="20" cy="8" r="3.4" class="petal"/><circle cx="27" cy="15" r="2.8" class="petal"/></g>`,
+
+  leaf: `<path d="M20 36C10 30 7 20 9 8c12 1 20 8 22 18 1 6-4 10-11 10z" class="petal"/><path d="M20 36C17 26 14 16 9 8" class="vein"/>`,
+
+  mat: `<g><path d="M4 30c6-4 10 2 16-2s10 2 16-2" class="stem"/><path d="M4 20c6-4 10 2 16-2s10 2 16-2" class="stem"/>${[
+    [10, 26], [22, 24], [32, 21], [15, 15], [28, 13],
+  ]
+    .map(([x, y]) => `<circle cx="${x}" cy="${y}" r="3.4" class="petal"/>`)
+    .join("")}</g>`,
+
+  mixed: `<g><circle cx="12" cy="14" r="6" class="petal"/><circle cx="12" cy="14" r="2.2" class="centre"/><ellipse cx="28" cy="13" rx="4" ry="7" class="centre" opacity="0.7"/><circle cx="26" cy="28" r="5.4" class="petal" opacity="0.7"/><circle cx="13" cy="29" r="3.6" class="centre"/></g>`,
+
+  unknown: `<g><circle cx="20" cy="20" r="14" class="dashed"/><text x="20" y="26" text-anchor="middle" class="qmark">?</text></g>`,
+};
+
+/* Inlined per card rather than referenced from one <symbol> sprite. CSS class
+   selectors do not cross into the shadow content that <use> creates, so the
+   petal and centre colours never landed and every mark rendered solid black.
+   Forty-one small inline shapes cost a few kilobytes and always style. */
+function plantMark(plant) {
+  const art = plant.art;
+  const body = FORMS[art?.form];
+  if (!body) return "";
+  return `<svg class="mark" viewBox="0 0 40 40" aria-hidden="true" focusable="false" style="--petal:${esc(
+    art.petal
+  )};--centre:${esc(art.centre)}">${body}</svg>`;
+}
+
 const CARE_FIELDS = [
   ["feed", "Soil and feeding"],
   ["deadhead", "Deadheading"],
@@ -464,6 +560,7 @@ function plantCard(plant) {
 
   return `        <details class="plant-card">
           <summary>
+            ${plantMark(plant)}
             <span class="pc-name">${esc(plant.name)}${
               uncertain
                 ? ` <span class="conf conf-${esc(plant.confidence)}">${plant.confidence === "likely" ? "likely" : "unknown"}</span>`
@@ -516,7 +613,7 @@ ${inBed.map(plantCard).join("\n")}
       <h2>Plant by plant</h2>
       <span class="window">${confirmed} of ${plants.length} confirmed</span>
     </div>
-    <p class="section-note">Open any plant for the same six answers: what to feed it and when, how to deadhead it, what it looks like doing well, what it looks like struggling, what to do when it is finished for the year, and how to get more of it. A plant growing in more than one area is listed under each.</p>
+    <p class="section-note">Each mark is a schematic of the flower form and its real colour, not a photograph: enough to match a plant by shape and shade when you are standing in front of it. Open any plant for the same six answers: what to feed it and when, how to deadhead it, what it looks like doing well, what it looks like struggling, what to do when it is finished for the year, and how to get more of it. A plant growing in more than one area is listed under each.</p>
 
 ${groups}
   </section>`;

@@ -221,6 +221,25 @@ these plants want nothing. For a plant that is not yet identified, say so in
 the fields rather than giving generic advice that might be wrong for whatever
 it turns out to be.
 
+`art` drives the little mark beside each plant name: `{ "form": "daisy",
+"petal": "#C0392B", "centre": "#E3BC4F" }`. These are **schematics, not
+photographs**: the flower's form plus its real colour, which between them are
+what you match against standing in front of a plant. Do not present them as
+photographs and do not try to fetch real images, which the artifact runtime
+blocks anyway.
+
+`form` must be one of the keys in `FORMS` in `src/build.mjs`: daisy, pompon,
+cup, trumpet, spike, cluster, pincushion, iris, face, pea, berry, needle, leaf,
+mat, mixed, unknown. Use `unknown`, which draws a dashed circle with a question
+mark, for anything not yet identified rather than guessing a form. Adding a
+seventeenth form is fine when a plant genuinely does not fit; keep the path
+data short.
+
+The marks are inlined per card rather than referenced from one `<symbol>`
+sprite. That was tried and reverted: CSS class selectors do not cross into the
+shadow content `<use>` creates, so the colours never applied and every mark
+rendered solid black.
+
 `window` is optional and drives the year calendar: `{ "from": 3, "to": 5,
 "kind": "flowers" }`, month numbers 1 to 12 inclusive. `kind` is free text and
 says what the plant is doing in that window, usually flowers, fruit, harvest or
