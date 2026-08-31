@@ -559,6 +559,38 @@
           "This is the one bit of real upkeep the front beds need, and it is once a year. Plant fresh bulbs into the gaps in October or November, deep, about three times the height of the bulb.",
           "If you want to shrink even this job, lean toward the kinds that persist here: Darwin hybrids and species tulips come back far better than the big fancy ones, and daffodils return and multiply on their own indefinitely."
         ]
+      },
+      {
+        "id": "clear-hosta-leaves",
+        "title": "Clear the collapsed hosta leaves",
+        "weight": "grow",
+        "beds": [
+          "upper-lower"
+        ],
+        "flags": [],
+        "done": false,
+        "slip": "costs",
+        "ifSkipped": "Slugs overwinter in the soggy leaf layer and start on next spring's shoots the moment they appear.",
+        "body": [
+          "Hosta leaves turn to mush after the first frost. Rake them off rather than leaving them to rot in place.",
+          "This is the single most effective slug measure there is for hostas, and it costs ten minutes once a year. The damage you see in May is decided by what you leave lying in November."
+        ]
+      },
+      {
+        "id": "leave-clematis",
+        "title": "Leave the clematis alone",
+        "weight": "check",
+        "beds": [
+          "upper-lower"
+        ],
+        "flags": [],
+        "done": false,
+        "slip": "closes",
+        "ifSkipped": "Prune the wrong type at the wrong time and you remove an entire year of flowers. That one is not recoverable.",
+        "body": [
+          "Do not cut the clematis back this autumn. Clematis fall into three pruning groups and they want completely different treatment: spring types are pruned right after flowering, early summer types get a light tidy in late winter, and late summer types are cut hard to about a foot in February.",
+          "Note when yours actually flowers next year and that tells us the group. Until then, leaving it untouched is the only move that cannot cost you a season."
+        ]
       }
     ]
   },

@@ -515,6 +515,23 @@ const FORMS = {
 
   mixed: `<g><circle cx="12" cy="14" r="6" class="petal"/><circle cx="12" cy="14" r="2.2" class="centre"/><ellipse cx="28" cy="13" rx="4" ry="7" class="centre" opacity="0.7"/><circle cx="26" cy="28" r="5.4" class="petal" opacity="0.7"/><circle cx="13" cy="29" r="3.6" class="centre"/></g>`,
 
+  pendant: `<g><line x1="6" y1="8" x2="34" y2="8" class="stem"/>${[
+    [12, 8], [20, 8], [28, 8],
+  ]
+    .map(
+      ([x, y]) =>
+        `<line x1="${x}" y1="${y}" x2="${x}" y2="${y + 6}" class="stem"/><path d="M${x} ${
+          y + 20
+        }c-6-3-8-7-8-11 0-3 3-4 5-2 1 1 2 2 3 4 1-2 2-3 3-4 2-2 5-1 5 2 0 4-2 8-8 11z" class="petal"/>`
+    )
+    .join("")}</g>`,
+
+  spray: `<g><line x1="20" y1="37" x2="20" y2="16" class="stem"/>${[
+    [20, 8, 4], [11, 13, 3.2], [29, 13, 3.2], [15, 21, 2.8], [26, 21, 2.8], [20, 15, 2.6], [8, 21, 2.2], [32, 21, 2.2],
+  ]
+    .map(([x, y, r]) => `<circle cx="${x}" cy="${y}" r="${r}" class="petal"/>`)
+    .join("")}</g>`,
+
   unknown: `<g><circle cx="20" cy="20" r="14" class="dashed"/><text x="20" y="26" text-anchor="middle" class="qmark">?</text></g>`,
 };
 

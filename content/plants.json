@@ -1029,7 +1029,7 @@
     "status": "finished",
     "statusLabel": "Dormant now",
     "handling": "Shear it back by about a third right after it finishes flowering. That is the whole job for the year.",
-    "idNote": "Purple cushions flowering with the candytuft and spilling over the wall. Aubrieta is the usual suspect, though a creeping phlox looks similar at a glance. Aubrieta leaves are small, grey-green and slightly hairy; phlox leaves are narrow and needle-like.",
+    "idNote": "The spring photographs change this. The big magenta mass on the wall has notched petals and needle-fine foliage, which reads as creeping phlox rather than aubrieta. There may be both: the paler lavender-purple further along looks different from the magenta. Worth a close look at a single flower and a leaf next spring, since they are sheared at the same time anyway and the care barely differs.",
     "window": {
       "from": 4,
       "to": 5,
@@ -1271,6 +1271,230 @@
       "form": "trumpet",
       "petal": "#F0D24A",
       "centre": "#E39B1F"
+    }
+  },
+  {
+    "id": "clematis",
+    "name": "Clematis",
+    "variety": "on the trellis",
+    "beds": [
+      "upper-lower"
+    ],
+    "type": "climber",
+    "confidence": "confirmed",
+    "status": "blooming",
+    "statusLabel": "Established",
+    "handling": "Head in the sun, roots in the shade. Pruning depends entirely on which type it is, so leave it alone until that is settled.",
+    "idNote": "",
+    "window": {
+      "from": 5,
+      "to": 6,
+      "kind": "flowers"
+    },
+    "art": {
+      "form": "face",
+      "petal": "#D9739B",
+      "centre": "#F2D9E4"
+    },
+    "care": {
+      "feed": "A spade of compost and a handful of sulphate of potash around the base in early spring. Keep the root area shaded and mulched: clematis want a cool root run and a sunny top.",
+      "deadhead": "Optional. Some types give a second flush if you cut the flowered stems back by a third once the first lot is over.",
+      "good": "New growth coming from low down as well as at the top, and buds all the way up the stems rather than only at the tips.",
+      "poor": "Everything green above and bare sticks below is normal for some types and a pruning problem in others. A shoot suddenly wilting and blackening from the top down is clematis wilt: cut that stem out to healthy tissue or right to the ground, and the plant usually recovers.",
+      "endOfSeason": "This is the one to be careful about, and I would leave it entirely alone this autumn. Clematis fall into three pruning groups and cutting the wrong one at the wrong time removes a whole year of flowers. Spring-flowering types are pruned right after they flower, early summer ones get only a light tidy in late winter, and late summer ones are cut hard to about a foot in February. Note when yours actually flowers next year and that identifies the group.",
+      "propagate": "Layering is easy and almost free: pin a low stem to the soil in spring or summer, leave it a season, then cut it away once rooted."
+    }
+  },
+  {
+    "id": "bleeding-heart",
+    "name": "Bleeding heart",
+    "variety": "Lamprocapnos spectabilis",
+    "beds": [
+      "upper-lower"
+    ],
+    "type": "perennial",
+    "confidence": "confirmed",
+    "status": "finished",
+    "statusLabel": "Dormant now",
+    "handling": "Arching stems of pink lockets in spring, then it disappears completely by midsummer. That is normal, not a death.",
+    "idNote": "",
+    "window": {
+      "from": 4,
+      "to": 6,
+      "kind": "flowers"
+    },
+    "art": {
+      "form": "pendant",
+      "petal": "#E0779E",
+      "centre": "#7E9478"
+    },
+    "care": {
+      "feed": "An inch of compost around it in spring. Nothing else.",
+      "deadhead": "Nothing to deadhead.",
+      "good": "Long arching stems hung with lockets from April, and fresh ferny foliage.",
+      "poor": "It yellows and vanishes entirely by July, which alarms people every year and is simply what this plant does. Genuine trouble looks different: collapsing while still green in spring usually means it is sitting too wet.",
+      "endOfSeason": "It dies back to nothing by midsummer. Clear the yellowed foliage once it has collapsed, and mark the spot, because the commonest way to lose one is to dig into the dormant crown in autumn thinking the ground is empty.",
+      "propagate": "Divide in early spring just as the shoots appear, or in autumn. The roots are brittle and snap easily, so lift a wide root ball and be gentle."
+    }
+  },
+  {
+    "id": "babys-breath",
+    "name": "Baby's breath",
+    "variety": "Gypsophila",
+    "beds": [
+      "upper-lower"
+    ],
+    "type": "perennial",
+    "confidence": "confirmed",
+    "status": "finished",
+    "statusLabel": "Gone over",
+    "handling": "Wants lean, sharply drained, limey soil, which is the opposite of most Seattle ground. Expect it to be short-lived here.",
+    "idNote": "",
+    "window": {
+      "from": 6,
+      "to": 8,
+      "kind": "flowers"
+    },
+    "art": {
+      "form": "spray",
+      "petal": "#F5F1E8",
+      "centre": "#C8CDBC"
+    },
+    "care": {
+      "feed": "None. Feeding gives soft growth that flops and rots.",
+      "deadhead": "Shear the whole plant back by about a third once the main flush is over and it often gives a second, lighter one.",
+      "good": "A cloud of tiny flowers held on wiry stems that do not need staking.",
+      "poor": "Rotting off at the base over winter is the usual end here, and it is about wet acid soil rather than cold. If it keeps dying, that is the soil telling you, not a mistake you made.",
+      "endOfSeason": "Cut back after flowering. Perennial types resent being moved once settled, so leave the crown alone.",
+      "propagate": "Perennial types from softwood cuttings in early summer, since division usually kills them. Annual types are sown fresh each spring."
+    }
+  },
+  {
+    "id": "hosta",
+    "name": "Hostas",
+    "variety": "",
+    "beds": [
+      "upper-lower"
+    ],
+    "type": "perennial",
+    "confidence": "confirmed",
+    "status": "blooming",
+    "statusLabel": "In leaf",
+    "handling": "Grown for the leaves. The whole game here is keeping slugs off them.",
+    "idNote": "",
+    "window": {
+      "from": 4,
+      "to": 10,
+      "kind": "foliage"
+    },
+    "art": {
+      "form": "leaf",
+      "petal": "#7FA05E",
+      "centre": "#4F6B3E"
+    },
+    "care": {
+      "feed": "An inch of compost around the crown in spring. They are not fussy.",
+      "deadhead": "Cut the flower spikes off if you prefer the foliage uncluttered, or leave them for the bees. Either is fine.",
+      "good": "Big unblemished leaves in a tight symmetrical clump that gets wider each year.",
+      "poor": "Holes chewed through the leaves are slugs and snails, which is the defining hosta problem in this climate. Brown crisped edges mean too much sun or dry roots. A clump that comes up thinner each year usually wants dividing.",
+      "endOfSeason": "The leaves collapse into mush after the first frost. Clear them away rather than leaving them, because that soggy layer is exactly where slugs overwinter and where next year's damage comes from.",
+      "propagate": "Divide in early spring as the pointed shoots, the noses, push through. Slice the clump down through the crown with a spade so each piece has noses and roots. One of the easiest divisions there is."
+    }
+  },
+  {
+    "id": "english-daisy",
+    "name": "English daisies",
+    "variety": "Bellis perennis",
+    "beds": [
+      "upper-lower"
+    ],
+    "type": "short-lived perennial",
+    "confidence": "confirmed",
+    "status": "finished",
+    "statusLabel": "Dormant now",
+    "handling": "Small pink and white pompoms through spring. Short-lived but self-sows, so it persists as a colony rather than as individual plants.",
+    "idNote": "",
+    "window": {
+      "from": 3,
+      "to": 6,
+      "kind": "flowers"
+    },
+    "art": {
+      "form": "daisy",
+      "petal": "#F2C4D0",
+      "centre": "#E3BC4F"
+    },
+    "care": {
+      "feed": "None.",
+      "deadhead": "Pinch spent flowers off and it keeps going noticeably longer. It also stops it seeding anywhere you would rather it did not.",
+      "good": "Neat flat rosettes covered in flowers from March.",
+      "poor": "Fading out in summer heat is normal rather than a failure. Many behave as biennials, flowering hard and then dying, which is why letting some seed matters.",
+      "endOfSeason": "Leave the rosettes alone. They stay green through a Seattle winter and are next spring's plants.",
+      "propagate": "Self-sows readily. You can also lift and split clumps right after flowering, which is the quickest way to spread a colour you like."
+    }
+  },
+  {
+    "id": "flax",
+    "name": "Flax",
+    "variety": "Linum",
+    "beds": [
+      "upper-lower"
+    ],
+    "type": "short-lived perennial",
+    "confidence": "confirmed",
+    "status": "finished",
+    "statusLabel": "Gone over",
+    "handling": "A haze of sky-blue flowers, each one lasting a single morning and replaced the next day.",
+    "idNote": "",
+    "window": {
+      "from": 6,
+      "to": 8,
+      "kind": "flowers"
+    },
+    "art": {
+      "form": "face",
+      "petal": "#7C9BD6",
+      "centre": "#EDE9D8"
+    },
+    "care": {
+      "feed": "None. It wants lean soil and flops if fed.",
+      "deadhead": "Not practical, since each flower lasts a day. A light shear after the main flush tidies it and can bring more.",
+      "good": "A fine airy mound covered in fresh blue flowers every morning through early summer.",
+      "poor": "Getting sparse and woody after two or three years is its normal lifespan rather than a problem. Flopping means the soil is too rich.",
+      "endOfSeason": "Leave the seedheads standing so it sows itself, and cut the old growth back in spring.",
+      "propagate": "Entirely by seed, and it does it itself. Scatter ripe seed where you want it in autumn. It has a taproot and will not transplant."
+    }
+  },
+  {
+    "id": "forget-me-not",
+    "name": "Forget-me-nots",
+    "variety": "Myosotis",
+    "beds": [
+      "upper-lower"
+    ],
+    "type": "biennial",
+    "confidence": "likely",
+    "status": "finished",
+    "statusLabel": "Dormant now",
+    "handling": "A blue haze between the other spring plants. Biennial: it seeds one year and flowers the next.",
+    "idNote": "Clearly visible as a blue haze through the spring photographs of this bed, though not on your list. Forget-me-not is the obvious call for that colour and habit at that time of year, but confirm it before I mark it certain.",
+    "window": {
+      "from": 4,
+      "to": 6,
+      "kind": "flowers"
+    },
+    "art": {
+      "form": "cluster",
+      "petal": "#8FAEDB",
+      "centre": "#F0E4A8"
+    },
+    "care": {
+      "feed": "None.",
+      "deadhead": "Not worth it, and pulling the plants once they brown is easier than deadheading them.",
+      "good": "A soft blue mist filling the gaps between the tulips and primroses.",
+      "poor": "It goes brown and mildewed in early summer, which is the plant finishing rather than failing.",
+      "endOfSeason": "Pull the whole plant once it browns, ideally after it has dropped seed. It comes away easily.",
+      "propagate": "Self-sows so freely that the job is usually thinning it rather than encouraging it."
     }
   }
 ]
