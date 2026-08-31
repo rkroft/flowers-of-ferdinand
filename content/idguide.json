@@ -1,0 +1,59 @@
+{
+  "intro": "Most plant photos fail for the same reason: they are taken from standing height, in bright sun, showing the flower and nothing else. The flower is often the least diagnostic part. What settles an identification is usually how the leaves attach to the stem, and that is the shot almost nobody takes.",
+  "shots": [
+    {
+      "name": "The whole plant, from its own height",
+      "what": "Crouch down so the camera is level with the middle of the plant, and step back far enough to get all of it in frame.",
+      "why": "Habit is diagnostic. Upright and stiff, mounding, sprawling, climbing: these separate plants that look identical up close."
+    },
+    {
+      "name": "Where a leaf meets the stem",
+      "what": "One clear shot of a stem joint. Get close enough that you can count the leaves at that joint.",
+      "why": "This single shot does more work than all the others. Two leaves facing each other is opposite, one at a time alternating is alternate, three or more radiating like spokes is whorled. It splits the plant world into thirds before anything else is considered."
+    },
+    {
+      "name": "One leaf, top and underside",
+      "what": "Hold a leaf flat against a plain background, a sheet of paper or your palm. Take the top, then flip it and take the underside. Put a coin or your thumb in frame for scale.",
+      "why": "Undersides carry the detail: hairs, silvering, raised veins, and any pests. Scale matters because many close relatives differ mainly in size."
+    },
+    {
+      "name": "The flower or seedhead, straight on",
+      "what": "Fill the frame. Tap the screen on the flower so the camera focuses there rather than on the background.",
+      "why": "Petal count, how the centre is arranged, and whether flowers sit singly or in clusters all narrow things down fast."
+    },
+    {
+      "name": "The base, where it meets the soil",
+      "what": "Push the surrounding foliage aside and shoot the bottom few inches.",
+      "why": "Woody or soft, one crown or many spreading shoots, and whether it is running sideways. This is how you tell a perennial from an annual, and a well-behaved plant from a colonising one."
+    }
+  ],
+  "tips": [
+    "Shade the plant with your own body or a piece of card. Harsh direct sun blows out exactly the fine detail that identifies a plant. An overcast Seattle morning is genuinely ideal.",
+    "Hold a sheet of plain paper behind a leaf or flower to isolate it from the busy background.",
+    "Crush a leaf and note the smell in your own words. Anise, mint, resin, tomato, bitter, or nothing at all. Smell is not photographable and it eliminates whole families.",
+    "Roll the stem between your fingers and note whether it is round or square. Square means the mint family, which covers a lot of ground.",
+    "Say where it is in a voice memo or note as you shoot: bed, and roughly where in the bed. Four unknowns are easy to mix up later."
+  ],
+  "offCamera": [
+    {
+      "title": "Look back through your own camera roll",
+      "note": "This is the highest-value thing on the list. Scroll back to May, June and July. Everything currently a brown seedhead was a flower then, and a flower is far easier to identify. A photo from bloom time will settle more of these than anything you can shoot today."
+    },
+    {
+      "title": "Find the seed packets or the order history",
+      "note": "A wildflower or cutting mix packet lists every species in it. That converts guessing into matching against a known list. Check the shed, the drawer, and any online orders from late winter."
+    },
+    {
+      "title": "Stake the unknowns now",
+      "note": "Push a labelled marker in beside each one, even just a numbered plant tag. Volunteers are often only identifiable in bloom, so the realistic plan is to tag them now and photograph them next spring. Without a marker you will not find the same plant again."
+    },
+    {
+      "title": "Take them to a Master Gardener clinic",
+      "note": "WSU Extension runs free plant clinics in King County where trained volunteers identify samples in person. Bring a cut stem with leaves attached in a bag, not just a photo. An expert holding the actual plant beats any amount of remote guessing."
+    },
+    {
+      "title": "Accept that some wait for spring",
+      "note": "A volunteer that has finished flowering and dropped its seed may genuinely not be identifiable until it comes back. That is not a failure, it is the season. Log where it is and revisit it in April."
+    }
+  ]
+}

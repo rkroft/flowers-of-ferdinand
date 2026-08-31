@@ -1,106 +1,230 @@
 [
   {
+    "id": "dahlia",
     "name": "Dahlia",
-    "variety": "yellow ball type",
+    "variety": "yellow ball or decorative type",
     "beds": ["bed1"],
+    "type": "tender perennial",
+    "confidence": "confirmed",
     "status": "blooming",
     "statusLabel": "Blooming",
-    "handling": "Deadhead deep and often. Runs to frost."
+    "handling": "Deadhead deep and often. Runs to frost, then cut to four inches and mulch.",
+    "idNote": "Cultivar unknown. Worth naming if you ever want to reorder the same one."
   },
   {
+    "id": "gaillardia",
     "name": "Gaillardia",
-    "variety": "blanket flower",
+    "variety": "blanket flower, possibly 'Arizona Sun'",
     "beds": ["bed1", "bed2"],
+    "type": "short-lived perennial",
+    "confidence": "confirmed",
     "status": "blooming",
     "statusLabel": "Blooming",
-    "handling": "Deadhead relentlessly. Short-lived perennial, keep its crown dry and open."
+    "handling": "Deadhead relentlessly. Dies of wet feet here, never of cold, so keep the crown dry and open.",
+    "idNote": ""
   },
   {
+    "id": "scabiosa",
     "name": "Scabiosa",
-    "variety": "pincushion",
+    "variety": "pincushion flower",
     "beds": ["bed1"],
+    "type": "perennial",
+    "confidence": "confirmed",
     "status": "blooming",
     "statusLabel": "Blooming",
-    "handling": "Deadhead. Will run into November here."
+    "handling": "Deadhead. Will run into November here.",
+    "idNote": ""
   },
   {
+    "id": "cosmos",
     "name": "Cosmos",
-    "variety": "",
+    "variety": "Cosmos bipinnatus",
     "beds": ["bed1"],
+    "type": "annual",
+    "confidence": "confirmed",
     "status": "blooming",
     "statusLabel": "Blooming",
-    "handling": "Deadhead. Let a few set seed to self-sow."
+    "handling": "Deadhead. Let a few set seed to self-sow.",
+    "idNote": ""
   },
   {
-    "name": "Sunflowers",
-    "variety": "red and yellow",
+    "id": "sunflower",
+    "name": "Sunflower",
+    "variety": "one mahogany, one branching yellow",
     "beds": ["bed1"],
+    "type": "annual",
+    "confidence": "confirmed",
     "status": "blooming",
     "statusLabel": "Blooming",
-    "handling": "Leave heads for birds, or cut when the back turns brown."
+    "handling": "Leave heads for birds, or cut when the back of the head turns brown.",
+    "idNote": "The dark red one is likely 'Velvet Queen' or 'Chocolate', but that is a guess from colour alone."
   },
   {
+    "id": "echinacea-purple",
     "name": "Echinacea",
-    "variety": "purple and white",
+    "variety": "purple coneflower",
     "beds": ["bed1"],
+    "type": "perennial",
+    "confidence": "confirmed",
     "status": "finished",
     "statusLabel": "Going over",
-    "handling": "Leave seedheads standing all winter. Cut in March."
+    "handling": "Leave seedheads standing all winter for goldfinches. Cut in March.",
+    "idNote": ""
   },
   {
+    "id": "echinacea-white",
+    "name": "Echinacea",
+    "variety": "white, possibly 'White Swan'",
+    "beds": ["bed1"],
+    "type": "perennial",
+    "confidence": "likely",
+    "status": "finished",
+    "statusLabel": "Going over",
+    "handling": "Same as the purple. Leave standing, cut in March.",
+    "idNote": "Definitely a white echinacea. Which cultivar is a guess, and it only matters for reordering."
+  },
+  {
+    "id": "gladiolus",
     "name": "Gladiolus",
-    "variety": "corms, not bulbs",
+    "variety": "grows from corms, not bulbs",
     "beds": ["bed1", "bed2"],
+    "type": "corm",
+    "confidence": "confirmed",
     "status": "watch",
     "statusLabel": "Check thrips",
-    "handling": "Spike off now, leaves stay until yellow. Overwinters in these beds already. Inspect each corm when lifting and spreading in fall."
+    "handling": "Spike off now, leaves stay until fully yellow. Overwinters in these beds already. Inspect each corm when lifting and spreading in fall.",
+    "idNote": "Confirmed as present. See the crocosmia entry for whether every strap-leaved clump is actually a glad."
   },
   {
+    "id": "california-poppy",
     "name": "California poppy",
-    "variety": "Eschscholzia",
+    "variety": "Eschscholzia californica",
     "beds": ["bed1", "bed2"],
+    "type": "annual, self-sowing",
+    "confidence": "confirmed",
     "status": "finished",
     "statusLabel": "Finishing",
-    "handling": "Self-sows freely. Leave it to do that."
+    "handling": "Self-sows freely. Leave it to do that.",
+    "idNote": ""
   },
   {
+    "id": "shirley-poppy",
     "name": "Shirley poppy",
     "variety": "Papaver rhoeas",
     "beds": ["bed2"],
+    "type": "annual",
+    "confidence": "confirmed",
     "status": "watch",
     "statusLabel": "Seed now",
-    "handling": "Shake pods where wanted, then pull the plants."
+    "handling": "Shake pods where you want them, then pull the plants. Will not transplant and resents spring sowing.",
+    "idNote": ""
   },
   {
-    "name": "Oregano",
-    "variety": "",
-    "beds": ["bed2"],
-    "status": "blooming",
-    "statusLabel": "In flower",
-    "handling": "Shear a third off now, dry the leaves. Hard prune in spring."
-  },
-  {
-    "name": "Hardy geranium",
-    "variety": "cranesbill",
-    "beds": ["bed2"],
-    "status": "blooming",
-    "statusLabel": "Blooming",
-    "handling": "Shear to a few inches for fresh foliage and a second flush."
-  },
-  {
-    "name": "Unidentified spike",
-    "variety": "likely Culver's root",
-    "beds": ["bed2"],
-    "status": "watch",
-    "statusLabel": "Needs ID",
-    "handling": "Square stem means agastache, round means veronica. See the open questions."
-  },
-  {
+    "id": "snapdragon",
     "name": "Snapdragon",
     "variety": "Antirrhinum",
     "beds": ["bed2"],
+    "type": "short-lived perennial here",
+    "confidence": "confirmed",
     "status": "finished",
     "statusLabel": "Gone to seed",
-    "handling": "Cut spent spikes, leave the plants. Often overwinters here and returns. Let a few spikes shatter if you want more."
+    "handling": "Cut spent spikes, leave the plants. Often overwinters here and returns. Let a few spikes shatter if you want more.",
+    "idNote": ""
+  },
+  {
+    "id": "oregano",
+    "name": "Oregano",
+    "variety": "Origanum vulgare",
+    "beds": ["bed2"],
+    "type": "perennial herb",
+    "confidence": "confirmed",
+    "status": "blooming",
+    "statusLabel": "In flower",
+    "handling": "Shear a third off now and dry the leaves. Hard prune into old wood in spring, not in fall.",
+    "idNote": ""
+  },
+  {
+    "id": "hardy-geranium",
+    "name": "Hardy geranium",
+    "variety": "cranesbill",
+    "beds": ["bed2"],
+    "type": "perennial",
+    "confidence": "confirmed",
+    "status": "blooming",
+    "statusLabel": "Blooming",
+    "handling": "Shear to a few inches for fresh foliage and often a second flush of flowers.",
+    "idNote": ""
+  },
+  {
+    "id": "whorled-spike",
+    "name": "Whorled spike plant",
+    "variety": "veronica, agastache, or Culver's root",
+    "beds": ["bed2"],
+    "type": "perennial",
+    "confidence": "unknown",
+    "status": "watch",
+    "statusLabel": "Needs ID",
+    "handling": "Leave the seed spikes standing either way. Only veronica gives a second flush if you cut them now.",
+    "idNote": "Roll the stem: square with four flat sides means agastache, round means veronica. Then count leaves at one joint: two facing each other is agastache, three or more radiating like spokes is Culver's root. Best guess from photos is Culver's root."
+  },
+  {
+    "id": "silver-mass",
+    "name": "Silver-grey dried mound",
+    "variety": "unknown",
+    "beds": ["bed2"],
+    "type": "unknown",
+    "confidence": "unknown",
+    "status": "watch",
+    "statusLabel": "Needs ID",
+    "handling": "Do not pull until identified. Squeeze a stem at the base: brittle and hollow means dead, flexible and green inside means alive.",
+    "idNote": "A large mass of fine grey branching stems. Candidates are artemisia, lavender, statice, or simply a spent annual. Crush a stem and smell it, then photograph the base of the plant where it meets the soil, and whether it has a woody trunk or many soft stems."
+  },
+  {
+    "id": "blue-wiry",
+    "name": "Small blue flowers",
+    "variety": "lobelia or annual salvia",
+    "beds": ["bed1"],
+    "type": "unknown",
+    "confidence": "unknown",
+    "status": "watch",
+    "statusLabel": "Needs ID",
+    "handling": "Harmless either way. Identify before deciding whether it returns next year.",
+    "idNote": "Tiny blue-purple flowers on thin wiry stems threading through bed 1. Lobelia is a low sprawling annual with tiny fan-shaped flowers. Salvia stands upright with flowers in tiers up a spike. A close photo of a single flower settles it."
+  },
+  {
+    "id": "round-leaved",
+    "name": "Round-leaved plant",
+    "variety": "possibly nasturtium",
+    "beds": ["bed1"],
+    "type": "unknown",
+    "confidence": "unknown",
+    "status": "watch",
+    "statusLabel": "Needs ID",
+    "handling": "If nasturtium, it is an annual, edible, and will self-sow.",
+    "idNote": "Nasturtium leaves are round like small lily pads with the stem joining in the middle of the leaf rather than at the edge. That centre-join is the giveaway."
+  },
+  {
+    "id": "white-daisy",
+    "name": "Small white daisy",
+    "variety": "possibly feverfew",
+    "beds": ["bed1"],
+    "type": "unknown",
+    "confidence": "unknown",
+    "status": "watch",
+    "statusLabel": "Needs ID",
+    "handling": "If feverfew, it self-sows enthusiastically and you may want to limit it.",
+    "idNote": "Small white daisies with yellow centres. Feverfew has divided, slightly yellow-green foliage and a strong bitter smell when crushed."
+  },
+  {
+    "id": "crocosmia-check",
+    "name": "Possible crocosmia",
+    "variety": "mixed among the gladiolus",
+    "beds": ["bed1", "bed2"],
+    "type": "corm",
+    "confidence": "unknown",
+    "status": "watch",
+    "statusLabel": "Worth checking",
+    "handling": "If present, keep it separate when lifting. Crocosmia spreads by underground corm chains and will colonise a bed.",
+    "idNote": "Out of bloom the two look nearly identical. Gladiolus leaves are thicker, stiffer and stand upright in a flat fan. Crocosmia leaves are thinner, more pleated and arch over. The real tell is underground: a gladiolus corm sits alone with small cormels around its base, while crocosmia forms a vertical chain of corms stacked on top of each other. You will see it when you lift them this fall."
   }
 ]

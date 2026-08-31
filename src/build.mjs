@@ -136,42 +136,143 @@ ${tasks}
   </section>`;
 }
 
-function renderPlants(plants, bedsById) {
-  const rows = plants
-    .map((plant) => {
-      const beds = (plant.beds ?? [])
-        .map((id) => (bedsById.get(id)?.name ?? id).replace(/^Bed /, ""))
-        .join(" & ");
+function plantRow(plant) {
+  const uncertain = plant.confidence !== "confirmed";
+  const mark = uncertain
+    ? `<span class="conf conf-${esc(plant.confidence)}">${plant.confidence === "likely" ? "likely" : "unknown"}</span>`
+    : "";
 
-      return `          <tr>
-            <td class="plant">${esc(plant.name)}${plant.variety ? `<em>${esc(plant.variety)}</em>` : ""}</td>
-            <td>${esc(beds || "none")}</td>
+  return `          <tr>
+            <td class="plant">${esc(plant.name)}${mark}${plant.variety ? `<em>${esc(plant.variety)}</em>` : ""}</td>
+            <td class="type">${esc(plant.type)}</td>
             <td><span class="status ${esc(plant.status)}">${esc(plant.statusLabel)}</span></td>
             <td>${esc(plant.handling)}</td>
           </tr>`;
+}
+
+function renderPlants(plants, garden) {
+  const confirmed = plants.filter((p) => p.confidence === "confirmed").length;
+
+  const groups = garden.beds
+    .map((bed) => {
+      const inBed = plants.filter((p) => (p.beds ?? []).includes(bed.id));
+      if (!inBed.length) return "";
+
+      const shared = inBed.filter((p) => (p.beds ?? []).length > 1).length;
+      const count = `${inBed.length} plant${inBed.length === 1 ? "" : "s"}${
+        shared ? `, ${shared} shared with the other bed` : ""
+      }`;
+
+      return `    <div class="bed-group">
+      <div class="bed-group-head">
+        <h3>${esc(bed.name)}</h3>
+        <span class="window">${count}</span>
+      </div>
+      <div class="table-scroll">
+        <table>
+          <thead>
+            <tr>
+              <th>Plant</th>
+              <th>Type</th>
+              <th>Status</th>
+              <th>Handling</th>
+            </tr>
+          </thead>
+          <tbody>
+${inBed.map(plantRow).join("\n")}
+          </tbody>
+        </table>
+      </div>
+    </div>`;
     })
-    .join("\n");
+    .filter(Boolean)
+    .join("\n\n");
 
   return `  <section id="plants">
     <div class="section-head">
-      <h2>What is planted</h2>
-      <span class="window">${plants.length} identified</span>
+      <h2>Bed inventory</h2>
+      <span class="window">${confirmed} of ${plants.length} confirmed</span>
+    </div>
+    <p class="section-note">Plants growing in both beds are listed under each. Anything not marked confirmed is a working guess, not a fact.</p>
+
+${groups}
+  </section>`;
+}
+
+function renderUnknowns(plants) {
+  const open = plants.filter((p) => p.confidence !== "confirmed" && p.idNote);
+  if (!open.length) return "";
+
+  const unknown = open.filter((p) => p.confidence === "unknown").length;
+
+  const items = open
+    .map(
+      (p) => `      <div class="id-card" data-confidence="${esc(p.confidence)}">
+        <div class="id-card-head">
+          <h3>${esc(p.name)}</h3>
+          <span class="conf conf-${esc(p.confidence)}">${esc(p.confidence)}</span>
+        </div>
+        <p>${esc(p.idNote)}</p>
+      </div>`
+    )
+    .join("\n");
+
+  return `  <section id="unknowns">
+    <div class="section-head">
+      <h2>Still to identify</h2>
+      <span class="window">${unknown} unknown, ${open.length - unknown} to confirm</span>
+    </div>
+    <p class="section-note">What to look at, and what would settle it. Photograph anything on this list next time you are out there.</p>
+
+    <div class="id-cards">
+${items}
+    </div>
+  </section>`;
+}
+
+function renderIdGuide(guide) {
+  const shots = guide.shots
+    .map(
+      (shot) => `      <li class="shot">
+        <h3>${esc(shot.name)}</h3>
+        <p>${esc(shot.what)}</p>
+        <p class="why"><span>Why</span> ${esc(shot.why)}</p>
+      </li>`
+    )
+    .join("\n");
+
+  const tips = guide.tips.map((t) => `        <li>${esc(t)}</li>`).join("\n");
+
+  const off = guide.offCamera
+    .map(
+      (item) => `      <div class="id-card" data-confidence="likely">
+        <div class="id-card-head"><h3>${esc(item.title)}</h3></div>
+        <p>${esc(item.note)}</p>
+      </div>`
+    )
+    .join("\n");
+
+  return `  <section id="id-guide">
+    <div class="section-head">
+      <h2>How to photograph a plant for ID</h2>
+      <span class="window">${guide.shots.length} shots per plant</span>
+    </div>
+    <p class="section-note">${esc(guide.intro)}</p>
+
+    <ol class="shots">
+${shots}
+    </ol>
+
+    <div class="callout">
+      <h3>While you are out there</h3>
+      <ul>
+${tips}
+      </ul>
     </div>
 
-    <div class="table-scroll">
-      <table>
-        <thead>
-          <tr>
-            <th>Plant</th>
-            <th>Bed</th>
-            <th>Status</th>
-            <th>Handling</th>
-          </tr>
-        </thead>
-        <tbody>
-${rows}
-        </tbody>
-      </table>
+    <h3 class="sub-head">Things that beat taking more photos</h3>
+    <div class="id-cards">
+${off}
     </div>
   </section>`;
 }
@@ -246,12 +347,13 @@ function renderFooter(garden) {
 /* ---------- assembly ---------- */
 
 async function build() {
-  const [garden, plan, plants, questions, journal, css, js] = await Promise.all([
+  const [garden, plan, plants, questions, journal, idguide, css, js] = await Promise.all([
     readJson("garden.json"),
     readJson("plan.json"),
     readJson("plants.json"),
     readJson("questions.json"),
     readJson("journal.json"),
+    readJson("idguide.json"),
     readFile(join(SRC, "styles.css"), "utf8"),
     readFile(join(SRC, "app.js"), "utf8"),
   ]);
@@ -274,7 +376,11 @@ ${renderBeds(garden)}
 
 ${plan.map((phase) => renderPhase(phase, bedsById)).join("\n\n")}
 
-${renderPlants(plants, bedsById)}
+${renderPlants(plants, garden)}
+
+${renderUnknowns(plants)}
+
+${renderIdGuide(idguide)}
 
 ${renderQuestions(questions)}
 
@@ -314,11 +420,13 @@ ${body}
     (n, phase) => n + phase.tasks.filter((t) => t.done).length,
     0
   );
+  const unconfirmed = plants.filter((p) => p.confidence !== "confirmed").length;
 
   console.log("Built dist/index.html and dist/artifact.html");
   console.log(
     `  ${plan.length} phases · ${taskCount} tasks (${doneCount} done) · ` +
-      `${plants.length} plants · ${questions.filter((q) => !q.answer).length} open questions`
+      `${plants.length} plants (${unconfirmed} unconfirmed) · ` +
+      `${questions.filter((q) => !q.answer).length} open questions`
   );
 }
 

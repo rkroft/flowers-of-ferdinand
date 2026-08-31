@@ -22,9 +22,10 @@ Everything you would want to change week to week lives in `content/`:
 | ---------------- | ------------------------------------------------------ |
 | `garden.json`    | Title, intro, the meta strip, bed descriptions          |
 | `plan.json`      | The dated phases and the tasks inside them              |
-| `plants.json`    | The plant inventory table                               |
+| `plants.json`    | The bed inventory, with a confidence level per plant     |
 | `questions.json` | Open questions, answered in place                       |
 | `journal.json`   | A dated log of what you observed and did                |
+| `idguide.json`   | The photograph-a-plant-for-ID reference                 |
 
 Then:
 
@@ -44,6 +45,12 @@ time wondering why the page looks odd.
 **Answered one of the open questions.** Replace `"answer": null` in
 `questions.json` with the answer as a string. It renders in a green panel and
 the "still open" count drops.
+
+**Worked out what a plant is.** In `plants.json`, set that plant's
+`"confidence"` to `"confirmed"`, put the real name in, and clear the `idNote`.
+It leaves the "Still to identify" section automatically, and the count in the
+inventory header goes up. Only mark something confirmed when you have actually
+seen the evidence, not because a guess sounded convincing.
 
 **Something happened in the garden.** Append an entry to `journal.json`:
 

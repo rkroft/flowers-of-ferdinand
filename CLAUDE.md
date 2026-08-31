@@ -28,9 +28,10 @@ non-zero and names the file and field on any problem.
 content/          the only files that change week to week
   garden.json     title, standfirst, meta strip, bed definitions, footnote
   plan.json       phases, each holding dated tasks
-  plants.json     the plant inventory table
+  plants.json     the bed inventory, grouped by bed at render time
   questions.json  open diagnostic questions, answered in place
   journal.json    dated log entries, newest rendered first
+  idguide.json    how to photograph a plant for identification
 src/
   build.mjs       renders content into dist/
   styles.css      design tokens and all page styling
@@ -85,9 +86,44 @@ A task:
 `beds` entries must match an `id` in `garden.json`. Task `id`s must be unique
 across the whole file, because the browser checkboxes key off them.
 
-**plants.json** `status` must be `blooming`, `finished` or `watch`.
-`statusLabel` is the human text shown in the table, so it can say anything
-("Going over", "Check thrips", "Needs ID").
+**plants.json** is the bed inventory. Each plant:
+
+```json
+{
+  "id": "shirley-poppy",
+  "name": "Shirley poppy",
+  "variety": "Papaver rhoeas",
+  "beds": ["bed2"],
+  "type": "annual",
+  "confidence": "confirmed",
+  "status": "watch",
+  "statusLabel": "Seed now",
+  "handling": "What to do with it.",
+  "idNote": ""
+}
+```
+
+`status` must be `blooming`, `finished` or `watch`. `statusLabel` is free text
+shown in the table, so it can say anything ("Going over", "Check thrips").
+
+`confidence` must be `confirmed`, `likely` or `unknown`, and this is the field
+that matters most. **Never promote a plant to `confirmed` on your own inference.**
+Only a real-world observation does that: the user saw it, tested it, or an
+expert identified it. A guess from a photo is `likely` at best. Anything not
+`confirmed` requires a non-empty `idNote` saying specifically what would settle
+it, and `npm run check` enforces that.
+
+`type` is free text (`annual`, `perennial`, `tender perennial`, `corm`,
+`perennial herb`). Use `"unknown"` rather than leaving it blank.
+
+Plants listing more than one bed appear under each bed, which is correct for an
+inventory. The "Still to identify" section is generated from every plant whose
+confidence is not `confirmed`, so there is no separate list to keep in sync.
+
+**idguide.json** holds the photography reference: an `intro`, a `shots` array
+(each with `name`, `what`, `why`), a `tips` array of strings, and an `offCamera`
+array of `{title, note}`. The shot list is deliberately numbered because it is a
+sequence to repeat at every plant, so keep it ordered and keep it short.
 
 **questions.json** `answer` is `null` while the question is open. Filling it in
 with a string renders the answer inline and marks the question resolved. Do not
@@ -104,6 +140,11 @@ build time, so append rather than prepend.
 - **Log an observation**: append to `journal.json`.
 - **Answer a question**: replace the `null` in `questions.json` with the answer,
   and update anything downstream it settles (a plant's `handling`, a task body).
+- **Identify a plant**: set `confidence` to `confirmed`, fill in the real name
+  and `variety`, clear the `idNote`, and update `type`, `status` and `handling`
+  to match what it actually is. Check whether any task in `plan.json` was
+  written around the uncertainty and rewrite it. Log the identification in
+  `journal.json` with what settled it.
 - **Roll into a new season**: bump `season` and `updated` in `garden.json`,
   reset the `done` flags, rewrite the phases.
 

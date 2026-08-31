@@ -14,6 +14,7 @@ const CONTENT = join(dirname(fileURLToPath(import.meta.url)), "..", "content");
 
 const WEIGHTS = new Set(["now", "seed", "grow", "check"]);
 const STATUSES = new Set(["blooming", "finished", "watch"]);
+const CONFIDENCE = new Set(["confirmed", "likely", "unknown"]);
 
 const errors = [];
 const warnings = [];
@@ -35,6 +36,7 @@ const plan = await readJson("plan.json");
 const plants = await readJson("plants.json");
 const questions = await readJson("questions.json");
 const journal = await readJson("journal.json");
+const idguide = await readJson("idguide.json");
 
 if (garden) {
   for (const field of ["title", "standfirst", "eyebrow", "updated", "season", "beds", "meta"]) {
@@ -91,14 +93,31 @@ if (plan) {
 }
 
 if (plants) {
+  const plantIds = new Set();
+
   for (const plant of plants) {
-    const where = `plants.json[${plant.name ?? "?"}]`;
+    const where = `plants.json[${plant.id ?? plant.name ?? "?"}]`;
+
+    if (!plant.id) fail(`${where}: missing id`);
+    if (plantIds.has(plant.id)) fail(`${where}: duplicate plant id "${plant.id}"`);
+    plantIds.add(plant.id);
+
     if (!plant.name) fail(`${where}: missing name`);
+    if (!plant.type) fail(`${where}: missing type, use "unknown" if you do not know yet`);
+
     if (!STATUSES.has(plant.status)) {
       fail(`${where}: status "${plant.status}" is not one of ${[...STATUSES].join(", ")}`);
     }
+    if (!CONFIDENCE.has(plant.confidence)) {
+      fail(`${where}: confidence "${plant.confidence}" is not one of ${[...CONFIDENCE].join(", ")}`);
+    }
+    if (plant.confidence !== "confirmed" && !plant.idNote) {
+      fail(`${where}: confidence is "${plant.confidence}" so it needs an idNote saying what would settle it`);
+    }
     if (!plant.statusLabel) fail(`${where}: missing statusLabel`);
     if (!plant.handling) warn(`${where}: no handling note yet`);
+    if (!plant.beds?.length) warn(`${where}: not assigned to any bed`);
+
     checkBeds(where, plant.beds);
   }
 }
@@ -125,6 +144,29 @@ if (journal) {
     }
     if (!entry.title) fail(`${where}: missing title`);
     if (!entry.note) fail(`${where}: missing note`);
+  }
+}
+
+if (idguide) {
+  if (!idguide.intro) fail("idguide.json: missing intro");
+
+  for (const field of ["shots", "tips", "offCamera"]) {
+    if (!Array.isArray(idguide[field]) || !idguide[field].length) {
+      fail(`idguide.json: "${field}" must be a non-empty array`);
+    }
+  }
+
+  for (const shot of idguide.shots ?? []) {
+    const where = `idguide.json[${shot.name ?? "?"}]`;
+    if (!shot.name) fail(`${where}: missing name`);
+    if (!shot.what) fail(`${where}: missing "what" instruction`);
+    if (!shot.why) fail(`${where}: missing "why" it matters`);
+  }
+
+  for (const item of idguide.offCamera ?? []) {
+    const where = `idguide.json[${item.title ?? "?"}]`;
+    if (!item.title) fail(`${where}: missing title`);
+    if (!item.note) fail(`${where}: missing note`);
   }
 }
 

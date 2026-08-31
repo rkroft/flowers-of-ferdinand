@@ -348,6 +348,106 @@ section { margin-top: 3.4rem; }
   color: var(--ink-soft);
 }
 
+.callout ul {
+  margin: 0;
+  padding-left: 1.1rem;
+  font-size: 0.92rem;
+  color: var(--ink-soft);
+  display: flex;
+  flex-direction: column;
+  gap: 0.45rem;
+}
+
+/* ---------- bed inventory ---------- */
+
+.bed-group + .bed-group { margin-top: 2rem; }
+
+.bed-group-head {
+  display: flex;
+  align-items: baseline;
+  gap: 0.7rem;
+  flex-wrap: wrap;
+  margin-bottom: 0.7rem;
+}
+
+.bed-group-head h3 {
+  font-family: "Fraunces", Georgia, serif;
+  font-size: 1.15rem;
+  font-weight: 600;
+  margin: 0;
+}
+
+.conf {
+  display: inline-block;
+  font-family: "IBM Plex Mono", ui-monospace, monospace;
+  font-size: 0.62rem;
+  font-weight: 500;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  padding: 0.1rem 0.36rem;
+  border-radius: 2px;
+  margin-left: 0.4rem;
+  vertical-align: 0.08em;
+  white-space: nowrap;
+}
+
+/* Chip classes are prefixed so they cannot collide with the .id-card
+   block below. Two rules named .unknown fought over borders once already. */
+
+.conf-likely {
+  background: var(--seed-soft);
+  color: var(--seed);
+}
+
+.conf-unknown {
+  background: var(--urgent-soft);
+  color: var(--urgent);
+}
+
+td.type {
+  font-family: "IBM Plex Mono", ui-monospace, monospace;
+  font-size: 0.72rem;
+  letter-spacing: 0.02em;
+  color: var(--ink-mute);
+}
+
+/* ---------- still to identify ---------- */
+
+.id-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(17rem, 1fr));
+  gap: 0.9rem;
+}
+
+.id-card {
+  background: var(--surface);
+  border: 1px solid var(--rule-soft);
+  border-left: 3px solid var(--urgent);
+  border-radius: 3px;
+  padding: 0.95rem 1.05rem;
+}
+
+.id-card[data-confidence="likely"] { border-left-color: var(--seed); }
+
+.id-card-head {
+  display: flex;
+  align-items: baseline;
+  flex-wrap: wrap;
+  margin-bottom: 0.35rem;
+}
+
+.id-card-head h3 {
+  font-size: 0.98rem;
+  font-weight: 600;
+  margin: 0;
+}
+
+.id-card p {
+  margin: 0;
+  font-size: 0.9rem;
+  color: var(--ink-soft);
+}
+
 /* ---------- inventory table ---------- */
 
 .table-scroll {
@@ -360,9 +460,16 @@ section { margin-top: 3.4rem; }
 table {
   border-collapse: collapse;
   width: 100%;
-  min-width: 34rem;
+  min-width: 42rem;
   font-size: 0.9rem;
+  table-layout: fixed;
 }
+
+/* Plant, type, status, handling. Fixed layout so the handling column gets
+   the room and the narrow columns stop wrapping every second word. */
+th:nth-child(1), td:nth-child(1) { width: 28%; }
+th:nth-child(2), td:nth-child(2) { width: 13%; }
+th:nth-child(3), td:nth-child(3) { width: 15%; }
 
 th {
   text-align: left;
@@ -389,7 +496,6 @@ tbody tr:last-child td { border-bottom: none; }
 td.plant {
   color: var(--ink);
   font-weight: 500;
-  white-space: nowrap;
 }
 
 td.plant em {
@@ -407,7 +513,6 @@ td.plant em {
   font-family: "IBM Plex Mono", ui-monospace, monospace;
   font-size: 0.7rem;
   letter-spacing: 0.04em;
-  white-space: nowrap;
 }
 
 .status.blooming { color: var(--leaf); }
@@ -465,6 +570,77 @@ td.plant em {
 }
 
 .q.answered::before { color: var(--leaf); }
+
+/* ---------- photo guide ----------
+   The shot list is numbered because it genuinely is a sequence: the same
+   five frames, in the same order, at every plant. */
+
+.shots {
+  list-style: none;
+  counter-reset: shot;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 1.1rem;
+}
+
+.shot {
+  display: grid;
+  grid-template-columns: 2rem 1fr;
+  gap: 0.5rem 0.9rem;
+  padding-bottom: 1.1rem;
+  border-bottom: 1px solid var(--rule-soft);
+}
+
+.shot:last-child { border-bottom: none; padding-bottom: 0; }
+
+.shot::before {
+  counter-increment: shot;
+  content: counter(shot, decimal-leading-zero);
+  grid-row: 1 / span 3;
+  font-family: "IBM Plex Mono", ui-monospace, monospace;
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--accent);
+  padding-top: 0.2rem;
+  font-variant-numeric: tabular-nums;
+}
+
+.shot h3 {
+  font-size: 1rem;
+  font-weight: 600;
+  margin: 0;
+  line-height: 1.35;
+}
+
+.shot p {
+  margin: 0;
+  font-size: 0.92rem;
+  color: var(--ink-soft);
+}
+
+.shot .why {
+  font-size: 0.88rem;
+  color: var(--ink-mute);
+}
+
+.shot .why span {
+  font-family: "IBM Plex Mono", ui-monospace, monospace;
+  font-size: 0.64rem;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin-right: 0.25rem;
+}
+
+.sub-head {
+  font-family: "Fraunces", Georgia, serif;
+  font-size: 1.15rem;
+  font-weight: 600;
+  margin: 2.2rem 0 0.9rem;
+}
 
 /* ---------- journal ---------- */
 
