@@ -142,6 +142,7 @@ ${mine
           <span class="sun" data-sun="${esc(bed.sun)}">${esc(bed.exposure)}</span>
         </div>
         <p class="panel-aspect">${esc(bed.aspect)}</p>
+        <p class="panel-water"><span>Watered by</span> ${esc(bed.watering ?? "not recorded")}</p>
         <p class="panel-desc">${esc(bed.description)}</p>
 
         <h4>What is in it <span>${inBed.length}</span></h4>
@@ -621,6 +622,8 @@ function plantCard(plant) {
           <summary>
             ${plantMark(plant)}
             <span class="pc-name">${esc(plant.name)}${
+              plant.planned ? ` <span class="conf conf-planned">planned</span>` : ""
+            }${
               uncertain
                 ? ` <span class="conf conf-${esc(plant.confidence)}">${plant.confidence === "likely" ? "likely" : "unknown"}</span>`
                 : ""

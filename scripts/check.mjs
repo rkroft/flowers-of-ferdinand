@@ -60,7 +60,7 @@ if (garden) {
     if (seen.has(bed.id)) fail(`${where}: duplicate area id "${bed.id}"`);
     seen.add(bed.id);
 
-    for (const field of ["name", "aspect", "exposure", "description"]) {
+    for (const field of ["name", "aspect", "exposure", "description", "watering"]) {
       if (!bed[field]) fail(`${where}: missing "${field}"`);
     }
     if (!SUN.has(bed.sun)) {

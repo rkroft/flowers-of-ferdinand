@@ -233,6 +233,23 @@
         ],
         "slip": "safe",
         "ifSkipped": "The map keeps a guess in it where it could have a fact."
+      },
+      {
+        "id": "dig-out-herbs",
+        "title": "Dig out the sage and the rosemary stump",
+        "weight": "grow",
+        "beds": [
+          "path-bed"
+        ],
+        "flags": [],
+        "done": false,
+        "slip": "safe",
+        "ifSkipped": "Nothing suffers. The bed just keeps a dead stump in it and the black-eyed Susans wait.",
+        "body": [
+          "Wait for the first proper rain rather than fighting bone-dry August soil. A woody root ball comes out of damp ground with a fraction of the effort.",
+          "Cut the top growth off first so you can actually see what you are digging. Then cut a trench right around the stump a spade's width out, work the spade under it, and lever. Rosemary roots are fibrous and spreading rather than deep, so it usually gives way in one piece. An old woody one may want a fork or a mattock.",
+          "Get the roots out rather than leaving them to rot in place, because that is where the new planting is going."
+        ]
       }
     ]
   },
@@ -358,22 +375,6 @@
         "ifSkipped": "The window is gone until next August, and a congested clump flowers less every year in the meantime."
       },
       {
-        "id": "layer-rosemary",
-        "title": "Peg down the sprawling rosemary branches",
-        "weight": "grow",
-        "beds": [
-          "path-bed"
-        ],
-        "flags": [],
-        "done": false,
-        "body": [
-          "The rosemary has opened up and thrown long bare branches flat across the soil. Rather than cutting them off, pin a few down where they touch the ground with a rock or a bent wire. They root along the buried section over winter, and you can cut them free as new plants in spring.",
-          "This is also the fix for the bare woody centre. You cannot prune rosemary back into old wood to rejuvenate it, so growing replacements is the way to renew the planting."
-        ],
-        "slip": "costs",
-        "ifSkipped": "You lose a free year of replacement plants, and the bare centre stays bare."
-      },
-      {
         "id": "survey-upper-lower",
         "title": "Survey the remaining three areas",
         "weight": "check",
@@ -390,6 +391,23 @@
         ],
         "slip": "safe",
         "ifSkipped": "The plan stays blank for a third of the garden. No plant suffers, but nothing about those beds can be planned either."
+      },
+      {
+        "id": "plant-rudbeckia",
+        "title": "Improve the soil, then plant the black-eyed Susans",
+        "weight": "grow",
+        "beds": [
+          "path-bed"
+        ],
+        "flags": [],
+        "done": false,
+        "slip": "costs",
+        "ifSkipped": "Planting in spring instead is perfectly fine. You water more, because you miss the autumn rains doing the establishing for you.",
+        "body": [
+          "Do the soil first. That corner has grown woody Mediterranean herbs for years, which want it lean and dry, and black-eyed Susans want more moisture than that. Fork a couple of buckets of compost through the hole and the ground around it before anything goes in.",
+          "Autumn is the better planting window here if you can get plants: the soil is still warm, the rains arrive to establish the roots, and you barely have to water. Spring is the fallback and works fine, you just do the watering yourself. Either way this bed drains sharply, which is what makes autumn planting safe.",
+          "Worth deciding which type when you buy. The clumping perennial kinds such as 'Goldsturm' come back reliably and slowly widen. The taller annual-ish ones are grown from seed and are a different job. Tell me which you get and I will set the card to match."
+        ]
       }
     ]
   },
@@ -515,19 +533,19 @@
       },
       {
         "id": "spare-the-herbs",
-        "title": "Keep the fall tidy away from the rosemary and sage",
+        "title": "Keep the fall tidy away from the oregano",
         "weight": "check",
         "beds": [
-          "path-bed"
+          "street-2"
         ],
         "flags": [],
         "done": false,
         "body": [
-          "This is the one to remember when the urge to cut everything down arrives. Pruning woody Mediterranean herbs in fall pushes out soft growth that then dies in the first cold snap, and cutting into their bare wood leaves a permanent hole because neither one resprouts from it.",
-          "Leave both untouched until spring. Keep compost and mulch off their crowns too: they die of wet feet here far more often than of cold."
+          "With the rosemary and sage coming out of Path Bed, the oregano in Street Bed Box 2 is the woody herb left to protect. The rule is the same: pruning it in autumn pushes out soft growth that dies in the first cold snap, and cutting into its bare wood leaves a permanent hole because it does not resprout from there.",
+          "Shear the top third now if you have not already, then leave it alone. Hard renewal pruning into the old wood happens in spring."
         ],
         "slip": "closes",
-        "ifSkipped": "Cut a woody Mediterranean herb into bare wood and the hole is permanent. This one is not recoverable."
+        "ifSkipped": "Cut a woody herb into bare wood and the hole is permanent. Not recoverable."
       },
       {
         "id": "zinnia-seed",

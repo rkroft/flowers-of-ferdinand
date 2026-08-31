@@ -444,6 +444,22 @@ section { margin-top: 3.4rem; }
   margin: 0.3rem 0 0;
 }
 
+.panel-water {
+  font-family: "IBM Plex Mono", ui-monospace, monospace;
+  font-size: 0.7rem;
+  letter-spacing: 0.04em;
+  color: var(--ink-soft);
+  margin: 0.25rem 0 0;
+}
+
+.panel-water span {
+  font-size: 0.62rem;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  color: var(--ink-mute);
+  margin-right: 0.3rem;
+}
+
 .panel-desc {
   margin: 0.7rem 0 0;
   font-size: 0.93rem;
@@ -806,6 +822,11 @@ section { margin-top: 3.4rem; }
 .conf-likely {
   background: var(--seed-soft);
   color: var(--seed);
+}
+
+.conf-planned {
+  background: var(--accent-soft);
+  color: var(--accent);
 }
 
 .conf-unknown {

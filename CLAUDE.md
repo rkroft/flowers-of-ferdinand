@@ -99,6 +99,12 @@ Driveway Bed 1, Front Lower Bed, Upper Bed, Side Bed Box, Driveway Bed 2, Back
 Bed 1, Back Bed 2, Back Bed 3. Upper Bed is the one deliberate difference:
 Rachel renamed it from the plan's "Upper Lower Bed".
 
+`watering` records how that area actually gets water, which differs by bed and
+changes advice: hose-watered beds get water in bursts when Rachel remembers,
+drip-line beds get it steadily. Current split: Front Lower Bed and Upper Bed are
+on drip, everything else surveyed is hose by hand, and the three back beds are
+unconfirmed.
+
 `surveyed` is false for areas that are on the map but have not been
 photographed or walked yet. The area's panel then says so instead of
 pretending it is empty.
@@ -248,6 +254,10 @@ The marks are inlined per card rather than referenced from one `<symbol>`
 sprite. That was tried and reverted: CSS class selectors do not cross into the
 shadow content `<use>` creates, so the colours never applied and every mark
 rendered solid black.
+
+`planned: true` marks a plant Rachel intends to put in but has not planted yet.
+It renders a "planned" chip on the card. Keep the care fields written as normal,
+since the point is knowing what it will need before committing to it.
 
 `window` is optional and drives the year calendar: `{ "from": 3, "to": 5,
 "kind": "flowers" }`, month numbers 1 to 12 inclusive. `kind` is free text and
