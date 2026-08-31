@@ -501,11 +501,11 @@
       "side"
     ],
     "type": "perennial",
-    "confidence": "likely",
+    "confidence": "confirmed",
     "status": "blooming",
     "statusLabel": "Still fruiting",
     "handling": "Do not mow the foliage. Thin the mat to about one plant every six to eight inches, pinch off runners you do not want, and let a few root as replacements.",
-    "idNote": "Flowering and fruiting at the end of August means everbearing or day-neutral, not June-bearing. That matters because the two get opposite fall treatment. Confirm by whether it also gave you a heavy single crop in June.",
+    "idNote": "Confirmed as strawberries in the side bed. The remaining question is only which type: fruiting in late August points to everbearing or day-neutral rather than June-bearing, and that is what the care here assumes. A heavy single crop in June would mean the opposite.",
     "window": {
       "from": 6,
       "to": 10,
@@ -522,29 +522,29 @@
   },
   {
     "id": "beans",
-    "name": "Beans",
-    "variety": "purple-flowered, on string trellis",
+    "name": "Pole beans",
+    "variety": "purple-flowered, on the string trellis",
     "beds": [
       "side"
     ],
     "type": "annual",
-    "confidence": "likely",
+    "confidence": "confirmed",
     "status": "blooming",
     "statusLabel": "Producing",
     "handling": "Keep picking, which is what keeps them producing. When finished, cut at soil level and leave the roots in the ground for the nitrogen in the nodules.",
-    "idNote": "Purple flowers point to a purple-podded variety. Whether these are bush or pole changes nothing about care but is worth noting for next year. A photo of a pod would settle it.",
+    "idNote": "",
     "window": {
       "from": 7,
       "to": 9,
       "kind": "harvest"
     },
     "care": {
-      "feed": "None. They fix their own nitrogen, and feeding gives you leaves instead of pods.",
-      "deadhead": "Picking is the deadheading. Every pod left to mature tells the plant it is finished.",
-      "good": "Steady pod production and dark green leaves.",
-      "poor": "Yellowing leaves with few pods late in the season is normal ageing rather than a problem.",
-      "endOfSeason": "Cut the stems off at soil level rather than pulling them up, so the nitrogen-fixing nodules on the roots stay to feed whatever grows there next.",
-      "propagate": "Leave a few pods on the plant until they rattle dry, then shell and store the seed somewhere cool. This only comes true from open-pollinated varieties, not from an F1 hybrid. Sow fresh in May, direct into warm soil."
+      "feed": "None. They fix their own nitrogen, and feeding gives you a magnificent vine with very few beans.",
+      "deadhead": "Picking is the deadheading, and with pole beans it is the whole game. Every pod left to swell and mature tells the vine it has reproduced and can stop. Pick every two or three days at the height of it, taking pods while they still snap.",
+      "good": "Flowers and pods forming all the way up the strings rather than only at the bottom, and pods that snap cleanly instead of bending.",
+      "poor": "Production stopping in late summer usually means picking fell behind rather than anything being wrong. Pods that are lumpy and stringy were left too long. On a west wall like this one, a slow start is normal: they want warm soil and this bed is shaded all morning.",
+      "endOfSeason": "They carry on until frost or until the vine exhausts itself, usually well into September here. When done, cut the stems off at soil level rather than pulling, so the nitrogen-fixing nodules stay in the ground. Take the strings down and clean the trellis so nothing overwinters on it.",
+      "propagate": "Leave a few pods on the vine until they are papery and rattle, then shell and store the seed somewhere cool and dry. This only comes true from an open-pollinated variety, not an F1 hybrid. Sow fresh in May, direct into warm soil, and get the supports in before you sow rather than after."
     }
   },
   {
