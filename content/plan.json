@@ -92,8 +92,8 @@
         "flags": [],
         "done": false,
         "body": [
-          "The white powdery coating on the side bed sunflowers is powdery mildew. It is not worth spraying this late in the season on plants that are nearly finished. Pull off the worst-affected leaves, especially the lower ones, and put them in the bin rather than the tumbler.",
-          "The cause is placement more than anything: a narrow bed against a wall means still air and a rain shadow. Worth remembering when you decide where sunflowers go next year."
+          "The white powdery coating on the side bed sunflowers is powdery mildew. It is not worth spraying this late on plants that are nearly finished. Pull off the worst leaves, especially the low ones, and bin them rather than putting them in the tumbler.",
+          "The cause is the spot, not the plant. An east wall gets morning sun then shade, sits in a rain shadow because Seattle weather comes from the south-west, and has almost no air movement. Damp, still and never properly dried out. Sunflowers want the opposite, so move them to the south side or the street boxes next year."
         ]
       },
       {
@@ -158,7 +158,7 @@
       },
       {
         "id": "compass-check",
-        "title": "Point a phone compass at the house",
+        "title": "Confirm the orientation",
         "weight": "check",
         "beds": [
           "side",
@@ -166,12 +166,12 @@
           "back-3"
         ],
         "flags": [
-          "Settles the map"
+          "Closed"
         ],
-        "done": false,
+        "done": true,
         "body": [
-          "Stand in the Side Bed Box with your back to the house wall, open the compass app on your phone, and tell me the heading you are facing. Then do the same standing in the Upper Lower Bed. Thirty seconds each.",
-          "This is worth doing because the sun map has flipped twice on drawing conventions, and every recommendation for every bed depends on it. One compass reading ends the guessing for good."
+          "Closed. Street confirmed as south, and the plan is drawn south-up, which puts east on the left and west on the right. The Side Bed Box is drawn on the left, so it is east facing, not west. Every area's aspect follows from that and is now recorded.",
+          "A phone compass would still confirm it in thirty seconds if you ever want the belt-and-braces version, but nothing is waiting on it."
         ]
       }
     ]
@@ -309,6 +309,21 @@
         "body": [
           "If the street really is south, the two beds between the house and the sidewalk are the sunniest ground you own, and neither has been looked at yet. The one against the wall in particular is the classic warm south-wall spot: sun all day, plus stored heat radiating back at night.",
           "Photograph both and note what is already growing there. It is the most likely place to find growing space you did not know you had."
+        ]
+      },
+      {
+        "id": "plan-sunny-side",
+        "title": "Decide what the south side is for",
+        "weight": "check",
+        "beds": [
+          "upper-lower",
+          "front-lower"
+        ],
+        "flags": [],
+        "done": false,
+        "body": [
+          "Now that the orientation is settled, the shape of this garden is clear: the sun is all on the south side and out by the street, and everything on the north and east of the house is shade or morning sun only. The sun-hungry things are currently in the wrong places.",
+          "Worth deciding before spring rather than in the rush of it. The south wall in particular is warm-wall growing space that nothing is currently making use of."
         ]
       }
     ]

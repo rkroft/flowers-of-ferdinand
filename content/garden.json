@@ -19,7 +19,7 @@
     },
     {
       "label": "Areas",
-      "value": "11 mapped, 4 surveyed"
+      "value": "11 mapped, 5 surveyed"
     }
   ],
   "map": {
@@ -136,7 +136,7 @@
       "name": "Path Bed",
       "mapLabel": "Path",
       "role": "Mediterranean and perennials",
-      "aspect": "North-west corner, beside the path",
+      "aspect": "South-east corner, out by the street",
       "exposure": "Full sun, dry",
       "sun": "full",
       "surveyed": true,
@@ -153,7 +153,7 @@
       "name": "Street Bed Box 1",
       "mapLabel": "Box 1",
       "role": "Active bloom",
-      "aspect": "Past the sidewalk, open to the north",
+      "aspect": "South side, past the sidewalk",
       "exposure": "Full sun",
       "sun": "full",
       "surveyed": true,
@@ -170,7 +170,7 @@
       "name": "Street Bed Box 2",
       "mapLabel": "Box 2",
       "role": "Seed and sowing",
-      "aspect": "Past the sidewalk, open to the north",
+      "aspect": "South side, past the sidewalk",
       "exposure": "Full sun",
       "sun": "full",
       "surveyed": true,
@@ -187,8 +187,8 @@
       "name": "Driveway Bed 1",
       "mapLabel": "Drive 1",
       "role": "Not yet surveyed",
-      "aspect": "West of the driveway, up by the street",
-      "exposure": "West side, to confirm",
+      "aspect": "South-west corner, beyond the driveway",
+      "exposure": "Afternoon sun likely",
       "sun": "unknown",
       "surveyed": false,
       "map": {
@@ -197,7 +197,7 @@
         "w": 78,
         "h": 96
       },
-      "description": "West of the driveway at the street end, open to the south. Likely afternoon sun and possibly a lot of it, but nothing seen yet."
+      "description": "South-west corner of the property beyond the driveway, open to both the south and the west. On the plan this looks like it should get a lot of afternoon sun, possibly the most of any area outside the street boxes. Not seen yet."
     },
     {
       "id": "front-lower",
@@ -221,7 +221,7 @@
       "name": "Upper Lower Bed",
       "mapLabel": "Upper Lower",
       "role": "Not yet surveyed",
-      "aspect": "South side of the house, toward the street",
+      "aspect": "South wall of the house",
       "exposure": "South wall, warm",
       "sun": "full",
       "surveyed": false,
@@ -238,8 +238,8 @@
       "name": "Side Bed Box",
       "mapLabel": "Side",
       "role": "Edibles",
-      "aspect": "Side wall of the house, which side to be confirmed",
-      "exposure": "Morning or afternoon sun, to confirm",
+      "aspect": "East wall of the house",
+      "exposure": "Morning sun",
       "sun": "part",
       "surveyed": true,
       "map": {
@@ -248,15 +248,15 @@
         "w": 56,
         "h": 76
       },
-      "description": "Narrow raised bed on one side wall of the house. Strawberries, beans on string trellis, sunflowers and the compost tumbler. Which wall it is on is the one thing still unresolved: your plan puts it on the east side, you said west. Either way it is sheltered from rain and short on moving air, and that is what mildewed the sunflowers. A phone compass settles it in thirty seconds."
+      "description": "Narrow raised bed on the east wall of the house. Strawberries, beans on string trellis, sunflowers and the compost tumbler. East facing means sun through the morning and shade from around midday on, which is cooler than it looked. It also explains the mildew better than my earlier guess did: Seattle weather arrives from the south-west, so an east wall sits in a strong rain shadow, and the bed gets damp still morning air followed by no drying sun. That is close to ideal for powdery mildew. It is a fine spot for strawberries, a mediocre one for beans, and the wrong spot entirely for sunflowers."
     },
     {
       "id": "driveway-2",
       "name": "Driveway Bed 2",
       "mapLabel": "Drive 2",
       "role": "Not yet surveyed",
-      "aspect": "West of the driveway, beside the house",
-      "exposure": "West side, to confirm",
+      "aspect": "West side, beyond the driveway",
+      "exposure": "Afternoon sun likely",
       "sun": "unknown",
       "surveyed": false,
       "map": {
@@ -265,14 +265,14 @@
         "w": 78,
         "h": 40
       },
-      "description": "West of the driveway alongside the house. Afternoon sun is likely, subject to whatever stands on the neighbouring property."
+      "description": "West side alongside the house, beyond the driveway. Afternoon and evening sun is likely, subject to what stands on the neighbouring property to the west. Not seen yet."
     },
     {
       "id": "back-2",
       "name": "Back Bed 2",
       "mapLabel": "Back 2",
       "role": "Not yet surveyed",
-      "aspect": "East side of the house, south end",
+      "aspect": "West side of the house, north end",
       "exposure": "To confirm",
       "sun": "unknown",
       "surveyed": false,
@@ -282,7 +282,7 @@
         "w": 42,
         "h": 76
       },
-      "description": "Narrow bed wrapping the south-east corner of the house, between the house and the stairs. Hemmed in on several sides, so the sun here needs watching rather than guessing. Not seen yet.",
+      "description": "Narrow bed on the west side of the house toward the north end, between the house and the stairs. Hemmed in, so worth watching rather than guessing. Not seen yet.",
       "vertical": true
     },
     {
@@ -290,7 +290,7 @@
       "name": "Back Bed 1",
       "mapLabel": "Back 1",
       "role": "Not yet surveyed",
-      "aspect": "Far south-east, on the neighbour boundary",
+      "aspect": "North-west corner, on the neighbour boundary",
       "exposure": "To confirm",
       "sun": "unknown",
       "surveyed": false,
@@ -300,7 +300,7 @@
         "w": 40,
         "h": 76
       },
-      "description": "The far south-east corner, up against the neighbouring property. Narrow, and whatever stands on the neighbour's side will decide its light. Not seen yet.",
+      "description": "The far north-west corner, up against the neighbouring property. Narrow, and north facing on a boundary, so likely shady. Not seen yet.",
       "vertical": true
     },
     {
