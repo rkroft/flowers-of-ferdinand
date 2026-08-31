@@ -340,7 +340,7 @@
     },
     "care": {
       "feed": "A light balanced feed when the shoots are about six inches, and again as the flower spike shows. Nothing after flowering.",
-      "deadhead": "Not deadheading exactly, but cut the whole flower spike off at its base once the last floret fades. In Street Bed Box 2 they are now fully dried and papery, well past that point, and each one is still carrying seed capsules that are costing you corm size. Cut them at the base and leave every leaf.",
+      "deadhead": "Not deadheading exactly, but cut the whole flower spike off at its base once the last floret fades. The Street Bed Box 1 spikes are fully dried and papery now and still carrying seed capsules, which cost the corm. Cut them at the base and leave every leaf.",
       "good": "Upright spikes and firm fat corms when you lift them.",
       "poor": "Silvery streaking and browning on the leaves means thrips. Corms that come up rough, corky or sticky are infested and go in the bin, not the compost.",
       "endOfSeason": "Leave every leaf until it has gone completely yellow, because that is what feeds the corm, then cut at ground level. Lift, inspect and spread the corms after that, across all three beds they grow in.",
@@ -434,13 +434,14 @@
     "name": "Snapdragon",
     "variety": "Antirrhinum",
     "beds": [
+      "street-1",
       "street-2"
     ],
     "type": "short-lived perennial here",
     "confidence": "confirmed",
-    "status": "finished",
-    "statusLabel": "Gone to seed",
-    "handling": "Cut spent spikes, leave the plants. Often overwinters here and returns. Let a few spikes shatter if you want more.",
+    "status": "watch",
+    "statusLabel": "Rusted, remove",
+    "handling": "Rust confirmed in Street Bed Box 1. Pull the affected plants out entirely rather than cutting and leaving them, and bag them for the bin.",
     "idNote": "",
     "window": {
       "from": 6,
@@ -449,11 +450,11 @@
     },
     "care": {
       "feed": "A light feed in spring is plenty.",
-      "deadhead": "Cut a finished spike back to a leaf junction lower down the stem and it will send up new spikes. This is the difference between six weeks of flowers and four months.",
-      "good": "New side spikes coming after each cut.",
-      "poor": "Orange powdery pustules on the undersides of leaves are rust, which is common here. Remove the worst leaves and give it more air.",
-      "endOfSeason": "Cut the spent spikes but leave the plants standing. They are hardy enough to overwinter in Seattle and often come back for a second year.",
-      "propagate": "Self-sows if you let a few spikes shatter, and often overwinters as a plant here anyway. Sow fresh seed indoors in late winter if you want particular colours."
+      "deadhead": "Normally you cut a finished spike back to a leaf junction and it sends up new ones. That is off the table on a rusted plant: it is coming out, not being encouraged.",
+      "good": "Clean green stems and leaves, with new side spikes coming after each cut.",
+      "poor": "Rust, which is what yours has. It shows as brown or rusty-orange pustules, mostly on the undersides of leaves and speckling the stems, and the leaves yellow and drop from the bottom up. It is very common on snapdragons here, and it is host-specific: Puccinia antirrhini attacks snapdragons and nothing else, so the gladiolus behind them and everything else in the bed are not at risk from it.",
+      "endOfSeason": "This is a change from what I told you before. I said to cut the spent spikes and leave the plants standing, because snapdragons often overwinter here and come back. With rust that is exactly the wrong move: the fungus survives the winter on living plants and on fallen debris, so leaving them is how you guarantee it returns. Pull the affected plants out roots and all, rake up the fallen leaves underneath, and bag the lot for the bin. Do not compost it, because a home heap rarely gets hot enough to kill the spores.",
+      "propagate": "Do not save seed from rusted plants and do not let them self-sow where they stand. Buy fresh seed or plants next spring, put them somewhere else in the garden rather than back in the same spot, look for varieties sold as rust-resistant, space them so air moves between them, and water the soil rather than the foliage."
     },
     "art": {
       "form": "spike",
@@ -615,7 +616,7 @@
     "status": "watch",
     "statusLabel": "Needs ID",
     "handling": "Do not pull until identified. Squeeze a stem at the base: brittle and hollow means dead, flexible and green inside means alive.",
-    "idNote": "Photographed again among the spent gladiolus spikes, where it reads as fine, feathery, grey-green foliage rather than dead twigs, which makes a living silver-leaved plant more likely than a burnt-out annual. Artemisia is the front runner on that texture. Two things settle it: crush a piece and smell it, since artemisia is strongly and bitterly aromatic, and look at the base to see whether it has a woody trunk or many soft stems from the ground.",
+    "idNote": "A large mass of fine grey branching stems in Street Bed Box 2. Candidates are artemisia, lavender, statice, or simply a spent annual. Crush a stem and smell it, then photograph the base of the plant where it meets the soil, and whether it has a woody trunk or many soft stems. Note that something silvery and feathery also appears in Street Bed Box 1, so worth checking whether that is the same plant in both boxes or two different things.",
     "care": {
       "feed": "Hold off until it is identified. Feeding the wrong thing at the wrong time is one of the few ways to actively harm a plant.",
       "deadhead": "Depends on what it turns out to be.",

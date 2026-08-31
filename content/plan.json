@@ -89,9 +89,9 @@
         "flags": [],
         "done": false,
         "body": [
-          "The Street Bed Box 2 spikes are fully dried out and papery now, and still holding seed capsules. Every one of those capsules is drawing on the corm that has to carry next summer.",
+          "The Street Bed Box 1 spikes are fully dried out and papery now, and still holding seed capsules. Every one of those capsules is drawing on the corm that has to carry next summer.",
           "Cut each flower spike off at its base, right down where it emerges from the fan of leaves. Leave every leaf standing, however tatty, until it has gone completely yellow: the leaves are what rebuild the corm, the spike is what drains it.",
-          "Same job in Street Bed Box 1 and Driveway Bed 2."
+          "Same job in Street Bed Box 2 and Driveway Bed 2."
         ],
         "slip": "costs",
         "ifSkipped": "Smaller corms and weaker flowers next summer."
@@ -271,6 +271,24 @@
           "The awkward part is finding them, because there is no foliage marking the spot. Work with a fork rather than a spade so you spear fewer of them, start well outside where you think they are, and lift wide and deep, sifting the soil as you go.",
           "Sort as you lift. Firm and heavy is good. Soft, light, papery or carrying blue-green mould goes in the bin. Then either replant straight away in their new spot, or store them somewhere cool, dark and dry in paper bags or mesh, never sealed plastic, and plant with the rest of your bulbs in October or November."
         ]
+      },
+      {
+        "id": "remove-rusted-snapdragons",
+        "title": "Pull the rusted snapdragons out, do not just cut them",
+        "weight": "now",
+        "beds": [
+          "street-1"
+        ],
+        "flags": [],
+        "done": false,
+        "slip": "costs",
+        "ifSkipped": "The rust overwinters on the plants and the fallen leaves, and comes back into next year's snapdragons from the same spot. Nothing else in the bed is at risk, so it is not urgent in the way a spreading disease would be, it just resets the problem every year until you break it.",
+        "body": [
+          "This reverses what I told you earlier. I said to cut the spent spikes and leave the plants standing, because snapdragons often overwinter here and return for a second year. That is right for a healthy plant and wrong for a rusted one: the fungus survives winter on living tissue and on debris underneath, so leaving them is how it comes back.",
+          "Pull the affected plants out roots and all, rake up the fallen leaves beneath them, and bag the lot for the household bin. Do not put it in the compost tumbler: a home heap rarely runs hot enough for long enough to kill rust spores.",
+          "The reassuring part is that snapdragon rust only attacks snapdragons. The gladiolus behind them, and everything else in that box, are not at risk from it.",
+          "Next spring, put snapdragons somewhere else rather than back in the same spot, look for varieties sold as rust-resistant, give them space so air moves between them, and water the soil rather than the leaves."
+        ]
       }
     ]
   },
@@ -308,7 +326,6 @@
         "done": false,
         "body": [
           "After the seed is shaken, pull the poppy plants. They are annuals and they are finished.",
-          "Leave the snapdragons. Cut their spent spikes off but keep the plants: they are hardy enough to overwinter here and often come back for a second year. Let two or three spikes stand and shatter if you want them to self-sow.",
           "Before pulling the big silver-grey mass, squeeze a stem near the base. Brittle and hollow means dead, pull it. Still flexible and green inside means alive and just ugly, leave it."
         ],
         "slip": "safe",
