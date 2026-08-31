@@ -29,6 +29,10 @@
   --seed-soft: #F0E9D2;
   --leaf: #3E6B45;
   --leaf-soft: #E1EBDF;
+  --sun-full: #E3BC4F;
+  --sun-part: #F0DFA8;
+  --sun-shade: #D3D8CC;
+  --select: #4E549A;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -49,6 +53,10 @@
     --seed-soft: #332C15;
     --leaf: #8FC095;
     --leaf-soft: #1E2C20;
+    --sun-full: #6B5316;
+    --sun-part: #3E3616;
+    --sun-shade: #2B322A;
+    --select: #A2A7E0;
   }
 }
 
@@ -69,6 +77,10 @@
   --seed-soft: #332C15;
   --leaf: #8FC095;
   --leaf-soft: #1E2C20;
+  --sun-full: #6B5316;
+  --sun-part: #3E3616;
+  --sun-shade: #2B322A;
+  --select: #A2A7E0;
 }
 
 * { box-sizing: border-box; }
@@ -180,19 +192,349 @@ section { margin-top: 3.4rem; }
   max-width: 34rem;
 }
 
-/* ---------- bed cards ---------- */
+/* ---------- site plan ----------
+   Sun is an ordered quantity, so it gets one sequential gold ramp rather than
+   four unrelated hues. Unsurveyed areas are left unfilled with a dashed
+   outline: absence of data drawn as absence of fill. */
 
-.beds {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
-  gap: 0.9rem;
-}
-
-.bed {
+.plan {
+  margin: 0;
   background: var(--surface);
   border: 1px solid var(--rule-soft);
   border-radius: 3px;
-  padding: 1rem 1.1rem;
+  padding: 1.2rem 1.2rem 1rem;
+}
+
+.plan svg {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  color: var(--ink-soft);
+}
+
+.plan figcaption {
+  margin-top: 1rem;
+  padding-top: 0.85rem;
+  border-top: 1px solid var(--rule-soft);
+  font-size: 0.88rem;
+  color: var(--ink-mute);
+}
+
+.m-structure {
+  fill: var(--surface-sunk);
+  stroke: var(--rule);
+  stroke-width: 1.5;
+}
+
+.m-structure-label,
+.m-bed-label,
+.m-line-label,
+.m-compass text {
+  font-family: "IBM Plex Mono", ui-monospace, monospace;
+  fill: currentColor;
+}
+
+.m-structure-label { font-size: 13px; letter-spacing: 0.08em; }
+.m-bed-label { font-size: 11px; }
+.m-line-label { font-size: 10px; fill: var(--ink-mute); letter-spacing: 0.06em; }
+
+.m-line {
+  stroke: var(--rule);
+  stroke-width: 1.5;
+  stroke-dasharray: 5 4;
+}
+
+.m-bed {
+  stroke: currentColor;
+  stroke-width: 1.5;
+}
+
+.m-bed[data-sun="full"] { fill: var(--sun-full); }
+.m-bed[data-sun="part"] { fill: var(--sun-part); }
+.m-bed[data-sun="shade"] { fill: var(--sun-shade); }
+
+.m-bed[data-sun="unknown"] {
+  fill: none;
+  stroke: var(--ink-mute);
+  stroke-dasharray: 4 3;
+}
+
+.m-compass line,
+.m-compass polygon {
+  stroke: currentColor;
+  stroke-width: 1.5;
+  fill: currentColor;
+}
+
+.m-compass text { font-size: 13px; font-weight: 600; }
+
+.legend {
+  list-style: none;
+  margin: 1rem 0 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem 1.3rem;
+  font-family: "IBM Plex Mono", ui-monospace, monospace;
+  font-size: 0.7rem;
+  letter-spacing: 0.04em;
+  color: var(--ink-mute);
+}
+
+.legend li {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.swatch {
+  width: 0.85rem;
+  height: 0.85rem;
+  border-radius: 2px;
+  border: 1.5px solid var(--ink-soft);
+  flex: none;
+}
+
+.swatch[data-sun="full"] { background: var(--sun-full); }
+.swatch[data-sun="part"] { background: var(--sun-part); }
+.swatch[data-sun="shade"] { background: var(--sun-shade); }
+
+.swatch[data-sun="unknown"] {
+  background: none;
+  border-style: dashed;
+  border-color: var(--ink-mute);
+}
+
+/* ---------- plan interaction ---------- */
+
+.m-hit {
+  cursor: pointer;
+  outline: none;
+}
+
+.m-hit .m-bed {
+  transition: stroke-width 120ms ease, fill-opacity 120ms ease;
+}
+
+.m-hit:hover .m-bed { stroke-width: 3; }
+
+.m-hit:focus-visible .m-bed {
+  stroke: var(--select);
+  stroke-width: 3;
+}
+
+.m-hit.is-selected .m-bed {
+  stroke: var(--select);
+  stroke-width: 4;
+}
+
+.m-hit.is-selected .m-bed-label { font-weight: 600; }
+
+@media (prefers-reduced-motion: reduce) {
+  .m-hit .m-bed { transition: none; }
+}
+
+/* ---------- area panels ---------- */
+
+.panels { margin-top: 1.4rem; }
+
+.panel-prompt {
+  margin: 0;
+  padding: 1.1rem 1.2rem;
+  background: var(--surface-sunk);
+  border-radius: 3px;
+  font-size: 0.92rem;
+  color: var(--ink-mute);
+  text-align: center;
+}
+
+.panel {
+  background: var(--surface);
+  border: 1px solid var(--rule-soft);
+  border-top: 3px solid var(--select);
+  border-radius: 3px;
+  padding: 1.2rem 1.3rem 1.4rem;
+}
+
+.panel-head {
+  display: flex;
+  align-items: baseline;
+  gap: 0.7rem;
+  flex-wrap: wrap;
+}
+
+.panel-head h3 {
+  font-family: "Fraunces", Georgia, serif;
+  font-size: 1.35rem;
+  font-weight: 600;
+  margin: 0;
+}
+
+.panel-aspect {
+  font-family: "IBM Plex Mono", ui-monospace, monospace;
+  font-size: 0.7rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--ink-mute);
+  margin: 0.3rem 0 0;
+}
+
+.panel-desc {
+  margin: 0.7rem 0 0;
+  font-size: 0.93rem;
+  color: var(--ink-soft);
+}
+
+.panel h4 {
+  font-family: "IBM Plex Mono", ui-monospace, monospace;
+  font-size: 0.68rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--ink-mute);
+  margin: 1.5rem 0 0.6rem;
+  padding-bottom: 0.4rem;
+  border-bottom: 1px solid var(--rule-soft);
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.panel h4 span { font-weight: 400; }
+
+.panel-plants {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+
+.panel-plants li {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 0.9rem;
+  font-size: 0.92rem;
+}
+
+.panel-plants .pn { color: var(--ink); }
+.panel-plants .ps { text-align: right; flex: none; }
+
+.panel-tasks {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  counter-reset: pt;
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+.panel-tasks li {
+  display: grid;
+  grid-template-columns: 1.6rem 1fr;
+  gap: 0.2rem 0.6rem;
+  padding-left: 0.7rem;
+  border-left: 3px solid var(--rule);
+}
+
+.panel-tasks li[data-weight="now"] { border-left-color: var(--urgent); }
+.panel-tasks li[data-weight="seed"] { border-left-color: var(--seed); }
+.panel-tasks li[data-weight="grow"] { border-left-color: var(--leaf); }
+.panel-tasks li[data-weight="check"] { border-left-color: var(--accent); }
+
+.panel-tasks li::before {
+  counter-increment: pt;
+  content: counter(pt);
+  grid-row: 1 / span 2;
+  font-family: "IBM Plex Mono", ui-monospace, monospace;
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: var(--ink-mute);
+  font-variant-numeric: tabular-nums;
+  padding-top: 0.15rem;
+}
+
+.pt-head {
+  display: flex;
+  gap: 0.6rem;
+  flex-wrap: wrap;
+  font-family: "IBM Plex Mono", ui-monospace, monospace;
+  font-size: 0.64rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.pt-weight { color: var(--ink-soft); font-weight: 500; }
+.pt-window { color: var(--ink-mute); }
+
+.pt-title {
+  font-size: 0.95rem;
+  color: var(--ink);
+  line-height: 1.4;
+}
+
+.panel-tasks li.done .pt-title {
+  color: var(--ink-mute);
+  text-decoration: line-through;
+  text-decoration-thickness: 1px;
+}
+
+.panel-empty {
+  margin: 0;
+  font-size: 0.92rem;
+  color: var(--ink-mute);
+  font-style: italic;
+}
+
+.sun {
+  font-family: "IBM Plex Mono", ui-monospace, monospace;
+  font-size: 0.66rem;
+  font-weight: 500;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+  padding: 0.16rem 0.44rem;
+  border-radius: 2px;
+  white-space: nowrap;
+  background: var(--surface-sunk);
+  color: var(--ink-soft);
+}
+
+/* The chip carries sun as a coloured dot rather than a fill. A fill would
+   have to be light enough for dark text in one theme and dark enough for
+   light text in the other, and the same ramp cannot do both. */
+
+.sun {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.38rem;
+}
+
+.sun::before {
+  content: "";
+  width: 0.5rem;
+  height: 0.5rem;
+  border-radius: 50%;
+  background: var(--sun-shade);
+  flex: none;
+}
+
+.sun[data-sun="full"]::before { background: var(--sun-full); }
+.sun[data-sun="part"]::before { background: var(--sun-part); }
+.sun[data-sun="shade"]::before { background: var(--sun-shade); }
+
+.sun[data-sun="unknown"] {
+  background: none;
+  border: 1px dashed var(--rule);
+  color: var(--ink-mute);
+}
+
+.sun[data-sun="unknown"]::before {
+  background: none;
+  border: 1px dashed var(--ink-mute);
 }
 
 .bed h3 {

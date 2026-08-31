@@ -1,3 +1,49 @@
+/* Site plan selection.
+ *
+ * Every area on the plan is a button. Selecting one reveals its pre-rendered
+ * panel: what is planted there, and its jobs ordered by urgency. The panels
+ * ship in the HTML rather than being built here, so the content is present
+ * even if this script never runs.
+ */
+(function () {
+  var hits = Array.prototype.slice.call(document.querySelectorAll(".m-hit"));
+  if (!hits.length) return;
+
+  var panels = Array.prototype.slice.call(document.querySelectorAll(".panel"));
+  var prompt = document.getElementById("panel-prompt");
+  var selected = null;
+
+  function select(id) {
+    // Tapping the selected area again clears it.
+    selected = selected === id ? null : id;
+
+    hits.forEach(function (hit) {
+      var on = hit.dataset.bed === selected;
+      hit.classList.toggle("is-selected", on);
+      hit.setAttribute("aria-pressed", on ? "true" : "false");
+    });
+
+    panels.forEach(function (panel) {
+      panel.hidden = panel.dataset.panel !== selected;
+    });
+
+    if (prompt) prompt.hidden = selected !== null;
+  }
+
+  hits.forEach(function (hit) {
+    hit.addEventListener("click", function () {
+      select(hit.dataset.bed);
+    });
+
+    hit.addEventListener("keydown", function (event) {
+      if (event.key === "Enter" || event.key === " " || event.key === "Spacebar") {
+        event.preventDefault();
+        select(hit.dataset.bed);
+      }
+    });
+  });
+})();
+
 /* Field checkboxes.
  *
  * The durable record of what is done lives in content/plan.json ("done": true).

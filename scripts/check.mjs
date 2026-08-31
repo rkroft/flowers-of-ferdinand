@@ -47,6 +47,51 @@ if (garden) {
   }
 }
 
+const SUN = new Set(["full", "part", "shade", "unknown"]);
+
+if (garden) {
+  const seen = new Set();
+
+  for (const bed of garden.beds ?? []) {
+    const where = `garden.json[${bed.id ?? bed.name ?? "?"}]`;
+
+    if (!bed.id) fail(`${where}: missing id`);
+    if (seen.has(bed.id)) fail(`${where}: duplicate area id "${bed.id}"`);
+    seen.add(bed.id);
+
+    for (const field of ["name", "aspect", "exposure", "description", "mapLabel"]) {
+      if (!bed[field]) fail(`${where}: missing "${field}"`);
+    }
+    if (!SUN.has(bed.sun)) {
+      fail(`${where}: sun "${bed.sun}" is not one of ${[...SUN].join(", ")}`);
+    }
+    if (typeof bed.surveyed !== "boolean") {
+      fail(`${where}: "surveyed" must be true or false`);
+    }
+    if (!bed.map || ["x", "y", "w", "h"].some((k) => typeof bed.map[k] !== "number")) {
+      fail(`${where}: "map" needs numeric x, y, w and h so it can be drawn on the site plan`);
+    }
+    if (bed.surveyed && bed.sun === "unknown") {
+      warn(`${where}: surveyed but sun is still "unknown"`);
+    }
+  }
+
+  /* Overlapping rectangles mean the plan is drawn wrong, and it is very hard
+     to see in JSON. Structures are allowed to touch beds, beds are not. */
+  const boxes = (garden.beds ?? []).filter((b) => b.map);
+  for (let i = 0; i < boxes.length; i++) {
+    for (let j = i + 1; j < boxes.length; j++) {
+      const a = boxes[i].map;
+      const b = boxes[j].map;
+      const overlap =
+        a.x < b.x + b.w && b.x < a.x + a.w && a.y < b.y + b.h && b.y < a.y + a.h;
+      if (overlap) {
+        fail(`garden.json: "${boxes[i].id}" and "${boxes[j].id}" overlap on the site plan`);
+      }
+    }
+  }
+}
+
 const bedIds = new Set((garden?.beds ?? []).map((b) => b.id));
 
 const checkBeds = (where, ids) => {

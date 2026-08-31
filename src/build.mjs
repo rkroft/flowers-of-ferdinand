@@ -61,26 +61,182 @@ function renderMasthead(garden) {
   </header>`;
 }
 
-function renderBeds(garden) {
-  if (!garden.beds?.length) return "";
+/* The site plan. Geometry comes from garden.json so the drawing and the
+   written descriptions can never drift apart. Fill encodes sun, which is an
+   ordered quantity, so it runs on one gold ramp rather than four unrelated
+   colours: more gold means more sun, and unsurveyed areas stay unfilled. */
+const WEIGHT_RANK = { now: 0, seed: 1, check: 2, grow: 3 };
+const WEIGHT_LABEL = {
+  now: "Do now",
+  seed: "Seed window",
+  check: "Go look",
+  grow: "Upkeep",
+};
 
-  const cards = garden.beds
+/* Every task, flattened out of its phase and tagged with where it sits in the
+   calendar, so an area's list can be ordered by urgency instead of by section. */
+function flattenTasks(plan) {
+  return plan.flatMap((phase, phaseIndex) =>
+    phase.tasks.map((task) => ({ ...task, phase: phase.title, window: phase.window, phaseIndex }))
+  );
+}
+
+function renderAreaPanel(bed, plants, tasks) {
+  const inBed = plants.filter((p) => (p.beds ?? []).includes(bed.id));
+
+  const mine = tasks
+    .filter((t) => (t.beds ?? []).includes(bed.id))
+    .sort(
+      (a, b) =>
+        Number(a.done) - Number(b.done) ||
+        (WEIGHT_RANK[a.weight] ?? 9) - (WEIGHT_RANK[b.weight] ?? 9) ||
+        a.phaseIndex - b.phaseIndex
+    );
+
+  const plantList = inBed.length
+    ? `        <ul class="panel-plants">
+${inBed
+  .map(
+    (p) => `          <li>
+            <span class="pn">${esc(p.name)}${
+              p.confidence !== "confirmed"
+                ? ` <span class="conf conf-${esc(p.confidence)}">${p.confidence === "likely" ? "likely" : "unknown"}</span>`
+                : ""
+            }</span>
+            <span class="ps status ${esc(p.status)}">${esc(p.statusLabel)}</span>
+          </li>`
+  )
+  .join("\n")}
+        </ul>`
+    : `        <p class="panel-empty">Nothing recorded here yet. This area has not been surveyed.</p>`;
+
+  const taskList = mine.length
+    ? `        <ol class="panel-tasks">
+${mine
+  .map(
+    (t) => `          <li class="${t.done ? "done" : ""}" data-weight="${esc(t.weight)}">
+            <div class="pt-head">
+              <span class="pt-weight">${esc(WEIGHT_LABEL[t.weight] ?? t.weight)}</span>
+              <span class="pt-window">${esc(t.window)}</span>
+            </div>
+            <span class="pt-title">${esc(t.title)}</span>
+          </li>`
+  )
+  .join("\n")}
+        </ol>`
+    : `        <p class="panel-empty">No jobs on the list for this area yet.</p>`;
+
+  return `      <div class="panel" data-panel="${esc(bed.id)}" hidden>
+        <div class="panel-head">
+          <h3>${esc(bed.name)}</h3>
+          <span class="sun" data-sun="${esc(bed.sun)}">${esc(bed.exposure)}</span>
+        </div>
+        <p class="panel-aspect">${esc(bed.aspect)}</p>
+        <p class="panel-desc">${esc(bed.description)}</p>
+
+        <h4>What is in it <span>${inBed.length}</span></h4>
+${plantList}
+
+        <h4>Priority list <span>${mine.filter((t) => !t.done).length} open</span></h4>
+${taskList}
+      </div>`;
+}
+
+function renderMap(garden, plants, plan) {
+  const map = garden.map;
+  if (!map) return "";
+  const tasks = flattenTasks(plan);
+
+  const structures = map.structures
     .map(
-      (bed) => `      <div class="bed">
-        <h3>${esc(bed.name)}</h3>
-        <span class="role">${esc(bed.role)}${bed.exposure ? ` &middot; ${esc(bed.exposure)}` : ""}</span>
-        <p>${esc(bed.description)}</p>
-      </div>`
+      (s) => `      <rect class="m-structure" x="${s.x}" y="${s.y}" width="${s.w}" height="${s.h}" rx="2"></rect>
+      <text class="m-structure-label${s.vertical ? " m-vertical" : ""}" x="${s.x + s.w / 2}" y="${s.y + s.h / 2}" text-anchor="middle" dominant-baseline="central"${
+        s.vertical
+          ? ` transform="rotate(-90 ${s.x + s.w / 2} ${s.y + s.h / 2})"`
+          : ""
+      }>${esc(s.label)}</text>`
     )
     .join("\n");
 
-  return `  <section id="areas">
+  const lines = map.lines
+    .map(
+      (l) => `      <line class="m-line" x1="${l.x1}" y1="${l.y1}" x2="${l.x2}" y2="${l.y2}"></line>
+      <text class="m-line-label" x="${l.vertical ? l.x1 - 6 : l.x1 + 4}" y="${l.vertical ? (l.y1 + l.y2) / 2 : l.y1 - 6}"${
+        l.vertical
+          ? ` text-anchor="middle" transform="rotate(-90 ${l.x1 - 6} ${(l.y1 + l.y2) / 2})"`
+          : ""
+      }>${esc(l.label)}</text>`
+    )
+    .join("\n");
+
+  const beds = garden.beds
+    .map((bed) => {
+      const m = bed.map;
+      if (!m) return "";
+      const cx = m.x + m.w / 2;
+      const cy = m.y + m.h / 2;
+      /* Narrow beds need a short label or the text runs outside the box. */
+      const short =
+        bed.mapLabel ??
+        bed.name.replace(/^Street Bed /, "Street ").replace(/^Back Bed /, "Back ");
+
+      return `      <g class="m-hit" role="button" tabindex="0" data-bed="${esc(bed.id)}" aria-pressed="false" aria-label="${esc(bed.name)}, ${esc(bed.exposure)}. Show what is planted here and what needs doing.">
+        <rect class="m-bed" data-sun="${esc(bed.sun)}" data-surveyed="${bed.surveyed}" x="${m.x}" y="${m.y}" width="${m.w}" height="${m.h}" rx="2"></rect>
+        <text class="m-bed-label" x="${cx}" y="${cy}" text-anchor="middle" dominant-baseline="central">${esc(short)}</text>
+      </g>`;
+    })
+    .join("\n");
+
+  const legend = [
+    ["full", "Full sun"],
+    ["part", "Part sun"],
+    ["shade", "Shade"],
+    ["unknown", "Not surveyed"],
+  ]
+    .map(
+      ([sun, label]) =>
+        `        <li><span class="swatch" data-sun="${sun}"></span>${label}</li>`
+    )
+    .join("\n");
+
+  const panels = garden.beds
+    .map((bed) => renderAreaPanel(bed, plants, tasks))
+    .join("\n");
+
+  return `  <section id="map">
     <div class="section-head">
-      <h2>The areas</h2>
-      <span class="window">${garden.beds.length}</span>
+      <h2>Site plan</h2>
+      <span class="window">Tap an area</span>
     </div>
-    <div class="beds">
-${cards}
+    <p class="section-note">Tap or click any bed to see what is planted in it and what needs doing there, most urgent first.</p>
+
+    <figure class="plan">
+      <svg viewBox="${esc(map.viewBox)}" role="img" aria-label="Site plan of nine growing areas around the house, shaded by how much sun each receives. The front bed sits on the north side of the house and is shaded; back bed 2 sits on the south wall and gets the most sun; the side bed is on the west wall.">
+        <g class="m-structures">
+${structures}
+        </g>
+        <g class="m-lines">
+${lines}
+        </g>
+        <g class="m-beds">
+${beds}
+        </g>
+        <g class="m-compass" transform="translate(40 372)">
+          <line x1="0" y1="26" x2="0" y2="-8"></line>
+          <polygon points="0,-16 -5,-4 5,-4"></polygon>
+          <text x="0" y="40" text-anchor="middle">N</text>
+        </g>
+      </svg>
+      <figcaption>${esc(map.caption)}</figcaption>
+    </figure>
+
+    <ul class="legend">
+${legend}
+    </ul>
+
+    <div class="panels" id="panels">
+      <p class="panel-prompt" id="panel-prompt">Tap an area on the plan to see its plants and its priority list.</p>
+${panels}
     </div>
   </section>`;
 }
@@ -373,7 +529,7 @@ ${css}</style>`;
 
 ${renderMasthead(garden)}
 
-${renderBeds(garden)}
+${renderMap(garden, plants, plan)}
 
 ${plan.map((phase) => renderPhase(phase, bedsById)).join("\n\n")}
 

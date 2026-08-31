@@ -26,7 +26,7 @@ non-zero and names the file and field on any problem.
 
 ```
 content/          the only files that change week to week
-  garden.json     title, standfirst, meta strip, bed definitions, footnote
+  garden.json     title, standfirst, meta strip, the areas, the site plan geometry
   plan.json       phases, each holding dated tasks
   plants.json     the bed inventory, grouped by bed at render time
   questions.json  open diagnostic questions, answered in place
@@ -46,6 +46,49 @@ dist/             generated, gitignored
 ```
 
 ## Content schemas
+
+**garden.json** holds the areas and the interactive site plan. Each area:
+
+```json
+{
+  "id": "side",
+  "name": "Side Bed",
+  "mapLabel": "Side",
+  "aspect": "West wall of the house",
+  "exposure": "Afternoon sun, rain shadow",
+  "sun": "part",
+  "surveyed": true,
+  "map": { "x": 24, "y": 172, "w": 42, "h": 82 },
+  "description": "..."
+}
+```
+
+`sun` must be `full`, `part`, `shade` or `unknown`, and it drives the fill on
+the plan. It is an **ordered** quantity, so the plan renders it as one gold
+ramp rather than four unrelated colours: more gold means more sun, and
+`unknown` is drawn unfilled with a dashed outline. Do not add a fifth category
+or give any level its own hue.
+
+`map` is the rectangle on the plan, in the coordinate space of
+`map.viewBox`. **North is at the top**, which is a 180 degree turn from
+Rachel's original sketch, so check the compass before moving anything.
+`npm run check` fails if two areas overlap, because that is nearly impossible
+to spot in JSON.
+
+`mapLabel` is the short label drawn inside the rectangle. Narrow beds need it
+or the text runs outside the box; the build verifies nothing overflows only if
+you look at the rendered page, so keep it short.
+
+`surveyed` is false for areas that are on the map but have not been
+photographed or walked yet. The area's panel then says so instead of
+pretending it is empty.
+
+Tapping an area on the plan opens its panel: what is planted there, and its
+tasks ordered by urgency (`now`, then `seed`, then `check`, then `grow`, then
+by calendar phase, with done tasks last). Panels are rendered into the HTML at
+build time, not assembled in the browser, so the content exists even if the
+script never runs.
+
 
 **plan.json** is an array of phases:
 

@@ -1,7 +1,7 @@
 {
   "title": "Two Beds, Ten Weeks",
   "standfirst": "Everything between today and first frost, ordered by how soon it stops being possible. The top block is the part with a closing window.",
-  "eyebrow": "Front beds · Seattle",
+  "eyebrow": "Whole garden · Seattle",
   "updated": "2026-08-31",
   "season": "2026",
   "meta": [
@@ -19,30 +19,220 @@
     },
     {
       "label": "Areas",
-      "value": "3 of 6 mapped"
+      "value": "9 mapped, 3 surveyed"
     }
   ],
+  "map": {
+    "viewBox": "0 -12 480 452",
+    "caption": "The nine growing areas, drawn from your sketch and turned so north is at the top. Fill shows how much sun each one gets: the more gold, the more sun. Unfilled areas are the ones not yet surveyed.",
+    "structures": [
+      {
+        "id": "house",
+        "label": "House",
+        "x": 80,
+        "y": 158,
+        "w": 240,
+        "h": 110
+      },
+      {
+        "id": "driveway",
+        "label": "Driveway",
+        "x": 336,
+        "y": 24,
+        "w": 44,
+        "h": 392,
+        "vertical": true
+      },
+      {
+        "id": "outbuilding",
+        "label": "?",
+        "x": 268,
+        "y": 328,
+        "w": 52,
+        "h": 44
+      }
+    ],
+    "lines": [
+      {
+        "id": "street-north",
+        "label": "Street",
+        "x1": 14,
+        "y1": 12,
+        "x2": 466,
+        "y2": 12
+      },
+      {
+        "id": "sidewalk",
+        "label": "Sidewalk",
+        "x1": 72,
+        "y1": 94,
+        "x2": 330,
+        "y2": 94
+      },
+      {
+        "id": "path",
+        "label": "Path",
+        "x1": 76,
+        "y1": 20,
+        "x2": 76,
+        "y2": 88,
+        "vertical": true
+      }
+    ]
+  },
   "beds": [
     {
-      "id": "bed1",
-      "name": "Bed 1",
+      "id": "street-1",
+      "name": "Street Bed 1",
       "role": "Active bloom",
+      "aspect": "Past the sidewalk, open to the north",
       "exposure": "Full sun",
-      "description": "The cut-flower box out front. Dahlias, gaillardia, scabiosa, cosmos and sunflowers, all still going. Needs constant deadheading for the next ten weeks."
+      "sun": "full",
+      "surveyed": true,
+      "map": {
+        "x": 80,
+        "y": 24,
+        "w": 110,
+        "h": 54
+      },
+      "description": "The cut-flower box. Dahlias, gaillardia, scabiosa, cosmos and sunflowers, all still going. Needs constant deadheading for the next ten weeks.",
+      "mapLabel": "Street 1"
     },
     {
-      "id": "bed2",
-      "name": "Bed 2",
+      "id": "street-2",
+      "name": "Street Bed 2",
       "role": "Seed and sowing",
+      "aspect": "Past the sidewalk, open to the north",
       "exposure": "Full sun",
-      "description": "Mostly finished and holding a lot of seed. One good clearing pass now, then it becomes the place hardy annuals get sown in September."
+      "sun": "full",
+      "surveyed": true,
+      "map": {
+        "x": 202,
+        "y": 24,
+        "w": 118,
+        "h": 54
+      },
+      "description": "Mostly finished and holding a lot of seed. One good clearing pass now, then it becomes the place hardy annuals get sown in September.",
+      "mapLabel": "Street 2"
     },
     {
-      "id": "bed3",
-      "name": "Side bed",
+      "id": "side",
+      "name": "Side Bed",
       "role": "Edibles",
+      "aspect": "West wall of the house",
+      "exposure": "Afternoon sun, rain shadow",
+      "sun": "part",
+      "surveyed": true,
+      "map": {
+        "x": 24,
+        "y": 172,
+        "w": 42,
+        "h": 82
+      },
+      "description": "Narrow raised bed on the west wall. Strawberries, beans on string trellis, sunflowers and the compost tumbler. Shaded until midday, then hot afternoon sun off the wall, and sheltered from rain. That combination is what mildewed the sunflowers.",
+      "mapLabel": "Side"
+    },
+    {
+      "id": "front",
+      "name": "Front Bed",
+      "role": "Not yet surveyed",
+      "aspect": "North wall of the house",
+      "exposure": "Shaded by the house",
+      "sun": "shade",
+      "surveyed": false,
+      "map": {
+        "x": 80,
+        "y": 104,
+        "w": 240,
+        "h": 40
+      },
+      "description": "The shadiest ground you have. The house sits directly to its south, so it is in shadow for most of the day, and almost all day from October to March. Whatever is planted here needs to be a shade plant, and sun-lovers will always disappoint.",
+      "mapLabel": "Front"
+    },
+    {
+      "id": "back-2",
+      "name": "Back Bed 2",
+      "role": "Not yet surveyed",
+      "aspect": "South wall of the house",
+      "exposure": "Hottest and driest",
+      "sun": "full",
+      "surveyed": false,
+      "map": {
+        "x": 80,
+        "y": 282,
+        "w": 240,
+        "h": 38
+      },
+      "description": "The best growing spot on the property and probably the most underused. A south-facing wall collects sun all day and radiates stored heat at night, which extends the season at both ends. It will also be the driest bed, in the wall's rain shadow.",
+      "mapLabel": "Back 2"
+    },
+    {
+      "id": "back-1",
+      "name": "Back Bed 1",
+      "role": "Not yet surveyed",
+      "aspect": "South end, east of the driveway",
       "exposure": "To confirm",
-      "description": "A narrow raised bed running along the house foundation. Strawberries, beans on string trellis, sunflowers against the wall, and a compost tumbler at the end. The wall creates a rain shadow and blocks airflow, which is driving the mildew on the sunflowers."
+      "sun": "unknown",
+      "surveyed": false,
+      "map": {
+        "x": 396,
+        "y": 250,
+        "w": 66,
+        "h": 66
+      },
+      "description": "Detached from the house at the south end, past the driveway. Open on the map, so likely good sun, but nothing seen yet.",
+      "mapLabel": "Back 1"
+    },
+    {
+      "id": "street-3",
+      "name": "Street Bed 3",
+      "role": "Not yet surveyed",
+      "aspect": "East edge, past the driveway",
+      "exposure": "To confirm",
+      "sun": "unknown",
+      "surveyed": false,
+      "map": {
+        "x": 396,
+        "y": 24,
+        "w": 66,
+        "h": 66
+      },
+      "description": "East side of the property beyond the driveway. Likely morning sun with afternoon shade, but that depends entirely on what stands to the west of it.",
+      "mapLabel": "Street 3"
+    },
+    {
+      "id": "street-4",
+      "name": "Street Bed 4",
+      "role": "Not yet surveyed",
+      "aspect": "East edge, past the driveway",
+      "exposure": "To confirm",
+      "sun": "unknown",
+      "surveyed": false,
+      "map": {
+        "x": 396,
+        "y": 130,
+        "w": 66,
+        "h": 66
+      },
+      "description": "Same east strip as Street Bed 3, further south. Same open question about afternoon shade.",
+      "mapLabel": "Street 4"
+    },
+    {
+      "id": "path-bed",
+      "name": "Path Bed",
+      "role": "Not yet surveyed",
+      "aspect": "North-west corner, beyond the path",
+      "exposure": "To confirm",
+      "sun": "unknown",
+      "surveyed": false,
+      "map": {
+        "x": 18,
+        "y": 24,
+        "w": 42,
+        "h": 54
+      },
+      "description": "The unlabelled bed at the north-west corner of your sketch, past the path. Needs a name as much as it needs a survey.",
+      "mapLabel": "Path"
     }
   ],
   "footnote": "Ticking a box here is a local convenience for working at the bed. The durable record is content/plan.json. Frost timing is a ten-year average for in-city Seattle and varies by several weeks year to year, so treat November as a watch-the-forecast month rather than a dated one."

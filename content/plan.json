@@ -10,7 +10,7 @@
         "title": "Shake the poppy seed where you want it",
         "weight": "seed",
         "beds": [
-          "bed2"
+          "street-2"
         ],
         "flags": [
           "Closing window"
@@ -26,8 +26,8 @@
         "title": "Deadhead the gaillardia hard, then the dahlias",
         "weight": "now",
         "beds": [
-          "bed1",
-          "bed2"
+          "street-1",
+          "street-2"
         ],
         "flags": [],
         "done": false,
@@ -41,8 +41,8 @@
         "title": "Quick thrips check on the gladiolus",
         "weight": "check",
         "beds": [
-          "bed1",
-          "bed2"
+          "street-1",
+          "street-2"
         ],
         "flags": [
           "Diagnostic"
@@ -58,7 +58,7 @@
         "title": "Inspect the split stem",
         "weight": "check",
         "beds": [
-          "bed1"
+          "street-1"
         ],
         "flags": [
           "Closed"
@@ -73,8 +73,8 @@
         "title": "Cut the spent gladiolus spikes, keep the leaves",
         "weight": "now",
         "beds": [
-          "bed1",
-          "bed2"
+          "street-1",
+          "street-2"
         ],
         "flags": [],
         "done": false,
@@ -87,7 +87,7 @@
         "title": "Strip the mildewed sunflower leaves",
         "weight": "now",
         "beds": [
-          "bed3"
+          "side"
         ],
         "flags": [],
         "done": false,
@@ -101,7 +101,7 @@
         "title": "Weed the strawberry mat before anything seeds",
         "weight": "now",
         "beds": [
-          "bed3"
+          "side"
         ],
         "flags": [],
         "done": false,
@@ -115,7 +115,7 @@
         "title": "Check how dry the soil is against the foundation",
         "weight": "check",
         "beds": [
-          "bed3"
+          "side"
         ],
         "flags": [
           "Diagnostic"
@@ -139,14 +139,14 @@
         "title": "Direct-sow hardy annuals into the gaps",
         "weight": "seed",
         "beds": [
-          "bed2"
+          "street-2"
         ],
         "flags": [
           "By Sep 20"
         ],
         "done": false,
         "body": [
-          "Bed 2 is the sowing bed, because pulling the spent poppies opens real ground. Larkspur, nigella, bachelor's button, breadseed poppy, calendula, orlaya. Scatter, press in, do not bury deep, keep damp until the rains take over."
+          "Street Bed 2 is the sowing bed, because pulling the spent poppies opens real ground. Larkspur, nigella, bachelor's button, breadseed poppy, calendula, orlaya. Scatter, press in, do not bury deep, keep damp until the rains take over."
         ]
       },
       {
@@ -154,7 +154,7 @@
         "title": "Clear the spent poppies and dead material",
         "weight": "grow",
         "beds": [
-          "bed2"
+          "street-2"
         ],
         "flags": [],
         "done": false,
@@ -169,7 +169,7 @@
         "title": "Shear the oregano by a third, dry the leaves",
         "weight": "grow",
         "beds": [
-          "bed2"
+          "street-2"
         ],
         "flags": [],
         "done": false,
@@ -182,7 +182,7 @@
         "title": "Shear the hardy geranium back hard",
         "weight": "grow",
         "beds": [
-          "bed2"
+          "street-2"
         ],
         "flags": [],
         "done": false,
@@ -195,7 +195,7 @@
         "title": "Thin the strawberry mat and take runner cuttings",
         "weight": "grow",
         "beds": [
-          "bed3"
+          "side"
         ],
         "flags": [],
         "done": false,
@@ -209,7 +209,7 @@
         "title": "Keep picking the beans, then cut at soil level",
         "weight": "grow",
         "beds": [
-          "bed3"
+          "side"
         ],
         "flags": [],
         "done": false,
@@ -296,8 +296,8 @@
         "title": "Cut the gladiolus foliage once it is fully yellow",
         "weight": "grow",
         "beds": [
-          "bed1",
-          "bed2"
+          "street-1",
+          "street-2"
         ],
         "flags": [],
         "done": false,
@@ -310,8 +310,8 @@
         "title": "Top-dress with compost",
         "weight": "grow",
         "beds": [
-          "bed1",
-          "bed2"
+          "street-1",
+          "street-2"
         ],
         "flags": [],
         "done": false,
@@ -332,7 +332,7 @@
         "title": "Put the dahlias to bed",
         "weight": "now",
         "beds": [
-          "bed1"
+          "street-1"
         ],
         "flags": [],
         "done": false,
@@ -346,8 +346,8 @@
         "title": "Lift, inspect and spread the gladiolus corms",
         "weight": "check",
         "beds": [
-          "bed1",
-          "bed2"
+          "street-1",
+          "street-2"
         ],
         "flags": [],
         "done": false,
@@ -361,8 +361,8 @@
         "title": "Leave more standing than feels tidy",
         "weight": "grow",
         "beds": [
-          "bed1",
-          "bed2"
+          "street-1",
+          "street-2"
         ],
         "flags": [],
         "done": false,

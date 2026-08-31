@@ -4,7 +4,7 @@
     "name": "Dahlia",
     "variety": "yellow ball or decorative type",
     "beds": [
-      "bed1"
+      "street-1"
     ],
     "type": "tender perennial",
     "confidence": "confirmed",
@@ -18,8 +18,8 @@
     "name": "Gaillardia",
     "variety": "blanket flower, possibly 'Arizona Sun'",
     "beds": [
-      "bed1",
-      "bed2"
+      "street-1",
+      "street-2"
     ],
     "type": "short-lived perennial",
     "confidence": "confirmed",
@@ -33,7 +33,7 @@
     "name": "Scabiosa",
     "variety": "pincushion flower",
     "beds": [
-      "bed1"
+      "street-1"
     ],
     "type": "perennial",
     "confidence": "confirmed",
@@ -47,7 +47,7 @@
     "name": "Cosmos",
     "variety": "Cosmos bipinnatus",
     "beds": [
-      "bed1"
+      "street-1"
     ],
     "type": "annual",
     "confidence": "confirmed",
@@ -61,8 +61,8 @@
     "name": "Sunflower",
     "variety": "one mahogany, one branching yellow",
     "beds": [
-      "bed1",
-      "bed3"
+      "street-1",
+      "side"
     ],
     "type": "annual",
     "confidence": "confirmed",
@@ -76,7 +76,7 @@
     "name": "Echinacea",
     "variety": "purple coneflower",
     "beds": [
-      "bed1"
+      "street-1"
     ],
     "type": "perennial",
     "confidence": "confirmed",
@@ -90,7 +90,7 @@
     "name": "Echinacea",
     "variety": "white, possibly 'White Swan'",
     "beds": [
-      "bed1"
+      "street-1"
     ],
     "type": "perennial",
     "confidence": "likely",
@@ -104,8 +104,8 @@
     "name": "Gladiolus",
     "variety": "grows from corms, not bulbs",
     "beds": [
-      "bed1",
-      "bed2"
+      "street-1",
+      "street-2"
     ],
     "type": "corm",
     "confidence": "confirmed",
@@ -119,8 +119,8 @@
     "name": "California poppy",
     "variety": "Eschscholzia californica",
     "beds": [
-      "bed1",
-      "bed2"
+      "street-1",
+      "street-2"
     ],
     "type": "annual, self-sowing",
     "confidence": "confirmed",
@@ -134,7 +134,7 @@
     "name": "Shirley poppy",
     "variety": "Papaver rhoeas",
     "beds": [
-      "bed2"
+      "street-2"
     ],
     "type": "annual",
     "confidence": "confirmed",
@@ -148,7 +148,7 @@
     "name": "Snapdragon",
     "variety": "Antirrhinum",
     "beds": [
-      "bed2"
+      "street-2"
     ],
     "type": "short-lived perennial here",
     "confidence": "confirmed",
@@ -162,7 +162,7 @@
     "name": "Oregano",
     "variety": "Origanum vulgare",
     "beds": [
-      "bed2"
+      "street-2"
     ],
     "type": "perennial herb",
     "confidence": "confirmed",
@@ -176,7 +176,7 @@
     "name": "Hardy geranium",
     "variety": "cranesbill",
     "beds": [
-      "bed2"
+      "street-2"
     ],
     "type": "perennial",
     "confidence": "confirmed",
@@ -190,7 +190,7 @@
     "name": "Whorled spike plant",
     "variety": "veronica, agastache, or Culver's root",
     "beds": [
-      "bed2"
+      "street-2"
     ],
     "type": "perennial",
     "confidence": "unknown",
@@ -204,7 +204,7 @@
     "name": "Silver-grey dried mound",
     "variety": "unknown",
     "beds": [
-      "bed2"
+      "street-2"
     ],
     "type": "unknown",
     "confidence": "unknown",
@@ -218,21 +218,21 @@
     "name": "Small blue flowers",
     "variety": "lobelia or annual salvia",
     "beds": [
-      "bed1"
+      "street-1"
     ],
     "type": "unknown",
     "confidence": "unknown",
     "status": "watch",
     "statusLabel": "Needs ID",
     "handling": "Harmless either way. Identify before deciding whether it returns next year.",
-    "idNote": "Tiny blue-purple flowers on thin wiry stems threading through bed 1. Lobelia is a low sprawling annual with tiny fan-shaped flowers. Salvia stands upright with flowers in tiers up a spike. A close photo of a single flower settles it."
+    "idNote": "Tiny blue-purple flowers on thin wiry stems threading through Street Bed 1. Lobelia is a low sprawling annual with tiny fan-shaped flowers. Salvia stands upright with flowers in tiers up a spike. A close photo of a single flower settles it."
   },
   {
     "id": "round-leaved",
     "name": "Round-leaved plant",
     "variety": "possibly nasturtium",
     "beds": [
-      "bed1"
+      "street-1"
     ],
     "type": "unknown",
     "confidence": "unknown",
@@ -246,7 +246,7 @@
     "name": "Small white daisy",
     "variety": "possibly feverfew",
     "beds": [
-      "bed1"
+      "street-1"
     ],
     "type": "unknown",
     "confidence": "unknown",
@@ -260,8 +260,8 @@
     "name": "Possible crocosmia",
     "variety": "mixed among the gladiolus",
     "beds": [
-      "bed1",
-      "bed2"
+      "street-1",
+      "street-2"
     ],
     "type": "corm",
     "confidence": "unknown",
@@ -275,7 +275,7 @@
     "name": "Strawberry",
     "variety": "everbearing or day-neutral",
     "beds": [
-      "bed3"
+      "side"
     ],
     "type": "perennial",
     "confidence": "likely",
@@ -289,7 +289,7 @@
     "name": "Beans",
     "variety": "purple-flowered, on string trellis",
     "beds": [
-      "bed3"
+      "side"
     ],
     "type": "annual",
     "confidence": "likely",
@@ -303,7 +303,7 @@
     "name": "Dark puckered greens",
     "variety": "spinach, chard or beet",
     "beds": [
-      "bed3"
+      "side"
     ],
     "type": "unknown",
     "confidence": "unknown",
@@ -317,7 +317,7 @@
     "name": "Low creeping ground cover",
     "variety": "chickweed or ground ivy",
     "beds": [
-      "bed3"
+      "side"
     ],
     "type": "unknown",
     "confidence": "unknown",
