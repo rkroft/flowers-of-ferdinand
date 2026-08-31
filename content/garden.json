@@ -23,64 +23,64 @@
     }
   ],
   "map": {
-    "viewBox": "0 -16 560 524",
-    "caption": "Redrawn from your Figma plan. North is at the top: the street is the north side, the townhomes are south, west is on the left. Grey blocks are the house, driveway, stairs and the townhomes. Fill shows how much sun each area gets: the more gold, the more sun. Unfilled areas are not surveyed yet.",
+    "viewBox": "0 -8 512 505",
+    "caption": "Traced from your Figma plan and kept to its proportions and positions. North is at the top: the street is the north side, the townhomes are south, west is on the left. Grey blocks are the house, driveway, stairs and the townhomes. Fill shows how much sun each area gets: the more gold, the more sun. Unfilled areas are not surveyed yet.",
     "structures": [
       {
         "id": "house",
         "label": "House",
-        "x": 168,
-        "y": 296,
-        "w": 220,
+        "x": 125,
+        "y": 274,
+        "w": 198,
         "h": 100
       },
       {
         "id": "driveway",
         "label": "Driveway",
-        "x": 408,
-        "y": 24,
-        "w": 44,
-        "h": 330,
+        "x": 322,
+        "y": 15,
+        "w": 72,
+        "h": 156,
         "vertical": true
       },
       {
         "id": "stairs-nw",
         "label": "Stairs",
-        "x": 30,
-        "y": 190,
+        "x": 28,
+        "y": 171,
         "w": 96,
-        "h": 56
+        "h": 70
       },
       {
         "id": "stairs-e",
-        "label": "",
-        "x": 446,
-        "y": 372,
-        "w": 48,
+        "label": "Stairs",
+        "x": 367,
+        "y": 334,
+        "w": 76,
         "h": 30
       },
       {
         "id": "stairs-s1",
         "label": "",
-        "x": 126,
-        "y": 404,
-        "w": 36,
-        "h": 40
+        "x": 78,
+        "y": 374,
+        "w": 47,
+        "h": 37
       },
       {
         "id": "stairs-s2",
         "label": "",
-        "x": 292,
-        "y": 404,
+        "x": 235,
+        "y": 374,
         "w": 36,
-        "h": 40
+        "h": 37
       },
       {
         "id": "townhomes",
         "label": "Townhomes (south)",
-        "x": 30,
-        "y": 470,
-        "w": 510,
+        "x": 28,
+        "y": 455,
+        "w": 454,
         "h": 30
       }
     ],
@@ -89,50 +89,66 @@
         "id": "street",
         "label": "Street",
         "x1": 20,
-        "y1": 8,
-        "x2": 540,
-        "y2": 8
+        "y1": 5,
+        "x2": 492,
+        "y2": 5
       },
       {
         "id": "sidewalk",
         "label": "Sidewalk",
-        "x1": 60,
-        "y1": 150,
-        "x2": 400,
-        "y2": 150
+        "x1": 28,
+        "y1": 144,
+        "x2": 322,
+        "y2": 144
       },
       {
         "id": "path-n",
         "label": "Path",
-        "x1": 118,
-        "y1": 26,
-        "x2": 118,
-        "y2": 118,
+        "x1": 102,
+        "y1": 17,
+        "x2": 102,
+        "y2": 111,
         "vertical": true
       },
       {
         "id": "path-w",
         "label": "Path",
-        "x1": 146,
-        "y1": 256,
-        "x2": 146,
-        "y2": 394,
+        "x1": 80,
+        "y1": 243,
+        "x2": 80,
+        "y2": 372,
         "vertical": true
       },
       {
         "id": "easements",
         "label": "Path / easements",
-        "x1": 30,
-        "y1": 456,
-        "x2": 540,
-        "y2": 456
+        "x1": 28,
+        "y1": 445,
+        "x2": 482,
+        "y2": 445
       }
     ],
     "north": "up",
     "compass": {
-      "x": 500,
-      "y": 300
-    }
+      "x": 438,
+      "y": 262
+    },
+    "outlines": [
+      {
+        "id": "strip",
+        "x": 28,
+        "y": 15,
+        "w": 294,
+        "h": 98
+      },
+      {
+        "id": "property",
+        "x": 28,
+        "y": 171,
+        "w": 454,
+        "h": 274
+      }
+    ]
   },
   "beds": [
     {
@@ -144,10 +160,10 @@
       "sun": "full",
       "surveyed": true,
       "map": {
-        "x": 30,
-        "y": 24,
-        "w": 60,
-        "h": 96
+        "x": 28,
+        "y": 15,
+        "w": 51,
+        "h": 97
       },
       "description": "Rosemary, sage and a big stand of shasta daisy, with bearded iris through the middle and a bare patch at the front. The herbs thriving here is the evidence for full sun and sharp drainage. This bed wants the opposite of a fall tidy: the woody herbs must not be cut back until spring."
     },
@@ -160,10 +176,10 @@
       "sun": "full",
       "surveyed": true,
       "map": {
-        "x": 150,
-        "y": 42,
-        "w": 84,
-        "h": 78
+        "x": 139,
+        "y": 32,
+        "w": 73,
+        "h": 67
       },
       "description": "The cut-flower box. Dahlias, gaillardia, scabiosa, cosmos and sunflowers, all still going. Needs constant deadheading for the next ten weeks."
     },
@@ -176,10 +192,10 @@
       "sun": "full",
       "surveyed": true,
       "map": {
-        "x": 252,
-        "y": 42,
-        "w": 84,
-        "h": 78
+        "x": 231,
+        "y": 32,
+        "w": 73,
+        "h": 67
       },
       "description": "Mostly finished and holding a lot of seed. One good clearing pass now, then it becomes the place hardy annuals get sown in September."
     },
@@ -192,10 +208,10 @@
       "sun": "full",
       "surveyed": true,
       "map": {
-        "x": 462,
-        "y": 24,
-        "w": 78,
-        "h": 96
+        "x": 394,
+        "y": 15,
+        "w": 88,
+        "h": 98
       },
       "description": "North-east corner beyond the driveway, out by the street and clear of the house. The annual patch: sunflowers, zinnias and a wildflower mix, grown here on purpose and staying that way. All three want full sun, which is the evidence for the sun rating."
     },
@@ -208,10 +224,10 @@
       "sun": "part",
       "surveyed": true,
       "map": {
-        "x": 168,
-        "y": 190,
-        "w": 220,
-        "h": 34
+        "x": 125,
+        "y": 173,
+        "w": 196,
+        "h": 35
       },
       "description": "The wooden-edged strip at street level, packed with tulips in March and April. I had this down as shade and said sun-lovers would disappoint here, which the photographs flatly contradict. Two things I did not know: the front is terraced, so these beds sit raised and clear of the worst of the house shadow, and a north aspect still gets real early and late sun through spring and summer, when the sun rises and sets well north of east and west. It is shaded around midday and in winter, which is exactly why a spring display works so well here."
     },
@@ -224,10 +240,10 @@
       "sun": "part",
       "surveyed": true,
       "map": {
-        "x": 168,
-        "y": 232,
-        "w": 220,
-        "h": 56
+        "x": 125,
+        "y": 209,
+        "w": 196,
+        "h": 65
       },
       "description": "The raised bed above the retaining wall, and by a distance the fullest planting in the garden. Nineteen things recorded so far and probably not all of them. Tulips, primroses, violas, English daisies, dianthus and sweet william over a base of candytuft and creeping mats, with hostas and bleeding heart in the shadier ground under the maple, clematis on the trellis behind, and periwinkle spilling down the wall face. Baby's breath and flax carry it past the bulbs into early summer. Raised and free-draining, which is why the cushion-forming plants do so well here."
     },
@@ -240,10 +256,10 @@
       "sun": "part",
       "surveyed": true,
       "map": {
-        "x": 30,
-        "y": 296,
-        "w": 56,
-        "h": 76
+        "x": 28,
+        "y": 274,
+        "w": 50,
+        "h": 75
       },
       "description": "Narrow raised bed on the west wall. Strawberries, beans on string trellis, sunflowers and the compost tumbler. West facing means shade until around midday, then several hours of strong afternoon sun with heat radiating off the wall and held in it overnight. Add a foundation that wicks moisture away and an eave that keeps rain off, and you get warm still air over dry roots, which is what powdery mildew wants. Hotter and drier than it looks."
     },
@@ -256,10 +272,10 @@
       "sun": "full",
       "surveyed": true,
       "map": {
-        "x": 462,
-        "y": 194,
-        "w": 78,
-        "h": 40
+        "x": 394,
+        "y": 175,
+        "w": 88,
+        "h": 36
       },
       "description": "East of the driveway alongside the house. Sunflowers, zinnias and gladiolus, and confirmed as full sun, which is more than its position beside the house suggested: nothing tall stands to the east of it. Together with Driveway Bed 1 it makes the driveway side a second sunny run rather than the marginal strip the map implied."
     },
@@ -272,12 +288,12 @@
       "sun": "unknown",
       "surveyed": false,
       "map": {
-        "x": 396,
-        "y": 372,
-        "w": 42,
-        "h": 76
+        "x": 324,
+        "y": 334,
+        "w": 43,
+        "h": 77
       },
-      "description": "Narrow bed wrapping the south-east corner of the house, between the house and the stairs. Morning light at best and hemmed in on several sides. Not seen yet.",
+      "description": "Narrow bed wrapping the south-east corner of the house, between the house and the stairs. The plan draws it as an L: the leg shown here plus an arm running west along the back of the house. Morning light at best and hemmed in on several sides. Not seen yet.",
       "vertical": true
     },
     {
@@ -289,10 +305,10 @@
       "sun": "unknown",
       "surveyed": false,
       "map": {
-        "x": 500,
-        "y": 372,
-        "w": 40,
-        "h": 76
+        "x": 444,
+        "y": 334,
+        "w": 38,
+        "h": 77
       },
       "description": "The far south-east corner, against the neighbouring property. South facing, which is promising, but narrow and boxed in. Not seen yet.",
       "vertical": true
@@ -306,10 +322,10 @@
       "sun": "part",
       "surveyed": false,
       "map": {
-        "x": 168,
-        "y": 404,
-        "w": 122,
-        "h": 40
+        "x": 125,
+        "y": 374,
+        "w": 110,
+        "h": 35
       },
       "description": "A south wall would normally make this the best growing spot on the property, but two or three storey townhomes stand close to the south across the easement and they block the low sun. At Seattle's latitude the sun only clears a building that tall and that close for a few hours around midday between roughly May and July, and from September through March this bed gets essentially nothing. It is warm sheltered shade rather than a hot bed: the wall holds heat, but boxed in on both sides means still air, so expect mildew pressure like the side bed."
     }

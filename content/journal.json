@@ -88,5 +88,10 @@
     "date": "2026-08-31",
     "title": "Driveway Bed 2 surveyed",
     "note": "Sunflowers, zinnias and gladiolus, and confirmed full sun rather than the morning-sun-likely I had guessed from its position beside the house. Nothing tall stands to its east. That makes the driveway side a second sunny run alongside the street beds, and it moves the gladiolus, zinnia and sunflower jobs onto three beds instead of two. Seven of eleven areas surveyed."
+  },
+  {
+    "date": "2026-08-31",
+    "title": "Site plan retraced from the Figma proportions",
+    "note": "Every box re-measured off the Figma plan and scaled rather than approximated, so the relative sizes and positions now match: the street strip with Path Bed at its west end, the two street boxes and the path between them, Driveway Bed 1 across the driveway, and the terracing down the front. Adds the two container outlines from the plan, the planting strip and the property boundary. Back Bed 2 is drawn as its vertical leg only, since it is an L on the plan and a single rectangle covering both arms overlapped the house."
   }
 ]

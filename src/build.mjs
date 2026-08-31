@@ -180,6 +180,16 @@ function renderMap(garden, plants, plan) {
   if (!map) return "";
   const tasks = flattenTasks(plan);
 
+  /* The two containers from the plan: the planting strip out by the street and
+     the property boundary. Outlines rather than fills, so the beds inside them
+     stay readable. */
+  const outlines = (map.outlines ?? [])
+    .map(
+      (o) =>
+        `      <rect class="m-outline" x="${o.x}" y="${o.y}" width="${o.w}" height="${o.h}" rx="2"></rect>`
+    )
+    .join("\n");
+
   const structures = map.structures
     .map(
       (s) => `      <rect class="m-structure" x="${s.x}" y="${s.y}" width="${s.w}" height="${s.h}" rx="2"></rect>${
@@ -255,6 +265,9 @@ function renderMap(garden, plants, plan) {
 
     <figure class="plan">
       <svg viewBox="${esc(map.viewBox)}" role="img" aria-label="Site plan of nine growing areas around the house, shaded by how much sun each receives. The front bed sits on the north side of the house and is shaded; back bed 2 sits on the south wall and gets the most sun; the side bed is on the west wall.">
+        <g class="m-outlines">
+${outlines}
+        </g>
         <g class="m-structures">
 ${structures}
         </g>
