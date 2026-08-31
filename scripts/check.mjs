@@ -74,6 +74,32 @@ if (garden) {
     if (bed.surveyed && bed.sun === "unknown") {
       warn(`${where}: surveyed but sun is still "unknown"`);
     }
+
+    /* Labels that overrun their box are invisible in JSON and obvious on the
+       page. Mono at 11px is close enough to 6.6px per character to catch it.
+       A turned label is limited by the box height, not its width. */
+    if (bed.map && bed.mapLabel) {
+      const room = (bed.vertical ? bed.map.h : bed.map.w) - 8;
+      const needed = bed.mapLabel.length * 6.6;
+      if (needed > room) {
+        fail(
+          `${where}: mapLabel "${bed.mapLabel}" needs about ${Math.ceil(needed)} units but the ` +
+            `box gives ${room}. Shorten it, or set "vertical": true to turn it.`
+        );
+      }
+    }
+  }
+
+  for (const s of garden.map?.structures ?? []) {
+    if (!s.label) continue;
+    const room = (s.vertical ? s.h : s.w) - 8;
+    const needed = s.label.length * 6.6;
+    if (needed > room) {
+      fail(
+        `garden.json[${s.id}]: label "${s.label}" needs about ${Math.ceil(needed)} units but the ` +
+          `box gives ${room}. Shorten it, turn it, or use "" to leave the block unlabelled.`
+      );
+    }
   }
 
   /* Overlapping rectangles mean the plan is drawn wrong, and it is very hard

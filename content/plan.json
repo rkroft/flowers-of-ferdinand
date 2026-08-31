@@ -157,19 +157,21 @@
         ]
       },
       {
-        "id": "shade-check-back2",
-        "title": "Time the sun on Back Bed 2",
+        "id": "compass-check",
+        "title": "Point a phone compass at the house",
         "weight": "check",
         "beds": [
-          "back-2"
+          "side",
+          "upper-lower",
+          "back-3"
         ],
         "flags": [
-          "Diagnostic"
+          "Settles the map"
         ],
         "done": false,
         "body": [
-          "Pick a clear day and look at the bed three times: mid-morning, midday and mid-afternoon. Note whether the soil is in sun or shadow each time. Half an hour of looking beats any amount of calculation from a map.",
-          "Do it soon. The sun drops fast through September, so what you see now is close to the best this bed gets, and by late October it will be a different bed entirely."
+          "Stand in the Side Bed Box with your back to the house wall, open the compass app on your phone, and tell me the heading you are facing. Then do the same standing in the Upper Lower Bed. Thirty seconds each.",
+          "This is worth doing because the sun map has flipped twice on drawing conventions, and every recommendation for every bed depends on it. One compass reading ends the guessing for good."
         ]
       }
     ]
@@ -292,6 +294,21 @@
         "body": [
           "The rosemary has opened up and thrown long bare branches flat across the soil. Rather than cutting them off, pin a few down where they touch the ground with a rock or a bent wire. They root along the buried section over winter, and you can cut them free as new plants in spring.",
           "This is also the fix for the bare woody centre. You cannot prune rosemary back into old wood to rejuvenate it, so growing replacements is the way to renew the planting."
+        ]
+      },
+      {
+        "id": "survey-upper-lower",
+        "title": "Survey the Upper Lower Bed",
+        "weight": "check",
+        "beds": [
+          "upper-lower",
+          "front-lower"
+        ],
+        "flags": [],
+        "done": false,
+        "body": [
+          "If the street really is south, the two beds between the house and the sidewalk are the sunniest ground you own, and neither has been looked at yet. The one against the wall in particular is the classic warm south-wall spot: sun all day, plus stored heat radiating back at night.",
+          "Photograph both and note what is already growing there. It is the most likely place to find growing space you did not know you had."
         ]
       }
     ]

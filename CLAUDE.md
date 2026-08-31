@@ -1,6 +1,6 @@
 # Working on this project
 
-A garden plan for nine growing areas around a house in Seattle. It is a static site built from JSON
+A garden plan for eleven growing areas around a house in Seattle. It is a static site built from JSON
 content by a small Node script. No dependencies, no framework, no build tooling
 beyond Node itself.
 
@@ -69,15 +69,20 @@ ramp rather than four unrelated colours: more gold means more sun, and
 `unknown` is drawn unfilled with a dashed outline. Do not add a fifth category
 or give any level its own hue.
 
-`map` is the rectangle on the plan, in the coordinate space of
-`map.viewBox`. **North is at the top**, which is a 180 degree turn from
-Rachel's original sketch, so check the compass before moving anything.
-`npm run check` fails if two areas overlap, because that is nearly impossible
-to spot in JSON.
+`map` is the rectangle on the plan, in the coordinate space of `map.viewBox`.
+**The plan is kept in Rachel's orientation, south at the top**, matching the
+Figma plan she works from, and `map.north` is `"down"` so the compass arrow
+points that way. That means the street is at the top and is the SOUTH side,
+the townhomes at the bottom are NORTH, and left and right are east and west
+respectively reversed from a standard map. Get this wrong and every sun
+conclusion inverts, which has already happened twice. `npm run check` fails if
+two areas overlap, because that is nearly impossible to spot in JSON.
 
-`mapLabel` is the short label drawn inside the rectangle. Narrow beds need it
-or the text runs outside the box; the build verifies nothing overflows only if
-you look at the rendered page, so keep it short.
+`mapLabel` is the short label drawn inside the rectangle. `npm run check`
+fails if a label is too wide for its box, estimating monospace at 6.6 units per
+character. Either shorten it or set `"vertical": true` to turn it, which is
+what the narrow strips do. A structure can have `"label": ""` to stay
+unlabelled when its box is too small for any text.
 
 `surveyed` is false for areas that are on the map but have not been
 photographed or walked yet. The area's panel then says so instead of

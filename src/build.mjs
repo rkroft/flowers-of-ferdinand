@@ -153,12 +153,13 @@ function renderMap(garden, plants, plan) {
 
   const structures = map.structures
     .map(
-      (s) => `      <rect class="m-structure" x="${s.x}" y="${s.y}" width="${s.w}" height="${s.h}" rx="2"></rect>
-      <text class="m-structure-label${s.vertical ? " m-vertical" : ""}" x="${s.x + s.w / 2}" y="${s.y + s.h / 2}" text-anchor="middle" dominant-baseline="central"${
-        s.vertical
-          ? ` transform="rotate(-90 ${s.x + s.w / 2} ${s.y + s.h / 2})"`
+      (s) => `      <rect class="m-structure" x="${s.x}" y="${s.y}" width="${s.w}" height="${s.h}" rx="2"></rect>${
+        s.label
+          ? `\n      <text class="m-structure-label" x="${s.x + s.w / 2}" y="${s.y + s.h / 2}" text-anchor="middle" dominant-baseline="central"${
+              s.vertical ? ` transform="rotate(-90 ${s.x + s.w / 2} ${s.y + s.h / 2})"` : ""
+            }>${esc(s.label)}</text>`
           : ""
-      }>${esc(s.label)}</text>`
+      }`
     )
     .join("\n");
 
@@ -184,9 +185,12 @@ function renderMap(garden, plants, plan) {
         bed.mapLabel ??
         bed.name.replace(/^Street Bed /, "Street ").replace(/^Back Bed /, "Back ");
 
+      /* Narrow strips get their label turned, the way they are on the plan. */
+      const turn = bed.vertical ? ` transform="rotate(-90 ${cx} ${cy})"` : "";
+
       return `      <g class="m-hit" role="button" tabindex="0" data-bed="${esc(bed.id)}" aria-pressed="false" aria-label="${esc(bed.name)}, ${esc(bed.exposure)}. Show what is planted here and what needs doing.">
         <rect class="m-bed" data-sun="${esc(bed.sun)}" data-surveyed="${bed.surveyed}" x="${m.x}" y="${m.y}" width="${m.w}" height="${m.h}" rx="2"></rect>
-        <text class="m-bed-label" x="${cx}" y="${cy}" text-anchor="middle" dominant-baseline="central">${esc(short)}</text>
+        <text class="m-bed-label" x="${cx}" y="${cy}" text-anchor="middle" dominant-baseline="central"${turn}>${esc(short)}</text>
       </g>`;
     })
     .join("\n");
@@ -225,11 +229,22 @@ ${lines}
         <g class="m-beds">
 ${beds}
         </g>
-        <g class="m-compass" transform="translate(40 372)">
+${
+    /* The plan is kept in Rachel's orientation, south at the top, so the arrow
+       points down. Flipping the drawing to a north-up convention would make it
+       stop matching the plan she works from. */
+    map.north === "down"
+      ? `        <g class="m-compass" transform="translate(${esc(map.compass?.x ?? 500)} ${esc(map.compass?.y ?? 280)})">
+          <line x1="0" y1="-26" x2="0" y2="8"></line>
+          <polygon points="0,16 -5,4 5,4"></polygon>
+          <text x="0" y="-32" text-anchor="middle">N</text>
+        </g>`
+      : `        <g class="m-compass" transform="translate(${esc(map.compass?.x ?? 40)} ${esc(map.compass?.y ?? 372)})">
           <line x1="0" y1="26" x2="0" y2="-8"></line>
           <polygon points="0,-16 -5,-4 5,-4"></polygon>
           <text x="0" y="40" text-anchor="middle">N</text>
-        </g>
+        </g>`
+  }
       </svg>
       <figcaption>${esc(map.caption)}</figcaption>
     </figure>
