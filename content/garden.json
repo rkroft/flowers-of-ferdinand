@@ -222,8 +222,8 @@
     },
     {
       "id": "upper-lower",
-      "name": "Upper Lower Bed",
-      "mapLabel": "Upper Lower",
+      "name": "Upper Bed",
+      "mapLabel": "Upper",
       "role": "Spring display",
       "aspect": "North side, raised above the retaining wall",
       "exposure": "Part sun, spring-lit",
@@ -235,7 +235,7 @@
         "w": 220,
         "h": 56
       },
-      "description": "The raised bed above the retaining wall, and the fullest planting in the garden. Tulips, primroses, violas and English daisies over a base of candytuft and creeping mats, with hostas and bleeding heart in the shadier ground under the tree, clematis on the trellis behind, and periwinkle spilling down the wall face. Baby's breath and flax carry it into early summer after the bulbs are done. Raised and free-draining, which is why the mat-forming perennials do so well."
+      "description": "The raised bed above the retaining wall, and by a distance the fullest planting in the garden. Nineteen things recorded so far and probably not all of them. Tulips, primroses, violas, English daisies, dianthus and sweet william over a base of candytuft and creeping mats, with hostas and bleeding heart in the shadier ground under the maple, clematis on the trellis behind, and periwinkle spilling down the wall face. Baby's breath and flax carry it past the bulbs into early summer. Raised and free-draining, which is why the cushion-forming plants do so well here."
     },
     {
       "id": "side",

@@ -955,7 +955,7 @@
   {
     "id": "tulips",
     "name": "Tulips",
-    "variety": "mixed, many colours",
+    "variety": "mixed, including a yellow lily-flowered type",
     "beds": [
       "front-lower",
       "upper-lower"
@@ -1495,6 +1495,102 @@
       "poor": "It goes brown and mildewed in early summer, which is the plant finishing rather than failing.",
       "endOfSeason": "Pull the whole plant once it browns, ideally after it has dropped seed. It comes away easily.",
       "propagate": "Self-sows so freely that the job is usually thinning it rather than encouraging it."
+    }
+  },
+  {
+    "id": "dianthus",
+    "name": "Dianthus",
+    "variety": "pinks, blue-grey cushions",
+    "beds": [
+      "upper-lower"
+    ],
+    "type": "evergreen perennial",
+    "confidence": "confirmed",
+    "status": "finished",
+    "statusLabel": "Dormant now",
+    "handling": "Tight blue-grey grassy cushions with fringed clove-scented flowers. Wants sharp drainage and lime, which is the opposite of most soil here.",
+    "idNote": "",
+    "window": {
+      "from": 5,
+      "to": 7,
+      "kind": "flowers"
+    },
+    "art": {
+      "form": "face",
+      "petal": "#C6335E",
+      "centre": "#F2DDE4"
+    },
+    "care": {
+      "feed": "None. What it actually wants is lime rather than food: our soil is acidic and dianthus prefer it alkaline, so a scatter of garden lime around them every couple of years does more than any fertiliser would.",
+      "deadhead": "Yes, and it makes a real difference. Cut each spent flower stem right down to the cushion rather than snipping the head off, or you are left with a hedgehog of bare stalks over the foliage.",
+      "good": "A tight dense blue-grey cushion throwing up plenty of stems, and the clove scent on a warm evening.",
+      "poor": "Brown dead patches opening in the middle of the cushion means either age or winter wet. They go woody and thin after three or four years, which is normal rather than a failure.",
+      "endOfSeason": "Leave the cushion completely alone. It is evergreen and carries the plant through winter. Trim only the spent flower stems, never into the woody base.",
+      "propagate": "Take cuttings, called pipings, in summer: hold a non-flowering shoot and pull it sharply so it comes away at a leaf joint, then push it into gritty compost. They root very easily. Since the plants go woody after a few years, taking a few every summer is how you keep them going indefinitely."
+    }
+  },
+  {
+    "id": "sweet-william",
+    "name": "Sweet William",
+    "variety": "Dianthus barbatus",
+    "beds": [
+      "upper-lower"
+    ],
+    "type": "biennial",
+    "confidence": "likely",
+    "status": "finished",
+    "statusLabel": "Dormant now",
+    "handling": "The dense flat-topped heads in pink, white and deep maroon. Same family as the pinks, different habit.",
+    "idNote": "Reading this from the photograph rather than from your list. The dense flat-topped clusters in mixed pink, white and dark maroon are the classic Sweet William look, and it sits alongside the cushion-forming pinks, which look like a different plant entirely. Both are dianthus, so this may be what you meant. Worth confirming they are two separate things.",
+    "window": {
+      "from": 5,
+      "to": 6,
+      "kind": "flowers"
+    },
+    "art": {
+      "form": "cluster",
+      "petal": "#C9436B",
+      "centre": "#F4E6EA"
+    },
+    "care": {
+      "feed": "None.",
+      "deadhead": "Cut spent heads off at the base of the stem. It sometimes gives a second lighter flush, and it stops the plant putting everything into seed.",
+      "good": "Broad domed heads packed with small flowers, held on sturdy upright stems.",
+      "poor": "Dying outright after flowering is not a problem, it is what a biennial does. A first-year plant that is all leaves and no flower is on schedule, not failing.",
+      "endOfSeason": "Let a few heads set and shed seed, then pull the plants. They are finished.",
+      "propagate": "This is the one with real timing attached. Sweet William is usually biennial: seed sown in early summer, roughly June, makes a leafy plant that year and flowers the following spring. Sow it in spring and you wait a whole extra year. Letting a few self-sow achieves the same thing with no effort."
+    }
+  },
+  {
+    "id": "wallflower",
+    "name": "Wallflower",
+    "variety": "Erysimum, possibly",
+    "beds": [
+      "upper-lower"
+    ],
+    "type": "short-lived perennial",
+    "confidence": "likely",
+    "status": "finished",
+    "statusLabel": "Dormant now",
+    "handling": "The orange and bronze mass through the middle of the bed. Scented, and one of the longest-flowering things in a spring border.",
+    "idNote": "Guessed from the photograph. The orange-bronze colour and the way it sits in loose spikes points to a wallflower, but geum and some of the perennial daisies can read similarly at this distance. A close photograph of one flower would settle it: a wallflower has four petals in a cross.",
+    "window": {
+      "from": 4,
+      "to": 6,
+      "kind": "flowers"
+    },
+    "art": {
+      "form": "spike",
+      "petal": "#D9772A",
+      "centre": "#E8A85E"
+    },
+    "care": {
+      "feed": "None. Lean soil keeps it compact; feeding makes it soft and short-lived.",
+      "deadhead": "Cut spent flower spikes back to a leaf and it keeps producing for weeks longer.",
+      "good": "Dense flowering spikes over grey-green foliage, and a strong sweet scent in the middle of the day.",
+      "poor": "Going leggy and woody at the base after two or three years is its normal lifespan. It rarely dies from anything, it just gets tired.",
+      "endOfSeason": "Trim spent spikes after flowering but do not cut back into the bare wood, which it does not resprout from. Perennial types stay put over winter.",
+      "propagate": "Take cuttings in summer, which root readily, and do it before the plant looks tired rather than after. Biennial types are sown in early summer for the following spring."
     }
   }
 ]
