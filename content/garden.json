@@ -24,7 +24,7 @@
   ],
   "map": {
     "viewBox": "0 -16 560 524",
-    "caption": "Redrawn from your Figma plan and kept in your orientation, south at the top, so north points down. Grey blocks are the house, driveway, stairs and the townhomes. Fill shows how much sun each area gets: the more gold, the more sun. Unfilled areas are not yet surveyed.",
+    "caption": "Redrawn from your Figma plan. North is at the top: the street is the north side, the townhomes are south, west is on the left. Grey blocks are the house, driveway, stairs and the townhomes. Fill shows how much sun each area gets: the more gold, the more sun. Unfilled areas are not surveyed yet.",
     "structures": [
       {
         "id": "house",
@@ -77,7 +77,7 @@
       },
       {
         "id": "townhomes",
-        "label": "Townhomes (north)",
+        "label": "Townhomes (south)",
         "x": 30,
         "y": 470,
         "w": 510,
@@ -128,7 +128,11 @@
         "y2": 456
       }
     ],
-    "north": "down"
+    "north": "up",
+    "compass": {
+      "x": 500,
+      "y": 300
+    }
   },
   "beds": [
     {
@@ -136,7 +140,7 @@
       "name": "Path Bed",
       "mapLabel": "Path",
       "role": "Mediterranean and perennials",
-      "aspect": "South-east corner, out by the street",
+      "aspect": "North-west corner, out by the street",
       "exposure": "Full sun, dry",
       "sun": "full",
       "surveyed": true,
@@ -153,7 +157,7 @@
       "name": "Street Bed Box 1",
       "mapLabel": "Box 1",
       "role": "Active bloom",
-      "aspect": "South side, past the sidewalk",
+      "aspect": "North side, past the sidewalk",
       "exposure": "Full sun",
       "sun": "full",
       "surveyed": true,
@@ -170,7 +174,7 @@
       "name": "Street Bed Box 2",
       "mapLabel": "Box 2",
       "role": "Seed and sowing",
-      "aspect": "South side, past the sidewalk",
+      "aspect": "North side, past the sidewalk",
       "exposure": "Full sun",
       "sun": "full",
       "surveyed": true,
@@ -187,8 +191,8 @@
       "name": "Driveway Bed 1",
       "mapLabel": "Drive 1",
       "role": "Not yet surveyed",
-      "aspect": "South-west corner, beyond the driveway",
-      "exposure": "Afternoon sun likely",
+      "aspect": "North-east corner, beyond the driveway",
+      "exposure": "To confirm",
       "sun": "unknown",
       "surveyed": false,
       "map": {
@@ -197,16 +201,16 @@
         "w": 78,
         "h": 96
       },
-      "description": "South-west corner of the property beyond the driveway, open to both the south and the west. On the plan this looks like it should get a lot of afternoon sun, possibly the most of any area outside the street boxes. Not seen yet."
+      "description": "North-east corner beyond the driveway, out by the street and clear of the house. Open sky counts for a lot, so this may be sunnier than its position beside the house would suggest. Not seen yet."
     },
     {
       "id": "front-lower",
       "name": "Front Lower Bed",
       "mapLabel": "Front Lower",
       "role": "Not yet surveyed",
-      "aspect": "South side of the house, toward the street",
-      "exposure": "Full sun",
-      "sun": "full",
+      "aspect": "North side of the house, toward the street",
+      "exposure": "Shaded by the house",
+      "sun": "shade",
       "surveyed": false,
       "map": {
         "x": 168,
@@ -214,16 +218,16 @@
         "w": 220,
         "h": 34
       },
-      "description": "Between the house and the sidewalk on the south side, with nothing tall to its south. On the plan this is one of the two sunniest pieces of ground you own, and it is not even surveyed yet."
+      "description": "The outer of the two beds on the north side. Being further from the wall it catches more open sky than the bed behind it, so it is the better of the two, but the house still sits to its south. Treat it as shade until you have watched it."
     },
     {
       "id": "upper-lower",
       "name": "Upper Lower Bed",
       "mapLabel": "Upper Lower",
       "role": "Not yet surveyed",
-      "aspect": "South wall of the house",
-      "exposure": "South wall, warm",
-      "sun": "full",
+      "aspect": "North wall of the house",
+      "exposure": "Shaded by the house",
+      "sun": "shade",
       "surveyed": false,
       "map": {
         "x": 168,
@@ -231,15 +235,15 @@
         "w": 220,
         "h": 56
       },
-      "description": "Directly against the south wall of the house, which is the prize spot on any property at this latitude. It collects sun all day and the wall radiates stored heat back at night, extending the season at both ends. It will also be the driest bed, sitting in the wall's rain shadow. If you want tomatoes, peppers, basil or figs, this is where they go. Worth surveying before anything else."
+      "description": "Hard against the north wall, and the shadiest ground on the property. In shadow most of the day and effectively all day from October to March, when the sun barely clears the roofline. Sun-lovers will always disappoint here. Plant it for shade and it will do well."
     },
     {
       "id": "side",
       "name": "Side Bed Box",
       "mapLabel": "Side",
       "role": "Edibles",
-      "aspect": "East wall of the house",
-      "exposure": "Morning sun",
+      "aspect": "West wall of the house",
+      "exposure": "Afternoon sun",
       "sun": "part",
       "surveyed": true,
       "map": {
@@ -248,15 +252,15 @@
         "w": 56,
         "h": 76
       },
-      "description": "Narrow raised bed on the east wall of the house. Strawberries, beans on string trellis, sunflowers and the compost tumbler. East facing means sun through the morning and shade from around midday on, which is cooler than it looked. It also explains the mildew better than my earlier guess did: Seattle weather arrives from the south-west, so an east wall sits in a strong rain shadow, and the bed gets damp still morning air followed by no drying sun. That is close to ideal for powdery mildew. It is a fine spot for strawberries, a mediocre one for beans, and the wrong spot entirely for sunflowers."
+      "description": "Narrow raised bed on the west wall. Strawberries, beans on string trellis, sunflowers and the compost tumbler. West facing means shade until around midday, then several hours of strong afternoon sun with heat radiating off the wall and held in it overnight. Add a foundation that wicks moisture away and an eave that keeps rain off, and you get warm still air over dry roots, which is what powdery mildew wants. Good for the strawberries, workable for the beans, and hotter and drier than it looks."
     },
     {
       "id": "driveway-2",
       "name": "Driveway Bed 2",
       "mapLabel": "Drive 2",
       "role": "Not yet surveyed",
-      "aspect": "West side, beyond the driveway",
-      "exposure": "Afternoon sun likely",
+      "aspect": "East side, beyond the driveway",
+      "exposure": "Morning sun likely",
       "sun": "unknown",
       "surveyed": false,
       "map": {
@@ -265,14 +269,14 @@
         "w": 78,
         "h": 40
       },
-      "description": "West side alongside the house, beyond the driveway. Afternoon and evening sun is likely, subject to what stands on the neighbouring property to the west. Not seen yet."
+      "description": "East side alongside the house, beyond the driveway. Morning sun and afternoon shade is the likely pattern, subject to whatever stands on the neighbouring property. Not seen yet."
     },
     {
       "id": "back-2",
       "name": "Back Bed 2",
       "mapLabel": "Back 2",
       "role": "Not yet surveyed",
-      "aspect": "West side of the house, north end",
+      "aspect": "East side of the house, south end",
       "exposure": "To confirm",
       "sun": "unknown",
       "surveyed": false,
@@ -282,7 +286,7 @@
         "w": 42,
         "h": 76
       },
-      "description": "Narrow bed on the west side of the house toward the north end, between the house and the stairs. Hemmed in, so worth watching rather than guessing. Not seen yet.",
+      "description": "Narrow bed wrapping the south-east corner of the house, between the house and the stairs. Morning light at best and hemmed in on several sides. Not seen yet.",
       "vertical": true
     },
     {
@@ -290,7 +294,7 @@
       "name": "Back Bed 1",
       "mapLabel": "Back 1",
       "role": "Not yet surveyed",
-      "aspect": "North-west corner, on the neighbour boundary",
+      "aspect": "South-east corner, on the neighbour boundary",
       "exposure": "To confirm",
       "sun": "unknown",
       "surveyed": false,
@@ -300,7 +304,7 @@
         "w": 40,
         "h": 76
       },
-      "description": "The far north-west corner, up against the neighbouring property. Narrow, and north facing on a boundary, so likely shady. Not seen yet.",
+      "description": "The far south-east corner, against the neighbouring property. South facing, which is promising, but narrow and boxed in. Not seen yet.",
       "vertical": true
     },
     {
@@ -308,9 +312,9 @@
       "name": "Back Bed 3",
       "mapLabel": "Back 3",
       "role": "Not yet surveyed",
-      "aspect": "North wall of the house",
-      "exposure": "Shaded by the house",
-      "sun": "shade",
+      "aspect": "South wall, facing the townhomes",
+      "exposure": "Summer midday only",
+      "sun": "part",
       "surveyed": false,
       "map": {
         "x": 168,
@@ -318,7 +322,7 @@
         "w": 122,
         "h": 40
       },
-      "description": "North wall of the house, and the shadiest ground on the property. The house sits directly to its south, so it is in shadow most of the day and effectively all day from October to March. The townhomes beyond it are further north still, so they take nothing from it. Plant it for shade and it will do fine; plant sun-lovers and they will always disappoint."
+      "description": "A south wall would normally make this the best growing spot on the property, but two or three storey townhomes stand close to the south across the easement and they block the low sun. At Seattle's latitude the sun only clears a building that tall and that close for a few hours around midday between roughly May and July, and from September through March this bed gets essentially nothing. It is warm sheltered shade rather than a hot bed: the wall holds heat, but boxed in on both sides means still air, so expect mildew pressure like the side bed."
     }
   ],
   "footnote": "Ticking a box here is a local convenience for working at the bed. The durable record is content/plan.json. Frost timing is a ten-year average for in-city Seattle and varies by several weeks year to year, so treat November as a watch-the-forecast month rather than a dated one."

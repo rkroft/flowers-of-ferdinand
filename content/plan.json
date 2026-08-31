@@ -93,7 +93,7 @@
         "done": false,
         "body": [
           "The white powdery coating on the side bed sunflowers is powdery mildew. It is not worth spraying this late on plants that are nearly finished. Pull off the worst leaves, especially the low ones, and bin them rather than putting them in the tumbler.",
-          "The cause is the spot, not the plant. An east wall gets morning sun then shade, sits in a rain shadow because Seattle weather comes from the south-west, and has almost no air movement. Damp, still and never properly dried out. Sunflowers want the opposite, so move them to the south side or the street boxes next year."
+          "The cause is the spot, not the plant. A west wall gives shade all morning, then hard afternoon heat radiating off the wall, over roots kept dry by the foundation and the eave. Warm, still and dry-rooted is what powdery mildew wants. Sunflowers want open sun and steady moisture, so move them to the street boxes next year."
         ]
       },
       {
@@ -170,8 +170,8 @@
         ],
         "done": true,
         "body": [
-          "Closed. Street confirmed as south, and the plan is drawn south-up, which puts east on the left and west on the right. The Side Bed Box is drawn on the left, so it is east facing, not west. Every area's aspect follows from that and is now recorded.",
-          "A phone compass would still confirm it in thirty seconds if you ever want the belt-and-braces version, but nothing is waiting on it."
+          "Closed. Confirmed three ways: the street is the north side, south is where the townhomes are, and the Side Bed Box is on the west wall. All three agree on a standard north-up plan, which also matches your original hand sketch and your observation that the street boxes are full sun.",
+          "Every area's aspect now derives from that one fact rather than being guessed bed by bed."
         ]
       }
     ]
@@ -298,32 +298,39 @@
       },
       {
         "id": "survey-upper-lower",
-        "title": "Survey the Upper Lower Bed",
+        "title": "Survey the remaining six areas",
         "weight": "check",
         "beds": [
+          "front-lower",
           "upper-lower",
-          "front-lower"
+          "back-1",
+          "back-2",
+          "back-3",
+          "driveway-1",
+          "driveway-2"
         ],
         "flags": [],
         "done": false,
         "body": [
-          "If the street really is south, the two beds between the house and the sidewalk are the sunniest ground you own, and neither has been looked at yet. The one against the wall in particular is the classic warm south-wall spot: sun all day, plus stored heat radiating back at night.",
-          "Photograph both and note what is already growing there. It is the most likely place to find growing space you did not know you had."
+          "Six of eleven areas have not been looked at. Two of them, Driveway Bed 1 in the north-east corner and Back Bed 1 in the south-east, are the only remaining candidates for real sun, since both sit clear of the house.",
+          "Photograph each and note what is already growing there. Sun aside, there may be more usable growing space here than anyone has counted."
         ]
       },
       {
         "id": "plan-sunny-side",
-        "title": "Decide what the south side is for",
+        "title": "Decide where the sun-lovers go next year",
         "weight": "check",
         "beds": [
-          "upper-lower",
-          "front-lower"
+          "street-1",
+          "street-2",
+          "path-bed",
+          "side"
         ],
         "flags": [],
         "done": false,
         "body": [
-          "Now that the orientation is settled, the shape of this garden is clear: the sun is all on the south side and out by the street, and everything on the north and east of the house is shade or morning sun only. The sun-hungry things are currently in the wrong places.",
-          "Worth deciding before spring rather than in the rush of it. The south wall in particular is warm-wall growing space that nothing is currently making use of."
+          "With the orientation settled, the shape of this garden is clear and it is lopsided. Every genuinely sunny area is out by the street, clear of the house: the two street boxes and Path Bed. Everything against the house is shade or part shade, because the house blocks the north side and the townhomes block the south.",
+          "That means the sun-hungry things are in the wrong places. The sunflowers are on a west wall, and the beds with real sun are given over to cut flowers. Worth deciding before spring rather than during it."
         ]
       }
     ]

@@ -71,13 +71,18 @@ ramp rather than four unrelated colours: more gold means more sun, and
 or give any level its own hue.
 
 `map` is the rectangle on the plan, in the coordinate space of `map.viewBox`.
-**The plan is kept in Rachel's orientation, south at the top**, matching the
-Figma plan she works from, and `map.north` is `"down"` so the compass arrow
-points that way. That means the street is at the top and is the SOUTH side,
-the townhomes at the bottom are NORTH, and left and right are east and west
-respectively reversed from a standard map. Get this wrong and every sun
-conclusion inverts, which has already happened twice. `npm run check` fails if
-two areas overlap, because that is nearly impossible to spot in JSON.
+
+**Orientation is settled and should not be re-derived. The plan is north-up:
+the street is the NORTH side, the townhomes are SOUTH, west is on the left.**
+Rachel confirmed this three independent ways (street faces north, south is
+where the townhomes are, the Side Bed Box is on the west wall), and it agrees
+with her original hand sketch. This took several wrong turns to pin down
+because one intermediate note said "south is at the top", so treat that note
+as superseded and do not reason from it. Every sun conclusion in the project
+inverts if this is got wrong.
+
+`npm run check` fails if two areas overlap, because that is nearly impossible
+to spot in JSON.
 
 `mapLabel` is the short label drawn inside the rectangle. `npm run check`
 fails if a label is too wide for its box, estimating monospace at 6.6 units per

@@ -31,17 +31,7 @@
   },
   {
     "date": "2026-08-31",
-    "title": "Correction: Back Bed 2 is not the sunny spot",
-    "note": "The unlabelled box on the sketch is an easement, and beyond it stand two or three storey townhomes, close. That reverses the earlier call that Back Bed 2 was the best growing spot on the property. Boxed between the house to the north and tall buildings to the south, it gets a few hours of midday sun in high summer and effectively none from September through March. Reclassified as part sun, warm sheltered shade. The easement itself is plantable. Net effect: every genuinely sunny bed is out by the street, and everything against the house is shade or part shade."
-  },
-  {
-    "date": "2026-08-31",
-    "title": "Orientation resolved: the street is south",
-    "note": "Figma plan supersedes the hand sketch and names eleven areas rather than nine. The two drawings disagreed about where the street was; confirmed as south. That reverses the townhome analysis entirely: the townhomes are north of the property and take nothing from it. The sunny half of the garden is the street side. Back Bed 3 on the north wall is the shadiest ground, and the Upper Lower Bed against the south wall is the best spot on the property and has not been surveyed. Still unresolved: which wall the Side Bed Box is on, since the plan says east and Rachel said west. A phone compass reading will settle it."
-  },
-  {
-    "date": "2026-08-31",
-    "title": "Orientation confirmed, all aspects set",
-    "note": "Street confirmed south for the second time, and the plan is south-up, so east is on the left and west on the right. That settles the Side Bed Box as east facing rather than west, which was an anchoring error on my part. East facing also explains the mildew better: morning sun then shade, a strong rain shadow because the weather comes from the south-west, and no moving air. Every area's aspect is now recorded rather than guessed. The shape of the garden: all the sun is on the south side and out by the street; the north and east of the house are shade or morning only."
+    "title": "Orientation settled for good: north-up",
+    "note": "Took several rounds. Confirmed three independent ways: the street is the north side, south is where the townhomes are, and the Side Bed Box is on the west wall. All agree on a standard north-up plan, consistent with the original hand sketch and with the street boxes being observed as full sun. Consequences: the two beds between the house and the street are the shadiest ground on the property, not the sunniest; Back Bed 3 on the south wall is compromised by the townhomes; the Side Bed Box is west facing, which explains the mildew; and every genuinely sunny area is out by the street, clear of the house."
   }
 ]

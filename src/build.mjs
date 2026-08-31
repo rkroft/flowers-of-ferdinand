@@ -229,22 +229,26 @@ ${lines}
         <g class="m-beds">
 ${beds}
         </g>
-${
-    /* The plan is kept in Rachel's orientation, south at the top, so the arrow
-       points down. Flipping the drawing to a north-up convention would make it
-       stop matching the plan she works from. */
-    map.north === "down"
-      ? `        <g class="m-compass" transform="translate(${esc(map.compass?.x ?? 500)} ${esc(map.compass?.y ?? 280)})">
-          <line x1="0" y1="-26" x2="0" y2="8"></line>
-          <polygon points="0,16 -5,4 5,4"></polygon>
-          <text x="0" y="-32" text-anchor="middle">N</text>
-        </g>`
-      : `        <g class="m-compass" transform="translate(${esc(map.compass?.x ?? 40)} ${esc(map.compass?.y ?? 372)})">
-          <line x1="0" y1="26" x2="0" y2="-8"></line>
-          <polygon points="0,-16 -5,-4 5,-4"></polygon>
-          <text x="0" y="40" text-anchor="middle">N</text>
-        </g>`
-  }
+${(() => {
+    /* All four points, always. Which way this plan faced took several rounds
+       to pin down, and a lone north arrow leaves room for the same mistake. */
+    const cx = map.compass?.x ?? 500;
+    const cy = map.compass?.y ?? 300;
+    const down = map.north === "down";
+    const tip = down ? 22 : -22;
+    const tail = down ? -20 : 20;
+    const barb = down ? 10 : -10;
+
+    return `        <g class="m-compass" transform="translate(${esc(cx)} ${esc(cy)})">
+          <line x1="0" y1="${tail}" x2="0" y2="${barb}"></line>
+          <polygon points="0,${tip} -5,${barb} 5,${barb}"></polygon>
+          <line x1="-18" y1="0" x2="18" y2="0"></line>
+          <text x="0" y="${down ? 38 : -28}" text-anchor="middle">N</text>
+          <text x="0" y="${down ? -26 : 40}" text-anchor="middle">S</text>
+          <text x="-30" y="5" text-anchor="middle">W</text>
+          <text x="30" y="5" text-anchor="middle">E</text>
+        </g>`;
+  })()}
       </svg>
       <figcaption>${esc(map.caption)}</figcaption>
     </figure>
