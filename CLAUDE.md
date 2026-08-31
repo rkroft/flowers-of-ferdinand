@@ -28,7 +28,7 @@ non-zero and names the file and field on any problem.
 content/          the only files that change week to week
   garden.json     title, standfirst, meta strip, the areas, the site plan geometry
   plan.json       phases, each holding dated tasks
-  plants.json     the bed inventory, grouped by bed at render time
+  plants.json     the inventory, grouped by area at render time
   questions.json  open diagnostic questions, answered in place
   journal.json    dated log entries, newest rendered first
   idguide.json    how to photograph a plant for identification
@@ -52,13 +52,14 @@ dist/             generated, gitignored
 ```json
 {
   "id": "side",
-  "name": "Side Bed",
+  "name": "Side Bed Box",
   "mapLabel": "Side",
-  "aspect": "West wall of the house",
-  "exposure": "Afternoon sun, rain shadow",
+  "aspect": "Side wall of the house, which side to be confirmed",
+  "exposure": "Morning or afternoon sun, to confirm",
   "sun": "part",
   "surveyed": true,
-  "map": { "x": 24, "y": 172, "w": 42, "h": 82 },
+  "vertical": false,
+  "map": { "x": 30, "y": 296, "w": 56, "h": 76 },
   "description": "..."
 }
 ```
@@ -132,9 +133,9 @@ A task:
 | `grow`  | ordinary growing and maintenance work         | green    |
 | `check` | go look at something and report back          | violet   |
 
-`beds` entries must match an area `id` in `garden.json` (`street-1`, `street-2`,
-`side`, `front`, `back-1`, `back-2`, `street-3`, `street-4`, `path-bed`). Task `id`s must be unique
-across the whole file, because the browser checkboxes key off them.
+`beds` entries must match an area `id` in `garden.json`. Current ids:
+`path-bed`, `street-1`, `street-2`, `driveway-1`, `front-lower`, `upper-lower`, `side`, `driveway-2`, `back-2`, `back-1`, `back-3`. Task `id`s must be unique across the whole
+file, because the browser checkboxes key off them.
 
 **plants.json** is the inventory. Each plant:
 
