@@ -1,0 +1,16 @@
+{
+  "name": "seattle-garden",
+  "version": "1.0.0",
+  "private": true,
+  "description": "A garden plan for two front beds in Seattle. Content lives in JSON, the site builds to a single self-contained HTML file.",
+  "type": "module",
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "build": "node src/build.mjs",
+    "check": "node scripts/check.mjs",
+    "dev": "node scripts/serve.mjs",
+    "start": "npm run build && npm run dev"
+  }
+}

@@ -1,0 +1,261 @@
+[
+  {
+    "id": "this-week",
+    "title": "Do this week",
+    "window": "Aug 31 – Sep 6",
+    "note": "Five jobs. The first has a hard deadline set by the plants, not by you. The rest buy weeks of extra bloom.",
+    "tasks": [
+      {
+        "id": "poppy-seed",
+        "title": "Shake the poppy seed where you want it",
+        "weight": "seed",
+        "beds": ["bed2"],
+        "flags": ["Closing window"],
+        "done": false,
+        "body": [
+          "Those hundreds of little pods are ripe or nearly ripe, and once they shatter the seed goes wherever it goes. Hold each stem over the spot you want poppies next spring and tip the pod. It pours out like a pepper shaker.",
+          "Shirley poppies will not transplant and resent spring sowing, so this fall drop is your only real shot at next year's display. Put a pinch in an envelope as insurance before you scatter the rest."
+        ]
+      },
+      {
+        "id": "deadhead-hard",
+        "title": "Deadhead the gaillardia hard, then the dahlias",
+        "weight": "now",
+        "beds": ["bed1", "bed2"],
+        "flags": [],
+        "done": false,
+        "body": [
+          "Across the photos there are roughly two dozen spent seed globes for every open gaillardia flower. Once the plant decides it has made enough seed, it quits blooming. Cut each spent globe back to a leaf or side shoot, not just the ball off the top.",
+          "Same move on the dahlias: cut back to a set of leaves or a stem junction. Buds are round and firm, spent heads are pointed and conical. Then the scabiosa. Done properly this is worth six to eight more weeks of flowers."
+        ]
+      },
+      {
+        "id": "thrips-test",
+        "title": "Thrips test on the gladiolus",
+        "weight": "check",
+        "beds": ["bed1"],
+        "flags": ["Diagnostic"],
+        "done": false,
+        "body": [
+          "The brown streaking and papery tips on the glad leaves are either normal post-bloom senescence or gladiolus thrips. Hold white paper under a leaf and flick the leaf sharply. Thrips look like tiny dark slivers moving fast on the paper.",
+          "This matters because thrips overwinter on the corms. A positive result means digging and treating rather than leaving them in the ground."
+        ]
+      },
+      {
+        "id": "split-stem",
+        "title": "Inspect the split stem",
+        "weight": "check",
+        "beds": ["bed1"],
+        "flags": ["Diagnostic"],
+        "done": false,
+        "body": [
+          "The thick green stalk with the long vertical crack. Dry and clean means growth cracking, which is harmless: leave it alone, do not wrap or seal it. Oozing, dark, mushy or smelly means rot got in and the stalk comes out.",
+          "Either way, if there is a heavy flower head above the split, stake it now. That crack is where it will snap in the first autumn wind."
+        ]
+      },
+      {
+        "id": "glad-spikes",
+        "title": "Cut the spent gladiolus spikes, keep the leaves",
+        "weight": "now",
+        "beds": ["bed1", "bed2"],
+        "flags": [],
+        "done": false,
+        "body": [
+          "The green seed capsules swelling on those spikes are pulling energy the corm needs to size up for next year. Cut the flower spike at its base. Leave every leaf until it yellows completely."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "sowing-window",
+    "title": "The sowing window",
+    "window": "Sep 1 – Sep 20",
+    "note": "The highest-leverage three weeks of the gardening year, and almost nobody uses them. Hardy annuals sown now germinate in warm soil, overwinter as small plants, and bloom in May and June, months earlier and twice the size of anything spring-sown.",
+    "tasks": [
+      {
+        "id": "sow-hardy-annuals",
+        "title": "Direct-sow hardy annuals into the gaps",
+        "weight": "seed",
+        "beds": ["bed2"],
+        "flags": ["By Sep 20"],
+        "done": false,
+        "body": [
+          "Bed 2 is the sowing bed, because pulling the spent poppies opens real ground. Larkspur, nigella, bachelor's button, breadseed poppy, calendula, orlaya. Scatter, press in, do not bury deep, keep damp until the rains take over."
+        ]
+      },
+      {
+        "id": "clear-spent",
+        "title": "Clear the spent poppies and dead material",
+        "weight": "grow",
+        "beds": ["bed2"],
+        "flags": [],
+        "done": false,
+        "body": [
+          "After the seed is shaken, pull the poppy plants. They are annuals and they are finished.",
+          "Before pulling the big silver-grey mass, squeeze a stem near the base. Brittle and hollow means dead, pull it. Still flexible and green inside means alive and just ugly, leave it."
+        ]
+      },
+      {
+        "id": "shear-oregano",
+        "title": "Shear the oregano by a third, dry the leaves",
+        "weight": "grow",
+        "beds": ["bed2"],
+        "flags": [],
+        "done": false,
+        "body": [
+          "It has already flowered so the leaves are past peak flavour, but they are still worth drying. Cutting now stops it going leggy and woody in the middle. Stay out of the old wood: save hard renewal pruning for spring."
+        ]
+      },
+      {
+        "id": "shear-geranium",
+        "title": "Shear the hardy geranium back hard",
+        "weight": "grow",
+        "beds": ["bed2"],
+        "flags": [],
+        "done": false,
+        "body": [
+          "Cut the cranesbill to a few inches. It looks brutal and it works: a fresh low mound of clean foliage within two or three weeks, and often a second flush of flowers before frost."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "late-september",
+    "title": "Late September",
+    "window": "Sep 21 – Sep 30",
+    "note": "",
+    "tasks": [
+      {
+        "id": "stop-feeding",
+        "title": "Stop all fertilizing",
+        "weight": "grow",
+        "beds": [],
+        "flags": [],
+        "done": false,
+        "body": [
+          "Soft new growth heading into a wet Seattle autumn is asking for rot and mildew. Nothing more goes on the beds until spring."
+        ]
+      },
+      {
+        "id": "keep-watering",
+        "title": "Keep watering deeply, once a week",
+        "weight": "grow",
+        "beds": [],
+        "flags": [],
+        "done": false,
+        "body": [
+          "September here looks wet and usually is not. A street-side raised box in full sun dries fast, and dahlias stop setting buds the moment they go dry. Carry on until real rain arrives, roughly mid-October."
+        ]
+      },
+      {
+        "id": "buy-bulbs",
+        "title": "Buy spring bulbs now, plant them later",
+        "weight": "check",
+        "beds": [],
+        "flags": [],
+        "done": false,
+        "body": [
+          "Selection is best in September and planting is October and November. Both beds have room once the annuals come out."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "october",
+    "title": "October",
+    "window": "Oct 1 – Oct 31",
+    "note": "The month the weather turns. The enemy from here is not cold, it is botrytis: grey mould on dense flower heads once the rain sets in.",
+    "tasks": [
+      {
+        "id": "mould-patrol",
+        "title": "Switch to mould patrol",
+        "weight": "grow",
+        "beds": [],
+        "flags": [],
+        "done": false,
+        "body": [
+          "Pull spent petals off the plant rather than letting them rot in place, especially on the dahlias. Thin enough stems that air moves through the bed. This one habit prevents most of the damage."
+        ]
+      },
+      {
+        "id": "sweet-peas-bulbs",
+        "title": "Sow sweet peas, start planting bulbs",
+        "weight": "seed",
+        "beds": [],
+        "flags": ["Mid-month"],
+        "done": false,
+        "body": [
+          "Sweet peas go in around mid-October for the earliest and strongest spring plants. Bulbs can go in any time from now, and tulips will happily wait until the ground is too wet to work, often December here."
+        ]
+      },
+      {
+        "id": "cut-glad-foliage",
+        "title": "Cut the gladiolus foliage once it is fully yellow",
+        "weight": "grow",
+        "beds": ["bed1", "bed2"],
+        "flags": [],
+        "done": false,
+        "body": [
+          "Not before. Green leaves are still feeding the corm. When they have gone completely yellow, cut them at ground level."
+        ]
+      },
+      {
+        "id": "top-dress",
+        "title": "Top-dress with compost",
+        "weight": "grow",
+        "beds": ["bed1", "bed2"],
+        "flags": [],
+        "done": false,
+        "body": [
+          "An inch or two over the soil surface, not piled against any crowns. Winter rain works it in for you."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "after-frost",
+    "title": "After first frost",
+    "window": "~Nov 15, watch the forecast",
+    "note": "In-city Seattle often does not freeze until mid-November, occasionally not until December. Do not act on the calendar, act on the first night that actually blackens the dahlia foliage.",
+    "tasks": [
+      {
+        "id": "dahlias-to-bed",
+        "title": "Put the dahlias to bed",
+        "weight": "now",
+        "beds": ["bed1"],
+        "flags": [],
+        "done": false,
+        "body": [
+          "Cut the blackened stalks to about four inches. Cap the hollow stems so winter rain cannot funnel down into the crown, then cover with a few inches of coarse mulch.",
+          "In a raised box that drains well, leaving tubers in the ground is a reasonable bet here. The risk is rot in saturated soil, not freezing. Dig and store only for zero risk."
+        ]
+      },
+      {
+        "id": "glad-corms",
+        "title": "Decide the gladiolus corms",
+        "weight": "check",
+        "beds": ["bed1", "bed2"],
+        "flags": [],
+        "done": false,
+        "body": [
+          "Genuinely borderline in Seattle: some gardeners leave them in and they return, some lose them. If the thrips test came back positive, dig regardless. Leaving infested corms in the ground guarantees a repeat next summer."
+        ]
+      },
+      {
+        "id": "leave-standing",
+        "title": "Leave more standing than feels tidy",
+        "weight": "grow",
+        "beds": ["bed1", "bed2"],
+        "flags": [],
+        "done": false,
+        "body": [
+          "Leave the echinacea seedheads for goldfinches and the sunflower heads for everything else. Cut the gaillardia to four to six inches rather than to the ground, so water cannot sit in a hollow crown, and keep mulch off its centre. Gaillardia dies of wet feet here, never of cold."
+        ]
+      }
+    ],
+    "callout": {
+      "title": "And then nothing until March",
+      "body": "Spring is when the standing seedheads come down, the oregano gets hard-pruned into old wood, and the mulch comes off the dahlia crowns. Winter is genuinely a rest."
+    }
+  }
+]

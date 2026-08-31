@@ -1,0 +1,26 @@
+[
+  {
+    "id": "lupine-or-snapdragon",
+    "question": "Lupine or snapdragon?",
+    "detail": "The tall woolly beige spikes in bed 2. Open a pod. Flat and furry with round hard seeds inside means lupine. A hard little capsule with holes in the top, like a tiny salt shaker, means snapdragon.",
+    "answer": null
+  },
+  {
+    "id": "veronica-or-agastache",
+    "question": "Veronica or agastache?",
+    "detail": "The dense narrow seed spikes with whorled serrated leaves, growing near the oregano. Crush a leaf. Strong anise or licorice smell means agastache. No real smell means veronica, which reblooms if the spent spikes are cut now.",
+    "answer": null
+  },
+  {
+    "id": "split-stem-state",
+    "question": "Is the split stem dry or wet?",
+    "detail": "Dry and clean, leave it. Oozing, dark or smelly, take the stalk out before it infects anything else.",
+    "answer": null
+  },
+  {
+    "id": "thrips-result",
+    "question": "Any thrips on the paper?",
+    "detail": "This single answer decides whether the gladiolus corms stay in the ground this winter or come out.",
+    "answer": null
+  }
+]

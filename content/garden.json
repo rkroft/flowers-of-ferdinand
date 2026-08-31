@@ -1,0 +1,28 @@
+{
+  "title": "Two Beds, Ten Weeks",
+  "standfirst": "Everything between today and first frost, ordered by how soon it stops being possible. The top block is the part with a closing window.",
+  "eyebrow": "Front beds · Seattle",
+  "updated": "2026-08-31",
+  "season": "2026",
+  "meta": [
+    { "label": "Written", "value": "Aug 31, 2026" },
+    { "label": "Zone", "value": "8b, in-city" },
+    { "label": "First frost", "value": "~Nov 15" },
+    { "label": "Exposure", "value": "Full sun" }
+  ],
+  "beds": [
+    {
+      "id": "bed1",
+      "name": "Bed 1",
+      "role": "Active bloom",
+      "description": "The cut-flower box. Dahlias, gaillardia, scabiosa, cosmos and sunflowers, all still going. Needs constant deadheading for the next ten weeks."
+    },
+    {
+      "id": "bed2",
+      "name": "Bed 2",
+      "role": "Seed and sowing",
+      "description": "Mostly finished and holding a lot of seed. One good clearing pass now, then it becomes the place hardy annuals get sown in September."
+    }
+  ],
+  "footnote": "Ticking a box here is a local convenience for working at the bed. The durable record is content/plan.json. Frost timing is a ten-year average for in-city Seattle and varies by several weeks year to year, so treat November as a watch-the-forecast month rather than a dated one."
+}
