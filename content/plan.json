@@ -155,6 +155,22 @@
           "There is a woody seedling with divided leaves coming up through the back of the bed. Ash and elder both self-sow all over Seattle and both become trees.",
           "Photograph a whole leaf laid flat and note whether leaves come off the stem in opposite pairs, then pull it. It will never be easier to remove than it is right now."
         ]
+      },
+      {
+        "id": "shade-check-back2",
+        "title": "Time the sun on Back Bed 2",
+        "weight": "check",
+        "beds": [
+          "back-2"
+        ],
+        "flags": [
+          "Diagnostic"
+        ],
+        "done": false,
+        "body": [
+          "Pick a clear day and look at the bed three times: mid-morning, midday and mid-afternoon. Note whether the soil is in sun or shadow each time. Half an hour of looking beats any amount of calculation from a map.",
+          "Do it soon. The sun drops fast through September, so what you see now is close to the best this bed gets, and by late October it will be a different bed entirely."
+        ]
       }
     ]
   },

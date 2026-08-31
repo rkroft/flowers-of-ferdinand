@@ -23,8 +23,8 @@
     }
   ],
   "map": {
-    "viewBox": "0 -12 480 452",
-    "caption": "The nine growing areas, drawn from your sketch and turned so north is at the top. Fill shows how much sun each one gets: the more gold, the more sun. Unfilled areas are the ones not yet surveyed.",
+    "viewBox": "0 -12 480 470",
+    "caption": "The growing areas, drawn from your sketch and turned so north is at the top. Fill shows how much sun each one gets: the more gold, the more sun. Unfilled areas are the ones not yet surveyed. The townhomes to the south are on the map because they decide the sun on Back Bed 2.",
     "structures": [
       {
         "id": "house",
@@ -44,12 +44,20 @@
         "vertical": true
       },
       {
-        "id": "outbuilding",
-        "label": "?",
-        "x": 268,
-        "y": 328,
-        "w": 52,
-        "h": 44
+        "id": "easement",
+        "label": "Easement",
+        "x": 80,
+        "y": 330,
+        "w": 240,
+        "h": 26
+      },
+      {
+        "id": "townhomes",
+        "label": "Townhomes, 2-3 storeys",
+        "x": 80,
+        "y": 366,
+        "w": 240,
+        "h": 56
       }
     ],
     "lines": [
@@ -153,9 +161,9 @@
       "id": "back-2",
       "name": "Back Bed 2",
       "role": "Not yet surveyed",
-      "aspect": "South wall of the house",
-      "exposure": "Hottest and driest",
-      "sun": "full",
+      "aspect": "South wall, boxed in by the townhomes",
+      "exposure": "Summer midday only",
+      "sun": "part",
       "surveyed": false,
       "map": {
         "x": 80,
@@ -163,7 +171,7 @@
         "w": 240,
         "h": 38
       },
-      "description": "The best growing spot on the property and probably the most underused. A south-facing wall collects sun all day and radiates stored heat at night, which extends the season at both ends. It will also be the driest bed, in the wall's rain shadow.",
+      "description": "Correction to an earlier call. A south wall would normally make this the best growing spot on the property, but two or three storey townhomes stand close to the south of it, and they block the low sun. At Seattle's latitude the sun only clears a building that tall and that close for a few hours around midday between roughly May and July. From September through March this bed gets essentially nothing. It is a warm sheltered shade bed, not a hot one: the wall still holds heat, and being boxed in on both sides means still air, so expect mildew pressure like the side bed. Plant it for shade, and use it for things that like warmth without direct sun.",
       "mapLabel": "Back 2"
     },
     {
