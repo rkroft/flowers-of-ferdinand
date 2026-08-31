@@ -173,6 +173,36 @@
           "Closed. Confirmed three ways: the street is the north side, south is where the townhomes are, and the Side Bed Box is on the west wall. All three agree on a standard north-up plan, which also matches your original hand sketch and your observation that the street boxes are full sun.",
           "Every area's aspect now derives from that one fact rather than being guessed bed by bed."
         ]
+      },
+      {
+        "id": "deadhead-zinnias",
+        "title": "Deadhead the zinnias, deep",
+        "weight": "now",
+        "beds": [
+          "driveway-1"
+        ],
+        "flags": [],
+        "done": false,
+        "body": [
+          "Zinnias are cut-and-come-again, and they reward hard cutting. Do not snip the flower off the top: follow the stem down to where it meets a pair of leaves or a side shoot and cut there. You get two new flowering stems from every cut.",
+          "Leave three or four of the best heads uncut to dry on the plant for seed. Zinnia seed is among the easiest to save and it is worth having."
+        ]
+      },
+      {
+        "id": "light-meter-check",
+        "title": "Read the light off the plants themselves",
+        "weight": "check",
+        "beds": [
+          "driveway-1"
+        ],
+        "flags": [
+          "Diagnostic"
+        ],
+        "done": false,
+        "body": [
+          "Sunflowers and zinnias make good light meters, so this bed can confirm its own sun without you timing shadows. Stout upright sunflower stems with big heads mean full sun. Thin stems leaning hard in one direction with small heads mean they are reaching for light they are not getting.",
+          "Same story for the zinnias: compact and smothered in flowers is full sun, tall and floppy with few flowers is not enough. Tell me which you see and I will fix the map."
+        ]
       }
     ]
   },
@@ -446,6 +476,20 @@
         "body": [
           "This is the one to remember when the urge to cut everything down arrives. Pruning woody Mediterranean herbs in fall pushes out soft growth that then dies in the first cold snap, and cutting into their bare wood leaves a permanent hole because neither one resprouts from it.",
           "Leave both untouched until spring. Keep compost and mulch off their crowns too: they die of wet feet here far more often than of cold."
+        ]
+      },
+      {
+        "id": "zinnia-seed",
+        "title": "Collect the zinnia seed",
+        "weight": "seed",
+        "beds": [
+          "driveway-1"
+        ],
+        "flags": [],
+        "done": false,
+        "body": [
+          "Take the heads you left standing once they are brown and crisp, not before. Damp seed rots in storage. Pull the dried head apart and the seeds are the arrowhead-shaped flakes at the base of each petal.",
+          "Dry them another week indoors on a plate, then into a paper envelope somewhere cool. Zinnias resent transplanting, so sow them straight into the ground after the last frost next spring."
         ]
       }
     ]

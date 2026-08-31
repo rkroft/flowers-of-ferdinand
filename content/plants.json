@@ -62,13 +62,14 @@
     "variety": "one mahogany, one branching yellow",
     "beds": [
       "street-1",
-      "side"
+      "side",
+      "driveway-1"
     ],
     "type": "annual",
     "confidence": "confirmed",
     "status": "watch",
     "statusLabel": "Powdery mildew",
-    "handling": "Leave heads for birds, or cut when the back turns brown. The side bed plants have powdery mildew: strip the worst leaves, bin them rather than composting, and do not spray this late.",
+    "handling": "Leave heads for birds, or cut when the back turns brown. The side bed plants have powdery mildew: strip the worst leaves and bin them, and do not spray this late. Sunflowers belong in the open sunny beds like the driveway patch, not against a west wall.",
     "idNote": "The dark red one is likely 'Velvet Queen' or 'Chocolate', but that is a guess from colour alone."
   },
   {
@@ -409,5 +410,33 @@
     "statusLabel": "Deal with soon",
     "handling": "Pull or cut it while it is still small enough to pull. A tree seedling in a narrow bed becomes a much bigger job every year you leave it.",
     "idNote": "Woody, with leaves divided into several toothed leaflets along a central stalk. Ash and elder both self-sow readily in Seattle and both get large. Photograph a whole leaf flat, and check whether leaves come off the stem in opposite pairs."
+  },
+  {
+    "id": "zinnia",
+    "name": "Zinnia",
+    "variety": "",
+    "beds": [
+      "driveway-1"
+    ],
+    "type": "annual",
+    "confidence": "likely",
+    "status": "blooming",
+    "statusLabel": "Blooming",
+    "handling": "Cut-and-come-again: deadhead deep, back to a leaf junction rather than snipping the flower off, and it keeps producing until frost kills it outright. Very prone to powdery mildew here, so give it air and water the soil rather than the leaves.",
+    "idNote": "Told to me rather than seen. The type matters only for seed saving: big dahlia-flowered kinds come fairly true, mixed bedding types scramble. A photo of one flower would settle it."
+  },
+  {
+    "id": "wildflower-mix",
+    "name": "Wildflower mix",
+    "variety": "composition unknown",
+    "beds": [
+      "driveway-1"
+    ],
+    "type": "mixed annuals and perennials",
+    "confidence": "unknown",
+    "status": "watch",
+    "statusLabel": "Needs ID",
+    "handling": "Let most of it stand and shed seed, which is how a mix carries itself into next year. Pull anything that is clearly taking over before it seeds.",
+    "idNote": "A mix is many species, and knowing which ones changes everything about how it is managed. If you still have the seed packet it lists them, which beats identifying them one by one. Failing that, photograph the three or four most numerous plants."
   }
 ]

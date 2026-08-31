@@ -19,7 +19,7 @@
     },
     {
       "label": "Areas",
-      "value": "11 mapped, 5 surveyed"
+      "value": "11 mapped, 6 surveyed"
     }
   ],
   "map": {
@@ -190,18 +190,18 @@
       "id": "driveway-1",
       "name": "Driveway Bed 1",
       "mapLabel": "Drive 1",
-      "role": "Not yet surveyed",
+      "role": "Sun annuals",
       "aspect": "North-east corner, beyond the driveway",
-      "exposure": "To confirm",
-      "sun": "unknown",
-      "surveyed": false,
+      "exposure": "Full sun",
+      "sun": "full",
+      "surveyed": true,
       "map": {
         "x": 462,
         "y": 24,
         "w": 78,
         "h": 96
       },
-      "description": "North-east corner beyond the driveway, out by the street and clear of the house. Open sky counts for a lot, so this may be sunnier than its position beside the house would suggest. Not seen yet."
+      "description": "North-east corner beyond the driveway, out by the street and clear of the house. A sunflower patch, zinnias and a wildflower mix. All three are full-sun plantings, and nobody puts a sunflower patch in the shade, so this is a fourth sunny area rather than the marginal one the map made it look. The sun call here comes from what is planted rather than from watching it, so the plants themselves are the check."
     },
     {
       "id": "front-lower",
