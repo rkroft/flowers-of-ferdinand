@@ -46,7 +46,7 @@ const formatDate = (iso) => {
 
 /* ---------- partials ---------- */
 
-function renderMasthead(garden) {
+function renderMasthead(garden, plan) {
   const meta = garden.meta
     .map((m) => `<span><strong>${esc(m.label)}</strong> ${esc(m.value)}</span>`)
     .join("\n        ");
@@ -61,7 +61,7 @@ function renderMasthead(garden) {
   </header>
 
   <div class="triage">
-    <p>Time comes in bursts, so most of this list is optional. Seven jobs have a window that closes and cannot be made up later.</p>
+    ${(() => { const n = plan.flatMap((ph) => ph.tasks).filter((t) => t.slip === "closes" && !t.done).length; return `<p>Time comes in bursts, so most of this list is optional. ${n} job${n === 1 ? " has" : "s have"} a window that closes and cannot be made up later.</p>`; })()}
     <button class="btn" type="button" id="triage-toggle" aria-pressed="false">Show only what cannot wait</button>
   </div>`;
 }
@@ -639,6 +639,30 @@ function plantCard(plant) {
             <dl class="care-list">
 ${rows}
             </dl>
+            ${
+              plant.divide
+                ? `<details class="divide">
+              <summary><span class="dv-label">How to divide it</span><span class="dv-when">${esc(plant.divide.when)}</span></summary>
+              <div class="dv-body">
+                <p class="dv-every"><span>How often</span> ${esc(plant.divide.every)}</p>
+                <ol class="dv-steps">
+${plant.divide.steps.map((step) => `                  <li>${esc(step)}</li>`).join("\n")}
+                </ol>${
+                  plant.divide.links?.length
+                    ? `\n                <ul class="dv-links">
+${plant.divide.links
+  .map(
+    (l) =>
+      `                  <li><a href="${esc(l.url)}" target="_blank" rel="noopener noreferrer">${esc(l.label)}</a></li>`
+  )
+  .join("\n")}
+                </ul>`
+                    : ""
+                }
+              </div>
+            </details>`
+                : ""
+            }
             ${plant.idNote ? `<p class="pc-idnote"><span>To confirm</span> ${esc(plant.idNote)}</p>` : ""}
           </div>
         </details>`;
@@ -852,7 +876,7 @@ ${css}</style>`;
 
   const body = `<div class="wrap">
 
-${renderMasthead(garden)}
+${renderMasthead(garden, plan)}
 
 ${renderMap(garden, plants, plan)}
 

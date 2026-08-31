@@ -1134,6 +1134,98 @@ table.calendar abbr { text-decoration: none; border: none; }
 .care-row[data-field="good"] dt { color: var(--leaf); }
 .care-row[data-field="poor"] dt { color: var(--urgent); }
 
+/* Division is a set of steps in a sequence, so it is numbered, and it is
+   folded away by default because most of the time you are not doing it. */
+
+.divide {
+  margin-top: 1rem;
+  background: var(--surface-sunk);
+  border-radius: 3px;
+}
+
+.divide summary {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 0.3rem 0.7rem;
+  padding: 0.6rem 0.85rem;
+  cursor: pointer;
+  list-style: none;
+}
+
+.divide summary::-webkit-details-marker { display: none; }
+
+.divide summary::after {
+  content: "+";
+  margin-left: auto;
+  font-family: "IBM Plex Mono", ui-monospace, monospace;
+  color: var(--ink-mute);
+  line-height: 1;
+}
+
+.divide[open] summary::after { content: "\2013"; }
+
+.divide summary:focus-visible { outline: 2px solid var(--accent); outline-offset: -2px; }
+
+.dv-label {
+  font-family: "IBM Plex Mono", ui-monospace, monospace;
+  font-size: 0.66rem;
+  font-weight: 600;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  color: var(--leaf);
+}
+
+.dv-when { font-size: 0.86rem; color: var(--ink-soft); }
+
+.dv-body { padding: 0 0.85rem 0.9rem; }
+
+.dv-every {
+  margin: 0 0 0.6rem;
+  font-family: "IBM Plex Mono", ui-monospace, monospace;
+  font-size: 0.68rem;
+  color: var(--ink-soft);
+}
+
+.dv-every span {
+  font-size: 0.62rem;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  color: var(--ink-mute);
+  margin-right: 0.3rem;
+}
+
+.dv-steps {
+  margin: 0;
+  padding-left: 1.2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.45rem;
+  font-size: 0.9rem;
+  color: var(--ink-soft);
+}
+
+.dv-steps li::marker {
+  font-family: "IBM Plex Mono", ui-monospace, monospace;
+  font-size: 0.8rem;
+  color: var(--leaf);
+}
+
+.dv-links {
+  list-style: none;
+  margin: 0.8rem 0 0;
+  padding: 0.7rem 0 0;
+  border-top: 1px dashed var(--rule);
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+  font-size: 0.86rem;
+}
+
+.dv-links a { color: var(--accent); text-decoration-thickness: 1px; text-underline-offset: 2px; }
+.dv-links a:hover { color: var(--ink); }
+.dv-links a:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+
 .pc-idnote {
   margin: 0.9rem 0 0;
   padding-top: 0.7rem;

@@ -250,6 +250,25 @@
           "Cut the top growth off first so you can actually see what you are digging. Then cut a trench right around the stump a spade's width out, work the spade under it, and lever. Rosemary roots are fibrous and spreading rather than deep, so it usually gives way in one piece. An old woody one may want a fork or a mattock.",
           "Get the roots out rather than leaving them to rot in place, because that is where the new planting is going."
         ]
+      },
+      {
+        "id": "lift-tulips",
+        "title": "Lift the tulip bulbs out of Path Bed",
+        "weight": "seed",
+        "beds": [
+          "path-bed"
+        ],
+        "flags": [
+          "Window closing"
+        ],
+        "done": false,
+        "slip": "closes",
+        "ifSkipped": "Once they sprout you cannot move them without wrecking the year, and the next chance is after the foliage dies back in June. That is a full season lost, and they will be in the way of the new planting the whole time.",
+        "body": [
+          "This is the right moment and nearly nobody realises it. Tulips are dormant from about July through October, and dormant is exactly when you can lift and move them. Do it at the same time as you dig out the sage and rosemary, since you are in that corner anyway.",
+          "The awkward part is finding them, because there is no foliage marking the spot. Work with a fork rather than a spade so you spear fewer of them, start well outside where you think they are, and lift wide and deep, sifting the soil as you go.",
+          "Sort as you lift. Firm and heavy is good. Soft, light, papery or carrying blue-green mould goes in the bin. Then either replant straight away in their new spot, or store them somewhere cool, dark and dry in paper bags or mesh, never sealed plastic, and plant with the rest of your bulbs in October or November."
+        ]
       }
     ]
   },

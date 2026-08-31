@@ -255,6 +255,24 @@ sprite. That was tried and reverted: CSS class selectors do not cross into the
 shadow content `<use>` creates, so the colours never applied and every mark
 rendered solid black.
 
+`divide` is optional and holds the how-and-when for plants that need dividing,
+renewing or propagating by hand: `{ when, every, steps: [...], links: [{label,
+url}] }`. It renders as a folded block inside the card, numbered because the
+steps are a genuine sequence.
+
+Write `when` as a season with a reason attached, not a month alone, and say
+which season is wrong where that matters: autumn division kills most things
+here because new roots sit in a wet winter, so almost everything is early
+spring, with surface rhizomes like bearded iris the exception. Steps should be
+physical and specific enough to follow with a spade in your hand.
+
+**Links must be real and verified, never invented.** The ones present were
+found by search, not recalled: YouTube demonstrations for the three fiddly jobs
+(bearded iris, dahlia tubers, hostas) and university extension guides for the
+ordinary clump divisions. If you add more, search for them first, and prefer a
+university extension page over a channel for anything that is not a manual
+technique.
+
 `planned: true` marks a plant Rachel intends to put in but has not planted yet.
 It renders a "planned" chip on the card. Keep the care fields written as normal,
 since the point is knowing what it will need before committing to it.
