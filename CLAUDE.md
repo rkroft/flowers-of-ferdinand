@@ -193,7 +193,7 @@ it, and `npm run check` enforces that.
 `perennial herb`). Use `"unknown"` rather than leaving it blank.
 
 **`care` is required on every plant and is the heart of this project.** Rachel
-asked for exactly five things per plant, in this order, and the page renders
+asked for these six things per plant, in this order, and the page renders
 them in that order every time:
 
 ```json
@@ -202,9 +202,17 @@ them in that order every time:
   "deadhead":    "How and when to deadhead, or that there is nothing to deadhead.",
   "good":        "What it looks like when it is thriving.",
   "poor":        "What it looks like when it is struggling, and what that means.",
-  "endOfSeason": "When it is finished, and whether to cut it back or leave it."
+  "endOfSeason": "When it is finished, and whether to cut it back or leave it.",
+  "propagate":   "Whether to divide, let it seed, take cuttings or just buy more, and when."
 }
 ```
+
+`propagate` must name a season, not just a method: "divide in early spring" is
+useful, "divide periodically" is not. Say plainly when the honest answer is buy
+new (tulips) or when a plant cannot be renewed at all (a grafted Japanese
+maple). Autumn division is usually the wrong call in Seattle because new roots
+going into a wet winter rot; surface rhizomes like bearded iris are the
+exception.
 
 Write these as things she can see with her eyes, not as categories. "Fat round
 buds and thick stems" beats "vigorous growth". For `feed`, "none, ever" is a

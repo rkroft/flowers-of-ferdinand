@@ -441,6 +441,7 @@ const CARE_FIELDS = [
   ["good", "Doing well"],
   ["poor", "Not doing well"],
   ["endOfSeason", "End of season"],
+  ["propagate", "More of it"],
 ];
 
 /* One card per plant, answering the same five questions in the same order
@@ -515,7 +516,7 @@ ${inBed.map(plantCard).join("\n")}
       <h2>Plant by plant</h2>
       <span class="window">${confirmed} of ${plants.length} confirmed</span>
     </div>
-    <p class="section-note">Open any plant for the same five answers: what to feed it and when, how to deadhead it, what it looks like doing well, what it looks like struggling, and what to do when it is finished for the year. A plant growing in more than one area is listed under each.</p>
+    <p class="section-note">Open any plant for the same six answers: what to feed it and when, how to deadhead it, what it looks like doing well, what it looks like struggling, what to do when it is finished for the year, and how to get more of it. A plant growing in more than one area is listed under each.</p>
 
 ${groups}
   </section>`;
