@@ -1,6 +1,6 @@
 # Working on this project
 
-A garden plan for two front beds in Seattle. It is a static site built from JSON
+A garden plan for nine growing areas around a house in Seattle. It is a static site built from JSON
 content by a small Node script. No dependencies, no framework, no build tooling
 beyond Node itself.
 
@@ -111,7 +111,7 @@ A task:
   "id": "poppy-seed",
   "title": "Shake the poppy seed where you want it",
   "weight": "seed",
-  "beds": ["bed2"],
+  "beds": ["street-2"],
   "flags": ["Closing window"],
   "done": false,
   "body": ["first paragraph", "second paragraph"]
@@ -127,17 +127,18 @@ A task:
 | `grow`  | ordinary growing and maintenance work         | green    |
 | `check` | go look at something and report back          | violet   |
 
-`beds` entries must match an `id` in `garden.json`. Task `id`s must be unique
+`beds` entries must match an area `id` in `garden.json` (`street-1`, `street-2`,
+`side`, `front`, `back-1`, `back-2`, `street-3`, `street-4`, `path-bed`). Task `id`s must be unique
 across the whole file, because the browser checkboxes key off them.
 
-**plants.json** is the bed inventory. Each plant:
+**plants.json** is the inventory. Each plant:
 
 ```json
 {
   "id": "shirley-poppy",
   "name": "Shirley poppy",
   "variety": "Papaver rhoeas",
-  "beds": ["bed2"],
+  "beds": ["street-2"],
   "type": "annual",
   "confidence": "confirmed",
   "status": "watch",
