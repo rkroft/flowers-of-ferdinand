@@ -152,6 +152,29 @@ ${taskList}
       </div>`;
 }
 
+/* Greedy word wrap in map units. Mono at 11px is close enough to 6.2 units a
+   character; a word longer than the line gets its own line and overhangs
+   slightly rather than being cut. */
+const LABEL_CHAR = 6.2;
+
+function wrapLabel(text, width) {
+  const words = String(text).split(" ");
+  const lines = [];
+  let line = "";
+
+  for (const word of words) {
+    const candidate = line ? `${line} ${word}` : word;
+    if (line && candidate.length * LABEL_CHAR > width) {
+      lines.push(line);
+      line = word;
+    } else {
+      line = candidate;
+    }
+  }
+  if (line) lines.push(line);
+  return lines;
+}
+
 function renderMap(garden, plants, plan) {
   const map = garden.map;
   if (!map) return "";
@@ -186,17 +209,23 @@ function renderMap(garden, plants, plan) {
       if (!m) return "";
       const cx = m.x + m.w / 2;
       const cy = m.y + m.h / 2;
-      /* Narrow beds need a short label or the text runs outside the box. */
-      const short =
-        bed.mapLabel ??
-        bed.name.replace(/^Street Bed /, "Street ").replace(/^Back Bed /, "Back ");
+      /* The plan carries the full bed name, wrapped onto as many lines as the
+         box needs. Abbreviating meant the map and the rest of the page called
+         the same bed two different things. A turned label wraps against the
+         box width and runs along its height. */
+      const label = bed.mapLabel ?? bed.name;
+      const across = (bed.vertical ? m.h : m.w) - 10;
+      const lines = wrapLabel(label, across);
 
-      /* Narrow strips get their label turned, the way they are on the plan. */
       const turn = bed.vertical ? ` transform="rotate(-90 ${cx} ${cy})"` : "";
+      const top = cy - ((lines.length - 1) * 12) / 2;
+      const spans = lines
+        .map((line, i) => `<tspan x="${cx}" y="${top + i * 12}">${esc(line)}</tspan>`)
+        .join("");
 
       return `      <g class="m-hit" role="button" tabindex="0" data-bed="${esc(bed.id)}" aria-pressed="false" aria-label="${esc(bed.name)}, ${esc(bed.exposure)}. Show what is planted here and what needs doing.">
         <rect class="m-bed" data-sun="${esc(bed.sun)}" data-surveyed="${bed.surveyed}" x="${m.x}" y="${m.y}" width="${m.w}" height="${m.h}" rx="2"></rect>
-        <text class="m-bed-label" x="${cx}" y="${cy}" text-anchor="middle" dominant-baseline="central"${turn}>${esc(short)}</text>
+        <text class="m-bed-label" text-anchor="middle" dominant-baseline="central"${turn}>${spans}</text>
       </g>`;
     })
     .join("\n");

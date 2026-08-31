@@ -84,11 +84,20 @@ inverts if this is got wrong.
 `npm run check` fails if two areas overlap, because that is nearly impossible
 to spot in JSON.
 
-`mapLabel` is the short label drawn inside the rectangle. `npm run check`
-fails if a label is too wide for its box, estimating monospace at 6.6 units per
-character. Either shorten it or set `"vertical": true` to turn it, which is
-what the narrow strips do. A structure can have `"label": ""` to stay
+**Bed names must match the labels on Rachel's Figma plan exactly**, and the
+site plan draws that same full name rather than an abbreviation. Abbreviating
+was tried and reverted: it meant the map and the rest of the page called the
+same bed two different things. Names wrap onto as many lines as the box needs,
+and `npm run check` fails if the longest word will not fit across the box or if
+the wrapped lines will not fit down it. Fix that by widening the box, turning
+the label with `"vertical": true`, or, as a last resort, setting an explicit
+short `mapLabel` override. A structure can have `"label": ""` to stay
 unlabelled when its box is too small for any text.
+
+Current names, matching the plan: Path Bed, Street Bed Box 1, Street Bed Box 2,
+Driveway Bed 1, Front Lower Bed, Upper Bed, Side Bed Box, Driveway Bed 2, Back
+Bed 1, Back Bed 2, Back Bed 3. Upper Bed is the one deliberate difference:
+Rachel renamed it from the plan's "Upper Lower Bed".
 
 `surveyed` is false for areas that are on the map but have not been
 photographed or walked yet. The area's panel then says so instead of

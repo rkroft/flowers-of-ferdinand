@@ -60,7 +60,7 @@ if (garden) {
     if (seen.has(bed.id)) fail(`${where}: duplicate area id "${bed.id}"`);
     seen.add(bed.id);
 
-    for (const field of ["name", "aspect", "exposure", "description", "mapLabel"]) {
+    for (const field of ["name", "aspect", "exposure", "description"]) {
       if (!bed[field]) fail(`${where}: missing "${field}"`);
     }
     if (!SUN.has(bed.sun)) {
@@ -76,16 +76,37 @@ if (garden) {
       warn(`${where}: surveyed but sun is still "unknown"`);
     }
 
-    /* Labels that overrun their box are invisible in JSON and obvious on the
-       page. Mono at 11px is close enough to 6.6px per character to catch it.
-       A turned label is limited by the box height, not its width. */
-    if (bed.map && bed.mapLabel) {
-      const room = (bed.vertical ? bed.map.h : bed.map.w) - 8;
-      const needed = bed.mapLabel.length * 6.6;
-      if (needed > room) {
+    /* The map wraps the full name, so the check is whether the longest single
+       word fits across the box and whether the wrapped lines fit down it. */
+    if (bed.map) {
+      const label = bed.mapLabel ?? bed.name ?? "";
+      const across = (bed.vertical ? bed.map.h : bed.map.w) - 10;
+      const down = (bed.vertical ? bed.map.w : bed.map.h) - 6;
+
+      const longest = Math.max(0, ...label.split(" ").map((w) => w.length * 6.2));
+      if (longest > across) {
         fail(
-          `${where}: mapLabel "${bed.mapLabel}" needs about ${Math.ceil(needed)} units but the ` +
-            `box gives ${room}. Shorten it, or set "vertical": true to turn it.`
+          `${where}: the word "${label.split(" ").find((w) => w.length * 6.2 > across)}" needs ` +
+            `about ${Math.ceil(longest)} units and the box gives ${across} across. Widen the box, ` +
+            `turn the label with "vertical": true, or set a shorter "mapLabel".`
+        );
+      }
+
+      let line = "";
+      let count = 1;
+      for (const word of label.split(" ")) {
+        const candidate = line ? `${line} ${word}` : word;
+        if (line && candidate.length * 6.2 > across) {
+          count += 1;
+          line = word;
+        } else {
+          line = candidate;
+        }
+      }
+      if (count * 12 > down) {
+        fail(
+          `${where}: "${label}" wraps to ${count} lines needing ${count * 12} units and the box ` +
+            `gives ${down} down. Make the box taller or set a shorter "mapLabel".`
         );
       }
     }

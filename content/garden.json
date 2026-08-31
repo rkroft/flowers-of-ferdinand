@@ -138,7 +138,6 @@
     {
       "id": "path-bed",
       "name": "Path Bed",
-      "mapLabel": "Path",
       "role": "Mediterranean and perennials",
       "aspect": "North-west corner, out by the street",
       "exposure": "Full sun, dry",
@@ -155,7 +154,6 @@
     {
       "id": "street-1",
       "name": "Street Bed Box 1",
-      "mapLabel": "Box 1",
       "role": "Active bloom",
       "aspect": "North side, past the sidewalk",
       "exposure": "Full sun",
@@ -172,7 +170,6 @@
     {
       "id": "street-2",
       "name": "Street Bed Box 2",
-      "mapLabel": "Box 2",
       "role": "Seed and sowing",
       "aspect": "North side, past the sidewalk",
       "exposure": "Full sun",
@@ -189,7 +186,6 @@
     {
       "id": "driveway-1",
       "name": "Driveway Bed 1",
-      "mapLabel": "Drive 1",
       "role": "Sun annuals",
       "aspect": "North-east corner, beyond the driveway",
       "exposure": "Full sun",
@@ -206,7 +202,6 @@
     {
       "id": "front-lower",
       "name": "Front Lower Bed",
-      "mapLabel": "Front Lower",
       "role": "Spring display",
       "aspect": "North side, street level below the retaining wall",
       "exposure": "Part sun, spring-lit",
@@ -223,7 +218,6 @@
     {
       "id": "upper-lower",
       "name": "Upper Bed",
-      "mapLabel": "Upper",
       "role": "Spring display",
       "aspect": "North side, raised above the retaining wall",
       "exposure": "Part sun, spring-lit",
@@ -240,7 +234,6 @@
     {
       "id": "side",
       "name": "Side Bed Box",
-      "mapLabel": "Side",
       "role": "Edibles",
       "aspect": "West wall of the house",
       "exposure": "Afternoon sun",
@@ -257,7 +250,6 @@
     {
       "id": "driveway-2",
       "name": "Driveway Bed 2",
-      "mapLabel": "Drive 2",
       "role": "Not yet surveyed",
       "aspect": "East side, beyond the driveway",
       "exposure": "Morning sun likely",
@@ -274,7 +266,6 @@
     {
       "id": "back-2",
       "name": "Back Bed 2",
-      "mapLabel": "Back 2",
       "role": "Not yet surveyed",
       "aspect": "East side of the house, south end",
       "exposure": "To confirm",
@@ -292,7 +283,6 @@
     {
       "id": "back-1",
       "name": "Back Bed 1",
-      "mapLabel": "Back 1",
       "role": "Not yet surveyed",
       "aspect": "South-east corner, on the neighbour boundary",
       "exposure": "To confirm",
@@ -310,7 +300,6 @@
     {
       "id": "back-3",
       "name": "Back Bed 3",
-      "mapLabel": "Back 3",
       "role": "Not yet surveyed",
       "aspect": "South wall, facing the townhomes",
       "exposure": "Summer midday only",

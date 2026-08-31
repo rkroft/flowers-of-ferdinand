@@ -78,5 +78,10 @@
     "date": "2026-08-31",
     "title": "Upper Bed: dianthus and two more from the photo",
     "note": "Dianthus confirmed. Reading further into the spring photograph, two more added as unconfirmed: sweet william, whose dense flat-topped clusters look distinct from the cushion-forming pinks despite both being dianthus, and a wallflower for the orange-bronze mass through the middle. Nineteen plants recorded in this bed and the photograph clearly holds more than that, so it stays open rather than being called complete."
+  },
+  {
+    "date": "2026-08-31",
+    "title": "Bed names reconciled with the plan",
+    "note": "Checked every bed name against the Figma labels. All eleven already matched; the drift was on the site plan, which abbreviated them to fit narrow boxes so the map said 'Box 1' where the rest of the page said 'Street Bed Box 1'. The map now wraps and draws the full name, and the validator checks the wrapped text fits rather than checking a hand-written abbreviation."
   }
 ]
