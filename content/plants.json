@@ -628,11 +628,11 @@
       "path-bed"
     ],
     "type": "perennial",
-    "confidence": "likely",
+    "confidence": "confirmed",
     "status": "finished",
     "statusLabel": "Gone over",
-    "handling": "Cut the spent stems back now. Divide every three years or so: the centre of the clump dies out and the flowering moves to the edges.",
-    "idNote": "Coarsely toothed dark lance-shaped leaves and white daisies with yellow centres. Shasta is the obvious call, but oxeye daisy looks similar and self-sows far harder. Shasta flowers are two to three inches across, oxeye about one.",
+    "handling": "Cut the spent stems down to the low green mound at the base. Divide every three years or so: the centre dies out and the flowering moves to the edges.",
+    "idNote": "",
     "window": {
       "from": 6,
       "to": 8,
@@ -643,7 +643,7 @@
       "deadhead": "Cut spent stems right down to the low mound of green leaves at the base. Doing it early enough sometimes brings a second smaller flush.",
       "good": "Strong stems that hold their flowers up without staking.",
       "poor": "Flopping and a dying centre with flowering pushed to the edges means it wants dividing, roughly every three years.",
-      "endOfSeason": "Cut the flowered stems down and leave the basal rosette of leaves, which stays green through winter."
+      "endOfSeason": "Cut the flowered stems down and leave the basal rosette of leaves, which stays green through winter. Divide in early spring, not autumn: a division going into a wet Seattle winter on new roots is the one that rots."
     }
   },
   {
@@ -654,11 +654,11 @@
       "path-bed"
     ],
     "type": "rhizome",
-    "confidence": "likely",
+    "confidence": "confirmed",
     "status": "finished",
     "statusLabel": "Divide now",
     "handling": "Late summer is the window for dividing. Cut the leaves back to a fan about six inches tall and replant the rhizomes shallow, with their backs showing above the soil. Burying them is the usual reason iris stops flowering.",
-    "idNote": "Broad flat grey-green leaves in a fan, wider and stiffer than the gladiolus in the street beds. Bearded iris grows from a fat rhizome sitting at the soil surface. Scrape the soil at the base: a thick horizontal rhizome confirms it.",
+    "idNote": "",
     "window": {
       "from": 5,
       "to": 6,
@@ -669,7 +669,7 @@
       "deadhead": "Snap spent flowers off as they go over, then cut the whole flower stalk down to the base once the last one has finished.",
       "good": "Fat firm rhizomes sitting at the soil surface with fans of clean leaves.",
       "poor": "A soft, smelly rhizome is rot and must be cut out. Brown streaks and spots on the leaves are leaf spot, which overwinters on old foliage. Plenty of leaves but no flowers almost always means the rhizomes are buried too deep or too congested.",
-      "endOfSeason": "Cut the leaves back to a fan about six inches tall in autumn and clear away every dead leaf, since that is where leaf spot overwinters. Divide in late summer, replanting shallow with the rhizome backs showing."
+      "endOfSeason": "Cut the leaves back to a fan about six inches tall and clear every dead leaf away, since leaf spot overwinters on old foliage. Division happens in late summer, which is the window closing now, and the rhizomes go back in shallow with their backs showing above the soil."
     }
   },
   {

@@ -152,7 +152,7 @@
         "flags": [],
         "done": false,
         "body": [
-          "Almost every flower on that stand is finished, and the bed is reading as brown from the sidewalk because of it. Cut the spent stems down to the low mound of fresh green leaves at the base, which stays through winter.",
+          "Confirmed as shasta daisy. Almost every flower on that stand is finished, and the bed is reading as brown from the sidewalk because of it. Cut the spent stems down to the low mound of fresh green leaves at the base, which stays through winter.",
           "Leave a few seedheads standing if you want it to self-sow, but only a few. This one seeds itself generously."
         ],
         "slip": "safe",
@@ -342,12 +342,13 @@
           "path-bed"
         ],
         "flags": [
-          "By mid-Sep"
+          "Window closing"
         ],
         "done": false,
         "body": [
-          "Late summer is the window, and you are at the end of it. Lift the clump, snap the rhizomes apart so each piece has a fan of leaves and some roots, and throw away any that are soft or hollow.",
-          "Cut the leaves back to a fan about six inches tall so the wind cannot rock the new divisions loose. Replant shallow, with the top of each rhizome visible above the soil. Iris planted too deep is the single most common reason it stops flowering."
+          "Confirmed as bearded iris, so this is worth doing properly. The window is roughly six weeks after flowering through early September, and you are at the end of it.",
+          "Lift the clump, snap the rhizomes apart so each piece has a fan of leaves and some roots, and throw away anything soft, hollow or smelly. Cut the leaves back to a fan about six inches tall so wind cannot rock the new divisions loose.",
+          "Replant shallow, with the top of each rhizome visible above the soil. Iris planted too deep is the single most common reason it stops flowering, and burying a rhizome in wet Seattle soil is how it rots."
         ],
         "slip": "closes",
         "ifSkipped": "The window is gone until next August, and a congested clump flowers less every year in the meantime."
