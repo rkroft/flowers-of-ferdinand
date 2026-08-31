@@ -321,9 +321,12 @@ section { margin-top: 3.4rem; }
   white-space: nowrap;
 }
 
-.tag.bed1 { background: var(--leaf-soft); color: var(--leaf); }
-.tag.bed2 { background: var(--seed-soft); color: var(--seed); }
-.tag.flag { background: var(--urgent-soft); color: var(--urgent); }
+/* Area tags stay neutral on purpose. Colour-coding works for two areas and
+   falls apart at six, and the area name already carries the meaning. Only
+   flags, which are always time-sensitive, take a colour. */
+
+.tag-area { background: var(--surface-sunk); color: var(--ink-soft); }
+.tag-flag { background: var(--urgent-soft); color: var(--urgent); }
 
 /* ---------- callout ---------- */
 

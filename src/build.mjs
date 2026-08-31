@@ -68,15 +68,16 @@ function renderBeds(garden) {
     .map(
       (bed) => `      <div class="bed">
         <h3>${esc(bed.name)}</h3>
-        <span class="role">${esc(bed.role)}</span>
+        <span class="role">${esc(bed.role)}${bed.exposure ? ` &middot; ${esc(bed.exposure)}` : ""}</span>
         <p>${esc(bed.description)}</p>
       </div>`
     )
     .join("\n");
 
-  return `  <section>
+  return `  <section id="areas">
     <div class="section-head">
-      <h2>The two beds</h2>
+      <h2>The areas</h2>
+      <span class="window">${garden.beds.length}</span>
     </div>
     <div class="beds">
 ${cards}
@@ -88,9 +89,9 @@ function renderTask(task, bedsById) {
   const tags = [
     ...(task.beds ?? []).map((id) => {
       const bed = bedsById.get(id);
-      return `<span class="tag ${esc(id)}">${esc(bed ? bed.name : id)}</span>`;
+      return `<span class="tag tag-area">${esc(bed ? bed.name : id)}</span>`;
     }),
-    ...(task.flags ?? []).map((flag) => `<span class="tag flag">${esc(flag)}</span>`),
+    ...(task.flags ?? []).map((flag) => `<span class="tag tag-flag">${esc(flag)}</span>`),
   ].join("");
 
   const tagRow = tags ? `          <div class="tags">${tags}</div>\n` : "";
@@ -160,7 +161,7 @@ function renderPlants(plants, garden) {
 
       const shared = inBed.filter((p) => (p.beds ?? []).length > 1).length;
       const count = `${inBed.length} plant${inBed.length === 1 ? "" : "s"}${
-        shared ? `, ${shared} shared with the other bed` : ""
+        shared ? `, ${shared} shared with other areas` : ""
       }`;
 
       return `    <div class="bed-group">
@@ -190,10 +191,10 @@ ${inBed.map(plantRow).join("\n")}
 
   return `  <section id="plants">
     <div class="section-head">
-      <h2>Bed inventory</h2>
+      <h2>Inventory</h2>
       <span class="window">${confirmed} of ${plants.length} confirmed</span>
     </div>
-    <p class="section-note">Plants growing in both beds are listed under each. Anything not marked confirmed is a working guess, not a fact.</p>
+    <p class="section-note">Grouped by area. A plant growing in more than one area is listed under each. Anything not marked confirmed is a working guess, not a fact.</p>
 
 ${groups}
   </section>`;

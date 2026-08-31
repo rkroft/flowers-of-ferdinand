@@ -8,19 +8,21 @@
     { "label": "Written", "value": "Aug 31, 2026" },
     { "label": "Zone", "value": "8b, in-city" },
     { "label": "First frost", "value": "~Nov 15" },
-    { "label": "Exposure", "value": "Full sun" }
+    { "label": "Areas", "value": "2 mapped" }
   ],
   "beds": [
     {
       "id": "bed1",
       "name": "Bed 1",
       "role": "Active bloom",
-      "description": "The cut-flower box. Dahlias, gaillardia, scabiosa, cosmos and sunflowers, all still going. Needs constant deadheading for the next ten weeks."
+      "exposure": "Full sun",
+      "description": "The cut-flower box out front. Dahlias, gaillardia, scabiosa, cosmos and sunflowers, all still going. Needs constant deadheading for the next ten weeks."
     },
     {
       "id": "bed2",
       "name": "Bed 2",
       "role": "Seed and sowing",
+      "exposure": "Full sun",
       "description": "Mostly finished and holding a lot of seed. One good clearing pass now, then it becomes the place hardy annuals get sown in September."
     }
   ],
