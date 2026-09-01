@@ -7221,12 +7221,13 @@ footer p { margin: 0 0 0.9rem; }
       panels.forEach(function (panel) {
         if (panel.dataset.panel === selected) open = panel;
       });
+      // Jump rather than animate. The distance from the plan to the panel is
+      // most of a screen and grows with the page, and a long smooth scroll is
+      // slow to sit through and easy to lose your place in. Jumping also means
+      // there is no motion to have to reduce.
       if (open && open.scrollIntoView) {
-        var reduce =
-          window.matchMedia &&
-          window.matchMedia("(prefers-reduced-motion: reduce)").matches;
         try {
-          open.scrollIntoView({ behavior: reduce ? "auto" : "smooth", block: "start" });
+          open.scrollIntoView({ behavior: "auto", block: "start" });
         } catch (e) {
           open.scrollIntoView(); // older Safari takes no options
         }
