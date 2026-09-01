@@ -710,6 +710,10 @@ function renderUnknowns(plants) {
   if (!open.length) return "";
 
   const unknown = open.filter((p) => p.confidence === "unknown").length;
+  const count =
+    unknown === 0
+      ? `${open.length} to confirm`
+      : `${unknown} unknown, ${open.length - unknown} to confirm`;
 
   const items = open
     .map(
@@ -726,7 +730,7 @@ function renderUnknowns(plants) {
   return `  <section id="unknowns">
     <div class="section-head">
       <h2>Still to identify</h2>
-      <span class="window">${unknown} unknown, ${open.length - unknown} to confirm</span>
+      <span class="window">${count}</span>
     </div>
     <p class="section-note">What to look at, and what would settle it. Photograph anything on this list next time you are out there.</p>
 
