@@ -288,6 +288,45 @@ Plants listing more than one bed appear under each bed, which is correct for an
 inventory. The "Still to identify" section is generated from every plant whose
 confidence is not `confirmed`, so there is no separate list to keep in sync.
 
+**routine.json** is the standing routine, the part that does not change with
+the season. `plan.json` is this year and gets reset; this file survives that.
+
+```json
+{
+  "intro": "...",
+  "amendments": {
+    "intro": "...",
+    "items": [{ "id", "name", "job", "what", "use", "avoid", "coverage", "verdict" }],
+    "note": "..."
+  },
+  "seasons": [{
+    "id": "fall",
+    "title": "...", "window": "...", "intro": "...",
+    "rule": { "title": "...", "body": ["..."] },
+    "groups": [{ "id", "label", "why", "plants": ["..."] }],
+    "steps": [{ "title", "when", "body" }]
+  }],
+  "works": [{ "title": "...", "note": "..." }]
+}
+```
+
+`verdict` is required on every amendment: it is the one line she reads if she
+reads nothing else, so it must be a decision ("this is the annual routine",
+"skip it"), not a summary. `coverage` is the only optional field, use `""`.
+
+Each season needs a `rule`, because the rule is the point. The groups exist to
+answer "what do I do with this specific plant", so `why` on each group has to
+say what the group has in common, not repeat the label. `steps` is ordered and
+may be `[]`, which is what the spring season uses since its groups are already
+chronological.
+
+`works` holds practices Rachel has found work in this garden, written in second
+person and credited as hers. Fall-sown sunflower seed is the first. Do not put
+general advice here, it is specifically the things she reports working.
+
+The whole file is written in second person, like the rest of the page. Do not
+write about her in the third person in content that renders.
+
 **idguide.json** holds the photography reference: an `intro`, a `shots` array
 (each with `name`, `what`, `why`), a `tips` array of strings, and an `offCamera`
 array of `{title, note}`. The shot list is deliberately numbered because it is a
@@ -303,10 +342,20 @@ build time, so append rather than prepend.
 ## What Rachel wants from this
 
 Stated directly: document what is actually there, and understand the timing of
-everything. **She has explicitly said she does not want new recommendations at
-the moment.** Record, identify and schedule; do not redesign. The annual
-sunflower and zinnia patch in Driveway Bed 1 is deliberate and she enjoys it, so
-do not propose replacing it with something lower maintenance.
+everything. Record, identify and schedule. The annual sunflower and zinnia patch
+in Driveway Bed 1 is deliberate and she enjoys it, so do not propose replacing it
+with something lower maintenance.
+
+**Do not redesign the planting.** That constraint still holds and is about what
+grows where.
+
+**Technique and routine advice is wanted, as of Aug 31 2026.** She asked
+directly for help putting the beds to bed for winter, prepping for spring, and
+choosing between compost, conditioner and the rest, and for her own routine to
+be written down and improved. That work lives in `routine.json`. An earlier
+version of this file said she did not want new recommendations at all, which was
+true when it was written and is no longer. Advise on how a job is done. Do not
+propose new plants.
 
 Low maintenance is a preference she holds, and her time comes in bursts, so
 `slip` and `ifSkipped` still matter on every task. That is about making the

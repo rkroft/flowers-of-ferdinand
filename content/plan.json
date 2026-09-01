@@ -493,6 +493,20 @@
         ],
         "slip": "costs",
         "ifSkipped": "The good selection is gone by late October. You can still plant, with less choice."
+      },
+      {
+        "id": "buy-compost-not-conditioner",
+        "title": "Buy compost, and check the bag says compost",
+        "weight": "check",
+        "slip": "costs",
+        "ifSkipped": "You end up top-dressing with bark fines, which feeds nothing, or you miss the window and the beds go into winter bare.",
+        "beds": [],
+        "flags": [],
+        "done": false,
+        "body": [
+          "Compost and soil conditioner sit on the same shelf at the same price and look identical through the plastic. Conditioner is ground bark. It opens up heavy soil but it is not food, and dug into a bed it takes nitrogen out rather than putting any in.",
+          "Work out the square footage first. A 1.5 cubic foot bag covers about 9 square feet at two inches, so the beds need more bags than feels reasonable. See the standing routine for the full comparison."
+        ]
       }
     ]
   },
@@ -650,6 +664,26 @@
           "Do not cut the clematis back this autumn. Clematis fall into three pruning groups and they want completely different treatment: spring types are pruned right after flowering, early summer types get a light tidy in late winter, and late summer types are cut hard to about a foot in February.",
           "Note when yours actually flowers next year and that tells us the group. Until then, leaving it untouched is the only move that cannot cost you a season."
         ]
+      },
+      {
+        "id": "cut-what-rots",
+        "title": "Cut what rots, leave what stands",
+        "weight": "grow",
+        "slip": "costs",
+        "ifSkipped": "Wet foliage sits on the crowns all winter, which is where grey mould and slug eggs overwinter. Recoverable, but it makes a worse spring.",
+        "beds": [
+          "street-1",
+          "street-2",
+          "path-bed",
+          "upper-lower",
+          "side"
+        ],
+        "flags": [],
+        "done": false,
+        "body": [
+          "The one rule that replaces deciding plant by plant. Anything that collapses into wet mush comes out: hostas, bleeding heart, shasta daisy, hardy geranium, the iris fans down to six inches. Anything with a stiff stem or a seed head stays up: echinacea, black-eyed Susan, gaillardia, scabiosa, baby's breath.",
+          "Diseased material goes in the green bin, not on a pile and not left on the bed. Rust and grey mould both overwinter on what they killed. The full list by group is in the standing routine below."
+        ]
       }
     ]
   },
@@ -708,6 +742,24 @@
         ],
         "slip": "safe",
         "ifSkipped": "You lose the bird food and the frost interest. The plants do not mind."
+      },
+      {
+        "id": "sow-sunflower-seed",
+        "title": "Sow sunflower seed for next year",
+        "weight": "seed",
+        "slip": "costs",
+        "ifSkipped": "You sow in spring instead and get later, softer plants. Nothing is lost beyond the head start.",
+        "beds": [
+          "driveway-1",
+          "driveway-2",
+          "side"
+        ],
+        "flags": [],
+        "done": false,
+        "body": [
+          "This is the one that already works here, so it goes in the plan properly. The seed sits dormant over winter and comes up when the soil warms, earlier and sturdier than anything started in a pot in May.",
+          "What beats it is rot in ground that stays wet, and birds and slugs taking the seed before it germinates. Sow more than you need, and put it on the driest ground you have."
+        ]
       }
     ],
     "callout": {

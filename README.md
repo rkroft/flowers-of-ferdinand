@@ -1,6 +1,6 @@
-# Two Beds, Ten Weeks
+# Flowers of Ferdinand
 
-A living garden plan for two front beds in Seattle. Edit the content, run the
+A living garden plan for eleven beds in Seattle. Edit the content, run the
 build, get a single self-contained web page you can open on a phone at the bed.
 
 ## Getting started
@@ -26,6 +26,7 @@ Everything you would want to change week to week lives in `content/`:
 | `questions.json` | Open questions, answered in place                       |
 | `journal.json`   | A dated log of what you observed and did                |
 | `idguide.json`   | The photograph-a-plant-for-ID reference                 |
+| `routine.json`  | The standing routine: amendments, fall and spring      |
 
 Then:
 

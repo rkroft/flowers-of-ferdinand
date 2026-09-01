@@ -38,6 +38,7 @@ const plants = await readJson("plants.json");
 const questions = await readJson("questions.json");
 const journal = await readJson("journal.json");
 const idguide = await readJson("idguide.json");
+const routine = await readJson("routine.json");
 
 if (garden) {
   for (const field of ["title", "standfirst", "eyebrow", "updated", "season", "beds", "meta"]) {
@@ -316,6 +317,72 @@ if (idguide) {
     const where = `idguide.json[${item.title ?? "?"}]`;
     if (!item.title) fail(`${where}: missing title`);
     if (!item.note) fail(`${where}: missing note`);
+  }
+}
+
+if (routine) {
+  if (!routine.intro) fail("routine.json: missing intro");
+
+  const am = routine.amendments;
+  if (!am || !Array.isArray(am.items) || !am.items.length) {
+    fail('routine.json: "amendments.items" must be a non-empty array');
+  } else {
+    if (!am.intro) fail("routine.json: amendments needs an intro");
+    const seen = new Set();
+    for (const item of am.items) {
+      const where = `routine.json amendment "${item.id ?? "?"}"`;
+      if (!item.id) fail(`${where}: missing id`);
+      if (seen.has(item.id)) fail(`${where}: duplicate amendment id`);
+      seen.add(item.id);
+      // verdict is the line Rachel reads if she reads nothing else, so it is required
+      for (const field of ["name", "job", "what", "use", "avoid", "verdict"]) {
+        if (!item[field]) fail(`${where}: missing "${field}"`);
+      }
+    }
+  }
+
+  if (!Array.isArray(routine.seasons) || !routine.seasons.length) {
+    fail('routine.json: "seasons" must be a non-empty array');
+  }
+
+  const seenSeason = new Set();
+  for (const season of routine.seasons ?? []) {
+    const where = `routine.json season "${season.id ?? "?"}"`;
+    if (!season.id) fail(`${where}: missing id`);
+    if (seenSeason.has(season.id)) fail(`${where}: duplicate season id`);
+    seenSeason.add(season.id);
+    for (const field of ["title", "window", "intro"]) {
+      if (!season[field]) fail(`${where}: missing "${field}"`);
+    }
+    if (!season.rule?.title || !Array.isArray(season.rule?.body) || !season.rule.body.length) {
+      fail(`${where}: needs a rule with a title and a non-empty body`);
+    }
+    if (!Array.isArray(season.groups) || !season.groups.length) {
+      fail(`${where}: needs at least one group`);
+    }
+    for (const group of season.groups ?? []) {
+      const gw = `${where} group "${group.id ?? "?"}"`;
+      if (!group.id) fail(`${gw}: missing id`);
+      if (!group.label) fail(`${gw}: missing label`);
+      if (!group.why) fail(`${gw}: missing "why", which is the reason the group exists`);
+      if (!Array.isArray(group.plants) || !group.plants.length) {
+        fail(`${gw}: needs a non-empty list`);
+      }
+    }
+    if (!Array.isArray(season.steps)) fail(`${where}: "steps" must be an array, use [] for none`);
+    for (const step of season.steps ?? []) {
+      const sw = `${where} step "${step.title ?? "?"}"`;
+      if (!step.title) fail(`${sw}: missing title`);
+      if (!step.when) fail(`${sw}: missing "when"`);
+      if (!step.body) fail(`${sw}: missing body`);
+    }
+  }
+
+  if (!Array.isArray(routine.works)) fail('routine.json: "works" must be an array, use [] for none');
+  for (const w of routine.works ?? []) {
+    const where = `routine.json works "${w.title ?? "?"}"`;
+    if (!w.title) fail(`${where}: missing title`);
+    if (!w.note) fail(`${where}: missing note`);
   }
 }
 

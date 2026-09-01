@@ -1,0 +1,233 @@
+{
+  "intro": "The dated phases above are this year. This is the part that stays true every year: what goes on the beds, what gets cut and what gets left, and the order to do it in. The cutback rule below is the one that changes things, because until now that decision was being made plant by plant, in the moment.",
+  "amendments": {
+    "intro": "Compost and soil conditioner sit next to each other on the same shelf, cost about the same, and do completely different jobs. That is the single most useful thing to get straight.",
+    "items": [
+      {
+        "id": "compost",
+        "name": "Compost",
+        "job": "Food and biology",
+        "what": "Finished organic matter, dark and crumbly, no recognisable pieces left in it.",
+        "use": "One to two inches spread on top of the bed once a year, in fall. Winter rain works it in without any digging. Keep it off crowns and off stems, and off the bearded iris rhizomes entirely, which need to sit exposed to the air.",
+        "avoid": "Digging it into an established bed. You tear through roots to bury something that was going to get there anyway.",
+        "coverage": "A 1.5 cubic foot bag covers about 9 square feet at two inches deep, or 18 square feet at one inch.",
+        "verdict": "This is the annual routine. If only one thing goes down, it is this."
+      },
+      {
+        "id": "conditioner",
+        "name": "Soil conditioner, or bark fines",
+        "job": "Structure, not food",
+        "what": "Finely ground bark or sawdust. It looks like compost in the bag and is sold beside it, which is why it gets bought by mistake.",
+        "use": "Only where drainage is genuinely bad: ground that stands in water after rain, or soil that is dense and grey when you dig it. Spread it on the surface like compost.",
+        "avoid": "Treating it as compost, and digging it in. It is almost pure carbon, so the microbes breaking it down pull nitrogen out of the soil to do the work, and a bed with it dug through is a hungry bed for a season. On the surface that reaction stays in the top inch and does not reach the roots.",
+        "coverage": "Same as compost by volume, but it should be a repair, not an annual habit.",
+        "verdict": "A fix for a specific problem. Buy it when a bed drains badly, not every fall."
+      },
+      {
+        "id": "manure",
+        "name": "Bagged manure",
+        "job": "Nitrogen",
+        "what": "Steer or chicken, composted or not.",
+        "use": "Spring, if at all, and only well composted.",
+        "avoid": "Putting it down in fall here. The nitrogen washes through a Seattle winter before roots want it, and fresh manure burns.",
+        "coverage": "",
+        "verdict": "Skip it. Compost does this job slowly and does not leach."
+      },
+      {
+        "id": "lime",
+        "name": "Lime",
+        "job": "Raises pH",
+        "what": "Ground limestone. Soils here are naturally acidic and winter rain makes them more so.",
+        "use": "Only after a soil test says so.",
+        "avoid": "Liming on principle. It is the one amendment worth testing for rather than guessing at, and it is actively wrong around anything acid loving.",
+        "coverage": "",
+        "verdict": "Do nothing until you have a number."
+      },
+      {
+        "id": "fall-feed",
+        "name": "Fall fertilizer",
+        "job": "None worth having",
+        "what": "Any balanced or high nitrogen feed applied in autumn.",
+        "use": "Never in fall.",
+        "avoid": "All of it. Nitrogen pushes soft new growth exactly when the plant should be shutting down, and that growth is what frost takes first. Most of it leaches out before spring anyway.",
+        "coverage": "",
+        "verdict": "The amendment to leave in the shop."
+      }
+    ],
+    "note": "Everything on this list arrives in bags, because there are no leaves in quantity here and no compost pile. Worth knowing: the yard waste going out in the green bin is the same material that comes back as bagged compost. Any fall leaves that can be raked up and left on the beds are the one free version of the first item on this list."
+  },
+  "seasons": [
+    {
+      "id": "fall",
+      "title": "Putting the beds to bed",
+      "window": "Late September through the first hard frost",
+      "intro": "Cold is not the enemy here, wet is. Almost everything below is about keeping water out of crowns and keeping rot from overwintering in dead material.",
+      "rule": {
+        "title": "Cut what rots, leave what stands",
+        "body": [
+          "Anything that collapses into wet mush comes out, because that mush is where grey mould and slug eggs spend the winter. Anything with a stiff stem or a seed head stays up: it feeds birds, it insulates its own crown, and it is the only thing in the bed worth looking at in February.",
+          "That one rule replaces the decision you were making plant by plant."
+        ]
+      },
+      "groups": [
+        {
+          "id": "cut",
+          "label": "Cut back and clear",
+          "why": "These all collapse into wet mush and hold rot over winter.",
+          "plants": [
+            "Hostas",
+            "Bleeding heart",
+            "Shasta daisy",
+            "Hardy geranium",
+            "Dahlia, once frost has blackened it",
+            "Bearded iris, fans down to about six inches",
+            "Strawberry, the old and spotted leaves only",
+            "Pole beans, cut at soil level and leave the roots in",
+            "Sunflower stalks once they mildew",
+            "Cosmos and zinnia once frost kills them"
+          ]
+        },
+        {
+          "id": "leave",
+          "label": "Leave standing",
+          "why": "Stiff stems and seed heads. They insulate the crown, feed birds, and hold frost.",
+          "plants": [
+            "Echinacea, both of them",
+            "Black-eyed Susan",
+            "Gaillardia",
+            "Scabiosa",
+            "Baby's breath",
+            "Flax",
+            "California and Shirley poppy, if you want them to sow themselves"
+          ]
+        },
+        {
+          "id": "never",
+          "label": "Do not cut until spring",
+          "why": "Cutting these going into winter is the mistake that does not grow back.",
+          "plants": [
+            "Clematis",
+            "Japanese maple, which bleeds if cut in fall. Midwinter, and only if it needs it",
+            "Oregano",
+            "Any woody herb, into old wood"
+          ]
+        },
+        {
+          "id": "carry",
+          "label": "Leave alone, they carry the winter",
+          "why": "These are the ones doing the work in March. Do not tidy them away in October.",
+          "plants": [
+            "Candytuft",
+            "Aubrieta",
+            "Periwinkle",
+            "Dianthus",
+            "Primroses",
+            "Violas and pansies",
+            "English daisies",
+            "Sweet William",
+            "Wallflower",
+            "Forget-me-nots",
+            "Sweet alyssum"
+          ]
+        }
+      ],
+      "steps": [
+        {
+          "title": "Stop feeding",
+          "when": "End of August",
+          "body": "Already done by the time this starts. Anything fed after this is being pushed into growth it cannot harden off."
+        },
+        {
+          "title": "Keep watering until the rain takes over",
+          "when": "Through a dry September",
+          "body": "Deeply, once a week. A plant goes into winter on whatever water it has stored, and September is usually still dry here."
+        },
+        {
+          "title": "Cut what rots, leave what stands",
+          "when": "As things go over, not all at once",
+          "body": "Diseased material goes in the green bin, never on a pile and never left on the bed. Rust and grey mould both overwinter on what they killed, which is why the rusted snapdragons get pulled rather than cut."
+        },
+        {
+          "title": "Lift what will not take a wet winter",
+          "when": "After the foliage yellows",
+          "body": "Gladiolus corms come up. Dahlias are a judgement call: they survive an in-ground winter here more often than not, and what kills them is standing water rather than cold."
+        },
+        {
+          "title": "Plant bulbs",
+          "when": "Daffodils in October, tulips in November",
+          "body": "Tulips go in later on purpose. Warm soil is what rots them, so waiting until it cools is the whole trick."
+        },
+        {
+          "title": "Sow what wants to sit over winter",
+          "when": "October into November",
+          "body": "Sweet peas, poppies, and the sunflower seed. See what already works, below."
+        },
+        {
+          "title": "Top-dress with compost",
+          "when": "Last job, once the beds are cleared and planted",
+          "body": "One to two inches over the whole bed. Off the crowns, off the stems, and nothing at all over the bearded iris rhizomes."
+        },
+        {
+          "title": "Go into winter covered, not bare",
+          "when": "By the end of November",
+          "body": "Bare soil takes the full winter rain, packs down hard, and comes out of it worse than it went in. The compost layer is what stops that."
+        }
+      ]
+    },
+    {
+      "id": "spring",
+      "title": "Waking the beds up",
+      "window": "Late February through May",
+      "intro": "The main risk in spring is doing things too early: cutting before the new growth shows, feeding into cold wet soil, and planting tender things into ground that has not warmed.",
+      "rule": {
+        "title": "Cut before it grows, feed after it does",
+        "body": [
+          "Everything left standing over winter comes down before the new shoots are up, because once they are up you cannot cut the old stems without cutting them too.",
+          "Feeding runs the other way. Nothing goes down until there is visible growth to use it, otherwise the rain takes it first."
+        ]
+      },
+      "groups": [
+        {
+          "id": "early",
+          "label": "Late February into early March",
+          "why": "Before anything breaks dormancy.",
+          "plants": [
+            "Cut down everything left standing from fall",
+            "Pull the compost back off the crowns so the soil can warm",
+            "Clear the last of the winter mush",
+            "Start slug patrol from the first warm wet week"
+          ]
+        },
+        {
+          "id": "mid",
+          "label": "March into April",
+          "why": "Once growth is actually showing.",
+          "plants": [
+            "First feed of the year, and not before",
+            "Divide almost anything that needs it, which is nearly everything: autumn division here puts new roots into a wet winter",
+            "Sow the hardy annuals",
+            "Watch for the fall-sown sunflowers coming up"
+          ]
+        },
+        {
+          "id": "late",
+          "label": "May, once the soil is properly warm",
+          "why": "Tender things only. Soil temperature matters more than the calendar.",
+          "plants": [
+            "Plant out dahlias",
+            "Plant out the gladiolus corms, and stagger them a few weeks apart for a longer run",
+            "Sow zinnias and cosmos",
+            "Pole beans in, once the nights hold"
+          ]
+        }
+      ],
+      "steps": []
+    }
+  ],
+  "works": [
+    {
+      "title": "Sowing sunflower seed in the fall",
+      "note": "This one is yours, and it works. It is the same mechanism as a volunteer: the seed sits dormant through winter and comes up when the soil warms, which is earlier and sturdier than anything sown in a pot in May. Sunflowers do not need the cold, they just need to survive it. The two things that beat it are rot in ground that stays wet, and birds and slugs taking the seed. Sow more than you need, and sow it on the driest ground you have."
+    }
+  ]
+}

@@ -51,11 +51,11 @@ function renderMasthead(garden, plan) {
     .map((m) => `<span><strong>${esc(m.label)}</strong> ${esc(m.value)}</span>`)
     .join("\n        ");
 
+  // eyebrow and standfirst are optional: set either to "" in garden.json and the
+  // element is left out rather than rendered empty, which would leave its margin.
   return `  <header class="masthead">
-    <div class="eyebrow">${esc(garden.eyebrow)}</div>
-    <h1>${esc(garden.title)}</h1>
-    <p class="standfirst">${esc(garden.standfirst)}</p>
-    <div class="meta">
+${garden.eyebrow ? `    <div class="eyebrow">${esc(garden.eyebrow)}</div>\n` : ""}    <h1>${esc(garden.title)}</h1>
+${garden.standfirst ? `    <p class="standfirst">${esc(garden.standfirst)}</p>\n` : ""}    <div class="meta">
         ${meta}
     </div>
   </header>
@@ -740,6 +740,107 @@ ${items}
   </section>`;
 }
 
+function renderRoutine(routine) {
+  const amend = routine.amendments.items
+    .map(
+      (a) => `      <div class="am-card" data-id="${esc(a.id)}">
+        <div class="am-head">
+          <h4>${esc(a.name)}</h4>
+          <span class="am-job">${esc(a.job)}</span>
+        </div>
+        <p class="am-what">${esc(a.what)}</p>
+        <p class="am-line"><span>Use</span> ${esc(a.use)}</p>
+        <p class="am-line am-avoid"><span>Avoid</span> ${esc(a.avoid)}</p>
+        ${a.coverage ? `<p class="am-line"><span>Covers</span> ${esc(a.coverage)}</p>` : ""}
+        <p class="am-verdict">${esc(a.verdict)}</p>
+      </div>`
+    )
+    .join("\n");
+
+  const seasons = routine.seasons
+    .map((s) => {
+      const groups = s.groups
+        .map(
+          (g) => `        <div class="rt-group" data-group="${esc(g.id)}">
+          <h4>${esc(g.label)}</h4>
+          <p class="rt-why">${esc(g.why)}</p>
+          <ul>
+${g.plants.map((p) => `            <li>${esc(p)}</li>`).join("\n")}
+          </ul>
+        </div>`
+        )
+        .join("\n");
+
+      const steps = s.steps.length
+        ? `        <ol class="rt-steps">
+${s.steps
+  .map(
+    (st) => `          <li>
+            <div class="rt-step-head">
+              <h4>${esc(st.title)}</h4>
+              <span class="rt-when">${esc(st.when)}</span>
+            </div>
+            <p>${esc(st.body)}</p>
+          </li>`
+  )
+  .join("\n")}
+        </ol>`
+        : "";
+
+      return `      <div class="rt-season" id="routine-${esc(s.id)}">
+        <div class="rt-season-head">
+          <h3>${esc(s.title)}</h3>
+          <span class="window">${esc(s.window)}</span>
+        </div>
+        <p class="rt-intro">${esc(s.intro)}</p>
+
+        <div class="rt-rule">
+          <h4>${esc(s.rule.title)}</h4>
+${s.rule.body.map((p) => `          <p>${esc(p)}</p>`).join("\n")}
+        </div>
+
+        <div class="rt-groups">
+${groups}
+        </div>
+${steps}
+      </div>`;
+    })
+    .join("\n\n");
+
+  const works = routine.works
+    .map(
+      (w) => `      <div class="rt-works">
+        <h4>${esc(w.title)}</h4>
+        <p>${esc(w.note)}</p>
+      </div>`
+    )
+    .join("\n");
+
+  return `  <section id="routine">
+    <div class="section-head">
+      <h2>The standing routine</h2>
+      <span class="window">every year</span>
+    </div>
+    <p class="section-note">${esc(routine.intro)}</p>
+
+    <div class="rt-block">
+      <h3>What to put on the beds</h3>
+      <p class="rt-intro">${esc(routine.amendments.intro)}</p>
+      <div class="am-cards">
+${amend}
+      </div>
+      <p class="am-note">${esc(routine.amendments.note)}</p>
+    </div>
+
+${seasons}
+
+    <div class="rt-block">
+      <h3>What already works</h3>
+${works}
+    </div>
+  </section>`;
+}
+
 function renderIdGuide(guide) {
   const shots = guide.shots
     .map(
@@ -857,13 +958,14 @@ function renderFooter(garden) {
 /* ---------- assembly ---------- */
 
 async function build() {
-  const [garden, plan, plants, questions, journal, idguide, css, js] = await Promise.all([
+  const [garden, plan, plants, questions, journal, idguide, routine, css, js] = await Promise.all([
     readJson("garden.json"),
     readJson("plan.json"),
     readJson("plants.json"),
     readJson("questions.json"),
     readJson("journal.json"),
     readJson("idguide.json"),
+    readJson("routine.json"),
     readFile(join(SRC, "styles.css"), "utf8"),
     readFile(join(SRC, "app.js"), "utf8"),
   ]);
@@ -885,6 +987,8 @@ ${renderMasthead(garden, plan)}
 ${renderMap(garden, plants, plan)}
 
 ${plan.map((phase) => renderPhase(phase, bedsById)).join("\n\n")}
+
+${renderRoutine(routine)}
 
 ${renderCalendar(garden, plants, new Date(garden.updated))}
 

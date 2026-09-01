@@ -1570,6 +1570,220 @@ footer p { margin: 0 0 0.9rem; }
   * { animation: none !important; transition: none !important; }
 }
 
+/* ---------- the standing routine ---------- */
+
+.rt-block { margin-bottom: 2.4rem; }
+
+#routine h3 {
+  font-family: "Fraunces", Georgia, serif;
+  font-size: 1.18rem;
+  font-weight: 600;
+  margin: 0 0 0.5rem;
+}
+
+#routine h4 {
+  font-size: 0.97rem;
+  font-weight: 600;
+  margin: 0;
+}
+
+.rt-intro {
+  font-size: 0.93rem;
+  color: var(--ink-soft);
+  margin: 0 0 1.1rem;
+  max-width: 34rem;
+}
+
+/* amendments: the compost-versus-conditioner comparison, which is the
+   question that sent Rachel here. One card each, same fields in the same
+   order, so two cards can be read against each other down the page. */
+.am-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
+  gap: 0.9rem;
+}
+
+.am-card {
+  background: var(--surface);
+  border: 1px solid var(--rule-soft);
+  border-left: 3px solid var(--leaf);
+  border-radius: 3px;
+  padding: 1rem 1.05rem;
+}
+
+.am-card[data-id="conditioner"] { border-left-color: var(--seed); }
+.am-card[data-id="manure"],
+.am-card[data-id="lime"] { border-left-color: var(--rule); }
+.am-card[data-id="fall-feed"] { border-left-color: var(--urgent); }
+
+.am-head {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 0.6rem;
+  flex-wrap: wrap;
+  margin-bottom: 0.4rem;
+}
+
+.am-job {
+  font-family: "IBM Plex Mono", ui-monospace, monospace;
+  font-size: 0.68rem;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+  color: var(--ink-mute);
+  white-space: nowrap;
+}
+
+.am-what {
+  font-size: 0.88rem;
+  color: var(--ink-soft);
+  margin: 0 0 0.7rem;
+}
+
+.am-line {
+  font-size: 0.88rem;
+  margin: 0 0 0.5rem;
+  color: var(--ink-soft);
+}
+
+.am-line span {
+  font-family: "IBM Plex Mono", ui-monospace, monospace;
+  font-size: 0.68rem;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+  color: var(--ink-mute);
+  margin-right: 0.3rem;
+}
+
+.am-avoid span { color: var(--urgent); }
+
+.am-verdict {
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: var(--ink);
+  margin: 0.8rem 0 0;
+  padding-top: 0.7rem;
+  border-top: 1px solid var(--rule-soft);
+}
+
+.am-note {
+  font-size: 0.88rem;
+  color: var(--ink-mute);
+  margin: 1rem 0 0;
+  max-width: 36rem;
+}
+
+/* seasons */
+.rt-season { margin-bottom: 2.6rem; }
+
+.rt-season-head {
+  display: flex;
+  align-items: baseline;
+  gap: 0.8rem;
+  flex-wrap: wrap;
+  margin-bottom: 0.5rem;
+}
+
+.rt-rule {
+  background: var(--accent-soft);
+  border-radius: 3px;
+  padding: 1rem 1.1rem;
+  margin-bottom: 1.3rem;
+}
+
+.rt-rule h4 {
+  font-family: "Fraunces", Georgia, serif;
+  font-size: 1.05rem;
+  margin-bottom: 0.45rem;
+}
+
+.rt-rule p {
+  font-size: 0.9rem;
+  color: var(--ink-soft);
+  margin: 0 0 0.5rem;
+}
+
+.rt-rule p:last-child { margin-bottom: 0; }
+
+.rt-groups {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+  gap: 0.9rem;
+  margin-bottom: 1.4rem;
+}
+
+.rt-group {
+  background: var(--surface);
+  border: 1px solid var(--rule-soft);
+  border-top: 3px solid var(--leaf);
+  border-radius: 3px;
+  padding: 0.9rem 1rem;
+}
+
+.rt-group[data-group="cut"] { border-top-color: var(--urgent); }
+.rt-group[data-group="never"] { border-top-color: var(--accent); }
+.rt-group[data-group="carry"] { border-top-color: var(--seed); }
+.rt-group[data-group="mid"] { border-top-color: var(--seed); }
+.rt-group[data-group="late"] { border-top-color: var(--accent); }
+
+.rt-why {
+  font-size: 0.84rem;
+  color: var(--ink-mute);
+  margin: 0.3rem 0 0.6rem;
+}
+
+.rt-group ul {
+  margin: 0;
+  padding-left: 1.05rem;
+}
+
+.rt-group li {
+  font-size: 0.88rem;
+  color: var(--ink-soft);
+  margin-bottom: 0.3rem;
+}
+
+.rt-steps {
+  margin: 0;
+  padding-left: 1.3rem;
+}
+
+.rt-steps li { margin-bottom: 1rem; }
+
+.rt-step-head {
+  display: flex;
+  align-items: baseline;
+  gap: 0.6rem;
+  flex-wrap: wrap;
+}
+
+.rt-when {
+  font-family: "IBM Plex Mono", ui-monospace, monospace;
+  font-size: 0.68rem;
+  letter-spacing: 0.06em;
+  color: var(--ink-mute);
+}
+
+.rt-steps p {
+  font-size: 0.89rem;
+  color: var(--ink-soft);
+  margin: 0.25rem 0 0;
+  max-width: 36rem;
+}
+
+.rt-works {
+  background: var(--leaf-soft);
+  border-radius: 3px;
+  padding: 1rem 1.1rem;
+}
+
+.rt-works p {
+  font-size: 0.9rem;
+  color: var(--ink-soft);
+  margin: 0.35rem 0 0;
+  max-width: 36rem;
+}
+
 /* ---------- touch targets ---------- */
 
 /* On a phone at the bed, ticking a task is the whole interaction, and the box
