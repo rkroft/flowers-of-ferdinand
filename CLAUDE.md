@@ -402,6 +402,20 @@ Low maintenance is a preference she holds, and her time comes in bursts, so
 `slip` and `ifSkipped` still matter on every task. That is about making the
 existing plan honest, not about changing the planting.
 
+## Design decisions already made
+
+**The site plan stays full width.** A two column layout was built on Sep 1 2026
+with the plan on the left and the panel on the right, and rejected on sight: it
+shrinks the drawing, and the drawing is the thing. Do not propose splitting the
+plan into a column again.
+
+**Overlays are the likely direction for showing a bed's panel**, not settled.
+Rachel called for a brainstorming session before anything gets built. Do not
+start building an overlay without one.
+
+The constraint that survives both: whatever shows a bed's detail must not make
+the plan smaller.
+
 ## Common jobs
 
 - **Mark a task done**: set `"done": true` in `plan.json`. That is the durable
