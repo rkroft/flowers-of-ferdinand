@@ -1569,3 +1569,30 @@ footer p { margin: 0 0 0.9rem; }
 @media (prefers-reduced-motion: reduce) {
   * { animation: none !important; transition: none !important; }
 }
+
+/* ---------- touch targets ---------- */
+
+/* On a phone at the bed, ticking a task is the whole interaction, and the box
+   is 1.15rem. Grow the hit area to the 44px thumb minimum without touching the
+   drawn box: the ::before is positioned, so it stays out of the grid that
+   centres the tick. */
+@media (pointer: coarse) {
+  .task input[type="checkbox"] { position: relative; }
+
+  .task input[type="checkbox"]::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 44px;
+    height: 44px;
+    transform: translate(-50%, -50%);
+  }
+
+  .btn {
+    min-height: 44px;
+    padding: 0.4rem 0.9rem;
+  }
+
+  summary { min-height: 44px; }
+}
