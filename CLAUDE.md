@@ -161,8 +161,14 @@ Be honest when grading these. Most deadheading is `costs`, not `closes`:
 skipping it means fewer flowers, not dead plants, and saying otherwise turns a
 low-maintenance garden into a guilt list. Reserve `closes` for real deadlines,
 seed windows, division windows, frost protection, and the one pruning mistake
-that cannot be undone. The triage button on the page filters to `closes` only,
-so over-grading empties that view of meaning.
+that cannot be undone. `closes` renders a "Closing window" tag on the task, so
+over-grading turns the page into a wall of red and the tag stops meaning
+anything.
+
+There used to be a triage button that filtered the page to `closes` only.
+Rachel had it removed on Sep 1 2026 as not needed. Do not rebuild it unless she
+asks; the grading still matters, it is just read off the tags and the
+`ifSkipped` line rather than used as a filter.
 
 `weight` sets the colour of the left stripe and must be one of:
 

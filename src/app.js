@@ -1,33 +1,3 @@
-/* Triage filter.
- *
- * Strips the page down to the jobs whose window closes for good. Phases left
- * with nothing showing are hidden too, so the filtered view has no empty
- * sections. Nothing is removed from the document, only hidden, so the full
- * list is one press away and searching the page still finds everything.
- */
-(function () {
-  var toggle = document.getElementById("triage-toggle");
-  if (!toggle) return;
-
-  var root = document.querySelector(".wrap");
-  var phases = Array.prototype.slice.call(document.querySelectorAll("section[id]"));
-  var label = { off: toggle.textContent, on: "Show everything" };
-
-  toggle.addEventListener("click", function () {
-    var on = toggle.getAttribute("aria-pressed") !== "true";
-    toggle.setAttribute("aria-pressed", on ? "true" : "false");
-    toggle.textContent = on ? label.on : label.off;
-    root.classList.toggle("filtered", on);
-
-    phases.forEach(function (section) {
-      var tasks = section.querySelectorAll(".task");
-      if (!tasks.length) return;
-      var urgent = section.querySelectorAll('.task[data-slip="closes"]').length;
-      section.classList.toggle("no-urgent", on && urgent === 0);
-    });
-  });
-})();
-
 /* Site plan selection.
  *
  * Every area on the plan is a button. Selecting one reveals its pre-rendered
@@ -58,6 +28,27 @@
     });
 
     if (prompt) prompt.hidden = selected !== null;
+
+    // Bring the panel to the top of the screen. Without this the panel opens
+    // below the plan and, on a phone, entirely off screen. Only on select:
+    // tapping the same area again clears it, and scrolling then would be
+    // chasing something that just disappeared.
+    if (selected) {
+      var open = null;
+      panels.forEach(function (panel) {
+        if (panel.dataset.panel === selected) open = panel;
+      });
+      if (open && open.scrollIntoView) {
+        var reduce =
+          window.matchMedia &&
+          window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+        try {
+          open.scrollIntoView({ behavior: reduce ? "auto" : "smooth", block: "start" });
+        } catch (e) {
+          open.scrollIntoView(); // older Safari takes no options
+        }
+      }
+    }
   }
 
   hits.forEach(function (hit) {

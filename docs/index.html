@@ -205,41 +205,7 @@ section { margin-top: 3.4rem; }
   max-width: 34rem;
 }
 
-/* ---------- triage bar ----------
-   Built for a gardener whose time comes in bursts: the default view is
-   everything, one press strips it to the jobs that cannot be made up. */
-
-.triage {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: space-between;
-  gap: 0.8rem 1.2rem;
-  margin-top: 1.4rem;
-  padding: 0.9rem 1.1rem;
-  background: var(--surface-sunk);
-  border-radius: 3px;
-}
-
-.triage p {
-  margin: 0;
-  font-size: 0.9rem;
-  color: var(--ink-soft);
-  max-width: 32rem;
-}
-
-.triage .btn { margin: 0; flex: none; }
-
-.triage .btn[aria-pressed="true"] {
-  background: var(--ink);
-  border-color: var(--ink);
-  color: var(--ground);
-}
-
-/* Filtered view: everything that can slip steps aside. */
-.filtered .task:not([data-slip="closes"]),
-.filtered .panel-tasks li:not([data-slip="closes"]),
-.filtered section.no-urgent { display: none; }
+/* ---------- task tags ---------- */
 
 .tag-closes { background: var(--urgent); color: var(--surface); }
 
@@ -1592,6 +1558,38 @@ footer p { margin: 0 0 0.9rem; }
   margin: 0 0 1.2rem;
 }
 
+.bed-plan > summary {
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  gap: 0.15rem;
+  list-style: none;
+}
+
+.bed-plan > summary::-webkit-details-marker { display: none; }
+
+.bed-plan > summary::after {
+  content: "Read it";
+  font-family: "IBM Plex Mono", ui-monospace, monospace;
+  font-size: 0.66rem;
+  letter-spacing: 0.05em;
+  color: var(--accent);
+  margin-top: 0.3rem;
+}
+
+.bed-plan[open] > summary::after { content: "Close"; }
+
+.bed-plan[open] > summary { margin-bottom: 0.85rem; }
+
+.bed-plan > summary:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 3px;
+}
+
+/* The panel is scrolled to the top of the screen when an area is tapped, so
+   leave it a little air rather than jamming it against the edge. */
+.panel { scroll-margin-top: 0.8rem; }
+
 .bp-label {
   font-family: "IBM Plex Mono", ui-monospace, monospace;
   font-size: 0.66rem;
@@ -1605,7 +1603,7 @@ footer p { margin: 0 0 0.9rem; }
   font-size: 1rem;
   font-weight: 600;
   color: var(--ink);
-  margin: 0.15rem 0 0.85rem;
+  margin: 0;
 }
 
 .bp-method {
@@ -1913,11 +1911,6 @@ footer p { margin: 0 0 0.9rem; }
     </div>
   </header>
 
-  <div class="triage">
-    <p>Time comes in bursts, so most of this list is optional. 9 jobs have a window that closes and cannot be made up later.</p>
-    <button class="btn" type="button" id="triage-toggle" aria-pressed="false">Show only what cannot wait</button>
-  </div>
-
   <section id="map">
     <div class="section-head">
       <h2>Site plan</h2>
@@ -2033,11 +2026,11 @@ footer p { margin: 0 0 0.9rem; }
         <p class="panel-aspect">North-west corner, out by the street</p>
         <p class="panel-water"><span>Watered by</span> Hose, by hand</p>
         <p class="panel-desc">North-west corner, out by the street and clear of the house. Being simplified: the sage and rosemary are coming out, the tulips are lifted, and the bearded iris is going too, which leaves shasta daisies and black-eyed Susans with the bed to themselves. Full sun and sharp drainage, which is what the herbs were thriving on, so the ground where they stood wants compost worked through it before the black-eyed Susans go in.</p>
-        <div class="bed-plan">
-          <div class="bp-head">
+        <details class="bed-plan">
+          <summary>
             <span class="bp-label">The plan</span>
-            <p class="bp-goal">Two plants, one long summer, and almost nothing to do between times.</p>
-          </div>
+            <span class="bp-goal">Two plants, one long summer, and almost nothing to do between times.</span>
+          </summary>
           <ol class="bp-method">
             <li>
               <div class="bp-step-head">
@@ -2083,7 +2076,7 @@ footer p { margin: 0 0 0.9rem; }
               <li>Angular brown or black spots climbing up the lower leaves of the black-eyed Susan is Septoria leaf spot, which rudbeckia get badly in this climate. Take the affected leaves off, water the soil rather than the foliage, and clear every dead leaf in autumn.</li>
             </ul>
           </div>
-        </div>
+        </details>
 
         <h4>What is in it <span>6</span></h4>
         <ul class="panel-plants">
@@ -2523,11 +2516,11 @@ footer p { margin: 0 0 0.9rem; }
         <p class="panel-aspect">North-east corner, beyond the driveway</p>
         <p class="panel-water"><span>Watered by</span> Hose, by hand</p>
         <p class="panel-desc">North-east corner beyond the driveway, out by the street and clear of the house. The annual patch: sunflowers, zinnias and a wildflower mix, grown here on purpose and staying that way. All three want full sun, which is the evidence for the sun rating.</p>
-        <div class="bed-plan">
-          <div class="bp-head">
+        <details class="bed-plan">
+          <summary>
             <span class="bp-label">The plan</span>
-            <p class="bp-goal">Stout single stems and big heads, not a thicket of thin ones.</p>
-          </div>
+            <span class="bp-goal">Stout single stems and big heads, not a thicket of thin ones.</span>
+          </summary>
           <ol class="bp-method">
             <li>
               <div class="bp-step-head">
@@ -2573,7 +2566,7 @@ footer p { margin: 0 0 0.9rem; }
               <li>The branching yellow will never be one tall stout stalk. That is what a branching variety is: many smaller flowers on thinner stems, by design. If tall and strong is the goal, save seed from the mahogany, and buy a single-stem mammoth type to sow alongside it.</li>
             </ul>
           </div>
-        </div>
+        </details>
 
         <h4>What is in it <span>2</span></h4>
         <ul class="panel-plants">
@@ -2926,11 +2919,11 @@ footer p { margin: 0 0 0.9rem; }
         <p class="panel-aspect">East side, beyond the driveway</p>
         <p class="panel-water"><span>Watered by</span> Hose, by hand</p>
         <p class="panel-desc">East of the driveway alongside the house. Sunflowers, zinnias and gladiolus, and confirmed as full sun, which is more than its position beside the house suggested: nothing tall stands to the east of it. Together with Driveway Bed 1 it makes the driveway side a second sunny run rather than the marginal strip the map implied.</p>
-        <div class="bed-plan">
-          <div class="bp-head">
+        <details class="bed-plan">
+          <summary>
             <span class="bp-label">The plan</span>
-            <p class="bp-goal">The same sunflower patch as Driveway Bed 1, worked around the gladiolus.</p>
-          </div>
+            <span class="bp-goal">The same sunflower patch as Driveway Bed 1, worked around the gladiolus.</span>
+          </summary>
           <ol class="bp-method">
             <li>
               <div class="bp-step-head">
@@ -2961,7 +2954,7 @@ footer p { margin: 0 0 0.9rem; }
               <li>The same crowding signs as Driveway Bed 1: thin stems, small heads, mildew.</li>
             </ul>
           </div>
-        </div>
+        </details>
 
         <h4>What is in it <span>3</span></h4>
         <ul class="panel-plants">
@@ -7188,36 +7181,6 @@ footer p { margin: 0 0 0.9rem; }
 </div>
 
 <script>
-/* Triage filter.
- *
- * Strips the page down to the jobs whose window closes for good. Phases left
- * with nothing showing are hidden too, so the filtered view has no empty
- * sections. Nothing is removed from the document, only hidden, so the full
- * list is one press away and searching the page still finds everything.
- */
-(function () {
-  var toggle = document.getElementById("triage-toggle");
-  if (!toggle) return;
-
-  var root = document.querySelector(".wrap");
-  var phases = Array.prototype.slice.call(document.querySelectorAll("section[id]"));
-  var label = { off: toggle.textContent, on: "Show everything" };
-
-  toggle.addEventListener("click", function () {
-    var on = toggle.getAttribute("aria-pressed") !== "true";
-    toggle.setAttribute("aria-pressed", on ? "true" : "false");
-    toggle.textContent = on ? label.on : label.off;
-    root.classList.toggle("filtered", on);
-
-    phases.forEach(function (section) {
-      var tasks = section.querySelectorAll(".task");
-      if (!tasks.length) return;
-      var urgent = section.querySelectorAll('.task[data-slip="closes"]').length;
-      section.classList.toggle("no-urgent", on && urgent === 0);
-    });
-  });
-})();
-
 /* Site plan selection.
  *
  * Every area on the plan is a button. Selecting one reveals its pre-rendered
@@ -7248,6 +7211,27 @@ footer p { margin: 0 0 0.9rem; }
     });
 
     if (prompt) prompt.hidden = selected !== null;
+
+    // Bring the panel to the top of the screen. Without this the panel opens
+    // below the plan and, on a phone, entirely off screen. Only on select:
+    // tapping the same area again clears it, and scrolling then would be
+    // chasing something that just disappeared.
+    if (selected) {
+      var open = null;
+      panels.forEach(function (panel) {
+        if (panel.dataset.panel === selected) open = panel;
+      });
+      if (open && open.scrollIntoView) {
+        var reduce =
+          window.matchMedia &&
+          window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+        try {
+          open.scrollIntoView({ behavior: reduce ? "auto" : "smooth", block: "start" });
+        } catch (e) {
+          open.scrollIntoView(); // older Safari takes no options
+        }
+      }
+    }
   }
 
   hits.forEach(function (hit) {

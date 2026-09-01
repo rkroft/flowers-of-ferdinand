@@ -58,12 +58,7 @@ ${garden.eyebrow ? `    <div class="eyebrow">${esc(garden.eyebrow)}</div>\n` : "
 ${garden.standfirst ? `    <p class="standfirst">${esc(garden.standfirst)}</p>\n` : ""}    <div class="meta">
         ${meta}
     </div>
-  </header>
-
-  <div class="triage">
-    ${(() => { const n = plan.flatMap((ph) => ph.tasks).filter((t) => t.slip === "closes" && !t.done).length; return `<p>Time comes in bursts, so most of this list is optional. ${n} job${n === 1 ? " has" : "s have"} a window that closes and cannot be made up later.</p>`; })()}
-    <button class="btn" type="button" id="triage-toggle" aria-pressed="false">Show only what cannot wait</button>
-  </div>`;
+  </header>`;
 }
 
 /* The site plan. Geometry comes from garden.json so the drawing and the
@@ -182,16 +177,16 @@ ${plan.watch.map((w) => `              <li>${esc(w)}</li>`).join("\n")}
           </div>`
     : "";
 
-  return `        <div class="bed-plan">
-          <div class="bp-head">
+  return `        <details class="bed-plan">
+          <summary>
             <span class="bp-label">The plan</span>
-            <p class="bp-goal">${esc(plan.goal)}</p>
-          </div>
+            <span class="bp-goal">${esc(plan.goal)}</span>
+          </summary>
           <ol class="bp-method">
 ${method}
           </ol>
 ${watch}
-        </div>
+        </details>
 `;
 }
 
