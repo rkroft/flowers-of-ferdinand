@@ -24,7 +24,7 @@
   ],
   "map": {
     "viewBox": "0 -8 512 505",
-    "caption": "Traced from your Figma plan and kept to its proportions and positions. North is at the top: the street is the north side, the townhomes are south, west is on the left. Grey blocks are the house, driveway, stairs and the townhomes. Fill shows how much sun each area gets: the more gold, the more sun. Unfilled areas are not surveyed yet.",
+    "caption": "",
     "structures": [
       {
         "id": "house",

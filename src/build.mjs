@@ -299,7 +299,7 @@ ${(() => {
         </g>`;
   })()}
       </svg>
-      <figcaption>${esc(map.caption)}</figcaption>
+${map.caption ? `      <figcaption>${esc(map.caption)}</figcaption>` : ""}
     </figure>
 
     <ul class="legend">
