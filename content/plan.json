@@ -766,5 +766,68 @@
       "title": "And then the front beds do the work",
       "body": "Spring is when the standing seedheads come down, the oregano gets hard-pruned into old wood, and the mulch comes off the dahlia crowns. It is also when the front beds pay out, with no input from you beyond having planted the bulbs. Leave every bulb leaf until it has yellowed completely: that is when next year's flower gets made."
     }
+  },
+  {
+    "id": "next-spring",
+    "title": "Next spring",
+    "window": "Mar – May",
+    "note": "The plan used to stop at first frost, which meant the one job that decides whether the sunflowers come up strong had nowhere to live. The standing routine below covers the general spring work; these are the dated, bed-specific ones.",
+    "tasks": [
+      {
+        "id": "cut-standing-stems",
+        "title": "Cut down everything left standing",
+        "weight": "grow",
+        "slip": "costs",
+        "ifSkipped": "Once the new shoots are up you cannot cut the old stems without cutting them too, so it turns into a fiddly job instead of a fast one.",
+        "beds": [
+          "street-1",
+          "street-2",
+          "path-bed",
+          "upper-lower"
+        ],
+        "flags": [],
+        "done": false,
+        "body": [
+          "Everything left up over winter comes down before the new growth shows. The echinacea, black-eyed Susan, gaillardia and the rest were left standing on purpose; this is the other half of that decision.",
+          "Pull the compost back off the crowns at the same time so the soil can warm."
+        ]
+      },
+      {
+        "id": "slug-watch-seedlings",
+        "title": "Slug watch on the sunflower seedlings",
+        "weight": "check",
+        "slip": "costs",
+        "ifSkipped": "The fall-sown seedlings get eaten and you are back to sowing in May, which gives later and softer plants. Recoverable, but it throws away the head start that makes fall sowing worth doing.",
+        "beds": [
+          "driveway-1",
+          "driveway-2"
+        ],
+        "flags": [],
+        "done": false,
+        "body": [
+          "The first three weeks after the seedlings emerge is where a fall-sown patch is won or lost. They come up into a wet spring, which is peak slug season, and a sunflower at two leaves is one night's work.",
+          "Check every couple of days from first emergence until they are hand height. After that they are too tough to bother with."
+        ]
+      },
+      {
+        "id": "thin-sunflowers",
+        "title": "Thin the sunflower patches, hard",
+        "weight": "now",
+        "slip": "closes",
+        "ifSkipped": "Nothing fixes it later. By the time the stems are drawn and thin they stay that way, and you get the scraggly patch instead of the tall one. This is the single job that decides how the sunflowers turn out.",
+        "beds": [
+          "driveway-1",
+          "driveway-2"
+        ],
+        "flags": [
+          "Closing window"
+        ],
+        "done": false,
+        "body": [
+          "At four to six inches tall, thin to eighteen inches apart for the single-stem types and twelve for the branching one. Volunteers come up in clumps where the heads fell, and ten seedlings in a hand's width gives ten thin whippy stems with small heads, every time.",
+          "Cut the extras off at soil level rather than pulling them, so you do not tear the roots of the one you are keeping. In Driveway Bed 2, thin so the sunflowers sit toward the outer edge and the gladiolus keep their light."
+        ]
+      }
+    ]
   }
 ]

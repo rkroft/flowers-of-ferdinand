@@ -217,7 +217,42 @@
         "h": 98
       },
       "description": "North-east corner beyond the driveway, out by the street and clear of the house. The annual patch: sunflowers, zinnias and a wildflower mix, grown here on purpose and staying that way. All three want full sun, which is the evidence for the sun rating.",
-      "watering": "Hose, by hand"
+      "watering": "Hose, by hand",
+      "plan": {
+        "goal": "Stout single stems and big heads, not a thicket of thin ones.",
+        "method": [
+          {
+            "title": "Keep sowing in fall",
+            "when": "October into November",
+            "body": "This already works here and it is the reason the patch comes up strong, so it stays. The seed sits through winter and germinates the week the soil is ready, which is earlier than you would dare sow by hand, and the taproot is never disturbed. Anything started in a pot in May is behind before it goes in."
+          },
+          {
+            "title": "Get the seedlings past the slugs",
+            "when": "The first three weeks after they emerge",
+            "body": "This is where a fall-sown patch is won or lost. The seedlings come up into a wet spring, which is peak slug season, and a sunflower at two leaves is one night's work. Check every couple of days from first emergence until they are hand height. After that they are too tough to matter."
+          },
+          {
+            "title": "Thin, and harder than feels reasonable",
+            "when": "At four to six inches tall",
+            "body": "This is the whole answer to scraggly. Volunteers come up in clumps where the heads fell, and ten seedlings in a hand's width gives you ten thin whippy stems with small heads, every time. Thin to eighteen inches apart for the single-stem types and twelve for the branching one. Cut the extras off at soil level instead of pulling, so you do not tear the roots of the one you are keeping."
+          },
+          {
+            "title": "Water deep, and not often",
+            "when": "July and August",
+            "body": "Deep and infrequent drives the taproot down, and a deep taproot is what makes a tall sunflower stand up by itself in an exposed spot out by the street. A daily splash keeps the roots near the surface and gives you exactly the leaning you are trying to avoid. One long slow soak a week beats a short one every day."
+          },
+          {
+            "title": "Earth up the tall ones",
+            "when": "Once they are knee high",
+            "body": "Draw soil up around the base of the big single-stem plants. It anchors them, and it is far quicker than staking a whole patch."
+          }
+        ],
+        "watch": [
+          "Thin stems with small heads. In a bed this sunny that is crowding, not light, and it means the thinning did not happen or did not go far enough.",
+          "Powdery mildew, which crowding causes too by killing air movement. Thinning fixes the mildew and the scraggly stems in one job.",
+          "The branching yellow will never be one tall stout stalk. That is what a branching variety is: many smaller flowers on thinner stems, by design. If tall and strong is the goal, save seed from the mahogany, and buy a single-stem mammoth type to sow alongside it."
+        ]
+      }
     },
     {
       "id": "front-lower",
@@ -285,7 +320,31 @@
         "h": 36
       },
       "description": "East of the driveway alongside the house. Sunflowers, zinnias and gladiolus, and confirmed as full sun, which is more than its position beside the house suggested: nothing tall stands to the east of it. Together with Driveway Bed 1 it makes the driveway side a second sunny run rather than the marginal strip the map implied.",
-      "watering": "Hose, by hand"
+      "watering": "Hose, by hand",
+      "plan": {
+        "goal": "The same sunflower patch as Driveway Bed 1, worked around the gladiolus.",
+        "method": [
+          {
+            "title": "Run the Driveway Bed 1 method",
+            "when": "Same dates",
+            "body": "Fall sowing, slug watch on the seedlings, hard thinning at four to six inches, deep infrequent water. Nothing about it changes for being the narrower bed."
+          },
+          {
+            "title": "Keep the sunflowers off the gladiolus",
+            "when": "At thinning",
+            "body": "This bed is narrow, and a thinned sunflower at eighteen inches across will shade a gladiolus fan completely. Thin so the sunflowers sit on the outer edge and the corms keep their light, rather than thinning evenly across the whole width."
+          },
+          {
+            "title": "Lift the corms without disturbing the taproots",
+            "when": "Autumn, after the foliage yellows",
+            "body": "The gladiolus lift and the fall sunflower sowing land in the same weeks. Lift the corms first, then sow, so you are not digging through seed you just put down."
+          }
+        ],
+        "watch": [
+          "Gladiolus going all leaf and no spike, which in this bed usually means the sunflowers next to them got too close.",
+          "The same crowding signs as Driveway Bed 1: thin stems, small heads, mildew."
+        ]
+      }
     },
     {
       "id": "back-2",

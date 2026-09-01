@@ -144,13 +144,55 @@ ${mine
         <p class="panel-aspect">${esc(bed.aspect)}</p>
         <p class="panel-water"><span>Watered by</span> ${esc(bed.watering ?? "not recorded")}</p>
         <p class="panel-desc">${esc(bed.description)}</p>
-
+${renderBedPlan(bed)}
         <h4>What is in it <span>${inBed.length}</span></h4>
 ${plantList}
 
         <h4>Priority list <span>${mine.filter((t) => !t.done).length} open</span></h4>
 ${taskList}
       </div>`;
+}
+
+/* A bed's plan is the standing intent for it: what it is meant to become and
+   how to get there. Optional, because most beds are just what is in them. It
+   sits above the inventory on purpose, since the plan is the reason the
+   inventory looks the way it does. */
+function renderBedPlan(bed) {
+  const plan = bed.plan;
+  if (!plan) return "";
+
+  const method = plan.method
+    .map(
+      (step) => `            <li>
+              <div class="bp-step-head">
+                <h5>${esc(step.title)}</h5>
+                <span class="bp-when">${esc(step.when)}</span>
+              </div>
+              <p>${esc(step.body)}</p>
+            </li>`
+    )
+    .join("\n");
+
+  const watch = plan.watch?.length
+    ? `          <div class="bp-watch">
+            <h5>Watch for</h5>
+            <ul>
+${plan.watch.map((w) => `              <li>${esc(w)}</li>`).join("\n")}
+            </ul>
+          </div>`
+    : "";
+
+  return `        <div class="bed-plan">
+          <div class="bp-head">
+            <span class="bp-label">The plan</span>
+            <p class="bp-goal">${esc(plan.goal)}</p>
+          </div>
+          <ol class="bp-method">
+${method}
+          </ol>
+${watch}
+        </div>
+`;
 }
 
 /* Greedy word wrap in map units. Mono at 11px is close enough to 6.2 units a
@@ -1020,7 +1062,7 @@ ${js}</script>`;
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="${esc(garden.standfirst)}">
+${garden.standfirst ? `<meta name="description" content="${esc(garden.standfirst)}">\n` : ""}
 <meta name="color-scheme" content="light dark">
 ${head}
 </head>

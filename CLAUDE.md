@@ -177,6 +177,28 @@ so over-grading empties that view of meaning.
 `path-bed`, `street-1`, `street-2`, `driveway-1`, `front-lower`, `upper-lower`, `side`, `driveway-2`, `back-2`, `back-1`, `back-3`. Task `id`s must be unique across the whole
 file, because the browser checkboxes key off them.
 
+A bed may carry an optional `plan`, which is the standing intent for it: what it
+is meant to become and how to get there. It renders in the bed's panel above the
+inventory, because the plan is the reason the inventory looks the way it does.
+
+```json
+"plan": {
+  "goal": "one sentence, the outcome she is after",
+  "method": [{ "title": "...", "when": "...", "body": "..." }],
+  "watch": ["a symptom, and what it actually means"]
+}
+```
+
+`goal` is required and should be in her terms, not horticultural ones ("stout
+single stems and big heads, not a thicket of thin ones"). `method` is ordered
+and every step needs a `when`, since timing is usually the whole difference.
+`watch` is optional and is for symptoms she will actually see, each paired with
+what it means, so the bed panel can be read standing in front of the bed.
+
+A `plan` is not a task list. Anything with a date belongs in `plan.json` as a
+task as well, and the two should agree. The sunflower thinning is in both: the
+method step explains it, the task schedules it.
+
 **plants.json** is the inventory. Each plant:
 
 ```json
@@ -349,13 +371,26 @@ with something lower maintenance.
 **Do not redesign the planting.** That constraint still holds and is about what
 grows where.
 
-**Technique and routine advice is wanted, as of Aug 31 2026.** She asked
-directly for help putting the beds to bed for winter, prepping for spring, and
-choosing between compost, conditioner and the rest, and for her own routine to
-be written down and improved. That work lives in `routine.json`. An earlier
-version of this file said she did not want new recommendations at all, which was
-true when it was written and is no longer. Advise on how a job is done. Do not
-propose new plants.
+**Planning advice is wanted, as of Aug 31 2026.** She said it directly: the help
+she needs is "the planning and maintaining, not just noting down the idea."
+Recording an idea is not the job. When she says she wants something in a bed,
+work out whether it fits, what it needs, what it displaces, when to do it, and
+what keeps it going afterwards. That is the deliverable.
+
+An earlier version of this file said she wanted no new recommendations. That was
+true when written and is not now. It changed twice in one session, so check here
+before assuming the old constraint.
+
+Two habits this implies:
+
+- **Say when her own records are wrong.** The sunflower `propagate` field said
+  to sow in May; she sows in fall and it works better. The `poor` field blamed
+  thin stems on light in a bed rated full sun, when the cause is crowding.
+  Contradictions like these are worth more than new notes.
+- **Follow a plan through to the job that sustains it.** The sunflower thinning
+  is in April and `plan.json` stopped at first frost, so the one task that
+  decides the outcome had nowhere to live. A plan that ends before its
+  maintenance is not finished.
 
 Low maintenance is a preference she holds, and her time comes in bursts, so
 `slip` and `ifSkipped` still matter on every task. That is about making the

@@ -79,6 +79,22 @@ if (garden) {
 
     /* The map wraps the full name, so the check is whether the longest single
        word fits across the box and whether the wrapped lines fit down it. */
+    if (bed.plan) {
+      const pw = `${where} plan`;
+      if (!bed.plan.goal) fail(`${pw}: needs a "goal", which is what the bed is meant to become`);
+      if (!Array.isArray(bed.plan.method) || !bed.plan.method.length) {
+        fail(`${pw}: needs a non-empty "method"`);
+      }
+      for (const step of bed.plan.method ?? []) {
+        const sw = `${pw} step "${step.title ?? "?"}"`;
+        if (!step.title) fail(`${sw}: missing title`);
+        if (!step.when) fail(`${sw}: missing "when"`);
+        if (!step.body) fail(`${sw}: missing body`);
+      }
+      if (bed.plan.watch !== undefined && !Array.isArray(bed.plan.watch)) {
+        fail(`${pw}: "watch" must be an array when present`);
+      }
+    }
     if (bed.map) {
       const label = bed.mapLabel ?? bed.name ?? "";
       const across = (bed.vertical ? bed.map.h : bed.map.w) - 10;

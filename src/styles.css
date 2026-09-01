@@ -1570,6 +1570,81 @@ footer p { margin: 0 0 0.9rem; }
   * { animation: none !important; transition: none !important; }
 }
 
+/* ---------- the plan for a bed ---------- */
+
+.bed-plan {
+  background: var(--surface-sunk);
+  border-radius: 3px;
+  padding: 0.9rem 1rem;
+  margin: 0 0 1.2rem;
+}
+
+.bp-label {
+  font-family: "IBM Plex Mono", ui-monospace, monospace;
+  font-size: 0.66rem;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  color: var(--ink-mute);
+}
+
+.bp-goal {
+  font-family: "Fraunces", Georgia, serif;
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--ink);
+  margin: 0.15rem 0 0.85rem;
+}
+
+.bp-method {
+  margin: 0;
+  padding-left: 1.15rem;
+}
+
+.bp-method > li { margin-bottom: 0.8rem; }
+
+.bp-step-head {
+  display: flex;
+  align-items: baseline;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.bed-plan h5 {
+  font-size: 0.9rem;
+  font-weight: 600;
+  margin: 0;
+}
+
+.bp-when {
+  font-family: "IBM Plex Mono", ui-monospace, monospace;
+  font-size: 0.66rem;
+  letter-spacing: 0.05em;
+  color: var(--ink-mute);
+}
+
+.bp-method p {
+  font-size: 0.87rem;
+  color: var(--ink-soft);
+  margin: 0.2rem 0 0;
+}
+
+.bp-watch {
+  margin-top: 0.9rem;
+  padding-top: 0.8rem;
+  border-top: 1px solid var(--rule);
+}
+
+.bp-watch ul {
+  margin: 0.35rem 0 0;
+  padding-left: 1.05rem;
+}
+
+.bp-watch li {
+  font-size: 0.87rem;
+  color: var(--ink-soft);
+  margin-bottom: 0.35rem;
+}
+
 /* ---------- the standing routine ---------- */
 
 .rt-block { margin-bottom: 2.4rem; }

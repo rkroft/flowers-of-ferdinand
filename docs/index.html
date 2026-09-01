@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="">
+
 <meta name="color-scheme" content="light dark">
 <title>Flowers of Ferdinand</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -1583,6 +1583,81 @@ footer p { margin: 0 0 0.9rem; }
   * { animation: none !important; transition: none !important; }
 }
 
+/* ---------- the plan for a bed ---------- */
+
+.bed-plan {
+  background: var(--surface-sunk);
+  border-radius: 3px;
+  padding: 0.9rem 1rem;
+  margin: 0 0 1.2rem;
+}
+
+.bp-label {
+  font-family: "IBM Plex Mono", ui-monospace, monospace;
+  font-size: 0.66rem;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  color: var(--ink-mute);
+}
+
+.bp-goal {
+  font-family: "Fraunces", Georgia, serif;
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--ink);
+  margin: 0.15rem 0 0.85rem;
+}
+
+.bp-method {
+  margin: 0;
+  padding-left: 1.15rem;
+}
+
+.bp-method > li { margin-bottom: 0.8rem; }
+
+.bp-step-head {
+  display: flex;
+  align-items: baseline;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.bed-plan h5 {
+  font-size: 0.9rem;
+  font-weight: 600;
+  margin: 0;
+}
+
+.bp-when {
+  font-family: "IBM Plex Mono", ui-monospace, monospace;
+  font-size: 0.66rem;
+  letter-spacing: 0.05em;
+  color: var(--ink-mute);
+}
+
+.bp-method p {
+  font-size: 0.87rem;
+  color: var(--ink-soft);
+  margin: 0.2rem 0 0;
+}
+
+.bp-watch {
+  margin-top: 0.9rem;
+  padding-top: 0.8rem;
+  border-top: 1px solid var(--rule);
+}
+
+.bp-watch ul {
+  margin: 0.35rem 0 0;
+  padding-left: 1.05rem;
+}
+
+.bp-watch li {
+  font-size: 0.87rem;
+  color: var(--ink-soft);
+  margin-bottom: 0.35rem;
+}
+
 /* ---------- the standing routine ---------- */
 
 .rt-block { margin-bottom: 2.4rem; }
@@ -1839,7 +1914,7 @@ footer p { margin: 0 0 0.9rem; }
   </header>
 
   <div class="triage">
-    <p>Time comes in bursts, so most of this list is optional. 9 jobs have a window that closes and cannot be made up later.</p>
+    <p>Time comes in bursts, so most of this list is optional. 10 jobs have a window that closes and cannot be made up later.</p>
     <button class="btn" type="button" id="triage-toggle" aria-pressed="false">Show only what cannot wait</button>
   </div>
 
@@ -1987,7 +2062,7 @@ footer p { margin: 0 0 0.9rem; }
           </li>
         </ul>
 
-        <h4>Priority list <span>7 open</span></h4>
+        <h4>Priority list <span>8 open</span></h4>
         <ol class="panel-tasks">
           <li class="" data-weight="now" data-slip="safe">
             <div class="pt-head">
@@ -2045,6 +2120,14 @@ footer p { margin: 0 0 0.9rem; }
             </div>
             <span class="pt-title">Cut what rots, leave what stands</span>
           </li>
+          <li class="" data-weight="grow" data-slip="costs">
+            <div class="pt-head">
+              <span class="pt-weight">Upkeep</span>
+              <span class="pt-window">Mar – May</span>
+              
+            </div>
+            <span class="pt-title">Cut down everything left standing</span>
+          </li>
         </ol>
       </div>
       <div class="panel" data-panel="street-1" hidden>
@@ -2100,7 +2183,7 @@ footer p { margin: 0 0 0.9rem; }
           </li>
         </ul>
 
-        <h4>Priority list <span>11 open</span></h4>
+        <h4>Priority list <span>12 open</span></h4>
         <ol class="panel-tasks">
           <li class="" data-weight="now" data-slip="costs">
             <div class="pt-head">
@@ -2190,6 +2273,14 @@ footer p { margin: 0 0 0.9rem; }
             </div>
             <span class="pt-title">Leave more standing than feels tidy</span>
           </li>
+          <li class="" data-weight="grow" data-slip="costs">
+            <div class="pt-head">
+              <span class="pt-weight">Upkeep</span>
+              <span class="pt-window">Mar – May</span>
+              
+            </div>
+            <span class="pt-title">Cut down everything left standing</span>
+          </li>
           <li class="done" data-weight="check" data-slip="safe">
             <div class="pt-head">
               <span class="pt-weight">Go look</span>
@@ -2241,7 +2332,7 @@ footer p { margin: 0 0 0.9rem; }
           </li>
         </ul>
 
-        <h4>Priority list <span>15 open</span></h4>
+        <h4>Priority list <span>16 open</span></h4>
         <ol class="panel-tasks">
           <li class="" data-weight="now" data-slip="costs">
             <div class="pt-head">
@@ -2363,6 +2454,14 @@ footer p { margin: 0 0 0.9rem; }
             </div>
             <span class="pt-title">Leave more standing than feels tidy</span>
           </li>
+          <li class="" data-weight="grow" data-slip="costs">
+            <div class="pt-head">
+              <span class="pt-weight">Upkeep</span>
+              <span class="pt-window">Mar – May</span>
+              
+            </div>
+            <span class="pt-title">Cut down everything left standing</span>
+          </li>
         </ol>
       </div>
       <div class="panel" data-panel="driveway-1" hidden>
@@ -2373,6 +2472,57 @@ footer p { margin: 0 0 0.9rem; }
         <p class="panel-aspect">North-east corner, beyond the driveway</p>
         <p class="panel-water"><span>Watered by</span> Hose, by hand</p>
         <p class="panel-desc">North-east corner beyond the driveway, out by the street and clear of the house. The annual patch: sunflowers, zinnias and a wildflower mix, grown here on purpose and staying that way. All three want full sun, which is the evidence for the sun rating.</p>
+        <div class="bed-plan">
+          <div class="bp-head">
+            <span class="bp-label">The plan</span>
+            <p class="bp-goal">Stout single stems and big heads, not a thicket of thin ones.</p>
+          </div>
+          <ol class="bp-method">
+            <li>
+              <div class="bp-step-head">
+                <h5>Keep sowing in fall</h5>
+                <span class="bp-when">October into November</span>
+              </div>
+              <p>This already works here and it is the reason the patch comes up strong, so it stays. The seed sits through winter and germinates the week the soil is ready, which is earlier than you would dare sow by hand, and the taproot is never disturbed. Anything started in a pot in May is behind before it goes in.</p>
+            </li>
+            <li>
+              <div class="bp-step-head">
+                <h5>Get the seedlings past the slugs</h5>
+                <span class="bp-when">The first three weeks after they emerge</span>
+              </div>
+              <p>This is where a fall-sown patch is won or lost. The seedlings come up into a wet spring, which is peak slug season, and a sunflower at two leaves is one night's work. Check every couple of days from first emergence until they are hand height. After that they are too tough to matter.</p>
+            </li>
+            <li>
+              <div class="bp-step-head">
+                <h5>Thin, and harder than feels reasonable</h5>
+                <span class="bp-when">At four to six inches tall</span>
+              </div>
+              <p>This is the whole answer to scraggly. Volunteers come up in clumps where the heads fell, and ten seedlings in a hand's width gives you ten thin whippy stems with small heads, every time. Thin to eighteen inches apart for the single-stem types and twelve for the branching one. Cut the extras off at soil level instead of pulling, so you do not tear the roots of the one you are keeping.</p>
+            </li>
+            <li>
+              <div class="bp-step-head">
+                <h5>Water deep, and not often</h5>
+                <span class="bp-when">July and August</span>
+              </div>
+              <p>Deep and infrequent drives the taproot down, and a deep taproot is what makes a tall sunflower stand up by itself in an exposed spot out by the street. A daily splash keeps the roots near the surface and gives you exactly the leaning you are trying to avoid. One long slow soak a week beats a short one every day.</p>
+            </li>
+            <li>
+              <div class="bp-step-head">
+                <h5>Earth up the tall ones</h5>
+                <span class="bp-when">Once they are knee high</span>
+              </div>
+              <p>Draw soil up around the base of the big single-stem plants. It anchors them, and it is far quicker than staking a whole patch.</p>
+            </li>
+          </ol>
+          <div class="bp-watch">
+            <h5>Watch for</h5>
+            <ul>
+              <li>Thin stems with small heads. In a bed this sunny that is crowding, not light, and it means the thinning did not happen or did not go far enough.</li>
+              <li>Powdery mildew, which crowding causes too by killing air movement. Thinning fixes the mildew and the scraggly stems in one job.</li>
+              <li>The branching yellow will never be one tall stout stalk. That is what a branching variety is: many smaller flowers on thinner stems, by design. If tall and strong is the goal, save seed from the mahogany, and buy a single-stem mammoth type to sow alongside it.</li>
+            </ul>
+          </div>
+        </div>
 
         <h4>What is in it <span>2</span></h4>
         <ul class="panel-plants">
@@ -2386,7 +2536,7 @@ footer p { margin: 0 0 0.9rem; }
           </li>
         </ul>
 
-        <h4>Priority list <span>4 open</span></h4>
+        <h4>Priority list <span>6 open</span></h4>
         <ol class="panel-tasks">
           <li class="" data-weight="now" data-slip="costs">
             <div class="pt-head">
@@ -2419,6 +2569,22 @@ footer p { margin: 0 0 0.9rem; }
               
             </div>
             <span class="pt-title">Sow sunflower seed for next year</span>
+          </li>
+          <li class="" data-weight="now" data-slip="closes">
+            <div class="pt-head">
+              <span class="pt-weight">Do now</span>
+              <span class="pt-window">Mar – May</span>
+              <span class="pt-closes">cannot be made up</span>
+            </div>
+            <span class="pt-title">Thin the sunflower patches, hard</span>
+          </li>
+          <li class="" data-weight="check" data-slip="costs">
+            <div class="pt-head">
+              <span class="pt-weight">Go look</span>
+              <span class="pt-window">Mar – May</span>
+              
+            </div>
+            <span class="pt-title">Slug watch on the sunflower seedlings</span>
           </li>
         </ol>
       </div>
@@ -2548,7 +2714,7 @@ footer p { margin: 0 0 0.9rem; }
           </li>
         </ul>
 
-        <h4>Priority list <span>5 open</span></h4>
+        <h4>Priority list <span>6 open</span></h4>
         <ol class="panel-tasks">
           <li class="" data-weight="seed" data-slip="closes">
             <div class="pt-head">
@@ -2589,6 +2755,14 @@ footer p { margin: 0 0 0.9rem; }
               
             </div>
             <span class="pt-title">Cut what rots, leave what stands</span>
+          </li>
+          <li class="" data-weight="grow" data-slip="costs">
+            <div class="pt-head">
+              <span class="pt-weight">Upkeep</span>
+              <span class="pt-window">Mar – May</span>
+              
+            </div>
+            <span class="pt-title">Cut down everything left standing</span>
           </li>
           <li class="done" data-weight="check" data-slip="safe">
             <div class="pt-head">
@@ -2701,6 +2875,42 @@ footer p { margin: 0 0 0.9rem; }
         <p class="panel-aspect">East side, beyond the driveway</p>
         <p class="panel-water"><span>Watered by</span> Hose, by hand</p>
         <p class="panel-desc">East of the driveway alongside the house. Sunflowers, zinnias and gladiolus, and confirmed as full sun, which is more than its position beside the house suggested: nothing tall stands to the east of it. Together with Driveway Bed 1 it makes the driveway side a second sunny run rather than the marginal strip the map implied.</p>
+        <div class="bed-plan">
+          <div class="bp-head">
+            <span class="bp-label">The plan</span>
+            <p class="bp-goal">The same sunflower patch as Driveway Bed 1, worked around the gladiolus.</p>
+          </div>
+          <ol class="bp-method">
+            <li>
+              <div class="bp-step-head">
+                <h5>Run the Driveway Bed 1 method</h5>
+                <span class="bp-when">Same dates</span>
+              </div>
+              <p>Fall sowing, slug watch on the seedlings, hard thinning at four to six inches, deep infrequent water. Nothing about it changes for being the narrower bed.</p>
+            </li>
+            <li>
+              <div class="bp-step-head">
+                <h5>Keep the sunflowers off the gladiolus</h5>
+                <span class="bp-when">At thinning</span>
+              </div>
+              <p>This bed is narrow, and a thinned sunflower at eighteen inches across will shade a gladiolus fan completely. Thin so the sunflowers sit on the outer edge and the corms keep their light, rather than thinning evenly across the whole width.</p>
+            </li>
+            <li>
+              <div class="bp-step-head">
+                <h5>Lift the corms without disturbing the taproots</h5>
+                <span class="bp-when">Autumn, after the foliage yellows</span>
+              </div>
+              <p>The gladiolus lift and the fall sunflower sowing land in the same weeks. Lift the corms first, then sow, so you are not digging through seed you just put down.</p>
+            </li>
+          </ol>
+          <div class="bp-watch">
+            <h5>Watch for</h5>
+            <ul>
+              <li>Gladiolus going all leaf and no spike, which in this bed usually means the sunflowers next to them got too close.</li>
+              <li>The same crowding signs as Driveway Bed 1: thin stems, small heads, mildew.</li>
+            </ul>
+          </div>
+        </div>
 
         <h4>What is in it <span>3</span></h4>
         <ul class="panel-plants">
@@ -2718,7 +2928,7 @@ footer p { margin: 0 0 0.9rem; }
           </li>
         </ul>
 
-        <h4>Priority list <span>8 open</span></h4>
+        <h4>Priority list <span>10 open</span></h4>
         <ol class="panel-tasks">
           <li class="" data-weight="now" data-slip="costs">
             <div class="pt-head">
@@ -2783,6 +2993,22 @@ footer p { margin: 0 0 0.9rem; }
               
             </div>
             <span class="pt-title">Lift, inspect and spread the gladiolus corms</span>
+          </li>
+          <li class="" data-weight="now" data-slip="closes">
+            <div class="pt-head">
+              <span class="pt-weight">Do now</span>
+              <span class="pt-window">Mar – May</span>
+              <span class="pt-closes">cannot be made up</span>
+            </div>
+            <span class="pt-title">Thin the sunflower patches, hard</span>
+          </li>
+          <li class="" data-weight="check" data-slip="costs">
+            <div class="pt-head">
+              <span class="pt-weight">Go look</span>
+              <span class="pt-window">Mar – May</span>
+              
+            </div>
+            <span class="pt-title">Slug watch on the sunflower seedlings</span>
           </li>
         </ol>
       </div>
@@ -3389,6 +3615,50 @@ footer p { margin: 0 0 0.9rem; }
     <div class="callout">
       <h3>And then the front beds do the work</h3>
       <p>Spring is when the standing seedheads come down, the oregano gets hard-pruned into old wood, and the mulch comes off the dahlia crowns. It is also when the front beds pay out, with no input from you beyond having planted the bulbs. Leave every bulb leaf until it has yellowed completely: that is when next year's flower gets made.</p>
+    </div>
+  </section>
+
+  <section id="next-spring">
+    <div class="section-head">
+      <h2>Next spring</h2>
+      <span class="window">Mar – May</span>
+    </div>
+    <p class="section-note">The plan used to stop at first frost, which meant the one job that decides whether the sunflowers come up strong had nowhere to live. The standing routine below covers the general spring work; these are the dated, bed-specific ones.</p>
+    <div class="tasks">
+
+      <div class="task" data-weight="grow" data-slip="costs" data-id="cut-standing-stems" data-source-done="false">
+        <input type="checkbox" aria-labelledby="h-cut-standing-stems">
+        <div class="task-body">
+          <div class="tags"><span class="tag tag-area">Street Bed Box 1</span><span class="tag tag-area">Street Bed Box 2</span><span class="tag tag-area">Path Bed</span><span class="tag tag-area">Upper Bed</span></div>
+          <h3 id="h-cut-standing-stems">Cut down everything left standing</h3>
+          <p>Everything left up over winter comes down before the new growth shows. The echinacea, black-eyed Susan, gaillardia and the rest were left standing on purpose; this is the other half of that decision.</p>
+          <p>Pull the compost back off the crowns at the same time so the soil can warm.</p>
+          <p class="if-skipped"><span>If you skip it</span> Once the new shoots are up you cannot cut the old stems without cutting them too, so it turns into a fiddly job instead of a fast one.</p>
+        </div>
+      </div>
+
+      <div class="task" data-weight="check" data-slip="costs" data-id="slug-watch-seedlings" data-source-done="false">
+        <input type="checkbox" aria-labelledby="h-slug-watch-seedlings">
+        <div class="task-body">
+          <div class="tags"><span class="tag tag-area">Driveway Bed 1</span><span class="tag tag-area">Driveway Bed 2</span></div>
+          <h3 id="h-slug-watch-seedlings">Slug watch on the sunflower seedlings</h3>
+          <p>The first three weeks after the seedlings emerge is where a fall-sown patch is won or lost. They come up into a wet spring, which is peak slug season, and a sunflower at two leaves is one night's work.</p>
+          <p>Check every couple of days from first emergence until they are hand height. After that they are too tough to bother with.</p>
+          <p class="if-skipped"><span>If you skip it</span> The fall-sown seedlings get eaten and you are back to sowing in May, which gives later and softer plants. Recoverable, but it throws away the head start that makes fall sowing worth doing.</p>
+        </div>
+      </div>
+
+      <div class="task" data-weight="now" data-slip="closes" data-id="thin-sunflowers" data-source-done="false">
+        <input type="checkbox" aria-labelledby="h-thin-sunflowers">
+        <div class="task-body">
+          <div class="tags"><span class="tag tag-area">Driveway Bed 1</span><span class="tag tag-area">Driveway Bed 2</span><span class="tag tag-flag">Closing window</span><span class="tag tag-closes">Cannot be made up</span></div>
+          <h3 id="h-thin-sunflowers">Thin the sunflower patches, hard</h3>
+          <p>At four to six inches tall, thin to eighteen inches apart for the single-stem types and twelve for the branching one. Volunteers come up in clumps where the heads fell, and ten seedlings in a hand's width gives ten thin whippy stems with small heads, every time.</p>
+          <p>Cut the extras off at soil level rather than pulling them, so you do not tear the roots of the one you are keeping. In Driveway Bed 2, thin so the sunflowers sit toward the outer edge and the gladiolus keep their light.</p>
+          <p class="if-skipped"><span>If you skip it</span> Nothing fixes it later. By the time the stems are drawn and thin they stay that way, and you get the scraggly patch instead of the tall one. This is the single job that decides how the sunflowers turn out.</p>
+        </div>
+      </div>
+
     </div>
   </section>
 
@@ -4528,7 +4798,7 @@ footer p { margin: 0 0 0.9rem; }
             <dl class="care-list">
             <div class="care-row" data-field="feed">
               <dt>Soil and feeding</dt>
-              <dd>None in reasonable soil. They are less hungry than their size suggests.</dd>
+              <dd>None. They are far less hungry than their size suggests, and nitrogen is what gives you a tall soft stem that folds in the first wind with a small head on it. Keep the compost thin over the driveway beds, or skip them.</dd>
             </div>
             <div class="care-row" data-field="deadhead">
               <dt>Deadheading</dt>
@@ -4540,7 +4810,7 @@ footer p { margin: 0 0 0.9rem; }
             </div>
             <div class="care-row" data-field="poor">
               <dt>Not doing well</dt>
-              <dd>Thin stems leaning hard in one direction with small heads means it is reaching for light it is not getting. White powdery coating is mildew, caused by still air and dry roots rather than by anything you did.</dd>
+              <dd>Thin stems with small heads in a bed this sunny is crowding, not light. It means the patch was not thinned, or not thinned hard enough. White powdery coating is mildew, which crowding also causes by killing the air movement, so thinning fixes both at once. Leaning in one direction only matters where something is genuinely casting shade, which is the side bed, not the driveway.</dd>
             </div>
             <div class="care-row" data-field="endOfSeason">
               <dt>End of season</dt>
@@ -4548,7 +4818,7 @@ footer p { margin: 0 0 0.9rem; }
             </div>
             <div class="care-row" data-field="propagate">
               <dt>More of it</dt>
-              <dd>Save seed from the best heads once the backs are brown, dry them indoors a week, and sow directly in May. They do not transplant well. Note that seed from a hybrid will not come true to the parent.</dd>
+              <dd>Save seed from the best heads once the backs are brown and dry them indoors a week. Then sow it in fall, not in May. Fall sowing is what works in this garden: the seed sits through winter and germinates the week the soil is ready, earlier than you would dare sow by hand, and the taproot is never disturbed. Sunflowers resent transplanting, so anything started in a pot is already behind. Seed from a hybrid will not come true to the parent.</dd>
             </div>
             </dl>
             
@@ -5188,7 +5458,7 @@ footer p { margin: 0 0 0.9rem; }
             <dl class="care-list">
             <div class="care-row" data-field="feed">
               <dt>Soil and feeding</dt>
-              <dd>None in reasonable soil. They are less hungry than their size suggests.</dd>
+              <dd>None. They are far less hungry than their size suggests, and nitrogen is what gives you a tall soft stem that folds in the first wind with a small head on it. Keep the compost thin over the driveway beds, or skip them.</dd>
             </div>
             <div class="care-row" data-field="deadhead">
               <dt>Deadheading</dt>
@@ -5200,7 +5470,7 @@ footer p { margin: 0 0 0.9rem; }
             </div>
             <div class="care-row" data-field="poor">
               <dt>Not doing well</dt>
-              <dd>Thin stems leaning hard in one direction with small heads means it is reaching for light it is not getting. White powdery coating is mildew, caused by still air and dry roots rather than by anything you did.</dd>
+              <dd>Thin stems with small heads in a bed this sunny is crowding, not light. It means the patch was not thinned, or not thinned hard enough. White powdery coating is mildew, which crowding also causes by killing the air movement, so thinning fixes both at once. Leaning in one direction only matters where something is genuinely casting shade, which is the side bed, not the driveway.</dd>
             </div>
             <div class="care-row" data-field="endOfSeason">
               <dt>End of season</dt>
@@ -5208,7 +5478,7 @@ footer p { margin: 0 0 0.9rem; }
             </div>
             <div class="care-row" data-field="propagate">
               <dt>More of it</dt>
-              <dd>Save seed from the best heads once the backs are brown, dry them indoors a week, and sow directly in May. They do not transplant well. Note that seed from a hybrid will not come true to the parent.</dd>
+              <dd>Save seed from the best heads once the backs are brown and dry them indoors a week. Then sow it in fall, not in May. Fall sowing is what works in this garden: the seed sits through winter and germinates the week the soil is ready, earlier than you would dare sow by hand, and the taproot is never disturbed. Sunflowers resent transplanting, so anything started in a pot is already behind. Seed from a hybrid will not come true to the parent.</dd>
             </div>
             </dl>
             
@@ -6213,7 +6483,7 @@ footer p { margin: 0 0 0.9rem; }
             <dl class="care-list">
             <div class="care-row" data-field="feed">
               <dt>Soil and feeding</dt>
-              <dd>None in reasonable soil. They are less hungry than their size suggests.</dd>
+              <dd>None. They are far less hungry than their size suggests, and nitrogen is what gives you a tall soft stem that folds in the first wind with a small head on it. Keep the compost thin over the driveway beds, or skip them.</dd>
             </div>
             <div class="care-row" data-field="deadhead">
               <dt>Deadheading</dt>
@@ -6225,7 +6495,7 @@ footer p { margin: 0 0 0.9rem; }
             </div>
             <div class="care-row" data-field="poor">
               <dt>Not doing well</dt>
-              <dd>Thin stems leaning hard in one direction with small heads means it is reaching for light it is not getting. White powdery coating is mildew, caused by still air and dry roots rather than by anything you did.</dd>
+              <dd>Thin stems with small heads in a bed this sunny is crowding, not light. It means the patch was not thinned, or not thinned hard enough. White powdery coating is mildew, which crowding also causes by killing the air movement, so thinning fixes both at once. Leaning in one direction only matters where something is genuinely casting shade, which is the side bed, not the driveway.</dd>
             </div>
             <div class="care-row" data-field="endOfSeason">
               <dt>End of season</dt>
@@ -6233,7 +6503,7 @@ footer p { margin: 0 0 0.9rem; }
             </div>
             <div class="care-row" data-field="propagate">
               <dt>More of it</dt>
-              <dd>Save seed from the best heads once the backs are brown, dry them indoors a week, and sow directly in May. They do not transplant well. Note that seed from a hybrid will not come true to the parent.</dd>
+              <dd>Save seed from the best heads once the backs are brown and dry them indoors a week. Then sow it in fall, not in May. Fall sowing is what works in this garden: the seed sits through winter and germinates the week the soil is ready, earlier than you would dare sow by hand, and the taproot is never disturbed. Sunflowers resent transplanting, so anything started in a pot is already behind. Seed from a hybrid will not come true to the parent.</dd>
             </div>
             </dl>
             
@@ -6360,7 +6630,7 @@ footer p { margin: 0 0 0.9rem; }
             <dl class="care-list">
             <div class="care-row" data-field="feed">
               <dt>Soil and feeding</dt>
-              <dd>None in reasonable soil. They are less hungry than their size suggests.</dd>
+              <dd>None. They are far less hungry than their size suggests, and nitrogen is what gives you a tall soft stem that folds in the first wind with a small head on it. Keep the compost thin over the driveway beds, or skip them.</dd>
             </div>
             <div class="care-row" data-field="deadhead">
               <dt>Deadheading</dt>
@@ -6372,7 +6642,7 @@ footer p { margin: 0 0 0.9rem; }
             </div>
             <div class="care-row" data-field="poor">
               <dt>Not doing well</dt>
-              <dd>Thin stems leaning hard in one direction with small heads means it is reaching for light it is not getting. White powdery coating is mildew, caused by still air and dry roots rather than by anything you did.</dd>
+              <dd>Thin stems with small heads in a bed this sunny is crowding, not light. It means the patch was not thinned, or not thinned hard enough. White powdery coating is mildew, which crowding also causes by killing the air movement, so thinning fixes both at once. Leaning in one direction only matters where something is genuinely casting shade, which is the side bed, not the driveway.</dd>
             </div>
             <div class="care-row" data-field="endOfSeason">
               <dt>End of season</dt>
@@ -6380,7 +6650,7 @@ footer p { margin: 0 0 0.9rem; }
             </div>
             <div class="care-row" data-field="propagate">
               <dt>More of it</dt>
-              <dd>Save seed from the best heads once the backs are brown, dry them indoors a week, and sow directly in May. They do not transplant well. Note that seed from a hybrid will not come true to the parent.</dd>
+              <dd>Save seed from the best heads once the backs are brown and dry them indoors a week. Then sow it in fall, not in May. Fall sowing is what works in this garden: the seed sits through winter and germinates the week the soil is ready, earlier than you would dare sow by hand, and the taproot is never disturbed. Sunflowers resent transplanting, so anything started in a pot is already behind. Seed from a hybrid will not come true to the parent.</dd>
             </div>
             </dl>
             
