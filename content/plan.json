@@ -394,23 +394,21 @@
         "ifSkipped": "Picking is what keeps them producing, so they stop early."
       },
       {
-        "id": "divide-iris",
-        "title": "Divide the bearded iris",
-        "weight": "grow",
+        "id": "remove-iris",
+        "title": "Lift the bearded iris out",
+        "weight": "now",
         "beds": [
           "path-bed"
         ],
-        "flags": [
-          "Window closing"
-        ],
+        "flags": [],
         "done": false,
         "body": [
-          "Confirmed as bearded iris, so this is worth doing properly. The window is roughly six weeks after flowering through early September, and you are at the end of it.",
-          "Lift the clump, snap the rhizomes apart so each piece has a fan of leaves and some roots, and throw away anything soft, hollow or smelly. Cut the leaves back to a fan about six inches tall so wind cannot rock the new divisions loose.",
-          "Replant shallow, with the top of each rhizome visible above the soil. Iris planted too deep is the single most common reason it stops flowering, and burying a rhizome in wet Seattle soil is how it rots."
+          "The plan for this bed changed. It is being simplified to shasta daisy and black-eyed Susan, so the iris is coming out rather than being divided and replanted.",
+          "Do it now anyway, because the division window is the same window: roughly six weeks after flowering through early September, and you are at the end of it. Lift the clump, snap the rhizomes apart so each piece has a fan of leaves and some roots, bin anything soft, hollow or smelly, and cut the leaves back to a six inch fan. What comes up firm is worth giving away.",
+          "Clear every old leaf off the ground while you are there. Iris leaf spot overwinters on dead foliage, and the bed is about to be replanted."
         ],
-        "slip": "closes",
-        "ifSkipped": "The window is gone until next August, and a congested clump flowers less every year in the meantime."
+        "slip": "costs",
+        "ifSkipped": "You can dig them out any time, so nothing is lost from the bed. What goes is the chance to pass them on: lifted outside the window they are a clump for the bin rather than firm divisions somebody else would want."
       },
       {
         "id": "survey-upper-lower",
@@ -442,9 +440,9 @@
         "slip": "costs",
         "ifSkipped": "Planting in spring instead is perfectly fine. You water more, because you miss the autumn rains doing the establishing for you.",
         "body": [
-          "Do the soil first. That corner has grown woody Mediterranean herbs for years, which want it lean and dry, and black-eyed Susans want more moisture than that. Fork a couple of buckets of compost through the hole and the ground around it before anything goes in.",
-          "Autumn is the better planting window here if you can get plants: the soil is still warm, the rains arrive to establish the roots, and you barely have to water. Spring is the fallback and works fine, you just do the watering yourself. Either way this bed drains sharply, which is what makes autumn planting safe.",
-          "Worth deciding which type when you buy. The clumping perennial kinds such as 'Goldsturm' come back reliably and slowly widen. The taller annual-ish ones are grown from seed and are a different job. Tell me which you get and I will set the card to match."
+          "Do the soil first. That corner has grown woody Mediterranean herbs for years, which want it lean and dry, and black-eyed Susans want more moisture than that. Fork a couple of buckets of compost through the top spit where the sage and rosemary came out.",
+          "With the iris leaving, there is nothing in this bed that objects to compost any more. The iris rhizomes were the one thing here that rots under it, so the improving and the planting stop pulling against each other. Do not overdo it even so: fed rudbeckia flops, and so does shasta daisy.",
+          "Autumn is the better planting window here if you can get plants. The soil is still warm, the rains arrive to establish the roots, and you barely have to water. Buy the clumping perennial kinds such as 'Goldsturm', which come back reliably and slowly widen."
         ]
       }
     ]
@@ -627,7 +625,7 @@
         "flags": [],
         "done": false,
         "slip": "costs",
-        "ifSkipped": "Next spring's display is thinner than this one, and thinner again the year after. Nothing dies, it just quietly fades.",
+        "ifSkipped": "Next spring's display is thinner than this one, and thinner again the year after. Nothing dies, it just thins out.",
         "body": [
           "This is the one bit of real upkeep the front beds need, and it is once a year. Plant fresh bulbs into the gaps in October or November, deep, about three times the height of the bulb.",
           "If you want to shrink even this job, lean toward the kinds that persist here: Darwin hybrids and species tulips come back far better than the big fancy ones, and daffodils return and multiply on their own indefinitely."

@@ -596,7 +596,7 @@
       "good": "Dark green leaves and steady fruit through the season.",
       "poor": "Pale leaves and small fruit means hungry or too crowded. Reddening leaves late in the season is usually age. Grey fuzz on the fruit is botrytis, which comes from damp still air.",
       "endOfSeason": "These are everbearing, so do not mow the foliage down: that advice is for June-bearing types and would cost you fruit. Pull dead leaves, thin the mat, and replace the oldest crowns every three or four years.",
-      "propagate": "The runners are the renewal. Peg a few down into gaps in summer and they root by autumn, then cut them free from the parent. Replace the oldest crowns every three or four years: plants decline sharply after that, and a bed kept going indefinitely quietly stops fruiting."
+      "propagate": "The runners are the renewal. Peg a few down into gaps in summer and they root by autumn, then cut them free from the parent. Replace the oldest crowns every three or four years: plants decline sharply after that, and a bed kept going indefinitely stops fruiting without ever looking dead."
     },
     "art": {
       "form": "berry",
@@ -611,7 +611,7 @@
         "Pick strong runners with a small plantlet forming, and peg the plantlet down into the soil or into a small pot sunk beside the parent. A bent wire or a stone will hold it.",
         "Leave it attached to the parent while it roots, which takes a few weeks.",
         "Once it has clearly taken hold, cut the runner and you have an independent plant.",
-        "Take out the oldest woodiest crowns each year so the bed is always a mix of ages. A bed kept going indefinitely without renewal quietly stops fruiting."
+        "Take out the oldest woodiest crowns each year so the bed is always a mix of ages. A bed kept going indefinitely without renewal stops fruiting without ever looking dead."
       ],
       "links": []
     }
@@ -776,9 +776,9 @@
     ],
     "type": "rhizome",
     "confidence": "confirmed",
-    "status": "finished",
-    "statusLabel": "Divide now",
-    "handling": "Late summer is the window for dividing. Cut the leaves back to a fan about six inches tall and replant the rhizomes shallow, with their backs showing above the soil. Burying them is the usual reason iris stops flowering.",
+    "status": "watch",
+    "statusLabel": "Coming out",
+    "handling": "Coming out. The bed is being simplified to shasta daisy and black-eyed Susan. Lift the rhizomes in the division window, which is late summer and closes in early September, so they come up as firm divisions worth giving away rather than as a clump binned in October. Cut the leaves to a six inch fan first so they are easier to handle.",
     "idNote": "",
     "window": {
       "from": 5,
@@ -1564,7 +1564,7 @@
     "planned": true,
     "status": "watch",
     "statusLabel": "Planned, not planted",
-    "handling": "Going in where the sage and rosemary come out. Full sun suits it, but it wants more moisture than what it is replacing, so work compost into that spot first.",
+    "handling": "Going in where the sage and rosemary come out, and with the bearded iris leaving it and the shasta daisy will have the bed to themselves. Full sun suits it. It wants more moisture than the woody herbs it replaces, so work compost into that spot, which is now straightforward: the iris was the only thing here that rotted under compost.",
     "idNote": "",
     "window": {
       "from": 7,

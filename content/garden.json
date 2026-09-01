@@ -154,7 +154,7 @@
     {
       "id": "path-bed",
       "name": "Path Bed",
-      "role": "Mediterranean and perennials",
+      "role": "Two perennials, one summer",
       "aspect": "North-west corner, out by the street",
       "exposure": "Full sun, dry",
       "sun": "full",
@@ -165,8 +165,43 @@
         "w": 51,
         "h": 97
       },
-      "description": "North-west corner, out by the street and clear of the house. Shasta daisies, bearded iris and a euphorbia, with the sage and rosemary coming out and black-eyed Susans going in where they were. Full sun and sharp drainage, which is what the herbs were thriving on, so the new planting will want its soil improved rather than inheriting the lean dry ground they liked.",
-      "watering": "Hose, by hand"
+      "description": "North-west corner, out by the street and clear of the house. Being simplified: the sage and rosemary are coming out, the tulips are lifted, and the bearded iris is going too, which leaves shasta daisies and black-eyed Susans with the bed to themselves. Full sun and sharp drainage, which is what the herbs were thriving on, so the ground where they stood wants compost worked through it before the black-eyed Susans go in.",
+      "watering": "Hose, by hand",
+      "plan": {
+        "goal": "Two plants, one long summer, and almost nothing to do between times.",
+        "method": [
+          {
+            "title": "Lift the bearded iris while the window is open",
+            "when": "Now, it closes in early September",
+            "body": "Removal itself can happen any time, but this is the last week the rhizomes come up as firm divisions rather than a clump for the bin. Cut the leaves to a six inch fan, snap the rhizomes apart, keep what is firm and pass it on. Clear every old leaf off the ground while you are there, because iris leaf spot overwinters on dead foliage and this bed is about to be replanted."
+          },
+          {
+            "title": "Dig the herb stumps out after the first proper rain",
+            "when": "October",
+            "body": "Not in August. A woody root ball comes out of damp ground with a fraction of the effort, and nothing suffers by waiting. Get the roots out rather than leaving them to rot in place, since that is exactly where the new planting goes."
+          },
+          {
+            "title": "Work compost into where the herbs stood",
+            "when": "Autumn, before planting",
+            "body": "That corner grew Mediterranean herbs for years, which want it lean and dry, and black-eyed Susans want more moisture than that. A couple of buckets forked through the top spit. With the iris gone there is nothing left here that rots under compost, so the improving and the planting no longer pull against each other."
+          },
+          {
+            "title": "Plant the black-eyed Susans",
+            "when": "Autumn if you can get plants, spring otherwise",
+            "body": "Autumn is the better window here: warm soil, the rains arrive to do the establishing, and you barely water. Buy the clumping perennial kinds such as 'Goldsturm'. Do not feed beyond the compost. Fed rudbeckia flops, and so does shasta daisy, and this bed is exposed."
+          },
+          {
+            "title": "Divide both, on the same clock",
+            "when": "Early spring, about every three years",
+            "body": "This is the whole maintenance of the bed and the reason the pairing is worth having. Both want dividing on roughly the same cycle, both want it in early spring rather than autumn, and both want an inch of compost and nothing else. One date, one job, the entire bed."
+          }
+        ],
+        "watch": [
+          "Nothing flowers here between October and June. That is the real cost of simplifying, and it lands in the bed most visible from the street. Daffodils planted under the perennials would cover March and April, ask nothing after planting, and already return and multiply in the front beds. Not planted, and not decided.",
+          "Flopping, with a dead centre and the flowers pushed out to the edges, is the shasta daisy asking to be divided. That is the three year clock telling you it is due.",
+          "Angular brown or black spots climbing up the lower leaves of the black-eyed Susan is Septoria leaf spot, which rudbeckia get badly in this climate. Take the affected leaves off, water the soil rather than the foliage, and clear every dead leaf in autumn."
+        ]
+      }
     },
     {
       "id": "street-1",
