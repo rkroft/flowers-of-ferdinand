@@ -82,6 +82,13 @@
         "y": 455,
         "w": 454,
         "h": 30
+      },
+      {
+        "label": "",
+        "x": 28,
+        "y": 258,
+        "w": 97,
+        "h": 115
       }
     ],
     "lines": [
@@ -337,7 +344,7 @@
         "w": 50,
         "h": 75
       },
-      "description": "Narrow raised bed on the west wall, with the compost tumbler at one end and concrete alongside it. The sunflowers and pole beans came out on September 8 2026, and the bed was replanned around food: a strawberry mat that renews from its own runners, pole beans back on the trellis each May, cucumbers on their own strings, garlic in the winter gap, and tomatoes in bags on the concrete rather than in the box. West facing means shade until around midday, then several hours of strong afternoon sun with heat radiating off the wall and held in it overnight. Add a foundation that wicks moisture away and an eave that keeps rain off, and you get warm still air over dry roots, which is what powdery mildew wants. Hotter and drier than it looks, and that is the fact every decision here has to answer to.",
+      "description": "Narrow raised bed on the west wall, set in concrete on every side, with the compost tumbler at one end. The sunflowers and pole beans came out on September 8 2026, and the bed was replanned around food: a strawberry mat that renews from its own runners, pole beans back on the trellis each May, cucumbers on their own strings, garlic in the winter gap, and tomatoes in bags on the concrete rather than in the box. West facing means shade until around midday, then several hours of strong afternoon sun with heat radiating off the wall and held in it overnight. Add a foundation that wicks moisture away and an eave that keeps rain off, and you get warm still air over dry roots, which is what powdery mildew wants. Concrete on all four sides adds to it, throwing back heat and light and giving the box no surrounding soil to draw on or drain into. Hotter and drier than it looks, and that is the fact every decision here has to answer to.",
       "watering": "Hose, by hand",
       "plan": {
         "goal": "A four-crop edible bed that mostly runs itself: strawberries renewing from their own runners, beans and cucumbers on the trellis each summer, garlic filling the winter, and the one thirsty crop kept out in bags where it cannot set the terms for the rest.",
@@ -402,7 +409,8 @@
           "Bitter or misshapen cucumbers means the watering went feast and famine, not that anything is diseased.",
           "White powdery coating on the cucumber leaves is mildew, which this bed causes rather than the plant catching. Dry roots are half of it, so it is a watering answer before it is a spray answer.",
           "A tomato bag whose leaves wilt in the afternoon and recover overnight is drying out, not sick. On concrete in July that is a daily job.",
-          "Fruit with a sunken dark patch on the base is blossom end rot, which is inconsistent watering and not a shortage of anything you can buy."
+          "Fruit with a sunken dark patch on the base is blossom end rot, which is inconsistent watering and not a shortage of anything you can buy.",
+          "Concrete on all sides means the box has no surrounding soil to wick from. It dries from every face, not just the top, so it needs water sooner than a bed cut into ground would."
         ]
       }
     },
