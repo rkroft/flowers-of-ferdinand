@@ -539,25 +539,6 @@
           "Compost and soil conditioner sit on the same shelf at the same price and look identical through the plastic. Conditioner is ground bark. It opens up heavy soil but it is not food, and dug into a bed it takes nitrogen out rather than putting any in.",
           "Work out the square footage first. A 1.5 cubic foot bag covers about 9 square feet at two inches, so the beds need more bags than feels reasonable. See the standing routine for the full comparison."
         ]
-      },
-      {
-        "id": "buy-seed-garlic",
-        "title": "Buy seed garlic now, plant it in October",
-        "weight": "check",
-        "slip": "closes",
-        "ifSkipped": "The good seed garlic is gone by late autumn and the window does not reopen until next October, which pushes the whole crop a year out.",
-        "beds": [
-          "side"
-        ],
-        "flags": [
-          "Closing window"
-        ],
-        "done": false,
-        "body": [
-          "Seed garlic sells out through September and October, and the buying is the half with the deadline on it. Planting can wait.",
-          "Buy seed garlic, not a supermarket bulb, which is often treated to stop it sprouting and can bring disease into the bed. A hardneck kind suits this climate and gives you scapes to cook in June.",
-          "One bulb splits into anywhere from four to a dozen cloves, and each clove becomes a bulb, so a couple of bulbs plants a decent block."
-        ]
       }
     ]
   },
@@ -750,7 +731,8 @@
         "body": [
           "One to two inches of compost spread on the surface. Do not dig it in. This bed's problem is that it dries out, digging is what wrecks the structure holding that water, and the bean roots left in the ground are free nitrogen you would only be breaking up. Winter rain takes it down without any help.",
           "Put the thickest part along the back six inches against the foundation. That strip is the driest soil in the garden: rain shadow, wicking foundation, eave overhead.",
-          "Keep it off the strawberry crowns, which rot if buried, and off the newly pegged plantlets. Nothing else goes on. Not soil conditioner or bark fines, which are for beds that drain badly, and this bed's problem is the exact opposite. Not fertilizer, not manure, not lime. Compost is the whole answer here."
+          "Keep it off the strawberry crowns, which rot if buried, and off the newly pegged plantlets. Nothing else goes on. Not soil conditioner or bark fines, which are for beds that drain badly, and this bed's problem is the exact opposite. Not fertilizer, not manure, not lime. Compost is the whole answer here.",
+          "That ground has nothing going into it this autumn, so the compost is the whole job. Spread it over the cleared area and leave it: the strawberry mat spreads into it next summer."
         ]
       },
       {
@@ -767,26 +749,6 @@
         "body": [
           "Four to six weeks after pegging. Give each plantlet a gentle tug: if it resists, it is on its own roots. Cut the runner between it and the parent.",
           "Anything still loose gets left another few weeks, or through winter, and cut in spring."
-        ]
-      },
-      {
-        "id": "plant-garlic",
-        "title": "Plant the garlic in the cleared side bed ground",
-        "weight": "seed",
-        "slip": "closes",
-        "flags": [
-          "Closing window"
-        ],
-        "beds": [
-          "side"
-        ],
-        "done": false,
-        "ifSkipped": "Planted much after October it does not get the cold spell it needs to split into a proper bulb, and you harvest single rounds instead of heads. The crop is a year out.",
-        "body": [
-          "Do it with the compost, in the ground the sunflowers and beans left. Keep it clear of the trellis line, which is bean and cucumber ground from May, and clear of where the pegged runners are spreading.",
-          "Split the bulbs into cloves at planting time rather than beforehand. Pointy end up, two inches deep, six inches apart, in rows about eight inches apart.",
-          "Then leave it entirely. It needs no water, no feed and no attention until growth restarts in March, which is the whole appeal of it.",
-          "The box is only about six inches deep, so the clove at two inches leaves four beneath it. Expect sound heads rather than big ones. Drainage was the real risk in a shallow box and it has been checked: water does not sit here after heavy rain, so the garlic can go in."
         ]
       }
     ]
