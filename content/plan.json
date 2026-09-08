@@ -785,7 +785,8 @@
         "body": [
           "Do it with the compost, in the ground the sunflowers and beans left. Keep it clear of the trellis line, which is bean and cucumber ground from May, and clear of where the pegged runners are spreading.",
           "Split the bulbs into cloves at planting time rather than beforehand. Pointy end up, two inches deep, six inches apart, in rows about eight inches apart.",
-          "Then leave it entirely. It needs no water, no feed and no attention until growth restarts in March, which is the whole appeal of it."
+          "Then leave it entirely. It needs no water, no feed and no attention until growth restarts in March, which is the whole appeal of it.",
+          "The box is only about six inches deep, so the clove at two inches leaves four beneath it. Expect sound heads rather than big ones. Drainage was the real risk in a shallow box and it has been checked: water does not sit here after heavy rain, so the garlic can go in."
         ]
       }
     ]
@@ -985,7 +986,7 @@
       },
       {
         "id": "sow-cucumbers",
-        "title": "Sow cucumbers on their own strings",
+        "title": "Sow the cucumber into a bag at the foot of the trellis",
         "weight": "seed",
         "slip": "costs",
         "flags": [],
@@ -993,11 +994,12 @@
           "side"
         ],
         "done": false,
-        "ifSkipped": "Sown late they crop late, and on a west wall shaded until midday they are already the slow ones. You lose fruit off the end of the season rather than the plant.",
+        "ifSkipped": "Sown late it crops late, and on a west wall shaded until midday it is already the slow one. Nothing else in the plan depends on it.",
         "body": [
-          "Buy a mildew-resistant variety. This bed proved it is a mildew bed when the sunflowers got it every year, and resistance costs nothing at the point of buying and cannot be added later.",
-          "Sow direct in May once the soil is genuinely warm, alongside the beans. Give them their own section of string: pole beans climb harder and will swamp a cucumber on shared strings.",
-          "Feed this plant and not the bed. A liquid feed at its base every two weeks once fruit sets. Broadcast feed would reach the beans, and a fed bean gives you vine instead of beans."
+          "Not in the box. A fifteen to twenty gallon bag on the concrete at the foot of the trellis, so it roots in real depth while still climbing the strings. Keep it on its own section of string: pole beans climb harder and will swamp it on shared strings.",
+          "Buy a mildew-resistant variety. This spot proved it grows mildew when the sunflowers got it every year, and resistance costs nothing at the point of buying and cannot be added later. Check the packet names powdery or downy mildew specifically rather than saying disease resistant in general, and take resistant to mean slower to get it rather than immune.",
+          "Sow direct into the bag in May once it has warmed. Mulch the surface of the bag as you would a bed, and lift it an inch off the concrete or use a light-coloured bag so the roots are not cooked from below.",
+          "Feed it properly and often, which is the other reason it is out here. In the box, feed meant for the cucumber would have reached the beans, and a fed bean is a magnificent vine with almost no beans."
         ]
       },
       {
@@ -1012,7 +1014,8 @@
         "done": false,
         "ifSkipped": "You water in bursts, which is what makes cucumbers bitter and gives the tomatoes blossom end rot. The strawberries and beans survive it; the two new crops are the ones that show it.",
         "body": [
-          "The cucumber is the thirstiest thing in the bed, so it sets the level and everything else is comfortable underneath it. Consistency matters more than volume.",
+          "With both thirsty crops in bags, the box itself holds only strawberries, beans and garlic, none of which need daily attention. The watering splits into three zones and they are not equal.",
+          "Six inches of soil means little and often, not deep and occasional. There is no reservoir to fill here, so the rule that works in a bed cut into ground is the wrong one in this box.",
           "Water the soil, not the leaves. Wet foliage against a warm still wall is how the strawberries get botrytis and the cucumbers get mildew, and this bed supplies the warm still air for free.",
           "The back six inches against the foundation is a separate zone from the front. Rain shadow, wicking foundation, eave overhead. Water it as two beds or it stays dry at the wall however long you stand there.",
           "The bags are a third zone again, and a daily one in July. Worth deciding now whether that is a hose pass or a cheap timer and a drip line, because July is not when you want to be solving it."

@@ -582,7 +582,7 @@
     "confidence": "confirmed",
     "status": "blooming",
     "statusLabel": "Still fruiting",
-    "handling": "Do not mow the foliage. Thin the mat to about one plant every six to eight inches, taking the oldest woodiest crowns out first, and peg runners into the gaps as free replacements. With the sunflowers and beans gone this is now the whole bed, so the spread is deliberate rather than incidental.",
+    "handling": "Do not mow the foliage. Thin the mat to about one plant every six to eight inches, taking the oldest woodiest crowns out first, and peg runners into the gaps as free replacements. This is the plant the box actually suits: six inches of soil is a strawberry's natural rooting depth, which is why the mat is the anchor of the bed rather than one crop among four.",
     "idNote": "Confirmed as strawberries in the side bed. The remaining question is only which type: fruiting in late August points to everbearing or day-neutral rather than June-bearing, and that is what the care here assumes. A heavy single crop in June would mean the opposite.",
     "window": {
       "from": 6,
@@ -639,7 +639,7 @@
       "feed": "None. They fix their own nitrogen, and feeding gives you a magnificent vine with very few beans.",
       "deadhead": "Picking is the deadheading, and with pole beans it is the whole game. Every pod left to swell and mature tells the vine it has reproduced and can stop. Pick every two or three days at the height of it, taking pods while they still snap.",
       "good": "Flowers and pods forming all the way up the strings rather than only at the bottom, and pods that snap cleanly instead of bending.",
-      "poor": "Production stopping in late summer usually means picking fell behind rather than anything being wrong. Pods that are lumpy and stringy were left too long. On a west wall like this one, a slow start is normal: they want warm soil and this bed is shaded all morning.",
+      "poor": "Production stopping in late summer usually means picking fell behind rather than anything being wrong. Pods that are lumpy and stringy were left too long. A slow start here is normal and has two causes, not one: the bed is shaded until midday so the soil warms late, and the box is only six inches deep, which for a plant that would root three times that leaves it wholly dependent on being watered. The earlier note blamed the aspect alone, which made it look like nothing could be done. The depth is the part that watering and feeding can answer.",
       "endOfSeason": "They carry on until frost or until the vine exhausts itself, usually well into September here. When done, cut the stems off at soil level rather than pulling, so the nitrogen-fixing nodules stay in the ground. Take the strings down and clean the trellis so nothing overwinters on it.",
       "propagate": "Leave a few pods on the vine until they are papery and rattle, then shell and store the seed somewhere cool and dry. This only comes true from an open-pollinated variety, not an F1 hybrid. Sow fresh in May, direct into warm soil, and get the supports in before you sow rather than after."
     },
@@ -1612,7 +1612,7 @@
   {
     "id": "cucumber",
     "name": "Cucumber",
-    "variety": "buy a mildew-resistant kind",
+    "variety": "a mildew-resistant kind, in a bag at the foot of the trellis",
     "beds": [
       "side"
     ],
@@ -1620,8 +1620,8 @@
     "confidence": "confirmed",
     "planned": true,
     "status": "watch",
-    "statusLabel": "Planned, not planted",
-    "handling": "Going on its own section of the string trellis in May 2027, separate from the beans, which are far more vigorous climbers and will swamp it on shared strings. This is the plant that sets the watering level for the whole bed.",
+    "statusLabel": "Planned, in a bag",
+    "handling": "Not in the box. In a fifteen to twenty gallon bag set on the concrete at the foot of the string trellis, so it still climbs the strings but roots in proper depth rather than six inches. It keeps its own section of string, separate from the beans, which climb harder and would swamp it. Growing it in a bag also means it can be fed as heavily as it wants without any of that reaching the beans, which want none.",
     "idNote": "",
     "window": {
       "from": 7,
@@ -1629,12 +1629,12 @@
       "kind": "harvest"
     },
     "care": {
-      "feed": "The one hungry plant in this bed. A liquid feed every two weeks once fruit sets, given at the base of this plant alone. Do not broadcast feed over the bed: the beans want nothing, and feeding them gives you a magnificent vine with very few beans.",
+      "feed": "The hungriest thing here, and a bag has no soil reserve to draw on, so it is fed on a schedule rather than by eye. Liquid feed every two weeks once fruit sets, or weekly at half strength. The reason it is in a bag rather than the bed is partly this: fed in the box, that feed would reach the beans, and a fed bean gives a magnificent vine with very few beans.",
       "deadhead": "No deadheading. Picking is the equivalent, and it is the whole game: pick while the fruit is still slim, because one cucumber left to swell and go yellow tells the vine it has reproduced and slows everything behind it.",
       "good": "Straight even fruit, dark green leaves, and flowers forming all the way up the strings.",
-      "poor": "Bitter or misshapen fruit means the watering went feast and famine, not that the plant is diseased. White powdery coating is mildew, which this bed is prone to: warm still air against a wall over dry roots is what causes it, so watering properly is half the cure.",
+      "poor": "Bitter or misshapen fruit means the watering went feast and famine, not that the plant is diseased. Leaves wilting in the afternoon and recovering overnight is the bag drying out, which on concrete in July is close to a daily job. White powdery coating is mildew, which this spot causes rather than the plant catching: warm still air against a wall over dry roots is what does it, so watering properly is half the cure.",
       "endOfSeason": "Finished by the first cold nights. Cut at soil level, clear every leaf off the bed rather than leaving it, and take the strings down. Mildewed material goes in the household bin, not the tumbler.",
-      "propagate": "Buy fresh seed each year rather than saving it. Most garden cucumbers are hybrids that will not come true, and the ones worth having here are bought for mildew resistance, which is exactly the trait you would lose. Sow direct in May once the soil is warm."
+      "propagate": "Buy fresh seed each year rather than saving it. Most garden cucumbers are hybrids that will not come true, and the trait worth buying for here is mildew resistance, which is exactly what saving would lose. Check the packet actually lists resistance to powdery or downy mildew rather than saying disease resistant in general, and note that resistant means slower to get it, not immune. Sow direct in May once the soil is warm."
     },
     "art": {
       "form": "berry",
