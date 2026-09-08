@@ -836,7 +836,7 @@
   {
     "id": "next-spring",
     "title": "Next spring",
-    "window": "Mar – May",
+    "window": "Mar - early Jun",
     "note": "The plan used to stop at first frost, which meant the one job that decides whether the sunflowers come up strong had nowhere to live. The standing routine below covers the general spring work; these are the dated, bed-specific ones.",
     "tasks": [
       {
@@ -896,7 +896,7 @@
       },
       {
         "id": "sow-beans",
-        "title": "Strings up, then sow the pole beans",
+        "title": "Strings up the first week of May, sow the beans the last week",
         "weight": "seed",
         "slip": "costs",
         "ifSkipped": "Sow late and you lose weeks off a crop that is already slow here, because the bed is shaded until midday and the soil takes its time warming.",
@@ -906,14 +906,15 @@
         "flags": [],
         "done": false,
         "body": [
-          "Get the string trellis rigged before anything is sown. Putting supports in around seedlings is how roots get damaged and how the job gets put off.",
-          "Sow direct into warm soil once it has genuinely warmed, which on a west wall shaded until midday is later than the packet suggests. Do not start them in pots.",
-          "Keep them off the strawberry mat, and redirect any strawberry runners that have crept into the trellis line over the winter."
+          "Rig the string trellis in the first week of May, before anything is sown. Putting supports in around seedlings damages roots, and it is the job that gets put off.",
+          "Sow direct in the last week of May, around Memorial Day. The gate is soil temperature, not the date: beans want sixty degrees and preferably sixty-five, and sown into colder ground they sit and rot rather than germinate. A sowing made two weeks later into warm soil will overtake one made too early.",
+          "This bed lies to you about that. It is shaded until midday, so it warms noticeably later than an open bed in the same city, and the usual Seattle dates run early for it. A cheap soil thermometer, ten or fifteen dollars, settles it in seconds and is worth more here than any calendar.",
+          "First picking is usually late July. Keep picking, because that is what keeps them producing, and cut at soil level at the end so the nitrogen nodules stay in the ground."
         ]
       },
       {
         "id": "buy-tomato-plants",
-        "title": "Buy tomato plants and grow bags",
+        "title": "Buy tomato plants in April, and the bags with them",
         "weight": "check",
         "slip": "costs",
         "flags": [],
@@ -923,6 +924,7 @@
         "done": false,
         "ifSkipped": "The early-ripening varieties go first at the nurseries, and a late start on a short season is the one thing tomatoes here cannot recover from.",
         "body": [
+          "April, while the early varieties are still in stock. They are the first to sell out and the last thing you can substitute, because a short cool season is the whole constraint here.",
           "Buy plants rather than starting seed, which would need a heated propagator in February to gain anything.",
           "Choose for early ripening rather than flavour notes, because a short cool season is the entire constraint here. Sungold, Early Girl, Stupice and Oregon Spring all ripen reliably in Seattle. Pick bush or determinate types for bags: an indeterminate in a bag is a staking and watering problem all summer.",
           "Fifteen to twenty gallon bags, not five gallon. A small bag is a daily-watering trap in July, and it is the usual reason bag tomatoes fail here."
@@ -930,7 +932,7 @@
       },
       {
         "id": "plant-out-bags",
-        "title": "Plant the tomato bags out on the concrete",
+        "title": "Plant the tomato out after about May 20",
         "weight": "grow",
         "slip": "costs",
         "flags": [],
@@ -940,7 +942,7 @@
         "done": false,
         "ifSkipped": "Out too early in cold soil they sit and sulk rather than growing, so nothing is gained by rushing. Out too late and the fruit does not colour before the autumn.",
         "body": [
-          "Late May, once the nights have genuinely warmed. Plant deep: a tomato roots along its buried stem, so set it with the lowest leaves at soil level and it builds a bigger root system than the bag suggests.",
+          "After about the twentieth of May. The gate is night temperature rather than frost: tomatoes stall below fifty degrees at night, and one set out into cold nights sits still while a later planting grows past it. Plant deep, with the lowest leaves at soil level, because a tomato roots along its buried stem. First ripe fruit is usually August, with the bulk through September.",
           "The concrete goes all the way round the box, so put the bags wherever the sun is longest rather than automatically on the house side, which has the same shaded-until-midday aspect as the bed. Move them as the sun shifts through the summer. A bag that never moves is just a small bed.",
           "Mulch the surface of each bag, and lift them an inch off the concrete on battens or use light-coloured bags, so the roots are not cooked from below.",
           "Feed every two weeks once the first fruit sets. A bag has no soil reserve, which makes this the one thing here that genuinely needs feeding on a schedule."
@@ -948,7 +950,7 @@
       },
       {
         "id": "sow-cucumbers",
-        "title": "Sow the cucumber into a bag at the foot of the trellis",
+        "title": "Sow the cucumber into its bag, mid to late May",
         "weight": "seed",
         "slip": "costs",
         "flags": [],
@@ -960,6 +962,7 @@
         "body": [
           "Not in the box. A fifteen to twenty gallon bag on the concrete at the foot of the trellis, so it roots in real depth while still climbing the strings. Keep it on its own section of string: pole beans climb harder and will swamp it on shared strings.",
           "Buy a mildew-resistant variety. This spot proved it grows mildew when the sunflowers got it every year, and resistance costs nothing at the point of buying and cannot be added later. Check the packet names powdery or downy mildew specifically rather than saying disease resistant in general, and take resistant to mean slower to get it rather than immune.",
+          "Sow direct into the bag from about the middle of May. It can go in ahead of the beans: a bag standing on concrete warms faster than six inches of soil in the shade of the house, so it reaches the sixty-five degrees a cucumber wants before the box does. First fruit is usually mid to late July.",
           "Sow direct into the bag in May once it has warmed. Mulch the surface of the bag as you would a bed, and lift it an inch off the concrete or use a light-coloured bag so the roots are not cooked from below.",
           "Feed it properly and often, which is the other reason it is out here. In the box, feed meant for the cucumber would have reached the beans, and a fed bean is a magnificent vine with almost no beans."
         ]
@@ -981,6 +984,23 @@
           "Water the soil, not the leaves. Wet foliage against a warm still wall is how the strawberries get botrytis and the cucumbers get mildew, and this bed supplies the warm still air for free.",
           "The back six inches against the foundation is a separate zone from the front. Rain shadow, wicking foundation, eave overhead. Water it as two beds or it stays dry at the wall however long you stand there.",
           "The bags are a third zone again, and a daily one in July. Worth deciding now whether that is a hose pass or a cheap timer and a drip line, because July is not when you want to be solving it."
+        ]
+      },
+      {
+        "id": "feed-strawberries",
+        "title": "Feed the strawberries after the first flush, then once more",
+        "weight": "grow",
+        "slip": "costs",
+        "flags": [],
+        "beds": [
+          "side"
+        ],
+        "done": false,
+        "ifSkipped": "Pale leaves and small fruit for the rest of the season. It is recoverable the following year, but you lose most of this one's crop quality.",
+        "body": [
+          "A balanced feed in June, after the first flush of fruit, and again in the second half of July. Two feeds, and that is the whole year.",
+          "Nothing after July. Feeding into the autumn pushes soft growth exactly when the plant should be shutting down, and that growth is what the first frost takes.",
+          "Keep it off the beans, which want none and give vine instead of pods when fed. Compost goes on in spring as a top-dress, kept clear of the crowns, which rot if buried."
         ]
       }
     ]
