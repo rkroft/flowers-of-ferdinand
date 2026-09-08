@@ -2,7 +2,7 @@
   {
     "id": "this-week",
     "title": "Do this week",
-    "window": "Aug 31 – Sep 6",
+    "window": "Sep 7 - Sep 13",
     "note": "Eleven jobs across five areas. Two of them have a window that closes; the rest buy you flowers or head off a problem, and nothing dies if they slip.",
     "tasks": [
       {
@@ -104,13 +104,13 @@
           "side"
         ],
         "flags": [],
-        "done": false,
+        "done": true,
         "body": [
-          "The white powdery coating on the side bed sunflowers is powdery mildew. It is not worth spraying this late on plants that are nearly finished. Pull off the worst leaves, especially the low ones, and bin them rather than putting them in the tumbler.",
-          "The cause is the spot, not the plant. A west wall gives shade all morning, then hard afternoon heat radiating off the wall, over roots kept dry by the foundation and the eave. Warm, still and dry-rooted is what powdery mildew wants. Sunflowers want open sun and steady moisture, so move them to the street boxes next year."
+          "Closed. The side bed sunflowers came out altogether on September 8 2026 rather than being nursed through, which settles the mildew for good.",
+          "The cause was the spot, not the plant. A west wall gives shade all morning, then hard afternoon heat radiating off the wall, over roots kept dry by the foundation and the eave. Warm, still and dry-rooted is what powdery mildew wants. The sunflower patch lives in the driveway beds, where it belongs."
         ],
         "slip": "safe",
-        "ifSkipped": "Cosmetic on plants that are nearly finished. It looks bad and does almost nothing."
+        "ifSkipped": "Closed."
       },
       {
         "id": "weed-strawberries",
@@ -385,13 +385,13 @@
           "side"
         ],
         "flags": [],
-        "done": false,
+        "done": true,
         "body": [
-          "Picking is what keeps them producing. Every pod left to mature tells the plant it is done. You have roughly four to six weeks left.",
-          "When they finish, cut the stems at soil level rather than pulling them up. The roots carry nitrogen-fixing nodules, and leaving them in place feeds whatever goes in that spot next year."
+          "Closed. The beans came out on September 8 2026, ahead of frost, as part of clearing the bed for the strawberries. Cut at soil level, so the nitrogen-fixing nodules stayed in the ground for whatever goes in that spot next.",
+          "Whether they go back on the string trellis next May is still open."
         ],
         "slip": "costs",
-        "ifSkipped": "Picking is what keeps them producing, so they stop early."
+        "ifSkipped": "Closed."
       },
       {
         "id": "remove-iris",
@@ -443,6 +443,40 @@
           "Do the soil first. That corner has grown woody Mediterranean herbs for years, which want it lean and dry, and black-eyed Susans want more moisture than that. Fork a couple of buckets of compost through the top spit where the sage and rosemary came out.",
           "With the iris leaving, there is nothing in this bed that objects to compost any more. The iris rhizomes were the one thing here that rots under it, so the improving and the planting stop pulling against each other. Do not overdo it even so: fed rudbeckia flops, and so does shasta daisy.",
           "Autumn is the better planting window here if you can get plants. The soil is still warm, the rains arrive to establish the roots, and you barely have to water. Buy the clumping perennial kinds such as 'Goldsturm', which come back reliably and slowly widen."
+        ]
+      },
+      {
+        "id": "peg-runners",
+        "title": "Peg the strawberry runners into the cleared ground",
+        "weight": "now",
+        "slip": "closes",
+        "ifSkipped": "Pegged after about mid September they do not root before the soil cools, and the free replacements become plants you buy in spring.",
+        "beds": [
+          "side"
+        ],
+        "flags": [
+          "Closing window"
+        ],
+        "done": false,
+        "body": [
+          "The sunflowers and beans coming out opens the ground this needs, so do it in the same session as the thinning.",
+          "Take the first plantlet on each runner, the one nearest the parent, and cut the rest off. Pin the runner stem just behind the plantlet with a bent wire, a staple or a stone. The crown sits on the surface: buried it rots, perched the roots dry out. Space them eight to twelve inches, wider than the mat spacing, because they are going into open ground.",
+          "Leave them attached to the parent. That is the whole reason this beats transplanting: the parent feeds the plantlet while it roots. Water them in and keep that end damp, because new roots in a rain shadow is how this fails."
+        ]
+      },
+      {
+        "id": "clean-trellis",
+        "title": "Take the bean strings down and clean the trellis",
+        "weight": "grow",
+        "slip": "safe",
+        "ifSkipped": "Old strings and dead vine are somewhere for disease to sit over winter. Minor, but it is thirty seconds now and a fiddly job in the rain later.",
+        "beds": [
+          "side"
+        ],
+        "flags": [],
+        "done": false,
+        "body": [
+          "Strings off, dead vine off, frame wiped down. Clean vine can go in the tumbler. Anything mildewed goes in the household bin, because a home heap does not run hot enough for long enough to kill the spores."
         ]
       }
     ]
@@ -504,6 +538,25 @@
         "body": [
           "Compost and soil conditioner sit on the same shelf at the same price and look identical through the plastic. Conditioner is ground bark. It opens up heavy soil but it is not food, and dug into a bed it takes nitrogen out rather than putting any in.",
           "Work out the square footage first. A 1.5 cubic foot bag covers about 9 square feet at two inches, so the beds need more bags than feels reasonable. See the standing routine for the full comparison."
+        ]
+      },
+      {
+        "id": "buy-seed-garlic",
+        "title": "Buy seed garlic now, plant it in October",
+        "weight": "check",
+        "slip": "closes",
+        "ifSkipped": "The good seed garlic is gone by late autumn and the window does not reopen until next October, which pushes the whole crop a year out.",
+        "beds": [
+          "side"
+        ],
+        "flags": [
+          "Closing window"
+        ],
+        "done": false,
+        "body": [
+          "Seed garlic sells out through September and October, and the buying is the half with the deadline on it. Planting can wait.",
+          "Buy seed garlic, not a supermarket bulb, which is often treated to stop it sprouting and can bring disease into the bed. A hardneck kind suits this climate and gives you scapes to cook in June.",
+          "One bulb splits into anywhere from four to a dozen cloves, and each clove becomes a bulb, so a couple of bulbs plants a decent block."
         ]
       }
     ]
@@ -682,6 +735,58 @@
           "The one rule that replaces deciding plant by plant. Anything that collapses into wet mush comes out: hostas, bleeding heart, shasta daisy, hardy geranium, the iris fans down to six inches. Anything with a stiff stem or a seed head stays up: echinacea, black-eyed Susan, gaillardia, scabiosa, baby's breath.",
           "Diseased material goes in the green bin, not on a pile and not left on the bed. Rust and grey mould both overwinter on what they killed. The full list by group is in the standing routine below."
         ]
+      },
+      {
+        "id": "compost-side-bed",
+        "title": "Compost the cleared side bed, thickest against the wall",
+        "weight": "grow",
+        "slip": "costs",
+        "ifSkipped": "The open ground grows weeds and caps over through the winter rain, and the bed goes into spring drier and hungrier than it needed to be.",
+        "beds": [
+          "side"
+        ],
+        "flags": [],
+        "done": false,
+        "body": [
+          "One to two inches of compost spread on the surface. Do not dig it in. This bed's problem is that it dries out, digging is what wrecks the structure holding that water, and the bean roots left in the ground are free nitrogen you would only be breaking up. Winter rain takes it down without any help.",
+          "Put the thickest part along the back six inches against the foundation. That strip is the driest soil in the garden: rain shadow, wicking foundation, eave overhead.",
+          "Keep it off the strawberry crowns, which rot if buried, and off the newly pegged plantlets. Nothing else goes on. Not soil conditioner or bark fines, which are for beds that drain badly, and this bed's problem is the exact opposite. Not fertilizer, not manure, not lime. Compost is the whole answer here."
+        ]
+      },
+      {
+        "id": "cut-runners-free",
+        "title": "Cut the rooted strawberry runners free",
+        "weight": "grow",
+        "slip": "safe",
+        "ifSkipped": "Nothing dies. The parent plants keep spending on runners they no longer need to support, so you lose a little vigour rather than a plant.",
+        "beds": [
+          "side"
+        ],
+        "flags": [],
+        "done": false,
+        "body": [
+          "Four to six weeks after pegging. Give each plantlet a gentle tug: if it resists, it is on its own roots. Cut the runner between it and the parent.",
+          "Anything still loose gets left another few weeks, or through winter, and cut in spring."
+        ]
+      },
+      {
+        "id": "plant-garlic",
+        "title": "Plant the garlic in the cleared side bed ground",
+        "weight": "seed",
+        "slip": "closes",
+        "flags": [
+          "Closing window"
+        ],
+        "beds": [
+          "side"
+        ],
+        "done": false,
+        "ifSkipped": "Planted much after October it does not get the cold spell it needs to split into a proper bulb, and you harvest single rounds instead of heads. The crop is a year out.",
+        "body": [
+          "Do it with the compost, in the ground the sunflowers and beans left. Keep it clear of the trellis line, which is bean and cucumber ground from May, and clear of where the pegged runners are spreading.",
+          "Split the bulbs into cloves at planting time rather than beforehand. Pointy end up, two inches deep, six inches apart, in rows about eight inches apart.",
+          "Then leave it entirely. It needs no water, no feed and no attention until growth restarts in March, which is the whole appeal of it."
+        ]
       }
     ]
   },
@@ -749,13 +854,13 @@
         "ifSkipped": "You sow in spring instead and get later, softer plants. Nothing is lost beyond the head start.",
         "beds": [
           "driveway-1",
-          "driveway-2",
-          "side"
+          "driveway-2"
         ],
         "flags": [],
         "done": false,
         "body": [
           "This is the one that already works here, so it goes in the plan properly. The seed sits dormant over winter and comes up when the soil warms, earlier and sturdier than anything started in a pot in May.",
+          "Driveway beds only now. The side bed is off the list for sunflowers for good: a west wall gave them half a day of shade and mildew every year.",
           "What beats it is rot in ground that stays wet, and birds and slugs taking the seed before it germinates. Sow more than you need, and put it on the driest ground you have."
         ]
       }
@@ -824,6 +929,93 @@
         "body": [
           "At four to six inches tall, thin to eighteen inches apart for the single-stem types and twelve for the branching one. Volunteers come up in clumps where the heads fell, and ten seedlings in a hand's width gives ten thin whippy stems with small heads, every time.",
           "Cut the extras off at soil level rather than pulling them, so you do not tear the roots of the one you are keeping. In Driveway Bed 2, thin so the sunflowers sit toward the outer edge and the gladiolus keep their light."
+        ]
+      },
+      {
+        "id": "sow-beans",
+        "title": "Strings up, then sow the pole beans",
+        "weight": "seed",
+        "slip": "costs",
+        "ifSkipped": "Sow late and you lose weeks off a crop that is already slow here, because the bed is shaded until midday and the soil takes its time warming.",
+        "beds": [
+          "side"
+        ],
+        "flags": [],
+        "done": false,
+        "body": [
+          "Get the string trellis rigged before anything is sown. Putting supports in around seedlings is how roots get damaged and how the job gets put off.",
+          "Sow direct into warm soil once it has genuinely warmed, which on a west wall shaded until midday is later than the packet suggests. Do not start them in pots.",
+          "Keep them off the strawberry mat, and redirect any strawberry runners that have crept into the trellis line over the winter."
+        ]
+      },
+      {
+        "id": "buy-tomato-plants",
+        "title": "Buy tomato plants and grow bags",
+        "weight": "check",
+        "slip": "costs",
+        "flags": [],
+        "beds": [
+          "side"
+        ],
+        "done": false,
+        "ifSkipped": "The early-ripening varieties go first at the nurseries, and a late start on a short season is the one thing tomatoes here cannot recover from.",
+        "body": [
+          "Buy plants rather than starting seed, which would need a heated propagator in February to gain anything.",
+          "Choose for early ripening rather than flavour notes, because a short cool season is the entire constraint here. Sungold, Early Girl, Stupice and Oregon Spring all ripen reliably in Seattle. Pick bush or determinate types for bags: an indeterminate in a bag is a staking and watering problem all summer.",
+          "Fifteen to twenty gallon bags, not five gallon. A small bag is a daily-watering trap in July, and it is the usual reason bag tomatoes fail here."
+        ]
+      },
+      {
+        "id": "plant-out-bags",
+        "title": "Plant the tomato bags out on the concrete",
+        "weight": "grow",
+        "slip": "costs",
+        "flags": [],
+        "beds": [
+          "side"
+        ],
+        "done": false,
+        "ifSkipped": "Out too early in cold soil they sit and sulk rather than growing, so nothing is gained by rushing. Out too late and the fruit does not colour before the autumn.",
+        "body": [
+          "Late May, once the nights have genuinely warmed. Plant deep: a tomato roots along its buried stem, so set it with the lowest leaves at soil level and it builds a bigger root system than the bag suggests.",
+          "Put the bags where the sun actually is rather than automatically beside the bed. The whole advantage of a bag is that it moves, and the strip beside the house has the same aspect as the bed, shaded until midday.",
+          "Mulch the surface of each bag, and lift them an inch off the concrete on battens or use light-coloured bags, so the roots are not cooked from below.",
+          "Feed every two weeks once the first fruit sets. A bag has no soil reserve, which makes this the one thing here that genuinely needs feeding on a schedule."
+        ]
+      },
+      {
+        "id": "sow-cucumbers",
+        "title": "Sow cucumbers on their own strings",
+        "weight": "seed",
+        "slip": "costs",
+        "flags": [],
+        "beds": [
+          "side"
+        ],
+        "done": false,
+        "ifSkipped": "Sown late they crop late, and on a west wall shaded until midday they are already the slow ones. You lose fruit off the end of the season rather than the plant.",
+        "body": [
+          "Buy a mildew-resistant variety. This bed proved it is a mildew bed when the sunflowers got it every year, and resistance costs nothing at the point of buying and cannot be added later.",
+          "Sow direct in May once the soil is genuinely warm, alongside the beans. Give them their own section of string: pole beans climb harder and will swamp a cucumber on shared strings.",
+          "Feed this plant and not the bed. A liquid feed at its base every two weeks once fruit sets. Broadcast feed would reach the beans, and a fed bean gives you vine instead of beans."
+        ]
+      },
+      {
+        "id": "side-bed-watering",
+        "title": "Set the side bed watering regime before it gets hot",
+        "weight": "check",
+        "slip": "costs",
+        "flags": [],
+        "beds": [
+          "side"
+        ],
+        "done": false,
+        "ifSkipped": "You water in bursts, which is what makes cucumbers bitter and gives the tomatoes blossom end rot. The strawberries and beans survive it; the two new crops are the ones that show it.",
+        "body": [
+          "The cucumber is the thirstiest thing in the bed, so it sets the level and everything else is comfortable underneath it. Consistency matters more than volume.",
+          "Water the soil, not the leaves. Wet foliage against a warm still wall is how the strawberries get botrytis and the cucumbers get mildew, and this bed supplies the warm still air for free.",
+          "The back six inches against the foundation is a separate zone from the front. Rain shadow, wicking foundation, eave overhead. Water it as two beds or it stays dry at the wall however long you stand there.",
+          "The bags are a third zone again, and a daily one in July. Worth deciding now whether that is a hose pass or a cheap timer and a drip line, because July is not when you want to be solving it."
         ]
       }
     ]

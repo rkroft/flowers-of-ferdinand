@@ -179,15 +179,14 @@
     "variety": "one mahogany, one branching yellow",
     "beds": [
       "street-1",
-      "side",
       "driveway-1",
       "driveway-2"
     ],
     "type": "annual",
     "confidence": "confirmed",
     "status": "watch",
-    "statusLabel": "Powdery mildew",
-    "handling": "Leave heads for birds, or cut when the back turns brown. The side bed plants have powdery mildew: strip the worst leaves and bin them, and do not spray this late. Sunflowers belong in the open sunny beds like the driveway patch, not against a west wall.",
+    "statusLabel": "Save the best heads",
+    "handling": "Leave heads for birds, or cut when the back turns brown. Out of the Side Bed Box as of September 8 2026: the plants there had powdery mildew every year, and the cause was the spot rather than the plant. Sunflowers belong in the open sunny beds like the driveway patch, not against a west wall.",
     "idNote": "The dark red one is likely 'Velvet Queen' or 'Chocolate', but that is a guess from colour alone.",
     "window": {
       "from": 7,
@@ -198,7 +197,7 @@
       "feed": "None. They are far less hungry than their size suggests, and nitrogen is what gives you a tall soft stem that folds in the first wind with a small head on it. Keep the compost thin over the driveway beds, or skip them.",
       "deadhead": "Single-stem types have one flower and nothing to deadhead. Branching types keep producing if you cut spent flowers back to a side shoot.",
       "good": "A stout upright stem with a big head means full sun.",
-      "poor": "Thin stems with small heads in a bed this sunny is crowding, not light. It means the patch was not thinned, or not thinned hard enough. White powdery coating is mildew, which crowding also causes by killing the air movement, so thinning fixes both at once. Leaning in one direction only matters where something is genuinely casting shade, which is the side bed, not the driveway.",
+      "poor": "Thin stems with small heads in a bed this sunny is crowding, not light. It means the patch was not thinned, or not thinned hard enough. White powdery coating is mildew, which crowding also causes by killing the air movement, so thinning fixes both at once. Leaning hard in one direction means something is genuinely casting shade, which is why these came out of the side bed: a west wall gives them nothing until midday.",
       "endOfSeason": "Annual. Leave the heads for the birds through autumn, or cut when the back of the head has turned brown and yellow if you want the seed. Pull the stems whenever they look done.",
       "propagate": "Save seed from the best heads once the backs are brown and dry them indoors a week. Then sow it in fall, not in May. Fall sowing is what works in this garden: the seed sits through winter and germinates the week the soil is ready, earlier than you would dare sow by hand, and the taproot is never disturbed. Sunflowers resent transplanting, so anything started in a pot is already behind. Seed from a hybrid will not come true to the parent."
     },
@@ -583,7 +582,7 @@
     "confidence": "confirmed",
     "status": "blooming",
     "statusLabel": "Still fruiting",
-    "handling": "Do not mow the foliage. Thin the mat to about one plant every six to eight inches, pinch off runners you do not want, and let a few root as replacements.",
+    "handling": "Do not mow the foliage. Thin the mat to about one plant every six to eight inches, taking the oldest woodiest crowns out first, and peg runners into the gaps as free replacements. With the sunflowers and beans gone this is now the whole bed, so the spread is deliberate rather than incidental.",
     "idNote": "Confirmed as strawberries in the side bed. The remaining question is only which type: fruiting in late August points to everbearing or day-neutral rather than June-bearing, and that is what the care here assumes. A heavy single crop in June would mean the opposite.",
     "window": {
       "from": 6,
@@ -596,7 +595,7 @@
       "good": "Dark green leaves and steady fruit through the season.",
       "poor": "Pale leaves and small fruit means hungry or too crowded. Reddening leaves late in the season is usually age. Grey fuzz on the fruit is botrytis, which comes from damp still air.",
       "endOfSeason": "These are everbearing, so do not mow the foliage down: that advice is for June-bearing types and would cost you fruit. Pull dead leaves, thin the mat, and replace the oldest crowns every three or four years.",
-      "propagate": "The runners are the renewal. Peg a few down into gaps in summer and they root by autumn, then cut them free from the parent. Replace the oldest crowns every three or four years: plants decline sharply after that, and a bed kept going indefinitely stops fruiting without ever looking dead."
+      "propagate": "The runners are the renewal. Peg a few down into gaps from late summer and they root by autumn, then cut them free from the parent about four to six weeks later. Replace the oldest crowns every three or four years: plants decline sharply after that, and a bed kept going indefinitely stops fruiting without ever looking dead. To move an established crown rather than root a new one, early spring is the safe window here, late February into March, with a second shorter one from late August to about mid September. Strawberries are the exception to the rule that autumn moves rot in this garden, because they are shallow rooted and root fast, but only if they get six weeks before the cold."
     },
     "art": {
       "form": "berry",
@@ -604,13 +603,15 @@
       "centre": "#6F8F55"
     },
     "divide": {
-      "when": "Summer, while runners are being produced.",
+      "when": "Summer into early autumn for pegging runners. Early spring, late February into March, for lifting and moving an established crown.",
       "every": "Continuously, replacing the oldest crowns every three or four years",
       "steps": [
         "This is not division. Strawberry crowns do not split; the plant renews itself through runners.",
-        "Pick strong runners with a small plantlet forming, and peg the plantlet down into the soil or into a small pot sunk beside the parent. A bent wire or a stone will hold it.",
-        "Leave it attached to the parent while it roots, which takes a few weeks.",
-        "Once it has clearly taken hold, cut the runner and you have an independent plant.",
+        "Take the first plantlet on each runner, the one nearest the parent. It is the strongest, and the ones further down the same stem are progressively weaker. Cut the rest off.",
+        "Pin the runner stem just behind the plantlet, not the plantlet itself. A bent wire, a landscape staple or a stone will hold it. The crown sits on the surface: buried it rots, perched the roots dry out.",
+        "Leave it attached to the parent while it roots. The parent is what feeds it, which is why this beats transplanting.",
+        "Four to six weeks later, once it resists a gentle tug, cut the runner and you have an independent plant.",
+        "To move a crown that is already established, lift it with a trowel keeping the root ball intact, replant with the crown at soil level and water it in. Early spring is the safe time; a move after about mid September will not root before the cold.",
         "Take out the oldest woodiest crowns each year so the bed is always a mix of ages. A bed kept going indefinitely without renewal stops fruiting without ever looking dead."
       ],
       "links": []
@@ -625,9 +626,9 @@
     ],
     "type": "annual",
     "confidence": "confirmed",
-    "status": "blooming",
-    "statusLabel": "Producing",
-    "handling": "Keep picking, which is what keeps them producing. When finished, cut at soil level and leave the roots in the ground for the nitrogen in the nodules.",
+    "status": "finished",
+    "statusLabel": "Cleared, back in May",
+    "handling": "Cleared on September 8 2026, cut at soil level with the roots left in the ground for the nitrogen in the nodules. Going back on the string trellis in May 2027: get the strings up before sowing rather than after, and sow direct into warm soil. Keep picking once they start, because that is what keeps them producing.",
     "idNote": "",
     "window": {
       "from": 7,
@@ -1606,6 +1607,105 @@
           "url": "https://extension.psu.edu/a-guide-to-dividing-perennials"
         }
       ]
+    }
+  },
+  {
+    "id": "cucumber",
+    "name": "Cucumber",
+    "variety": "buy a mildew-resistant kind",
+    "beds": [
+      "side"
+    ],
+    "type": "annual",
+    "confidence": "confirmed",
+    "planned": true,
+    "status": "watch",
+    "statusLabel": "Planned, not planted",
+    "handling": "Going on its own section of the string trellis in May 2027, separate from the beans, which are far more vigorous climbers and will swamp it on shared strings. This is the plant that sets the watering level for the whole bed.",
+    "idNote": "",
+    "window": {
+      "from": 7,
+      "to": 9,
+      "kind": "harvest"
+    },
+    "care": {
+      "feed": "The one hungry plant in this bed. A liquid feed every two weeks once fruit sets, given at the base of this plant alone. Do not broadcast feed over the bed: the beans want nothing, and feeding them gives you a magnificent vine with very few beans.",
+      "deadhead": "No deadheading. Picking is the equivalent, and it is the whole game: pick while the fruit is still slim, because one cucumber left to swell and go yellow tells the vine it has reproduced and slows everything behind it.",
+      "good": "Straight even fruit, dark green leaves, and flowers forming all the way up the strings.",
+      "poor": "Bitter or misshapen fruit means the watering went feast and famine, not that the plant is diseased. White powdery coating is mildew, which this bed is prone to: warm still air against a wall over dry roots is what causes it, so watering properly is half the cure.",
+      "endOfSeason": "Finished by the first cold nights. Cut at soil level, clear every leaf off the bed rather than leaving it, and take the strings down. Mildewed material goes in the household bin, not the tumbler.",
+      "propagate": "Buy fresh seed each year rather than saving it. Most garden cucumbers are hybrids that will not come true, and the ones worth having here are bought for mildew resistance, which is exactly the trait you would lose. Sow direct in May once the soil is warm."
+    },
+    "art": {
+      "form": "berry",
+      "petal": "#4E7C3F",
+      "centre": "#8FA85C"
+    }
+  },
+  {
+    "id": "garlic",
+    "name": "Garlic",
+    "variety": "seed garlic, a hardneck for this climate",
+    "beds": [
+      "side"
+    ],
+    "type": "bulb",
+    "confidence": "confirmed",
+    "planned": true,
+    "status": "watch",
+    "statusLabel": "Planned, not planted",
+    "handling": "The winter tenant. Cloves go in in October, sit through the wet months needing nothing at all, and come out in July before the beans and cucumbers are at full stretch. It uses the one slot in this bed that no other crop wants.",
+    "idNote": "",
+    "window": {
+      "from": 6,
+      "to": 7,
+      "kind": "harvest"
+    },
+    "care": {
+      "feed": "Compost at planting is enough. It is in the ground over winter, when a fall feed would only wash straight through, so anything extra waits until growth restarts in March.",
+      "deadhead": "Hardneck types throw a curling flower stalk, the scape, in June. Snap it off and cook it. Leaving it on takes size off the bulb, and it is the one job in this crop's whole year.",
+      "good": "Green leaves standing upright through spring, and a fat neck at the base.",
+      "poor": "Yellowing early in spring is usually wet feet rather than hunger. Small bulbs at harvest mean the cloves went in too shallow, too close, or too late in the autumn.",
+      "endOfSeason": "Lift in July when the lower third of the leaves have gone brown and the rest are still green. Waiting for all of them to brown splits the wrapper and the bulb will not store. Dry it out of direct sun for two or three weeks before trimming.",
+      "propagate": "It replants itself: keep the biggest bulbs from the July harvest and split them into cloves at planting time in October. Buy seed garlic to start, never a supermarket bulb, which is often treated to stop it sprouting and can carry disease into the bed."
+    },
+    "art": {
+      "form": "cluster",
+      "petal": "#C6BFD4",
+      "centre": "#E8E2D5"
+    }
+  },
+  {
+    "id": "tomato",
+    "name": "Tomato",
+    "variety": "short-season bush types, in grow bags",
+    "beds": [
+      "side"
+    ],
+    "type": "annual",
+    "confidence": "confirmed",
+    "planned": true,
+    "status": "watch",
+    "statusLabel": "Planned, in bags",
+    "handling": "Not in the bed. In grow bags on the concrete beside it, because they want more root depth than this box gives and because a bag can be moved to wherever the sun actually is. Keeping them out of the bed also keeps the bed's watering honest: a bag needs water daily in July, and the strawberries, beans and garlic do not.",
+    "idNote": "",
+    "window": {
+      "from": 8,
+      "to": 9,
+      "kind": "harvest"
+    },
+    "care": {
+      "feed": "Unlike everything in the bed, a bag has no soil reserve to draw on. Liquid feed every two weeks once the first fruit sets, and stop when the nights turn cold.",
+      "deadhead": "No deadheading. On bush and determinate types do not pinch out side shoots either, which is advice for cordon types and would cost you most of the crop.",
+      "good": "Dark even foliage and trusses setting fruit all the way up. In this climate, fruit that colours up before the end of September is the real measure.",
+      "poor": "Leaves wilting in the afternoon and recovering overnight is the bag drying out, not disease. Fruit with a sunken dark patch on the bottom is blossom end rot, which is inconsistent watering rather than a shortage of anything. Brown blotches spreading fast in a wet September is late blight, and the plant should come out.",
+      "endOfSeason": "Pull the plants when the cold sets in and pick everything still green. Green fruit ripens indoors in a paper bag. Do not compost blighted material.",
+      "propagate": "Buy plants each spring rather than saving seed. Seed from a hybrid will not come true, and starting from seed here means a heated propagator in February to gain anything. Choose for early ripening rather than flavour notes, because a short cool season is the whole constraint: Sungold, Early Girl, Stupice and Oregon Spring all ripen reliably here."
+    },
+    "art": {
+      "form": "berry",
+      "petal": "#C4392B",
+      "centre": "#6F8F55"
     }
   }
 ]

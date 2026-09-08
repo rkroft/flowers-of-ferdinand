@@ -2,12 +2,12 @@
   "title": "Flowers of Ferdinand",
   "standfirst": "",
   "eyebrow": "",
-  "updated": "2026-08-31",
+  "updated": "2026-09-08",
   "season": "2026",
   "meta": [
     {
       "label": "Written",
-      "value": "Aug 31, 2026"
+      "value": "Sep 8, 2026"
     },
     {
       "label": "Zone",
@@ -337,8 +337,74 @@
         "w": 50,
         "h": 75
       },
-      "description": "Narrow raised bed on the west wall. Strawberries, beans on string trellis, sunflowers and the compost tumbler. West facing means shade until around midday, then several hours of strong afternoon sun with heat radiating off the wall and held in it overnight. Add a foundation that wicks moisture away and an eave that keeps rain off, and you get warm still air over dry roots, which is what powdery mildew wants. Hotter and drier than it looks.",
-      "watering": "Hose, by hand"
+      "description": "Narrow raised bed on the west wall, with the compost tumbler at one end and concrete alongside it. The sunflowers and pole beans came out on September 8 2026, and the bed was replanned around food: a strawberry mat that renews from its own runners, pole beans back on the trellis each May, cucumbers on their own strings, garlic in the winter gap, and tomatoes in bags on the concrete rather than in the box. West facing means shade until around midday, then several hours of strong afternoon sun with heat radiating off the wall and held in it overnight. Add a foundation that wicks moisture away and an eave that keeps rain off, and you get warm still air over dry roots, which is what powdery mildew wants. Hotter and drier than it looks, and that is the fact every decision here has to answer to.",
+      "watering": "Hose, by hand",
+      "plan": {
+        "goal": "A four-crop edible bed that mostly runs itself: strawberries renewing from their own runners, beans and cucumbers on the trellis each summer, garlic filling the winter, and the one thirsty crop kept out in bags where it cannot set the terms for the rest.",
+        "method": [
+          {
+            "title": "Thin the mat and peg runners into the cleared ground",
+            "when": "Now, and the pegging closes around mid September",
+            "body": "Thin to roughly one plant every six to eight inches, oldest woodiest crowns out first. Then take the first plantlet on each runner, pin the stem just behind it, and leave it attached to the parent to root. Space the new ones eight to twelve inches, since they are going into open ground rather than a crowded mat. Spread them forward and along, not into the trellis line, which is bean ground again from May. Pegged now they root before the soil cools. Pegged in late October most of them do not."
+          },
+          {
+            "title": "Compost on top, and nothing else",
+            "when": "October, once the bed is cleared",
+            "body": "One to two inches spread on the surface and left for the rain to work in. Do not dig it through: this bed's problem is that it dries out, digging wrecks the structure that holds water, and the bean roots left in the ground are free nitrogen you would only be breaking up. Keep it off the strawberry crowns, which rot if buried, and off the newly pegged plantlets. No soil conditioner, which is for beds that drain badly and this one has the opposite problem. No fertilizer, no manure, no lime. The soil here is almost certainly already acid enough for strawberries, which want it that way."
+          },
+          {
+            "title": "Mulch the foundation strip specifically",
+            "when": "October, with the compost",
+            "body": "The back six inches against the wall is the driest soil in the garden: rain shadow, wicking foundation, eave overhead. Put the thickest part of the compost there, and water that strip separately from the rest of the bed rather than assuming one pass covers both."
+          },
+          {
+            "title": "Garlic in the winter gap",
+            "when": "October, planted with the compost",
+            "body": "The useful thing about this bed is that its free space is a season, not a corner. Strawberries hold their ground all year and the trellis is busy from May to September, which leaves October to May with nothing in it. That window belongs to garlic: in in October, out in July, no competition with anything and nothing to water through the winter. Buy seed garlic rather than a supermarket bulb, which is often treated to stop it sprouting. Split the bulb into cloves at planting, not before, pointy end up, two inches deep and six inches apart."
+          },
+          {
+            "title": "Cut the rooted runners free",
+            "when": "Late October, four to six weeks after pegging",
+            "body": "Once a plantlet resists a gentle tug it is on its own roots. Cut the runner. Leaving them joined is not a disaster, but the parent keeps spending on them."
+          },
+          {
+            "title": "Hold the trellis line for the beans",
+            "when": "Standing rule, sown in May",
+            "body": "The pole beans are coming back, so the strip along the string trellis is spoken for from May to September and nothing perennial goes into it. Get the strings up before sowing rather than after, and sow direct once the soil is warm. This bed is shaded until midday, so a slow start there is normal rather than a problem. The roots stay in the ground again at the end."
+          },
+          {
+            "title": "Cucumbers on their own strings, beside the beans",
+            "when": "Sown in May with the beans",
+            "body": "The three crops in this bed agree on soil: they overlap at a pH of about six to six and a half, which is where this ground already sits, and all three want the same well-drained compost-fed soil. They agree on the direction of watering too. What they do not agree on is feeding, so feed the cucumber alone with a liquid feed at its base every two weeks once fruit sets, and never broadcast feed across the bed. The beans want nothing, and a fed bean is a magnificent vine with almost no beans. Give the cucumber its own section of string as well, because pole beans climb harder and will swamp it on shared strings."
+          },
+          {
+            "title": "Tomatoes in bags on the concrete, not in the bed",
+            "when": "Planted out late May, bought in April",
+            "body": "They want more root depth than this box gives, and a bag can be moved to wherever the sun genuinely is, which matters because moving three feet west does not change an aspect that is shaded until midday. Keeping them out of the bed is also what keeps the bed honest: a grow bag on hot concrete needs water daily in July, and nothing planted in the box does. Use fifteen to twenty gallon bags, not five, mulch the surface of the bag as you would a bed, and lift the bags an inch off the concrete or use light-coloured ones so the roots are not cooked from below. Buy for early ripening rather than flavour notes, because a short cool season is the whole constraint here."
+          },
+          {
+            "title": "Water for the cucumber, and water the soil",
+            "when": "Standing rule, June through September",
+            "body": "The cucumber is the thirstiest thing here, so it sets the level and the other two are happy underneath it. Consistency matters more than volume: feast and famine is what makes cucumbers bitter and misshapen, and what causes blossom end rot in the tomatoes. Water the soil and not the leaves. Wet foliage in this bed is how you get botrytis on the strawberries and mildew on the cucumbers, and warm still air against a wall is already half of both. Keep the strawberry mat thinned so air moves through it."
+          },
+          {
+            "title": "Replace the oldest quarter, every year",
+            "when": "Late summer, annually",
+            "body": "This is the job that makes the bed permanent. Crowns decline sharply after three or four years, so peg enough runners each summer to swap out the oldest quarter of the bed. Done every year, there is never a bad year and never a plant to buy."
+          }
+        ],
+        "watch": [
+          "Grey fuzz on the fruit is botrytis, which means damp still air around crowded crowns rather than anything you can spray.",
+          "Pale leaves and small fruit is hungry or crowded, and after this clearing crowded is the less likely of the two.",
+          "Reddening leaves late in the season is age, not disease. Those are the crowns to take out first.",
+          "Soil dry at the wall but damp at the front edge means the bed needs watering as two zones, not one.",
+          "Strawberry runners heading into the trellis line are heading into bean ground. Redirect them forward rather than letting them settle there.",
+          "Bitter or misshapen cucumbers means the watering went feast and famine, not that anything is diseased.",
+          "White powdery coating on the cucumber leaves is mildew, which this bed causes rather than the plant catching. Dry roots are half of it, so it is a watering answer before it is a spray answer.",
+          "A tomato bag whose leaves wilt in the afternoon and recover overnight is drying out, not sick. On concrete in July that is a daily job.",
+          "Fruit with a sunken dark patch on the base is blossom end rot, which is inconsistent watering and not a shortage of anything you can buy."
+        ]
+      }
     },
     {
       "id": "driveway-2",
