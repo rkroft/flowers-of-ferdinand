@@ -1,5 +1,62 @@
 # Flowers of Ferdinand — Session Log
 
+## 2026-09-08 — The side bed gets a food plan, gated on temperature not calendar
+
+**What we built.** The side bed was cleared — sunflowers and beans out — and instead of just
+recording that, the bed got planned through the whole of next season. Sunflowers are not coming
+back, the strawberry patch is being grown out, and the space is going to food: tomatoes in bags on
+the concrete, cucumbers trellised, pole beans again. The 2027 calendar that came out of it is
+written against soil and night temperatures rather than the usual Seattle dates, because this
+particular bed doesn't behave like the average garden.
+
+**Technical changes.** Five commits, all content in the site's plan data.
+- `a9718b5` — the Side Bed Box replanned around food, through 2027.
+- `4d90852` — recorded that the box sits on concrete on every side. This is the fact the rest of
+  the plan hangs off.
+- `2ce2c33` — cucumbers moved out to a bag, strawberries given the room. The box is six inches
+  deep, which decided it.
+- `3e8605c` — garlic dropped from the task list, kept as an option rather than deleted.
+- `7a2512c` — real sowing dates, each one gated on a temperature rather than a week.
+
+**Decisions & tradeoffs.**
+
+- **Decision:** tomatoes go in bags on the concrete beside the bed, not in the bed.
+  - **Why:** the box is six inches deep at most. Tomatoes want depth, and no amount of scheduling
+    fixes a root run that isn't there.
+  - **Alternatives:** keep everything in the bed, which was the preference going in. Rejected on
+    the depth measurement, not on principle.
+  - **Tradeoff we accepted:** the planting is now split across two surfaces with different watering
+    behaviour — bags on concrete dry out faster than a bed does.
+
+- **Decision:** write the calendar as temperature gates, not dates.
+  - **Why:** the standard Seattle dates are wrong for this bed *in both directions*. The box is
+    shaded until midday so it warms late — beans sown on the usual date sit in cold soil and rot,
+    and a sowing two weeks later overtakes them. The bags stand on concrete and warm early, which
+    is why the cucumber can go in *ahead* of the beans despite wanting warmer soil.
+  - **Alternatives:** standard last-frost dates. Rejected — they'd be wrong twice over on one bed.
+  - **Tradeoff we accepted:** a temperature gate needs a thermometer. A $10–15 soil thermometer is
+    now a dependency of the plan, and it was added to the bean task.
+
+- **Decision:** garlic off the task list but kept as an option.
+  - **Why:** it was a "big maybe." Putting a maybe on a task list makes the list lie.
+  - **Tradeoff we accepted:** an option not on the list is an option that can be forgotten. Kept
+    written down for that reason rather than deleted.
+
+**Concepts in play.**
+- *Gate on the real signal, not the proxy* — the calendar is a proxy for soil temperature, and it's
+  a bad proxy for a shaded box next to warm concrete. Same shape as preferring a measured condition
+  over a scheduled one anywhere else.
+- *A maybe is not a task* — status has to be true or the list stops being readable.
+
+**Open threads.**
+- Buy the soil thermometer. The whole calendar depends on it and nothing else enforces that.
+- The strawberry runners were to be pinned and spread this session — worth confirming it happened,
+  since the 2027 plan assumes an expanded patch.
+- Watch note recorded but untested: a bean sowing that doesn't show within ten days went into soil
+  that was too cold. Resow rather than wait.
+
+**Stories worth keeping.** — none this session. Good planning, no surprise worth retelling.
+
 ## 2026-08-31 — Published it, then made it plan rather than record
 
 **What we built.** The garden site went from a folder in Downloads to a live page at
